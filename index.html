@@ -19,7 +19,6 @@
 </head>
 <body onload='showMenuComponent("Home");'>
 <div class='bground'></div>
-<header>
 <!-- Start of Nav Bootstrap Template 01-->
 <nav class="navbar navbar-dark navbar-expand-md">
 <div class='logoleft'>
@@ -33,39 +32,49 @@
 </button>
 <div class='collapse navbar-collapse' id='navbarNavDropdown'>
 <ul id='menu' class='navbar-nav mr-auto'>
-<li class='nav-link'>
+<li class='nav-item mr-2'>
 <a class='nav-link MenuButton' id='HomeButton' onclick='showMenuComponent("Home")'>Home</a>
 </li>
-<li class='nav-link'>
+<li class='nav-item mr-2'>
 <a class='nav-link MenuButton' id='AboutButton' onclick='showMenuComponent("About")'>About</a>
 </li>
-<li class='nav-link'>
+<li class='nav-item dropdown'>
 <a class='nav-link dropdown-toggle' href='#' id='navbarDropdownMenuLink' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>Search Teams</a>
+<div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
+<a class='dropdown-item' href='#'>All Terrain</a>
+<a class='dropdown-item' href='#'>Kayaks</a>
+<a class='dropdown-item' href='#'>Search Dogs</a>
+</div>
 </li>
-<li class='nav-link'>
+<li class='nav-item mr-2'>
 <a class='nav-link MenuButton' id='GetInvolvedButton' onclick='showMenuComponent("GetInvolved")'>Get Involved</a>
 </li>
-<li class='nav-link'>
+<li class='nav-item mr-2'>
 <a class='nav-link MenuButton' id='GalleryButton' onclick='showMenuComponent("Gallery")'>Gallery</a>
 </li>
-<li class='nav-link'>
+<li class='nav-item mr-2'>
 <a class='nav-link MenuButton' id='ContactButton' onclick='showMenuComponent("Contact")'>Contact</a>
 </li>
 </ul>
 </div>
 </nav>
 <!-- End of Nav Bootstrap Template 01-->
-</header>
 <div class='MenuComponent' id='Home'>
 <header>
 </header>
 <section id='Home-CTA' class='Home-CTA'>
-<img src="assets/images/logo.png">
-<ul>
-<li><a>Find Out More</a></li>
-<li><a>Contact Us</a></li>
-<li><a>Support Us</a></li>
-</ul>
+<!-- Start of Callout -->
+
+ <div class="Home-CTA">
+    <img src="assets/images/imgwarksarTED.png" class="Home-CTA" id="CTA-logo">
+    <ul class="Home-CTA">
+     <li><span class="d-none d-sm-inline far fa-hand-point-right"></span><a>Find Out More</a></li>
+     <li><span class="d-none d-sm-inline far fa-hand-point-right"></span><a>Contact Us</a></li>
+     <li><span class="d-none d-sm-inline far fa-hand-point-right"></span><a>Get Involved</a></li>
+    </ul>
+  </div>
+
+<!-- End of Callout -->
 </section>
 </div>
 <div class='MenuComponent' id='About'>
@@ -90,6 +99,12 @@
 <h1 class='MenuSectionTitle'>The Team in Action</h1>
 </header>
 <section id='photo'>
+<img src="assets/images/imgwarksar027.jpg"  alt="Search Team With Dog">
+<img src="assets/images/imgwarksar026.jpg"  alt="Teddy Bear Mascot">
+<img src="assets/images/imgwarksar025.jpg"  alt="Search Team Outdoors">
+<img src="assets/images/imgwarksar024.jpg"  alt="Member Fund Raising">
+<img src="assets/images/imgwarksar023.jpg"  alt="Team with Helicopter">
+<img src="assets/images/imgwarksar022.jpg"  alt="Search Team in Woodland">
 <img src="assets/images/imgwarksar001.jpg"  alt="Search Training">
 <img src="assets/images/imgwarksar002.jpg"  alt="Search Team">
 <img src="assets/images/imgwarksar003.jpg"  alt="Search Training">
@@ -104,9 +119,13 @@
 <img src="assets/images/imgwarksar012.jpg"  alt="Charity Run">
 <img src="assets/images/imgwarksar013.jpg"  alt="Search Team Runners">
 <img src="assets/images/imgwarksar014.jpg"  alt="Wolf Run">
+<img src="assets/images/imgwarksar015.jpg"  alt="Search Team Outdoors">
 <img src="assets/images/imgwarksar016.jpg"  alt="Search Team Outdoors">
+<img src="assets/images/imgwarksar017.jpg"  alt="Search Team Outdoors">
+<img src="assets/images/imgwarksar018.jpg"  alt="Search Team Outdoors">
 <img src="assets/images/imgwarksar019.jpg"  alt="Search Team Activity">
 <img src="assets/images/imgwarksar020.jpg"  alt="Search Dog Sash">
+<img src="assets/images/imgwarksar021.jpg"  alt="Search Team Outdoors">
 </section>
 </div>
 <footer>
@@ -118,6 +137,6 @@
 </ul>
 <p class='enquiry'>For Enquiries Please Email: support@warksar.org.uk</p>
 <p class='d-none d-lg-inline footer-sm'>Created by Stephen Clarke on behalf of Warwickshire Search and Rescue 
-||&nbsp;Last update on 08/01/2021||&nbsp;<span id='HTMLSerNo'>0001</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
+||&nbsp;Last update on 10/01/2021||&nbsp;<span id='HTMLSerNo'>0002</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
 </body>
 </html>

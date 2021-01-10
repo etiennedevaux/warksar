@@ -1,0 +1,255 @@
+/* Imported Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
+/* Variable */
+:root{
+--menubuttonwidth: %;
+--cssfileversion: "0014";
+--lightgrey:#e5e5e5; /* Light grey color for use across the site */
+--darkgrey:#555555; /* Dark grey color for use across the site */
+}
+*{
+margin: 0px;
+padding: 0px;
+border: 0px;
+}
+div.bground{
+width: 100%;
+height: 100%;
+background-image:  URL("http://www.warksar.org.uk/wp-content/uploads/2018/01/IMGP6198.jpg");
+background-color: #bbbbbb;
+z-index: -1;
+padding: 0px;
+position: fixed;
+background-size: cover;
+margin: 0px;
+animation-name: hero-zoom;
+animation-duration: 5s;
+animation-fill-mode: forwards;
+background-position: center center;
+}
+@keyframes hero-zoom{
+ from{
+    transform: scale(1);
+    opacity: 0.6;
+
+  }
+  to{
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+@keyframes CTA-zoom{
+ from{
+    transform: scale(0);
+    opacity: 0;
+
+  }
+  to{
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+.navbar{
+margin-bottom: 0;
+border: 0;
+width: 100%;
+background-color:  rgba(0,0,0,.8);
+}
+.navbar .navbar-toggler{
+border: 0;
+}
+.navbar navbar-nav a{
+font-weight: bold;
+}
+.logoleft{
+border-radius: 50%;
+width: 80px;
+padding: 0;
+margin: 0 10px 0 0;
+border-width: 0;
+}
+footer{
+position: fixed;
+bottom: 0;
+width: 100%;
+text-align: center;
+background-color: var(--darkgrey);
+opacity: 0.8;
+}
+.social-networks{
+text-align: center;
+margin: 5px 0;
+}
+.social-networks i{
+font-size: 160%;
+margin: 0 1% 0;
+padding: 3px 5% 0;
+color: #ffffffff;
+}
+.social-networks li{
+display: inline;
+}
+footer p{
+color: #ffffffff;
+margin: 0;
+}
+.enquiry{
+font-size: 120%;
+font-weight: 500;
+}
+.header-lg{
+font-size: 130%;
+font-weight: 500;
+margin: 0;
+padding: 0;
+line-height: 100%;
+text-align: center;
+}
+.header-sm{
+font-size: 90%;
+font-weight: 300;
+margin: 0 0 0 5px;
+padding: 0;
+line-height: 100%;
+letter-spacing: 1px;
+text-align: center;
+}
+.footer-sm{
+font-size: 90%;
+color: #aaa;
+}
+#CSSSerNo::before{
+content: var(--cssfileversion);
+}
+#photo img{
+width: 100%;
+margin: 0px;
+}
+#photo{
+clear: both;
+line-height: 0px;
+column-count: 5;
+column-gap: 0;
+padding: 0 0 90px 0;
+}
+#Gallery{
+background-color: #aaaaaaaa;
+}
+@media screen and (min-width: 1397px){
+#photo {
+column-count: 4;
+}
+
+div.Home-CTA {
+background-color: #111111ee;
+border-radius: 90px;
+width: 60%;
+margin: 180px auto 180px;
+}
+}
+@media screen and (max-width: 1396px){
+#photo {
+column-count: 4;
+}
+
+div.Home-CTA {
+background-color: #111111ee;
+border-radius: 90px;
+width: 60%;
+margin: 180px auto 180px;
+}
+}
+@media screen and (max-width: 1000px){
+#photo {
+    column-count: 3;
+  }
+
+#CTA-logo{
+display: none;
+}
+
+div.Home-CTA {
+background-color: #111111ee;
+border-radius: 20px;
+width: 80%;
+margin: 20% auto;
+}
+}
+@media screen and (max-width: 812px){
+#photo {
+    column-count: 3;
+  }
+
+#CTA-logo{
+display: none;
+}
+
+div.Home-CTA {
+background-color: #111111ee;
+border-radius: 20px;
+width: 80%;
+margin: 20% auto;
+}
+}
+@media (min-width: 768px){
+div.dropdown-menu{
+position: sticky;
+}
+}
+@media screen and (max-width: 500px){
+#photo {
+    column-count: 2;
+  }
+
+div.Home-CTA {
+background-color: #333333bb;
+border-radius: 0px;
+width: 90%;
+margin: 20px 0px;
+}
+}
+.MenuSectionTitle{
+text-align: center;
+background-color: var(--darkgrey);
+opacity: 0.8;
+color: #ffffffff;
+margin: 0;
+font-size: 150%;
+font-weight: 500;
+letter-spacing: 3px;
+width: 100%;
+line-height: 100%;
+padding: 2%;
+}
+header{
+overflow: hidden;
+margin: 0;
+}
+img.Home-CTA{
+float: left;
+height: 180px;
+}
+div.Home-CTA{
+height: 180px;
+vertical-align: middle;
+animation-name: CTA-zoom;
+animation-duration: 15s;
+animation-fill-mode: forwards;
+max-width: 800px;
+}
+ul.Home-CTA{
+text-align: center;
+margin: auto;
+list-style-type: none;
+margin: auto;
+padding: 0;
+}
+ul.Home-CTA li{
+font-size: 180%;
+color: orange;
+line-height: 200%;
+}
+.dropdown-menu{
+position: static;
+}

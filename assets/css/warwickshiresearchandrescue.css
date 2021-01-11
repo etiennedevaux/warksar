@@ -192,8 +192,21 @@ ul.Home-CTA span{
 width: 30px;
 margin: 0 30px 0 50px;
 }
-.ContentPage-STD{
-background-color: #99999999;
+section.ContentPage-STD{
+background-color: #999999ee;
+border-width: 5px;
+border-style: solid;
+margin: 20px;
+padding: 20px;
+border-color: #378a5b;
+border-radius: 20px;
+color: #118822ff;
+font-size: 130%;
+font-weight: 700;
+letter-spacing: 1px;
+}
+div.MenuComponent{
+padding: 0 0 100px 0;
 }
 @media screen and (min-width: 1397px){
 #photo {

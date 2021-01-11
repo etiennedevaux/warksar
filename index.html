@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang='en-GB'>
 <head>
-<meta charset='utf-8'>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
 <meta name='viewport' content='width=device-width initial-scale=1.0'>
+<link rel='icon' href='assets/images/favicon.ico'>
 <meta name='description' content='Public facing website for Warwickshire Search and Rescue'>
 <meta name='keywords' content=''>
 <meta name='author' content='Stephen Clarke: Warwickshire Search and Rescue'>
@@ -35,16 +36,23 @@
 <li class='nav-item mr-2'>
 <a class='nav-link MenuButton' id='HomeButton' onclick='showMenuComponent("Home")'>Home</a>
 </li>
-<li class='nav-item mr-2'>
-<a class='nav-link MenuButton' id='AboutButton' onclick='showMenuComponent("About")'>About</a>
+<li class='nav-item dropdown'>
+<a class='nav-link dropdown-toggle' href='#' id='navbarDropdownMenuLink' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>About</a>
+<div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
+<a class='dropdown-item' href='#' onclick='showMenuComponent("WhatWeDo")'>What We Do</a>
+<a class='dropdown-item' href='#' onclick='showMenuComponent("OurHistory")'>Our History</a>
+</div>
 </li>
 <li class='nav-item dropdown'>
 <a class='nav-link dropdown-toggle' href='#' id='navbarDropdownMenuLink' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>Search Teams</a>
 <div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
-<a class='dropdown-item' href='#'>All Terrain</a>
-<a class='dropdown-item' href='#'>Kayaks</a>
-<a class='dropdown-item' href='#'>Search Dogs</a>
+<a class='dropdown-item' href='#' onclick='showMenuComponent("AllTerrain")'>All Terrain</a>
+<a class='dropdown-item' href='#' onclick='showMenuComponent("Kayaks")'>Kayaks</a>
+<a class='dropdown-item' href='#' onclick='showMenuComponent("SearchDogs")'>Search Dogs</a>
 </div>
+</li>
+<li class='nav-item mr-2'>
+<a class='nav-link MenuButton' id='EventsButton' onclick='showMenuComponent("Events")'>Events</a>
 </li>
 <li class='nav-item mr-2'>
 <a class='nav-link MenuButton' id='GetInvolvedButton' onclick='showMenuComponent("GetInvolved")'>Get Involved</a>
@@ -59,7 +67,7 @@
 </div>
 </nav>
 <!-- End of Nav Bootstrap Template 01-->
-<div class='MenuComponent' id='Home'>
+<div style='display: none;' class='MenuComponent' id='Home'>
 <header>
 </header>
 <section id='Home-CTA' class='Home-CTA'>
@@ -68,7 +76,7 @@
  <div class="Home-CTA">
     <img src="assets/images/imgwarksarTED.png" class="Home-CTA" id="CTA-logo">
     <ul class="Home-CTA">
-     <li><span class="d-none d-sm-inline far fa-hand-point-right"></span><a>Find Out More</a></li>
+     <li><span class="d-none d-sm-inline far fa-hand-point-right"></span><a onclick='showMenuComponent("WhatWeDo")'>Find Out More</a></li>
      <li><span class="d-none d-sm-inline far fa-hand-point-right"></span><a>Contact Us</a></li>
      <li><span class="d-none d-sm-inline far fa-hand-point-right"></span><a>Get Involved</a></li>
     </ul>
@@ -77,24 +85,44 @@
 <!-- End of Callout -->
 </section>
 </div>
-<div class='MenuComponent' id='About'>
+<div style='display: none;' class='MenuComponent' id='About'>
 <header>
 <h1 class='MenuSectionTitle'>About Warksar</h1>
 </header>
 </div>
-<div class='MenuComponent' id='SearchTeams'>
+<div style='display: none;' class='MenuComponent' id='SearchTeams'>
 <header>
 </header>
 </div>
-<div class='MenuComponent' id='GetInvolved'>
+<div style='display: none;' class='MenuComponent' id='GetInvolved'>
+<header>
+<h1 class='MenuSectionTitle'>Warwickshire Search and Rescue Needs You</h1>
+</header>
+</div>
+<div style='display: none;' class='MenuComponent' id='Contact'>
 <header>
 </header>
 </div>
-<div class='MenuComponent' id='Contact'>
+<div style='display: none;' class='MenuComponent' id='Kayaks'>
 <header>
+<h1 class='MenuSectionTitle'>The Kayak Team in Training</h1>
+</header>
+<section id='Kayak' class='Kayak ContentPage-STD'>
+<p>The Kayak Search Team is a dedicated team of highly competent kayakers.  All team members are qualified and operational Lowland Search Technicians, who have developed these skills for the water environment.  All are skilled paddlers, capable of using a range of craft.  Most of the team are active white water paddlers, and all are coaches with British Canoeing Safety and Rescue qualifications.</p>
+<img src="assets/images/imgwarksar008.jpg">
+<p>Warwickshire Search and Rescue were successful in their application for funding from the People’s Postcode Lottery. This has enabled us to buy new kayaks, as well as all the personal protective equipment (P.P.E) required to use them safely, including helmets and dry suits. It also means that our kayak team can deploy faster than previously, as all the equipment they need will be at the meeting point. We would like to thank the People’s Postcode Lottery for helping us to provide this essential service to the residents of Warwickshire.</p>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/qDnTAo1rHks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Kayaks are an ideal rapid deployment water search craft, which can be used in any waterway, but are especially useful in shallow, narrow, environmentally sensitive or difficult to access waters. Since most of Warwickshire’s waterways are small and shallow kayaks are the ideal search vehicles for these waterways.</p>
+<img src="assets/images/imgwarksar009.jpg">
+<p>If you are interested in joining our Kayak Team, please visit the Join Us page for more information.  If you have any further questions, e-mail volunteering@warksar.org.uk.</p>
+</section>
+</div>
+<div style='display: none;' class='MenuComponent' id='SearchDogs'>
+<header>
+<h1 class='MenuSectionTitle'>Search Dogs on the Trail</h1>
 </header>
 </div>
-<div class='MenuComponent' id='Gallery'>
+<div style='display: none;' class='MenuComponent' id='Gallery'>
 <header>
 <h1 class='MenuSectionTitle'>The Team in Action</h1>
 </header>
@@ -128,6 +156,29 @@
 <img src="assets/images/imgwarksar021.jpg"  alt="Search Team Outdoors">
 </section>
 </div>
+<div style='display: none;' class='MenuComponent' id='AllTerrain'>
+<header>
+<h1 class='MenuSectionTitle'>The Terrain Team on Foot</h1>
+</header>
+</div>
+<div style='display: none;' class='MenuComponent' id='WhatWeDo'>
+<header>
+<h1 class='MenuSectionTitle'>What We Do</h1>
+</header>
+<section>
+Warwickshire Search and Rescue is a lowland search and rescue organisation.
+</section>
+</div>
+<div style='display: none;' class='MenuComponent' id='OurHistory'>
+<header>
+<h1 class='MenuSectionTitle'>History of Warwickshire Search and Rescue</h1>
+</header>
+</div>
+<div style='display: none;' class='MenuComponent' id='Events'>
+<header>
+<h1 class='MenuSectionTitle'>Warwickshire Search and Rescue in the Community</h1>
+</header>
+</div>
 <footer>
 <ul class="social-networks">
 <li><a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
@@ -137,6 +188,6 @@
 </ul>
 <p class='enquiry'>For Enquiries Please Email: support@warksar.org.uk</p>
 <p class='d-none d-lg-inline footer-sm'>Created by Stephen Clarke on behalf of Warwickshire Search and Rescue 
-||&nbsp;Last update on 10/01/2021||&nbsp;<span id='HTMLSerNo'>0002</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
+||&nbsp;Last update on 11/01/2021||&nbsp;<span id='HTMLSerNo'>0002</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
 </body>
 </html>

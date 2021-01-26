@@ -4,7 +4,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0014";
+--cssfileversion: "0015";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 }
@@ -19,7 +19,8 @@ font-family: Lato;
 div.bground{
 width: 100%;
 height: 100%;
-background-image:  URL("http://www.warksar.org.uk/wp-content/uploads/2018/01/IMGP6198.jpg");
+rem background-image:  URL("http://www.warksar.org.uk/wp-content/uploads/2018/01/IMGP6198.jpg");
+background-image: URL("https://scportfolio.blob.core.windows.net/$web/warksar/assets/images/imgwarksar001.jpg");
 background-color: #bbbbbb;
 z-index: -1;
 padding: 0px;
@@ -198,15 +199,75 @@ border-width: 5px;
 border-style: solid;
 margin: 20px;
 padding: 20px;
-border-color: #378a5b;
+border-color: #378a5b88;
 border-radius: 20px;
-color: #118822ff;
+color: #054405ff;
 font-size: 130%;
 font-weight: 700;
 letter-spacing: 1px;
 }
+section.Content-STD{
+background-color: var(--darkgrey);
+opacity: 0.8;
+border-style: none;
+margin: 0;
+padding: 0;
+color: #054405ff;
+font-size: 130%;
+font-weight: 700;
+letter-spacing: 1px;
+}
+#AllTerrainFoot{
+margin: 0;
+float: left;
+width: 100%;
+object-fit: cover;
+}
 div.MenuComponent{
 padding: 0 0 100px 0;
+}
+#ALSAR-logo{
+float: right;
+width: 400px;
+margin: 0 20px 0 40px;
+}
+#Police-image{
+float: right;
+width: 400px;
+margin: 0 40px 0 0;
+}
+#Warksmap{
+float: left;
+width: 300px;
+margin: 0 40px 0 0;
+}
+div.InnerText{
+padding: 20px;
+width: 60%;
+background-color: var(--darkgrey);
+opacity: 0.8;
+float: left;
+color: #ffffff;
+}
+.Content-Container{
+width: 100%;
+height: 300px;
+overflow: hidden;
+border: collapse;
+}
+.Content-Image{
+width: 40%;
+}
+.Content-Text{
+float: left;
+width: 60%;
+}
+.Content-Text p{
+color: white;
+margin: 20px;
+font-weight: 500;
+letter-spacing: 2px;
+opacity: 0.8;
 }
 @media screen and (min-width: 1397px){
 #photo {
@@ -232,7 +293,7 @@ width: 60%;
 margin: 180px auto 180px;
 }
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1062px){
 #photo {
     column-count: 3;
   }
@@ -281,5 +342,25 @@ background-color: #333333bb;
 ul.Home-CTA li{
 text-align: center;
 letter-spacing: 1px;
+}
+
+#ALSAR-logo, #Police-image, #Warksmap {
+width: 100%;
+margin: 0 ;
+}
+
+section.AnnReport img{
+width: 98%;
+margin: auto;
+float: none;
+}
+
+section.AnnReport {
+width: 100%;
+padding: 0;
+margin: 0;
+border-style: none;
+border-radius: 0;
+text-align: center;
 }
 }

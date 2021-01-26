@@ -249,6 +249,20 @@ opacity: 0.8;
 float: left;
 color: #ffffff;
 }
+.gallery-anchor{
+position: relative;
+display: block;
+}
+.gallery-overlay{
+position: absolute;
+bottom: 0px;
+left: 0px;
+white-space: nowrap;
+letter-spacing: 1px;
+font-weight: 800;
+color: #ffffffdd;
+padding: 3px;
+}
 .Content-Container{
 width: 100%;
 height: 300px;

@@ -4,7 +4,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0015";
+--cssfileversion: "0050";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 }
@@ -126,7 +126,7 @@ color: #aaa;
 #CSSSerNo::before{
 content: var(--cssfileversion);
 }
-#photo img{
+#photo img, #photo iframe{
 width: 100%;
 margin: 0px;
 }
@@ -210,18 +210,24 @@ section.Content-STD{
 background-color: var(--darkgrey);
 opacity: 0.8;
 border-style: none;
-margin: 0;
+margin: 0  0 250px;
 padding: 0;
 color: #054405ff;
 font-size: 130%;
 font-weight: 700;
 letter-spacing: 1px;
+display: inline-block;
 }
 #AllTerrainFoot{
 margin: 0;
 float: left;
 width: 100%;
 object-fit: cover;
+}
+#imgwarksar030-01{
+margin: 0;
+float: left;
+max-height: 400px;
 }
 div.MenuComponent{
 padding: 0 0 100px 0;
@@ -272,18 +278,43 @@ border: collapse;
 .Content-Image{
 width: 40%;
 }
-.Content-Text{
+.wsr-content-text{
 float: left;
 width: 60%;
 }
-.Content-Text p{
+.wsr-content-text p{
 color: white;
-margin: 20px;
+padding: 3%;
 font-weight: 500;
 letter-spacing: 2px;
 opacity: 0.8;
 }
-@media screen and (min-width: 1397px){
+/* Content Row for Warksar Website */
+.wsr-content-row{
+width: 100%;
+float: left;
+}
+.wsr-content-img-l{
+width: 30%;
+float: left;
+object-fit: scale-down;
+}
+.wsr-content-text-r{
+width: 70%;
+}
+.wsr-content-img{
+object-fit: scale-down;
+width: 100%;
+}
+.wsr-content-img-r{
+width: 30%;
+float: left;
+}
+.wsr-content-text-l{
+width: 50%;
+}
+/* Equivalent to Bootstrap Extra Extra Large */
+@media screen and (min-width: 1400px){
 #photo {
 column-count: 4;
 }
@@ -295,19 +326,8 @@ width: 60%;
 margin: 180px auto 180px;
 }
 }
-@media screen and (max-width: 1396px){
-#photo {
-column-count: 4;
-}
-
-div.Home-CTA {
-background-color: #111111ee;
-border-radius: 90px;
-width: 60%;
-margin: 180px auto 180px;
-}
-}
-@media screen and (max-width: 1062px){
+/* Equivalent to Bootstrap Extra Large */
+@media screen and (max-width: 1399px){
 #photo {
     column-count: 3;
   }
@@ -323,7 +343,8 @@ width: 60%;
 margin: 20% auto;
 }
 }
-@media screen and (max-width: 812px){
+/* Equivalent to Bootstrap Large */
+@media screen and (max-width: 1199px){
 #photo {
     column-count: 3;
   }
@@ -339,12 +360,17 @@ width: 80%;
 margin: 20% auto;
 }
 }
-@media (min-width: 768px){
+/* Equivalent to Bootstrap Medium */
+@media screen and (max-width: 991px){
 div.dropdown-menu{
 position: sticky;
 }
 }
-@media screen and (max-width: 576px){
+/* Equivalent to Bootstrap Small */
+@media screen and (max-width: 767px){
+}
+/* Equivalent to Bootstrap X-Small */
+@media screen and (max-width: 575px){
 #photo {
     column-count: 2;
   }

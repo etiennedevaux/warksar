@@ -4,7 +4,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0050";
+--cssfileversion: "0056";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 }
@@ -210,7 +210,7 @@ section.Content-STD{
 background-color: var(--darkgrey);
 opacity: 0.8;
 border-style: none;
-margin: 0  0 250px;
+margin: 0  0 100px;
 padding: 0;
 color: #054405ff;
 font-size: 130%;
@@ -293,12 +293,17 @@ opacity: 0.8;
 .wsr-content-row{
 width: 100%;
 float: left;
+display: flex;
+align-items: center;
 }
+/* Left Hand Content Image for Warksar Website */
 .wsr-content-img-l{
 width: 30%;
 float: left;
 object-fit: scale-down;
+margin: 0 0 0 2%;
 }
+/* Right Hand Content Image for Warksar Website */
 .wsr-content-text-r{
 width: 70%;
 }
@@ -312,6 +317,10 @@ float: left;
 }
 .wsr-content-text-l{
 width: 50%;
+}
+/* Warksar Covid 19 Symbol */
+#imgwarksarcovid-01{
+max-height: 150px;
 }
 /* Equivalent to Bootstrap Extra Extra Large */
 @media screen and (min-width: 1400px){

@@ -4,7 +4,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0057";
+--cssfileversion: "0083";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 }
@@ -232,21 +232,6 @@ max-height: 400px;
 div.MenuComponent{
 padding: 0 0 100px 0;
 }
-#ALSAR-logo{
-float: right;
-width: 400px;
-margin: 0 20px 0 40px;
-}
-#Police-image{
-float: right;
-width: 400px;
-margin: 0 40px 0 0;
-}
-#Warksmap{
-float: left;
-width: 300px;
-margin: 0 40px 0 0;
-}
 div.InnerText{
 padding: 20px;
 width: 60%;
@@ -268,6 +253,10 @@ letter-spacing: 1px;
 font-weight: 800;
 color: #ffffffdd;
 padding: 3px;
+}
+/* Styling for anchors that call Javascript */
+.jsclick{
+color: #555555;
 }
 .Content-Container{
 width: 100%;
@@ -315,13 +304,30 @@ width: 100%;
 .wsr-content-img-r{
 width: 30%;
 float: left;
+display: flex;
+align-items: center;
 }
 .wsr-content-text-l{
 width: 50%;
 }
+/* Warksar larger content text for emphasis */
+.wsr-content-text-lg{
+font-size: 110%;
+}
 /* Warksar Covid 19 Symbol */
 #imgwarksarcovid-01{
 max-height: 150px;
+}
+/* Warksar map of Warwickshire */
+#warksmap-01{
+max-width: 250px;
+}
+#ALSAR-logo-01{
+width: 200px;
+margin: auto;
+}
+#imgwarksar028-01{
+width: 400px;
 }
 /* Equivalent to Bootstrap Extra Extra Large */
 @media screen and (min-width: 1400px){

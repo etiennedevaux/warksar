@@ -4,7 +4,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0083";
+--cssfileversion: "0088";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 }
@@ -217,6 +217,7 @@ font-size: 130%;
 font-weight: 700;
 letter-spacing: 1px;
 display: inline-block;
+width: 100%;
 }
 #AllTerrainFoot{
 margin: 0;
@@ -283,8 +284,6 @@ opacity: 0.8;
 width: 100%;
 float: left;
 display: flex;
-align-items: center;
-clear: both;
 }
 /* Left Hand Content Image for Warksar Website */
 .wsr-content-img-l{
@@ -312,7 +311,12 @@ width: 50%;
 }
 /* Warksar larger content text for emphasis */
 .wsr-content-text-lg{
-font-size: 110%;
+font-size: 150%;
+display: inline-block;
+}
+/* Warksar ull width text section. */
+.wsr-content-text-f{
+width: 100%;
 }
 /* Warksar Covid 19 Symbol */
 #imgwarksarcovid-01{

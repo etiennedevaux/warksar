@@ -4,9 +4,10 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0088";
+--cssfileversion: "0269";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
+--bgroundshade:#378a42ff;; /* Opaque background */
 }
 *{
 margin: 0px;
@@ -15,22 +16,23 @@ border: 0px;
 }
 body{
 font-family: Lato;
+background-color: var(--bgroundshade);
 }
 div.bground{
 width: 100%;
 height: 100%;
-rem background-image:  URL("http://www.warksar.org.uk/wp-content/uploads/2018/01/IMGP6198.jpg");
-background-image: URL("https://scportfolio.blob.core.windows.net/$web/warksar/assets/images/imgwarksar001.jpg");
-background-color: #bbbbbb;
+/* rem background-image:  URL("http://www.warksar.org.uk/wp-content/uploads/2018/01/IMGP6198.jpg"); */
+background-image: URL("https://scportfolio.blob.core.windows.net/$web/warksar/assets/images/imgwarksar001.jpg"); 
+background-color: var(--bgroundshade);
 z-index: -1;
 padding: 0px;
 position: fixed;
 background-size: cover;
 margin: 0px;
-animation-name: hero-zoom;
-animation-duration: 5s;
-animation-fill-mode: forwards;
-background-position: center center;
+/* animation-name: hero-zoom;*/
+/* animation-duration: 5s;*/
+/* animation-fill-mode: forwards;*/
+background-position: center center;*/
 }
 @keyframes hero-zoom{
  from{
@@ -43,22 +45,14 @@ background-position: center center;
     opacity: 0.8;
   }
 }
-@keyframes CTA-zoom{
- from{
-    transform: scale(0);
-    opacity: 0;
-
-  }
-  to{
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 .navbar{
 margin-bottom: 0;
 border: 0;
 width: 100%;
 background-color:  rgba(0,0,0,.8);
+position: fixed;
+top: 0;
+height: 100px;
 }
 .navbar .navbar-toggler{
 border: 0;
@@ -80,6 +74,7 @@ width: 100%;
 text-align: center;
 background-color: var(--darkgrey);
 opacity: 0.8;
+height: 120px;
 }
 .social-networks{
 text-align: center;
@@ -142,12 +137,11 @@ background-color: #aaaaaaaa;
 }
 .MenuSectionTitle{
 text-align: center;
-background-color: var(--darkgrey);
-opacity: 0.8;
+/* background-color: var(--bgroundshade); */
 color: #ffffffff;
 margin: 0;
-font-size: 150%;
-font-weight: 500;
+font-size: 160%;
+font-weight: 800;
 letter-spacing: 3px;
 width: 100%;
 line-height: 100%;
@@ -157,41 +151,30 @@ header{
 overflow: hidden;
 margin: 0;
 }
-img.Home-CTA{
-float: left;
-height: 300px;
-}
 div.Home-CTA{
-height: 180px;
-vertical-align: middle;
-animation-name: CTA-zoom;
-animation-duration: 15s;
-animation-fill-mode: forwards;
-max-width: 800px;
-}
-ul.Home-CTA{
-text-align: center;
-list-style-type: none;
-margin: auto;
-padding: 0;
-}
-ul.Home-CTA li{
-font-size: 180%;
-color: orange;
-line-height: 200%;
-letter-spacing: 4px;
-font-weight: 500;
-text-align: left;
+/* height: 180px; */
+/* vertical-align: middle; */
+/* animation-name: CTA-zoom; */
+/* animation-duration: 15s; */
+/* animation-fill-mode: forwards; */
+/* max-width: 800px; */
+
+width: 100%;
+height: 100%;
+/* rem background-image:  URL("http://www.warksar.org.uk/wp-content/uploads/2018/01/IMGP6198.jpg"); */
+background-image: URL("https://scportfolio.blob.core.windows.net/$web/warksar/assets/images/imgwarksar001.jpg"); 
+background-color: var(--bgroundshade);
+padding: 0px;
+position: fixed;
+background-size: cover;
+margin: 0px;
+/* animation-name: hero-zoom;*/
+/* animation-duration: 5s;*/
+/* animation-fill-mode: forwards;*/
+background-position: center center;*/
 }
 .dropdown-menu{
 position: static;
-}
-ul.Home-CTA a{
-text-align: left;
-}
-ul.Home-CTA span{
-width: 30px;
-margin: 0 30px 0 50px;
 }
 section.ContentPage-STD{
 background-color: #999999ee;
@@ -206,19 +189,6 @@ font-size: 130%;
 font-weight: 700;
 letter-spacing: 1px;
 }
-section.Content-STD{
-background-color: var(--darkgrey);
-opacity: 0.8;
-border-style: none;
-margin: 0  0 100px;
-padding: 0;
-color: #054405ff;
-font-size: 130%;
-font-weight: 700;
-letter-spacing: 1px;
-display: inline-block;
-width: 100%;
-}
 #AllTerrainFoot{
 margin: 0;
 float: left;
@@ -230,8 +200,13 @@ margin: 0;
 float: left;
 max-height: 400px;
 }
+#Home{
+width: 100%;
+}
 div.MenuComponent{
 padding: 0 0 100px 0;
+margin-top: 100px;
+margin-bottom: 120px;
 }
 div.InnerText{
 padding: 20px;
@@ -270,31 +245,39 @@ width: 40%;
 }
 .wsr-content-text{
 float: left;
-width: 60%;
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+padding: 20px;
 }
 .wsr-content-text p{
 color: white;
-padding: 3%;
+padding: 10px;
 font-weight: 500;
 letter-spacing: 2px;
 opacity: 0.8;
+display: inline-block;
 }
 /* Content Row for Warksar Website */
 .wsr-content-row{
-width: 100%;
 float: left;
 display: flex;
+width: 100%;
+padding: auto;
+background-color: var(--bgroundshade);
 }
 /* Left Hand Content Image for Warksar Website */
 .wsr-content-img-l{
 width: 30%;
 float: left;
 object-fit: scale-down;
-margin: 0 0 0 2%;
+display: flex;
+align-items: center;
 }
-/* Right Hand Content Image for Warksar Website */
+/* Warksar Right Hand Text Box */
 .wsr-content-text-r{
 width: 70%;
+align-items: center;
 }
 .wsr-content-img{
 object-fit: scale-down;
@@ -306,8 +289,10 @@ float: left;
 display: flex;
 align-items: center;
 }
+/* Warksar Left Hand Text Box */
 .wsr-content-text-l{
 width: 50%;
+align-items: center;
 }
 /* Warksar larger content text for emphasis */
 .wsr-content-text-lg{
@@ -315,8 +300,129 @@ font-size: 150%;
 display: inline-block;
 }
 /* Warksar ull width text section. */
-.wsr-content-text-f{
+.wsr-content-text-fl{
 width: 100%;
+}
+.wsr-content-text-fc{
+width: 100%;
+text-align: center;
+}
+/* Warksar Style for Key Images on Items */
+.wsr-content-item-img{
+float: left;
+min-width: 200px;
+min-height: 200px;
+max-width: 200px;
+max-height: 200px;
+margin-left: auto;
+}
+/* Warksar Title for Items */
+.wsr-content-item-title{
+text-align: center;
+color: #ffffffff;
+font-size: 140%;
+font-weight: 800;
+letter-spacing: 3px;
+line-height: 100%;
+
+display: flex;
+align-items: center;
+
+min-width: 200px;
+min-height: 200px;
+max-width: 200px;
+max-height: 200px;
+
+margin: 0 10px;
+}
+/* Warksar Item Text */
+.wsr-content-item-text{
+text-align: justify;
+color: #ffffffff;
+font-size: 100%;
+font-weight: 500;
+letter-spacing: 2px;
+line-height: 100%;
+
+display: flex;
+align-items: center;
+
+min-width: 600px;
+min-height: 200px;
+max-width: 600px;
+max-height: 200px;
+margin-right: auto;
+}
+.wsr-content-item{
+margin-bottom: 20px;
+background-color: var(--bgroundshade);
+}
+.wsr-content-text p{
+text-align: justify;
+color: #ffffffff;
+font-size: 100%;
+font-weight: 500;
+letter-spacing: 2px;
+line-height: 100%;
+}
+section.wsr-content{
+display: inline-block;
+margin-bottom: 150px;
+width: 100%;
+}
+.wsr-cta{
+color: #ffffff;
+float: left;
+font-size: 200%;
+height: 300px;
+}
+.wsr-cta-img{
+width: 200px;
+display: flex;
+}
+.wsr-cta-img img{
+height: 170px;
+width: 170px;
+margin: auto;
+}
+.wsr-cta-row{
+margin: 10% auto;
+width: fit-content;
+display: flex;
+background-color: #00000088;
+border-radius: 20px;
+}
+.wsr-cta-text{
+width: 500px;
+text-align: left;
+    color: #ffffffff;
+    font-size: 180%;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 100%;
+    display: flex;
+    min-width: 600px;
+    min-height: 300px;
+    max-width: 600px;
+    max-height: 300px;
+flex-direction: column;
+}
+.wsr-cta-actions{
+
+    color: #ffffffff;
+    font-size: 150%;
+    font-weight: 1000;
+    letter-spacing: 2px;
+    line-height: 100%;
+    display: flex;
+    min-width: 250px;
+    min-height: 300px;
+    max-width: 250px;
+    max-height: 300px;
+flex-direction: column;
+}
+.wsr-cta p{
+margin: auto 0 auto 10px;
 }
 /* Warksar Covid 19 Symbol */
 #imgwarksarcovid-01{
@@ -333,17 +439,43 @@ margin: auto;
 #imgwarksar028-01{
 width: 400px;
 }
+#imgwarksar029-01{
+max-wdith: 300px;
+}
+#imgitem001{
+background: url(http://www.warksar.org.uk/wp-content/uploads/2018/01/IMGP6198.jpg);
+width: 200px;
+height: 200px;
+background-size: cover;
+}
+#imgitem002{
+background: url(http://www.warksar.org.uk/wp-content/uploads/2017/01/logo.png);
+width: 200px;
+height: 200px;
+background-size: 130px;
+background-position: center center;
+background-repeat: no-repeat;
+}
+#imgitem003{
+background: url(https://www.lowlandrescue.org/images/lowland-rescue-lozenge1.png);
+width: 200px;
+height: 200px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center center;
+}
+#imgitem0004{
+background: url(http://www.warksar.org.uk/wp-content/uploads/2020/10/Team-2019_09-copy2.jpg);
+width: 200px;
+height: 200px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center center;
+}
 /* Equivalent to Bootstrap Extra Extra Large */
 @media screen and (min-width: 1400px){
 #photo {
 column-count: 4;
-}
-
-div.Home-CTA {
-background-color: #111111ee;
-border-radius: 90px;
-width: 60%;
-margin: 180px auto 180px;
 }
 }
 /* Equivalent to Bootstrap Extra Large */
@@ -351,17 +483,6 @@ margin: 180px auto 180px;
 #photo {
     column-count: 3;
   }
-
-#CTA-logo{
-display: none;
-}
-
-div.Home-CTA {
-background-color: #111111ee;
-border-radius: 20px;
-width: 60%;
-margin: 20% auto;
-}
 }
 /* Equivalent to Bootstrap Large */
 @media screen and (max-width: 1199px){
@@ -371,13 +492,6 @@ margin: 20% auto;
 
 #CTA-logo{
 display: none;
-}
-
-div.Home-CTA {
-background-color: #111111ee;
-border-radius: 20px;
-width: 80%;
-margin: 20% auto;
 }
 }
 /* Equivalent to Bootstrap Medium */
@@ -394,10 +508,6 @@ position: sticky;
 #photo {
     column-count: 2;
   }
-
-div.Home-CTA {
-background-color: #333333bb;
-}
 
 ul.Home-CTA li{
 text-align: center;

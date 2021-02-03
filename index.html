@@ -19,7 +19,7 @@
 <title>Warwickshire Search and Rescue</title>
 </head>
 <body onload='showMenuComponent("Home");'>
-<div class='bground'></div>
+<div id='imgbground' class='bground Home-display'></div>
 <!-- Start of Nav Bootstrap Template 01-->
 <nav class="navbar navbar-dark navbar-expand-md">
 <div class='logoleft'>
@@ -40,21 +40,12 @@
 <li class='nav-item dropdown'>
 <a class='nav-link dropdown-toggle' href='#' id='navbarDropdownMenuLink' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>About</a>
 <div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
-<a class='dropdown-item' href='#' onclick='showMenuComponent("AnnualReport")'>Annual Report</a>
 <a class='dropdown-item' href='#' onclick='showMenuComponent("WhatWeDo")'>What We Do</a>
 <a class='dropdown-item' href='#' onclick='showMenuComponent("OurHistory")'>Our History</a>
 </div>
 </li>
-<li class='nav-item dropdown'>
-<a class='nav-link dropdown-toggle' href='#' id='navbarDropdownMenuLink' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>Search Teams</a>
-<div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
-<a class='dropdown-item' href='#' onclick='showMenuComponent("AllTerrain")'>All Terrain</a>
-<a class='dropdown-item' href='#' onclick='showMenuComponent("Kayaks")'>Kayaks</a>
-<a class='dropdown-item' href='#' onclick='showMenuComponent("SearchDogs")'>Search Dogs</a>
-</div>
-</li>
 <li class='nav-item mr-2'>
-<a class='nav-link MenuButton' id='EventsButton' onclick='showMenuComponent("Events")'>Events</a>
+<a class='nav-link MenuButton' id='SearchTeamsButton' onclick='showMenuComponent("SearchTeams")'>Search Teams</a>
 </li>
 <li class='nav-item mr-2'>
 <a class='nav-link MenuButton' id='GetInvolvedButton' onclick='showMenuComponent("GetInvolved")'>Get Involved</a>
@@ -70,149 +61,78 @@
 </nav>
 <!-- End of Nav Bootstrap Template 01-->
 <div style='display: none;' class='MenuComponent' id='Home'>
-<header>
-</header>
-<section id='Home-CTA' class='Home-CTA'>
-<!-- Start of Callout -->
-
- <div class="Home-CTA">
-    <img src="assets/images/imgwarksarTED.png" class="Home-CTA" id="CTA-logo">
-    <ul class="Home-CTA">
-     <li><span class="d-none d-sm-inline far fa-hand-point-right"></span><a onclick='showMenuComponent("WhatWeDo")'>Find Out More</a></li>
-     <li><span class="d-none d-sm-inline far fa-hand-point-right"></span><a>Contact Us</a></li>
-     <li><span class="d-none d-sm-inline far fa-hand-point-right"></span><a>Get Involved</a></li>
-    </ul>
-  </div>
-
-<!-- End of Callout -->
+<section id='wsr-home' class='wsr-content'>
+<!-- Start of Call to Action -->
+<!-- Start of Call to Action -->
+<div class="wsr-cta-row">
+<div class="wsr-cta wsr-cta-img">
+<img src="assets/images/logo.png">
+</div>
+<div  class="wsr-cta wsr-cta-text">
+<p>100% Volunteers</p>
+<p>Full Professional Training</p>
+<p>On Call From Hill to Highwater</p>
+<p>24 Hours a Day 365 Days a Year</p>
+</div>
+<div class="wsr-cta wsr-cta-actions">
+<p><a onclick='showMenuComponent("WhatWeDo")'>Find Out More</a></p>
+<p><a>Contact Us</a></p>
+<p><a>Get Involved</a></p>
+<p><a>Donate</a></p>
+</div>
+</div>
+<!-- End of Call to Action -->
 </section>
 </div>
 <div style='display: none;' class='MenuComponent' id='About'>
-<header>
-<h1 class='MenuSectionTitle'>About Warksar</h1>
-</header>
-</div>
-<div style='display: none;' class='MenuComponent' id='AnnualReport'>
-<header>
-<h1 class='MenuSectionTitle'>Annual Report</h1>
-</header>
-<section id='2020AnnualReport' class='Content-STD'>
-<div class="wsr-content-row wsr-content-text"><p>The key message for 2020 is that the number of our callouts, and the hours volunteered on callouts, has continued its steady rise and was largely unaffected by the pandemic. </p></div>
-<div class="wsr-content-row">
-<div class="wsr-content-img-l">
-<img id="imgwarksarcovid-01" class="wsr-content-img" src="assets/images/imgwarksarcovid.png">
-</div>
-<div class="wsr-content-text wsr-content-text-r">
-<p>We quickly got a covid safe policy in place which enabled us to continue with operational callouts. We have also adapted our training protocols to ensure that we, and the people we work with, remain as safe from Covid as possible.</p>
-</div>
-</div>
-<div class="wsr-content-row">
-<div class="wsr-content-text-l wsr-content-text">
-<p>
-The steady increase in volunteer search hours shows that the work we are doing in building relationships with Warwickshire and West Midlands Police is productive and I'm sure this trend will continue.  We hope to continue to build the breadth and depth of those key relationships.
-</p>
-</div>
-<div class="wsr-content-img-r">
-<img id="2020AnnualReport01-01" src="assets/images/2020AnnualReport01.png" class="wasr-content-img">
-</div>
-</div>
-<div class="wsr-content-row">
-<div class="wsr-content-img-l">
-<img id="2020AnnualReport02-01" src="assets/images/2020AnnualReport02.png" class="wsr-content-img">
-</div>
-<div class="wsr-content-text-r wsr-content-text">
-<p>
-Overall membership remains strong, with 35 operational members, and 30 trainees working to swell the ranks during 2021.
-</p>
-</div>
-</div>
-<div class="wsr-content-row">
-<div class="wsr-content-text-l wsr-content-text">
-<p>
-Volunteering activity is high, and has grown over the last couple of years.  Inevitably the pandemic has affected our ability to run training events, ut our overall training programme continues and remains strong.
-</p>
-</div>
-<div class="wsr-content-img-r">
-<img id="2020AnnualReport03-01" src="assets/images/2020AnnualReport03.png" class="wasr-content-img">
-</div>
-</div>
-<div class="wsr-content-row">
-<div class="wsr-content-img-l">
-<img id="2020AnnualReport04-01" src="assets/images/2020AnnualReport04.png" class="wsr-content-img">
-</div>
-<div class="wsr-content-text-r wsr-content-text">
-<p>
-Our volunteers have spent more time on actual incidents, as many fund-rasing events have been rescheduled, curtailed or postponed so our the time our volunteers can spend on fund-raising events has reduced.  We are looking forward to stepping up activities as circumstances allow.
-</p>
-</div>
-</div>
-</section>
 </div>
 <div style='display: none;' class='MenuComponent' id='WhatWeDo'>
 <header>
 <h1 class='MenuSectionTitle'>What We Do</h1>
 </header>
-<section id='WhatWeDo' class='Content-STD'>
-<div class="wsr-content-row wsr-content-text wsr-content-text-lg">
-<p>In a typical year around 700 people go missing in Warwickshire, the equivalent of two people every day.</p>
-</div>
+<section id='WhatWeDo' class='wsr-content'>
 <div class="wsr-content-row">
-<div class="wsr-content-img-l">
-<p><img id="warksmap-01" src="assets/images/warwickshire.png" class="wsr-content-img">
+<div id="imgitem002" class="wsr-content-item wsr-content-item-img">
 </div>
-<div class="wsr-content-text-r wsr-content-text">
+<div class="wsr-content-item wsr-content-item-title">
 <p>
-Thankfully many missing people soon return safe and well to their friends and family.  When they do not, often because they suffer from a form of dementia or wish to harm themselves, Warwickshire Search and Rescue are there to support the Police in finding those people.
+Warwickshire Search and Rescue
 </p>
 </div>
-</div>
-<div class="wsr-content-row">
-<div class="wsr-content-text-l wsr-content-text">
-<p>Warwickshire Search and Rescue Team is an operational Lowland Rescue team, set up to assist the Police with searches for vulnerable missing persons within Warwickshire, and sometimes beyond. Our team is part of a much bigger family of 36 Lowland Rescue teams across the United Kingdom.</p>
-</div>
-<div class="wsr-content-img-r">
-<img id='ALSAR-logo-01' src="assets/images/lowland-rescue-full-logo-and-strapline-transparent.png" class="wsr-content-img">
-</div>
-</div>
-<div class="wsr-content-row">
-<div  class="wsr-content-img-l">
-<img src="assets/images/imgwarksar021.jpg" class="wsr-content-img" id="imgwarksar021-01">
-</div>
-<div  class="wsr-content-text-r wsr-content-text">
-<p>All teams are members of the Association of Lowland Search and Rescue (ALSAR). ALSAR set the training standards that we all have to reach, and the code of practice that we use, working alongside the police. With Mountain Rescue England and Wales (MREW), Mountain Rescue Committee of Scotland (MRC of S), and the British Cave Rescue Council (BCRC), ALSAR members are nationally recognised as part of UKSAR capability.
-</p>
-</div>
-</div>
-<div class="wsr-content-row">
-<div  class="wsr-content-text wsr-content-text-l">
+<div  class="wsr-content-item wsr-content-item-text">
 <p>
-Our team volunteers directly for Warwickshire Police, providing valuable search management services and physical resources to search on land and inland waterways.  In addition, we often get called out by neighbouring Lowland Rescue teams, as well, to assist them in police searches within their areas, as they will also assist us at times. We are usually called out by Police Search Advisors, but this can vary between police forces.  It is important to mention that we cannot be called out by members of the public, only by government agencies.
+In a typical year around 700 people go missing in Warwickshire, the equivalent of two people every day. Thankfully many missing people soon return safe and well to their friends and family. When they do not, often because they suffer from a form of dementia or wish to harm themselves, Warwickshire Search and Rescue are there to support the Police in finding those people.
 </p>
 </div>
-<div   class="wsr-content-image-r">
-<img id="imgwarksar028-01" src="assets/images/imgwarksar028.jpg"   class="wsr-content-img">
-</div>
 </div>
 <div class="wsr-content-row">
-<div  class="wsr-content-img-l">
-<img src="assets/images/imgwarksar001.jpg"  class="wsr-content-img">
+<div id="imgitem003" class="wsr-content-item wsr-content-item-img">
 </div>
-<div  class="wsr-content-text wsr-content-text-r">
-<p>Most of our work involves locating high risk missing people, those most at risk of injury or loss of life, either through their own actions, their environment, or due to illness or injury.  However, Lowland Rescue teams can be called upon for other tasks, such as helping people in flooded areas.</p>
-</div>
-</div>
-<div class="wsr-content-row">
-<div class="wsr-content-text wsr-content-l">
+<div class="wsr-content-item wsr-content-item-title">
 <p>
-All team members are unpaid volunteers from all walks of life, from 18 to 80 years old.  We are available to respond to callouts 24 hours a day, 7 days a week, every day of the year.  As well as search management personnel, team leaders and search technicians, Warwickshire Search and Rescue also has a search dog team and a specialist kayak team.  To learn more about the roles within our team, or to find out how to join the team, <a class="jsclick" onclick="showMenuComponent('GetInvolved')">click here</a>.
+Lowland Search and Rescue
 </p>
 </div>
-<div class="wsr-content-img-r">
-<img id="imgwarksar016-01" src="assets/images/imgwarksar016.jpg" class="wsr-content-img">
+<div  class="wsr-content-item wsr-content-item-text">
+<p>
+All teams are members of the Association of Lowland Search and Rescue (ALSAR). ALSAR set the training standards that we all have to reach, and the code of practice that we use, working alongside the police. With Mountain Rescue England and Wales (MREW), Mountain Rescue Committee of Scotland (MRC of S), and the British Cave Rescue Council (BCRC), ALSAR members are nationally recognised as part of UKSAR capability.
+
+</p>
 </div>
 </div>
-<div class="wsr-content-row wsr-content-text wsr-content-text-lg">
-<p>We are a registered charity**, and, when we&apos;re not out searching or training, we are often at various locations in Warwickshire, raising much needed funds for equipment for the team, things such as first aid kits and vital software.  However, we really appreciate support from local companies too.  If you would like to help us save the lives of others, please visit our <a class="jsclick" onclick="showMenuComponent('GetInvolved')">Support Us page</a>.</p>
+<div class="wsr-content-row">
+<div id="imgitem0004" class="wsr-content-item wsr-content-item-img">
+</div>
+<div class="wsr-content-item wsr-content-item-title">
+<p>
+Team Members
+</p>
+</div>
+<div  class="wsr-content-item wsr-content-item-text">
+<p>
+All team members are unpaid volunteers from all walks of life, from 18 to 80 years old.  We are available to respond to callouts 24 hours a day, 7 days a week, every day of the year.  As well as search management personnel, team leaders and search technicians, Warwickshire Search and Rescue also has a search dog team and a specialist kayak team.  To learn more about the roles within our team, or to find out how to join the team, click here.
+</p>
+</div>
 </div>
 </section>
 </div>
@@ -220,10 +140,27 @@ All team members are unpaid volunteers from all walks of life, from 18 to 80 yea
 <header>
 <h1 class='MenuSectionTitle'>History of Warwickshire Search and Rescue</h1>
 </header>
-<section id='WarksarTimeline' class='Content-STD'>
+<section id='WarksarTimeline'>
 <div class="wsr-content-row">
 <div class=" wsr-content-text wsr-content-text-lg wsr-content-text-f">
 <p>Warwickshire Lowland Search and Rescue was established in 2013, by the end of that year there were 20 members, with five being operational.</p>
+</div>
+</div>
+<div class="wsr-content-row">
+<div  class="wsr-content-text wsr-content-text-lg wsr-content-text-f">
+<p>
+In 2014 training started for the Search Dog Team.
+<p>
+</div>
+</div>
+<div>
+<div>
+<p>
+In June 2018 Warwickshire Search and Rescue reached an important milestone by responding to their 100th callout.
+</p>
+</div>
+<div>
+<img src="assets/images/imgwarksar044.jpg">
 </div>
 </div>
 <div class="wsr-content-row wsr-content-text wsr-content-text-lg">
@@ -233,66 +170,24 @@ All team members are unpaid volunteers from all walks of life, from 18 to 80 yea
 </div>
 <div style='display: none;' class='MenuComponent' id='SearchTeams'>
 <header>
+<h1 class='MenuSectionTitle'>Search Teams</h1>
 </header>
-</div>
-<div style='display: none;' class='MenuComponent' id='AllTerrain'>
-<header>
-<h1 class='MenuSectionTitle'>The Terrain Team on Foot</h1>
-</header>
-<section id='AllTerrainText' class='Content-STD'>
+<section>
 <div class="wsr-content-row">
-<div class="wsr-content-img-l">
-<img id="imgwarksar029-01" src="assets/images/imgwarksar029.jpg" class="wsr-content-img">
+<div id="imgitem001" class="wsr-content-item wsr-content-item-img">
 </div>
-<div class='wsr-content-text-r wsr-content-text'>
-<p>Most searches are conducted on-foot.  Even those that use, or are led by, other teams will nearly always have on on-foot element.  It would be extremely rare for a search to be successfully concluded without a team of on-foot search technicians reaching the person.</p>
-</div>
-</div>
-<div class="wsr-content-row">
-<div class='wsr-content-text-l wsr-content-text'>
+<div class="wsr-content-item wsr-content-item-title">
 <p>
-The simplest and safest means of extracting a casualty is often on-foot.  Using a stretcher a casualty can be taken to recieve the care they need by paramedics or other specialist teams.
+Foot Search Team
 </p>
 </div>
-<div class="wsr-content-img-r">
-<IMG id="imgwarksar030-01" src="assets/images/imgwarksar030.jpg" class="wsr-content-img">
-</div>
-</div>
-<div class="wsr-content-row">
-<div class="wsr-content-img-l"> 
-<img id="imgwarskar002-01" src="assets/images/imgwarksar002.jpg"  class="wsr-content-img">
-</div>
-<div class="wsr-content-text wsr-content-text-r">
+<div  class="wsr-content-item wsr-content-item-text">
 <p>
-The whole Warwickshire Search and Rescue team train primarily for on-foot search and rescue, although many team members have other skills that can complement the all-terrain teams.
+Most searches are conducted on-foot. Even those that use, or are led by, other teams will nearly always have on on-foot element. It would be extremely rare for a search to be successfully concluded without a team of on-foot search technicians reaching the person.
 </p>
 </div>
 </div>
 </section>
-</div>
-<div style='display: none;' class='MenuComponent' id='Kayaks'>
-<header>
-<h1 class='MenuSectionTitle'>The Kayak Team in Training</h1>
-</header>
-<section id='Kayak' class='Kayak ContentPage-STD'>
-<p>The Kayak Search Team is a dedicated team of highly competent kayakers.  All team members are qualified and operational Lowland Search Technicians, who have developed these skills for the water environment.  All are skilled paddlers, capable of using a range of craft.  Most of the team are active white water paddlers, and all are coaches with British Canoeing Safety and Rescue qualifications.</p>
-<img src="assets/images/imgwarksar008.jpg">
-<p>Warwickshire Search and Rescue were successful in their application for funding from the People&apos;s Postcode Lottery. This has enabled us to buy new kayaks, as well as all the personal protective equipment (P.P.E) required to use them safely, including helmets and dry suits. It also means that our kayak team can deploy faster than previously, as all the equipment they need will be at the meeting point. We would like to thank the People&apos;s Postcode Lottery for helping us to provide this essential service to the residents of Warwickshire.</p>
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/qDnTAo1rHks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>Kayaks are an ideal rapid deployment water search craft, which can be used in any waterway, but are especially useful in shallow, narrow, environmentally sensitive or difficult to access waters. Since most of Warwickshire&apos;s waterways are small and shallow kayaks are the ideal search vehicles for these waterways.</p>
-<img src="assets/images/imgwarksar009.jpg">
-<p>If you are interested in joining our Kayak Team, please visit the Join Us page for more information.  If you have any further questions, e-mail volunteering@warksar.org.uk.</p>
-</section>
-</div>
-<div style='display: none;' class='MenuComponent' id='SearchDogs'>
-<header>
-<h1 class='MenuSectionTitle'>Search Dogs on the Trail</h1>
-</header>
-</div>
-<div style='display: none;' class='MenuComponent' id='Events'>
-<header>
-<h1 class='MenuSectionTitle'>Warwickshire Search and Rescue in the Community</h1>
-</header>
 </div>
 <div style='display: none;' class='MenuComponent' id='GetInvolved'>
 <header>
@@ -340,8 +235,6 @@ The whole Warwickshire Search and Rescue team train primarily for on-foot search
 </section>
 </div>
 <div style='display: none;' class='MenuComponent' id='Contact'>
-<header>
-</header>
 </div>
 <footer>
 <ul class="social-networks">
@@ -353,6 +246,6 @@ The whole Warwickshire Search and Rescue team train primarily for on-foot search
 <p>Registered Charity No. 1167079</p>
 <p class='enquiry'>For Enquiries Please Email: support@warksar.org.uk</p>
 <p class='d-none d-lg-inline footer-sm'>Created by Stephen Clarke on behalf of Warwickshire Search and Rescue 
-||&nbsp;Last update on 01/02/2021||&nbsp;<span id='HTMLSerNo'>0027</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
+||&nbsp;Last update on 03/02/2021||&nbsp;<span id='HTMLSerNo'>0109</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
 </body>
 </html>

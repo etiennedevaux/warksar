@@ -4,9 +4,19 @@ README.md
 
 #Version Details: Warwickshire Search and Rescue
 README Version: ;
-HTML Version: 0109;
-CSS Version: 0269;
+HTML Version: 0126;
+CSS Version: 0277;
 JavaScript Version: 0008;
 
+##Credits
+
 ##User Experience
+
+Features for the Warwickshire Search and Rescue Website
+
+## External Libraries
+
+
+
+##Deployment
 

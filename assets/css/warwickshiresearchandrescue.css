@@ -4,7 +4,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0277";
+--cssfileversion: "0285";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
@@ -260,9 +260,7 @@ display: inline-block;
 }
 /* Content Row for Warksar Website */
 .wsr-content-row{
-float: left;
 display: flex;
-width: 100%;
 padding: auto;
 background-color: var(--bgroundshade);
 }
@@ -308,7 +306,7 @@ width: 100%;
 text-align: center;
 }
 /* Warksar Style for Key Images on Items */
-.wsr-content-item-img{
+.wsr-content-item-imgbox{
 float: left;
 min-width: 200px;
 min-height: 200px;
@@ -427,6 +425,14 @@ margin: auto 0 auto 10px;
 }
 .wsr-content-item-text p{
 margin: auto 0;
+}
+.wsr-content-item-img{
+float: left;
+min-width: 200px;
+min-height: 200px;
+max-width: 200px;
+max-height: 200px;
+margin-left: auto;
 }
 /* Warksar Covid 19 Symbol */
 #imgwarksarcovid-01{

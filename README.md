@@ -4,8 +4,8 @@ README.md
 
 #Version Details: Warwickshire Search and Rescue
 README Version: ;
-HTML Version: 0132;
-CSS Version: 0285;
+HTML Version: 0146;
+CSS Version: 0296;
 JavaScript Version: 0008;
 
 ##User Experience
@@ -64,6 +64,8 @@ Multiple approaches have been tried.  The two key approaches are:
 
 So far approach 1 would seem easier to manage and maintain, although approach 2 is likely to work better with small video clips.  Approach 1 will be deployed for now.
 
+By default all images and image boxes are given an ID.  This may not be strictly necessary, but if the id is in place it makes it easier to use CSS to target individual images.
+
 Many images will be assigned an id so that they can be individually manipulated from CSS.
 
 ### Background Image
@@ -73,6 +75,10 @@ This site is using a single page of html, with sections being hidden and shown v
 Some of the user feedback is for the site background image to only appear in the 'Call to Action' home section.  Having the background image as a separate div keeps it out of the content flow, so making other changes easier.  
 
 To provide the user requirement the div now has an additional class that makes it easy to switch it off and on with a small change to the existing Javascript.
+
+### Donate images
+
+The existing donation page images will not produce an elegant page, even as placeholders.  It will be necessary to source or create some appropriate placeholder images.
 
 
 

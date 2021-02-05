@@ -4,10 +4,13 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0285";
+--cssfileversion: "0296";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
+}
+.wsr-content-item-text a{
+color: #000055;
 }
 *{
 margin: 0px;
@@ -133,7 +136,6 @@ column-gap: 0;
 padding: 0 0 90px 0;
 }
 #Gallery{
-background-color: #aaaaaaaa;
 }
 .MenuSectionTitle{
 text-align: center;
@@ -313,12 +315,13 @@ min-height: 200px;
 max-width: 200px;
 max-height: 200px;
 margin-left: auto;
+object-fit: cover;
 }
 /* Warksar Title for Items */
 .wsr-content-item-title{
 text-align: center;
-color: #ffffffff;
-font-size: 140%;
+color: #ffffffbb;
+font-size: 150%;
 font-weight: 800;
 letter-spacing: 3px;
 line-height: 100%;
@@ -337,10 +340,10 @@ margin: 0 10px;
 .wsr-content-item-text{
 text-align: justify;
 color: #ffffffff;
-font-size: 100%;
-font-weight: 500;
+font-size: 120%;
+font-weight: 800;
 letter-spacing: 2px;
-line-height: 100%;
+line-height: 120%;
 
 display: flex;
 align-items: center;
@@ -434,6 +437,9 @@ max-width: 200px;
 max-height: 200px;
 margin-left: auto;
 }
+.wsr-content-item-title p{
+width: 100%;
+}
 /* Warksar Covid 19 Symbol */
 #imgwarksarcovid-01{
 max-height: 150px;
@@ -505,6 +511,13 @@ height: 200px;
 background-size: cover/contain/px;
 background-repeat: no-repeat;
 background-position: center center;
+}
+#warwickshire-police-logo-warwickshirepolice{
+object-fit: contain;
+}
+/* Warksar Donate Image */
+#btn_donateCC_LG-01{
+image-fit: contain;
 }
 /* Equivalent to Bootstrap Extra Extra Large */
 @media screen and (min-width: 1400px){

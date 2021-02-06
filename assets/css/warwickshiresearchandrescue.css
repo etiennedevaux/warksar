@@ -4,13 +4,10 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0296";
+--cssfileversion: "0327";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
-}
-.wsr-content-item-text a{
-color: #000055;
 }
 *{
 margin: 0px;
@@ -52,10 +49,11 @@ background-position: center center;*/
 margin-bottom: 0;
 border: 0;
 width: 100%;
-background-color:  rgba(0,0,0,.8);
+background-color:  rgba(0,0,0,.9);
 position: fixed;
 top: 0;
 height: 100px;
+z-index: 1;
 }
 .navbar .navbar-toggler{
 border: 0;
@@ -206,7 +204,7 @@ max-height: 400px;
 width: 100%;
 }
 div.MenuComponent{
-padding: 0 0 120px 0;
+padding: 0 0 0 0;
 margin-top: 100px;
 margin-bottom: 120px;
 }
@@ -369,7 +367,6 @@ line-height: 100%;
 }
 section.wsr-content{
 display: inline-block;
-margin-bottom: 150px;
 width: 100%;
 }
 .wsr-cta{
@@ -439,6 +436,9 @@ margin-left: auto;
 }
 .wsr-content-item-title p{
 width: 100%;
+}
+.wsr-content-item-text a{
+color: #000055;
 }
 /* Warksar Covid 19 Symbol */
 #imgwarksarcovid-01{
@@ -518,6 +518,49 @@ object-fit: contain;
 /* Warksar Donate Image */
 #btn_donateCC_LG-01{
 image-fit: contain;
+}
+#warwickshire-police-logo-policecard{
+object-fit: contain;
+}
+/* Bootstrap Card Customisation */
+.card{
+background-color: #555555aa;
+padding: 5px;
+margin: 20px auto;
+float: left;
+border: 4px solid #555555ff;
+}
+/* Bootstrap Card Image Customisation */
+.card-img-top{
+object-fit: cover;
+height: 200px;
+}
+.card-body{
+height: 250px;
+}
+.card-body span{
+font-weight: 800;
+font-size: 90%;
+}
+/* Bootstrap button customisation */
+.card-text a{
+width: 200px;
+}
+.card-text{
+color: #fff;
+height: 200px;
+}
+/* Complements within Bootstrap card */
+.card-link{
+height: 100px;
+text-align: center;
+}
+.card-link a{
+width: 80%;
+}
+.card-title{
+color: #fff;
+font-weight: 900;
 }
 /* Equivalent to Bootstrap Extra Extra Large */
 @media screen and (min-width: 1400px){

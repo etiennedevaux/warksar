@@ -1,5 +1,5 @@
 // Global Variables
-var jsfileversion="0008";
+var jsfileversion="0009";
 
 function showMenuComponent(sect) {
 var elements = document.getElementsByClassName('MenuComponent');

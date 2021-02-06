@@ -4,9 +4,9 @@ README.md
 
 #Version Details: Warwickshire Search and Rescue
 README Version: ;
-HTML Version: 0146;
-CSS Version: 0296;
-JavaScript Version: 0008;
+HTML Version: 0167;
+CSS Version: 0327;
+JavaScript Version: 0009;
 
 ##User Experience
 
@@ -47,6 +47,18 @@ The top menu is static, ensuring a familiar navitation interface from any part o
 The footer is also static, keeping key information and links readily available at all times when on the site.  This information includes social media links, registered charity number and email contact.
 
 The CTA can be animated, some people love animation some hate it.  At present the css is available but disabled.
+
+The Navigation bar, based on a Bootstrap Navigation bar, but with some local customisation, is visible in the same place at all times.  This gives a simple, unobtrusive and always easily available navigation experience.
+
+The element has 0.9 opacity, so that it is always clear when there is content behind it, inviting the user to scroll to that content, but without obscuring the text.
+
+The Footer bar is visible in the same place at all times.  This gives simple, unobtrusive and always easily available information, such as contact and charity number, as well as links to related external social media sites.
+
+The element has 0.8 opacity, so that it is always clear when there is content behind it, inviting the user to scroll to that content, but without obscuring the text.  The opacity is lower than the header for two reasons, firstly it shows content that the user may not yet have seen, secondly it is primarily a reference feature rather than an active part of the naviation experience.
+
+The footer also contains information about the precise code versions the user is seeing.  This helps to match the user experience to precise versions of html, css and Javascript code.
+
+Date and ownership information are also held here.  This information is generally of low importance, but on occasions can be an important reference.
 
 ## External Libraries
 

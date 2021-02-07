@@ -16,7 +16,18 @@
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'/>
 <link rel='stylesheet' href='assets/css/warwickshiresearchandrescue.css'>
 <script src='assets/js/warwickshiresearchandrescue.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <title>Warwickshire Search and Rescue</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+  }
+  </style>
 </head>
 <body onload='showMenuComponent("Home");'>
 <div id='imgbground' class='bground Home-display Gallery-display'></div>
@@ -46,9 +57,6 @@
 </li>
 <li class='nav-item mr-2'>
 <a class='nav-link MenuButton' id='SearchTeamsButton' onclick='showMenuComponent("SearchTeams")'>Search Teams</a>
-</li>
-<li class='nav-item mr-2'>
-<a class='nav-link MenuButton' id='TeamCarouselButton' onclick='showMenuComponent("TeamCarousel")'>Team Carousel</a>
 </li>
 <li class='nav-item mr-2'>
 <a class='nav-link MenuButton' id='JoinUsButton' onclick='showMenuComponent("JoinUs")'>Join Us</a>
@@ -132,45 +140,60 @@ Team members are unpaid volunteers from all walks of life, from 18 to 80 years o
 <h1 class='MenuSectionTitle'>History of Warwickshire Search and Rescue</h1>
 </header>
 <section id='WarksarTimeline' class='wsr-content'>
-<!-- Timeline taken from W3 Schools-->
-<div class="wsr-outer-container-timeline">
-<div class="wsr-timeline">
-  <div class="wsr-container-timeline wsr-timeline-left">
-    <div class="wsr-timeline-content">
-      <h2>2017</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-    </div>
-  </div>
-  <div class="wsr-container-timeline wsr-timeline-right">
-    <div class="wsr-timeline-content">
-      <h2>2016</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-    </div>
-  </div>
-  <div class="wsr-container-timeline wsr-timeline-left">
-    <div class="wsr-timeline-content">
-      <h2>2015</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-    </div>
-  </div>
-  <div class="wsr-container-timeline wsr-timeline-right">
-    <div class="wsr-timeline-content">
-      <h2>2012</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-    </div>
-  </div>
-  <div class="wsr-container-timeline wsr-timeline-left">
-    <div class="wsr-timeline-content">
-      <h2>2011</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-    </div>
-  </div>
-  <div class="wsr-container-timeline wsr-timeline-right">
-    <div class="wsr-timeline-content">
-      <h2>2007</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-    </div>
-  </div>
+<div class="wsr-content-row">
+<div id="imgitem006" class="wsr-content-item wsr-content-item-img">
+</div>
+<div class="wsr-content-item wsr-content-item-title">
+<p>
+2013
+</p>
+</div>
+<div  class="wsr-content-item wsr-content-item-text">
+<p>
+<p>Warwickshire Lowland Search and Rescue was established in 2013, by the end of that year there were 20 members, with five being operational.</p>
+</p>
+</div>
+</div>
+<div class="wsr-content-row">
+<div id="imgitem006" class="wsr-content-item wsr-content-item-img">
+</div>
+<div class="wsr-content-item wsr-content-item-title">
+<p>
+2014
+</p>
+</div>
+<div  class="wsr-content-item wsr-content-item-text">
+<p>
+In 2014 training started for the Search Dog Team.
+</p>
+</div>
+</div>
+<div class="wsr-content-row">
+<div id="imgitem006" class="wsr-content-item wsr-content-item-img">
+</div>
+<div class="wsr-content-item wsr-content-item-title">
+<p>
+2018
+</p>
+</div>
+<div  class="wsr-content-item wsr-content-item-text">
+<p>
+In June 2018 Warwickshire Search and Rescue reached an important milestone by responding to their 100th callout.
+</p>
+</div>
+</div>
+<div class="wsr-content-row">
+<div id="imgitem006" class="wsr-content-item wsr-content-item-img">
+</div>
+<div class="wsr-content-item wsr-content-item-title">
+<p>
+2020
+</p>
+</div>
+<div  class="wsr-content-item wsr-content-item-text">
+<p>
+At end of 2020
+</p>
 </div>
 </div>
 </section>
@@ -181,89 +204,64 @@ Team members are unpaid volunteers from all walks of life, from 18 to 80 years o
 </header>
 <div class="container">
 <section id='searchteams' class='wsr-content'>
-<div class="wsr-content-row">
-<div id="imgitem005" class="wsr-content-item wsr-content-item-img">
-</div>
-<div class="wsr-content-item wsr-content-item-title">
-<p>
-Kayak Search Team
-</p>
-</div>
-<div  class="wsr-content-item wsr-content-item-text">
-<p>
-The Kayak Search Team is a dedicated team of highly competent kayakers.  All team members are qualified and operational Lowland Search Technicians, who have developed these skills for the water environment.  All are skilled paddlers, capable of using a range of craft.  Most of the team are active white water paddlers, and all are coaches with British Canoeing Safety and Rescue qualifications.
-</p>
-</div>
-</div>
-<div class="wsr-content-row">
-<div id="imgitem010" class="wsr-content-item wsr-content-item-img">
-</div>
-<div class="wsr-content-item wsr-content-item-title">
-<p>
-Dog Search Team
-</p>
-</div>
-<div  class="wsr-content-item wsr-content-item-text">
-<p>
-Lowland Rescue search dog teams are used to search areas that are difficult for human teams to search, such as dense woodland and difficult terrain, or to cover larger areas more quickly.  As with the foot teams, they will also look for vulnerable missing people, such as children, those suffering from mental illness and despondent people, who may wish to harm themselves.
-</p>
-<p>
-Currently, we have a small team of five dogs.  All are trainee search dogs.
-</p>
-</div>
-</div>
-<div class="wsr-content-row">
-<div id="imgitem001" class="wsr-content-item wsr-content-item-img">
-</div>
-<div class="wsr-content-item wsr-content-item-title">
-<p>
-Foot Search Team
-</p>
-</div>
-<div  class="wsr-content-item wsr-content-item-text">
-<p>
-Most searches are conducted on-foot. Even those that use, or are led by, other teams will nearly always have on on-foot element. It would be extremely rare for a search to be successfully concluded without a team of on-foot search technicians reaching the person.
-</p>
-</div>
-</div>
-</section>
-</div>
-</div>
-<div style='display: none;' class='MenuComponent' id='TeamCarousel'>
-<header>
-<h1 class='MenuSectionTitle'>Team Carousel</h1>
-</header>
-<div class="container wsr-container-carousel">
-<section id='wsr-carousel-01' class='wsr-content'>
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="assets/images/imgwarksar001.jpg" alt="First slide">
-<div class="carousel-caption d-none d-md-block">
-    <h5>Test</h5>
-    <p>This feature</p>
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="img_chania.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img_chania2.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Chania</h3>
+          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="img_flower.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beautiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img_flower2.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Flowers</h3>
+          <p>Beautiful flowers in Kolymbari, Crete.</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="assets/images/imgwarksar002.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="assets/images/imgwarksar003.jpg" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
 </section>
 </div>
@@ -530,6 +528,6 @@ Easyfundraising is a brilliant way to raise money for Warwickshire Search and Re
 <p>Registered Charity No. 1167079</p>
 <p class='enquiry'>For Enquiries Please Email: support@warksar.org.uk</p>
 <p class='d-none d-lg-inline footer-sm'>Created by Stephen Clarke on behalf of Warwickshire Search and Rescue 
-||&nbsp;Last update on 07/02/2021||&nbsp;<span id='HTMLSerNo'>0217</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
+||&nbsp;Last update on 07/02/2021||&nbsp;<span id='HTMLSerNo'>0203</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
 </body>
 </html>

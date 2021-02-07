@@ -4,7 +4,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0361";
+--cssfileversion: "0363";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
@@ -440,7 +440,8 @@ width: 100%;
 color: #000055;
 }
 .wsr-content-img-frame{
-width: 30%;
+padding: 0px;
+border-radius: 5px;
 }
 .wsr-content-text-frame{
 width: 70%;

@@ -4,7 +4,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0386";
+--cssfileversion: "0451";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
@@ -45,6 +45,17 @@ background-position: center center;*/
     opacity: 0.8;
   }
 }
+@keyframes CTA-zoom{
+ from{
+    transform: scale(0.8);
+    opacity: 0.6;
+
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 .navbar{
 margin-bottom: 0;
 border: 0;
@@ -53,7 +64,7 @@ background-color:  rgba(0,0,0,.9);
 position: fixed;
 top: 0;
 height: 100px;
-z-index: 1;
+z-index: 5;
 }
 .navbar .navbar-toggler{
 border: 0;
@@ -74,8 +85,9 @@ bottom: 0;
 width: 100%;
 text-align: center;
 background-color: var(--darkgrey);
-opacity: 0.8;
+opacity: 0.9;
 height: 120px;
+z-index: 5;
 }
 .social-networks{
 text-align: center;
@@ -150,28 +162,6 @@ padding: 2%;
 header{
 overflow: hidden;
 margin: 0;
-}
-div.Home-CTA{
-/* height: 180px; */
-/* vertical-align: middle; */
-/* animation-name: CTA-zoom; */
-/* animation-duration: 15s; */
-/* animation-fill-mode: forwards; */
-/* max-width: 800px; */
-
-width: 100%;
-height: 100%;
-/* rem background-image:  URL("http://www.warksar.org.uk/wp-content/uploads/2018/01/IMGP6198.jpg"); */
-background-image: URL("https://scportfolio.blob.core.windows.net/$web/warksar/assets/images/imgwarksar001.jpg"); 
-background-color: var(--bgroundshade);
-padding: 0px;
-position: fixed;
-background-size: cover;
-margin: 0px;
-/* animation-name: hero-zoom;*/
-/* animation-duration: 5s;*/
-/* animation-fill-mode: forwards;*/
-background-position: center center;*/
 }
 .dropdown-menu{
 position: static;
@@ -262,11 +252,14 @@ display: inline-block;
 }
 /* Content Row for Warksar Website */
 .wsr-row{
+display: flex;
 max-width: 1400px;
 background-color: #555555aa;
 padding: 5px;
 float: left;
 border: 4px solid #555555ff;
+width: 100%;
+margin: auto;
 }
 /* Left Hand Content Image for Warksar Website */
 .wsr-content-img-l{
@@ -387,8 +380,12 @@ margin: auto;
 margin: 10% auto;
 width: fit-content;
 display: flex;
-background-color: #00000088;
-border-radius: 20px;
+background-color: #4b674ef9;
+border-radius: 10px;
+border: 4px solid #335533f9;
+animation-name: CTA-zoom;
+animation-duration: 4s;
+animation-fill-mode: forwards;
 }
 .wsr-cta-text{
 width: 500px;
@@ -456,14 +453,14 @@ margin-bottom: 20px;
 }
 .wsr-outer-container-timeline{
 box-sizing: border-box;
-background-color: #474e5d;
+background-color: var(--bgroundshade);
 }
 .wsr-container-timeline::after{
 content: '';
   position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
+  width: 26px;
+  height: 26px;
+  right: -13px;
   background-color: white;
   border: 4px solid #FF9F55;
   top: 15px;
@@ -473,11 +470,12 @@ content: '';
 .wsr-container-timeline{
 padding: 10px 40px;
   position: relative;
-  background-color: inherit;
+  background-color: #55555500;
   width: 50%;
 }
-wsr-timeline-left{
+.wsr-timeline-left{
 left: 0;
+background-color: #55555500;
 }
 .wsr-timeline-right{
 left: 50%;
@@ -486,34 +484,35 @@ left: 50%;
 content: " ";
   height: 0;
   position: absolute;
-  top: 22px;
+  top: 13px;
   width: 0;
   z-index: 1;
-  right: 30px;
+  right: 20px;
   border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-width: 20px 0 20px 20px;
+  border-color: transparent transparent transparent #55555555;
 }
 .wsr-timeline-right::before{
 content: " ";
   height: 0;
   position: absolute;
-  top: 22px;
+  top: 13px;
   width: 0;
   z-index: 1;
-  left: 30px;
+  left: 20px;
   border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-width: 20px 20px 20px 0;
+  border-color: transparent #55555555 transparent transparent;
 }
 .wsr-timeline-right::after{
-  left: -16px;
+  left: -13px;
 }
 .wsr-timeline-content{
 padding: 20px 30px;
-  background-color: white;
+  background-color: #55555555;
   position: relative;
   border-radius: 6px;
+color: #fff;
 }
 .wsr-timeline::after{
 content: '';
@@ -530,9 +529,9 @@ position: relative;
   max-width: 1200px;
   margin: 0 auto;
 }
-/* Warksar Covid 19 Symbol */
-#imgwarksarcovid-01{
-max-height: 150px;
+.wsr-contact-container{
+width: 90%;
+margin: auto;
 }
 /* Warksar map of Warwickshire */
 #warksmap-01{
@@ -616,6 +615,9 @@ image-fit: contain;
 #warwickshire-police-logo-policecard{
 object-fit: contain;
 }
+#btn_donateCC_LG-02{
+object-fit: scale-down;
+}
 /* Bootstrap Card Customisation */
 .card{
 background-color: #555555aa;
@@ -629,8 +631,11 @@ border: 4px solid #555555ff;
 object-fit: cover;
 height: 200px;
 }
+.card-img-top-small{
+height: 150px;
+}
 .card-body{
-height: 250px;
+height: 240px;
 }
 .card-body span{
 font-weight: 800;
@@ -642,11 +647,10 @@ width: 200px;
 }
 .card-text{
 color: #fff;
-height: 200px;
 }
 /* Complements within Bootstrap card */
 .card-link{
-height: 100px;
+height: 50px;
 text-align: center;
 }
 .card-link a{
@@ -655,10 +659,6 @@ width: 80%;
 .card-title{
 color: #fff;
 font-weight: 900;
-}
-.carousel-inner > .item > img, .carousel-inner > .{
-width: 70%;
-margin: auto;
 }
 /* Equivalent to Bootstrap Extra Extra Large */
 @media screen and (min-width: 1400px){
@@ -752,4 +752,9 @@ text-align: center;
   .right {
   left: 0%;
   }
+}
+.container{
+}
+.card-body-small{
+height: 180px;
 }

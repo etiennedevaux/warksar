@@ -1,5 +1,5 @@
 // Global Variables
-var jsfileversion="0009";
+var jsfileversion="0023";
 
 function showMenuComponent(sect) {
 var elements = document.getElementsByClassName('MenuComponent');
@@ -21,5 +21,22 @@ var elements2 = document.getElementsByClassName(sect + '-display');
     }
 
 document.getElementById('JSSerNo').textContent='.'+jsfileversion;
+}
+
+function formSubmit(formid){
+
+var form=document.getElementById(formid);
+var namefull=form.elements.fullname.value;
+var addrfrom=form.elements.email.value;
+
+
+emailjs.init("user_KA2KaFXQUejP5h83rWQcg");
+emailjs.send("service_00lxi2c", "template_zjxvz73", {
+to_name: namefull,
+send_to: addrfrom,
+}
+);
+
+document.getElementById("donationmodal-button").innerHTML="Details Submitted";
 }
 

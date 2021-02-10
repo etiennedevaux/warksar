@@ -349,7 +349,9 @@ Someone who is qualified to perform both the Search Planner and Search Operation
 <div class="row">
 <div  class="col-12">
 <p class="wsr-content-text">
-Once operational you will be called out in the middle of the night in all weathers?  You might need to deal with potentially dangerous situations, and still keep yourself and your team members safe?  You will also need to buy personal kit and fund your own travel? If you can make the commitment and see yourself as a Search Technician, wanting to also undertake other roles, then please <a>Contact Us</a>.
+Once operational you will be called out in the middle of the night in all weathers?  You might need to deal with potentially dangerous situations, and still keep yourself and your team members safe?  You will also need to buy personal kit and fund your own travel? If you can make the commitment and see yourself as a Search Technician, wanting to also undertake other roles, then please get in touch.</p>
+<p>
+<a class="btn btn-primary wsr-text-btn" href="mailto: support@warksar.org.uk">Contact Us</a>
 </p>
 </div>
 </div>
@@ -486,19 +488,22 @@ Every member of Warwickshire Search and Rescue is a volunteer, and the only way 
         </button>
       </div>
       <div class="modal-body">
-       Please enter your name and email address and we will send you details of how to perform an online transfer.
-<form id="query-form" class="signup-form" method="POST" action="https://devauxphp.azurewebsites.net/warksar.php" target="form-response">
+       Please enter your name and email address and we will send you details of how to perform an online transfer
+<form id="query-form" class="signup-form" method="POST" action="https://devauxphp.azurewebsites.net/warksar_log.php" target="null">
+
+<!-- iframe to receive post input from php.  Presently hidden-->
+<iframe id="null-iframe" name="null"></iframe>
 
 <label for="fname"> Full Name</label><br>
 <input class="text-input wsr-text-input" id="fullname" type="text" name="full_name" required="" size="50"><br>
 <label for="email">Email Address</label><br>
 <input class="text-input wsr-text-input" id="email" type="email" name="email_address" required="" size="50">
-</form>
-      </div>
+</div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button id="donationmodal-button" type="button" class="btn btn-primary" onclick="formSubmit('query-form')">Request Details</button>
+        <input form_id="query_form" id="donationmodal-button" type="submit" class="btn btn-primary" onclick="formSubmit('query-form')">
       </div>
+</form>
     </div>
   </div>
 </div>
@@ -555,6 +560,6 @@ Banking Details
 <p>Registered Charity No. 1167079</p>
 <p class='enquiry'>For Enquiries Please Email: support@warksar.org.uk</p>
 <p class='d-none d-lg-inline footer-sm'>Created by Stephen Clarke on behalf of Warwickshire Search and Rescue 
-||&nbsp;Last update on 09/02/2021||&nbsp;<span id='HTMLSerNo'>0286</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
+||&nbsp;Last update on 10/02/2021||&nbsp;<span id='HTMLSerNo'>0295</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
 </body>
 </html>

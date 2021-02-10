@@ -1,5 +1,5 @@
 // Global Variables
-var jsfileversion="0023";
+var jsfileversion="0024";
 
 function showMenuComponent(sect) {
 var elements = document.getElementsByClassName('MenuComponent');
@@ -37,6 +37,6 @@ send_to: addrfrom,
 }
 );
 
-document.getElementById("donationmodal-button").innerHTML="Details Submitted";
+document.getElementById("donationmodal-button").value="Details Submitted";
 }
 

@@ -4,9 +4,9 @@ README.md
 
 # Version Details: Warwickshire Search and Rescue
 README Version: ;
-HTML Version: 0286;
-CSS Version: 0485;
-JavaScript Version: 0023;
+HTML Version: 0295;
+CSS Version: 0489;
+JavaScript Version: 0024;
 
 ## User Experience
 
@@ -59,6 +59,17 @@ The element has 0.8 opacity, so that it is always clear when there is content be
 The footer also contains information about the precise code versions the user is seeing.  This helps to match the user experience to precise versions of html, css and Javascript code.
 
 Date and ownership information are also held here.  This information is generally of low importance, but on occasions can be an important reference.
+
+### Donation Modal Form
+When submitting a donation via an online transfer the workflow involves sending an automated email to the benefactor, with a copy to the fund raising co-ordinator and a record being made in a remote database of the request for details.
+
+This is achieved by using a Bootstrap Modal, in which there is an embedded form with a submit button.
+
+The submit button runs a JS routine and also posts the form to a PHP routine that securely accesses the database.
+
+In the initial implementation the output from the PHP routing goes to a hidden iframe, future deployments will use the iframe to give a message to the user.
+
+At present the form button label changes to show that the submission has been completed.
 
 ## External Libraries
 

@@ -4,9 +4,9 @@ README.md
 
 # Version Details: Warwickshire Search and Rescue
 README Version: ;
-HTML Version: 0295;
-CSS Version: 0489;
-JavaScript Version: 0024;
+HTML Version: 0321;
+CSS Version: 0566;
+JavaScript Version: 0026;
 
 ## User Experience
 
@@ -20,19 +20,25 @@ This leads us to 4 critical personae
 
 For most of the public in general they may have had little reason to have come across Warksar, but have now heard about it and would like to know more.  These people are potential donors, members and collaborators - but for now need to be nurtured rather than directed.
 
+The Call to Action gives these people a prompt to the About - What We Do section.  All navigation remains either directly visible, or within a single click on a dropdown.  At most this user is two clicks from any part of the site.
+
 ### Queries
 
 If somebody wants to get in touch they are potentially valuable to the organisation.  They probably already know something about the organisation already and want to discuss something specific.  They need rapid access to contact information, balancing the need to get to the right person with the need to have the information without any complex navigation.
+
+This user is immediately prompted to the Contact section.  The navigation bar keeps these users within two clicks of a relevant contact person.
 
 ### Potential Members, Supporters and Collaborators
 
 These people may be ready and willing to make substantial contributions and to bring their own time and expertise.  They are likely to want specific information about key activities, and to understand how they could best contribute.
 
+It is important that this group understand waht is involved before signing up.  Therefore the Join Us page is always a single click, with the sign-up button being a click at the bottom of the information page.
+
 This group are also likely to be future donors.
 
 ### Intentional Donors
 
-These are people comning to the site with the specific intention of making a donation.  These people need rapid links to the dontation information that supports their preferred donation method. 
+These are people comning to the site with the specific intention of making a donation.  These people need rapid links to the dontation information that supports their preferred donation method. At all times users will be within two clicks of a donation option.
 
 It may also be desirable to keep a GDPR compliant record of these people, so that they can be supported and thanked.  Such information is easy to gather - but managing it on an ongoing basis does need to considered.
 
@@ -103,7 +109,47 @@ To provide the user requirement the div now has an additional class that makes i
 
 The existing donation page images will not produce an elegant page, even as placeholders.  It will be necessary to source or create some appropriate placeholder images.
 
+## Testing and Quality Assurance
 
+### Systematic Testing
+
+Systematic testing involves checking each menu option from left to right, including drop-down options.  The left to right pattern helps to reduce the risk of options being overlooked.
+
+For each option the page is then checked from top to bottom.  Key checks include, but are not limited to, formating, spelling, links, colouring and shading.
+
+For layout and look and feel consistency, usability and aesthetics are considered.
+
+### Browser Testing
+
+The site needs to be systematically checked against a range of common browsers.  These include, but are not limited to, Google Chrome, Firefox, Microsoft Edge, Safari and Internet Explorer.
+
+Errors corrected include, not use of auto-fit in css and careful use of flex display options.
+
+### Device Testing
+
+Ideally the site would be checked on the full range of devices and operating systems.  For practical reasons in the context of a learning project it may not be possible to test against all options.
+
+The web developer tools allow testing against common devices, particularly mobile devices.
+
+The site has been developed on a Windows 10 Platform with Chrome.
+
+### End User Testing
+
+In this case there is a client organisation, so there will be extensive end user testing from a range of stakeholders, focusing on a range of personae.
+
+There will also be a range of end users asked to review and comment on the site.  Beyond the context of a learning project this would need to be more extensive, more formal and more structured.
+
+### Scenario Testing
+
+There are four key user experience scenarios against which the site will be tested, a user seeking further information, a user wishing to get in touch with the organisation, a user wishing to join the organisation and a user wishing to donate to the organisation.  
+
+### Responsive Design
+
+The site is based on the Bootstrap breakpoints, testing will be conducted against each of these.
+
+### Accessibility
+
+The will be checked against the W3C validator validator.w3.org
 
 ##Deployment
 

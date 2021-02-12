@@ -1,5 +1,5 @@
 // Global Variables
-var jsfileversion="0024";
+var jsfileversion="0026";
 
 function showMenuComponent(sect) {
 var elements = document.getElementsByClassName('MenuComponent');
@@ -9,6 +9,9 @@ var elements = document.getElementsByClassName('MenuComponent');
     }
 
 var w = document.getElementById('imgbground');
+w.style.display = 'none';
+
+var w = document.getElementById('imgbground-blur');
 w.style.display = 'none';
 
 var x = document.getElementById(sect);

@@ -4,7 +4,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0566";
+--cssfileversion: "0604";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
@@ -418,30 +418,25 @@ animation-duration: 3s;
 animation-fill-mode: forwards;
 }
 .wsr-cta-text{
-width: 500px;
+/* width: 500px; */
 text-align: left;
     color: #ffffffff;
-    font-size: 180%;
+    font-size: 160%;
     font-weight: 500;
     letter-spacing: 2px;
     line-height: 100%;
     display: flex;
-    min-width: 600px;
-    min-height: 300px;
     max-width: 600px;
     max-height: 300px;
 flex-direction: column;
 }
 .wsr-cta-actions{
-
-    color: #ffffffff;
+color: #ffffffff;
     font-size: 150%;
     font-weight: 1000;
     letter-spacing: 2px;
     line-height: 100%;
     display: flex;
-    min-width: 250px;
-    min-height: 300px;
     max-width: 250px;
     max-height: 300px;
 flex-direction: column;
@@ -753,6 +748,48 @@ width: 100%;
 .card-body-small{
 height: 180px;
 }
+.wsr-carousel-caption{
+top: 20px;
+}
+.wsr-carousel-caption h5{
+font-size: 200%;
+backdrop-filter: blur(10px);
+color: #000;
+font-weight: 900;
+background-color: #ffffff99;
+}
+/* Warksar Carousel Slide Indicator */
+.wsr-carousel-indicator{
+position: fixed;
+bottom: revert;
+z-index: 2;
+background-color: #555555aa;
+justify-content: center;
+height: 30px;
+}
+/* Position the carousel previous indicator */
+.carousel-control-prev, .carousel-control-next{
+height: 30px;
+background-color: #555555aa;
+top: 100px;
+opacity: 1;
+position: fixed;
+color: inherit;
+}
+.wsr-carousel-indicator li{
+margin: auto 3px;;
+height: 5px;
+}
+.wsr-carousel-caption p{
+font-size: 120%;
+backdrop-filter: blur(10px);
+color: #000;
+font-weight: 900;
+background-color: #ffffff99;
+}
+.wsr-row-foot{
+display: inline;
+}
 /* Equivalent to Bootstrap Extra Extra Large */
 @media screen and (min-width: 1400px){
 #photo {
@@ -764,6 +801,15 @@ column-count: 4;
 #photo {
     column-count: 3;
   }
+
+.wsr-cta-text{
+font-size: 140%;
+}
+
+.wsr-cta-img img{
+width: 120px;
+height: 120px;
+}
 }
 /* Equivalent to Bootstrap Large */
 @media screen and (max-width: 1199px){
@@ -771,8 +817,14 @@ column-count: 4;
     column-count: 3;
   }
 
-#CTA-logo{
-display: none;
+
+.wsr-cta-text{
+font-size: 120%;
+}
+
+.wsr-cta-img img{
+width: 100px;
+height: 100px;
 }
 }
 /* Equivalent to Bootstrap Medium */
@@ -780,9 +832,49 @@ display: none;
 div.dropdown-menu{
 position: sticky;
 }
+
+.wsr-cta-text{
+font-size: 120%;
+}
+
+.wsr-cta-img{
+display: none;
+}
 }
 /* Equivalent to Bootstrap Small */
 @media screen and (max-width: 767px){
+.wsr-cta-row {
+
+    width: 90%;
+    display: flow-root;
+  
+}
+
+.wsr-cta-actions {
+font-size: 60%;
+display: inline;
+letter-spacing: 1px;
+max-width: unset;
+text-align: center; 
+width: 100%;}
+
+.wsr-cta-btn {
+width: 120px;
+margin: 5px auto;
+}
+
+.wsr-cta-actions p {
+display: inline;
+}
+
+.wsr-cta-text {
+width: 100%;
+text-align: center;
+}
+
+.wsr-cta-text {
+float: none;
+}
 }
 /* Equivalent to Bootstrap X-Small */
 @media screen and (max-width: 575px){
@@ -849,46 +941,4 @@ text-align: center;
   .right {
   left: 0%;
   }
-}
-.wsr-carousel-caption{
-top: 20px;
-}
-.wsr-carousel-caption h5{
-font-size: 200%;
-backdrop-filter: blur(10px);
-color: #000;
-font-weight: 900;
-background-color: #ffffff99;
-}
-/* Warksar Carousel Slide Indicator */
-.wsr-carousel-indicator{
-position: fixed;
-bottom: revert;
-z-index: 2;
-background-color: #555555aa;
-justify-content: center;
-height: 30px;
-}
-/* Position the carousel previous indicator */
-.carousel-control-prev, .carousel-control-next{
-height: 30px;
-background-color: #555555aa;
-top: 100px;
-opacity: 1;
-position: fixed;
-color: inherit;
-}
-.wsr-carousel-indicator li{
-margin: auto 3px;;
-height: 5px;
-}
-.wsr-carousel-caption p{
-font-size: 120%;
-backdrop-filter: blur(10px);
-color: #000;
-font-weight: 900;
-background-color: #ffffff99;
-}
-.wsr-row-foot{
-display: inline;
 }

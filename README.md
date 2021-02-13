@@ -5,7 +5,7 @@ README.md
 # Version Details: Warwickshire Search and Rescue
 README Version: ;
 HTML Version: 0321;
-CSS Version: 0566;
+CSS Version: 0604;
 JavaScript Version: 0026;
 
 ## User Experience
@@ -145,7 +145,47 @@ There are four key user experience scenarios against which the site will be test
 
 ### Responsive Design
 
-The site is based on the Bootstrap breakpoints, testing will be conducted against each of these.
+The site is based on the Bootstrap breakpoints, testing has been conducted against each of these.
+
+#### Extra Extra Large (XXL) >= 1400px
+
+Home Page - OK
+
+#### Extra Large xl 1200px - 1400px
+
+##### Home Page
+Remove min-width and min-height for CTA-text frame
+Reduce size of central logo
+Reduce font size of CTA text
+
+#### Large lg 992px - 1200px
+
+##### Home Page
+Further educe size of central logo
+Further educe font size of CTA text
+
+#### Medium md 768px to 992px
+
+##### Home Page
+Hide central logo
+
+#### Small 
+
+##### Home Page
+Move buttons below central main text
+Re-align buttons for horizontal display
+
+#### Extra Small
+
+#### Home Page
+
+
+
+#### Medium
+
+#### Small
+
+#### Extra Small
 
 ### Accessibility
 

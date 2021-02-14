@@ -4,7 +4,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0614";
+--cssfileversion: "0622";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
@@ -882,6 +882,23 @@ text-align: center;
 
 .wsr-cta-text {
 float: none;
+}
+
+.wsr-timeline-left::before, #wsr-container-timeline-top::before, .wsr-timeline-right::before, .wsr-timeline::before {
+display: none;
+}
+
+.wsr-timeline-left::after, #wsr-container-timeline-top::after, .wsr-timeline-right::after, .wsr-timeline::after {
+display: none;
+}
+
+.wsr-container-timeline {
+padding: 5px;
+width: 100%;
+}
+
+.wsr-timeline-right {
+left: unset;
 }
 }
 /* Equivalent to Bootstrap X-Small */

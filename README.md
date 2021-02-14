@@ -2,10 +2,10 @@ README.md
 
 # Website Title: Warwickshire Search and Rescue
 
-# Version Details: Warwickshire Search and Rescue
+## Version Details: Warwickshire Search and Rescue
 README Version: ;
-HTML Version: 0322;
-CSS Version: 0606;
+HTML Version: 0325;
+CSS Version: 0614;
 JavaScript Version: 0026;
 
 ## User Experience
@@ -149,7 +149,9 @@ The site is based on the Bootstrap breakpoints, testing has been conducted again
 
 #### Extra Extra Large (XXL) >= 1400px
 
-Home Page - OK
+##### Home Page - **OK**
+
+##### What We Do Page - *OK*
 
 #### Extra Large xl 1200px - 1400px
 
@@ -158,16 +160,24 @@ Remove min-width and min-height for CTA-text frame
 Reduce size of central logo
 Reduce font size of CTA text
 
+##### What We Do Page - *OK*
+
 #### Large lg 992px - 1200px
 
 ##### Home Page
 Further educe size of central logo
 Further educe font size of CTA text
 
+##### What We Do Page - *OK*
+
 #### Medium md 768px to 992px
 
 ##### Home Page
 Hide central logo
+
+##### What We Do Page
+Add element ids so that individual elements can be targeted, and Bootstrap customised, without affecting other parts of the site
+Set images to go vertically above text
 
 #### Small 
 

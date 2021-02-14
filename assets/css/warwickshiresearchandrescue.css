@@ -4,7 +4,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0604";
+--cssfileversion: "0606";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
@@ -416,6 +416,7 @@ border: 4px solid #335533f9;
 animation-name: CTA-zoom;
 animation-duration: 3s;
 animation-fill-mode: forwards;
+max-width: 1000px;
 }
 .wsr-cta-text{
 /* width: 500px; */

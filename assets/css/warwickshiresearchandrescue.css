@@ -4,7 +4,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0628";
+--cssfileversion: "0635";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
@@ -664,10 +664,6 @@ object-fit: contain;
 #btn_donateCC_LG-02{
 object-fit: scale-down;
 }
-#img-carousel-3{
-object-fit: cover;
-width: 100%;
-}
 #img-carousel-0{
 object-fit: cover;
 min-height;
@@ -688,9 +684,9 @@ object-fit: cover;
 object-align: center center;
 }
 #img-carousel-2{
-object-fill: cover;
+object-fit: cover;
 max-height: 1000px;
-object-align: center center;
+object-position: center center;
 }
 #img-carousel-3{
 object-fit: cover;
@@ -907,6 +903,14 @@ background-color: var(--bgroundshade);
 width: 30%;
 padding: 5px;
 border-radius: 5px;
+}
+
+#img-carousel-3 {
+max-height: 600px;
+}
+
+#img-carousel-2 {
+height: 600px;
 }
 }
 /* Equivalent to Bootstrap X-Small */

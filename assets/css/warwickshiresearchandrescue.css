@@ -4,12 +4,10 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0622";
+--cssfileversion: "0628";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
-}
-#alsar-logo-container{
 }
 /* Attributes that apply across the site as a whole */
 *{
@@ -588,6 +586,8 @@ width: 100%;
 height: 100%;
 object-fit: scale-down;
 }
+#alsar-logo-container{
+}
 #imgwarksar028-01{
 width: 400px;
 }
@@ -844,10 +844,11 @@ font-size: 120%;
 display: none;
 }
 
-#alsar-logo-container, #alsar-text-container, #warksar-whatwedo-img-container, #warksar-whatwedo-text-container  {
+/* #alsar-logo-container, #alsar-text-container, #warksar-whatwedo-img-container, #warksar-whatwedo-text-container  {
 max-width: 100%;
 flex: 0 0 100%;
 }
+*/
 }
 /* Equivalent to Bootstrap Small */
 @media screen and (max-width: 767px){
@@ -899,6 +900,13 @@ width: 100%;
 
 .wsr-timeline-right {
 left: unset;
+}
+
+#menu{
+background-color: var(--bgroundshade);
+width: 30%;
+padding: 5px;
+border-radius: 5px;
 }
 }
 /* Equivalent to Bootstrap X-Small */

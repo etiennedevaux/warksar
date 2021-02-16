@@ -4,8 +4,8 @@ README.md
 
 # Version Details: Warwickshire Search and Rescue
 README Version: ;
-HTML Version: 0329;
-CSS Version: 0635;
+HTML Version: 0342;
+CSS Version: 0667;
 JavaScript Version: 0026;
 
 ## User Experience
@@ -155,6 +155,13 @@ The site is based on the Bootstrap breakpoints, testing has been conducted again
 
 ##### What We Do Page - *OK*
 
+##### Our History - *OK*
+
+##### Team Carousel
+Adjust width for first item.
+
+##### Join Us - *OK*
+
 #### Extra Large xl 1200px - 1400px
 
 ##### Home Page
@@ -163,6 +170,10 @@ Reduce size of central logo
 Reduce font size of CTA text
 
 ##### What We Do Page - *OK*
+
+##### Team Carousel - *OK*
+
+##### Join Us - *OK*
 
 #### Large lg 992px - 1200px
 

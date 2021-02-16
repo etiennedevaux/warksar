@@ -4,7 +4,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0635";
+--cssfileversion: "0667";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
@@ -664,34 +664,44 @@ object-fit: contain;
 #btn_donateCC_LG-02{
 object-fit: scale-down;
 }
+/* First Carousel Image */
 #img-carousel-0{
 object-fit: cover;
-min-height;
+height: 1000px;
 }
+/* Second Carousel Image */
 #img-carousel-1{
-max-height: 1000px;
 object-fit: cover;
-object-align: center center;
+object-position: center center;
+min-height: 1000px;
 }
+/* Third Carousel Image */
+#img-carousel-2{
+object-fit: cover;
+max-height: 1200px;
+object-position: center center;
+min-height: 1000px;
+}
+/* Fourth Carousel Image */
+#img-carousel-3{
+object-fit: cover;
+max-height: 1200px;
+object-position: center center;
+min-height: 1000px;
+}
+/* Fifth Carousel Image */
+#img-carousel-4{
+max-height: 1200px;
+object-fit: cover;
+object-position: center center;
+min-height: 1000px;
+}
+/* Sixth Carousel Image */
 #img-carousel-5{
 object-fit: cover;
 object-align: center center;
-max-height: 1000px;
-}
-#img-carousel-4{
-max-height: 1000px;
-object-fit: cover;
-object-align: center center;
-}
-#img-carousel-2{
-object-fit: cover;
-max-height: 1000px;
-object-position: center center;
-}
-#img-carousel-3{
-object-fit: cover;
-max-height: 1000px;
-object-align: center center;
+max-height: 1200px;
+min-height: 1000px;
 }
 /* Bootstrap Card Customisation */
 .card{
@@ -766,6 +776,9 @@ background-color: #555555aa;
 justify-content: center;
 height: 30px;
 }
+.wsr-img-lscape{
+width: 100%;
+}
 /* Position the carousel previous indicator */
 .carousel-control-prev, .carousel-control-next{
 height: 30px;
@@ -794,6 +807,29 @@ display: inline;
 #photo {
 column-count: 4;
 }
+
+#img-carousel-0 {
+}
+
+#img-carousel-1 {
+max-height: 1200px;
+}
+
+#img-carousel-2 {
+max-height: 1200px;
+}
+
+#img-carousel-3 {
+max-height: 1100px;
+}
+
+#img-carousel-4 {
+max-height: 1100px;
+}
+
+#img-carousel-5 {
+max-height: 1100px;
+}
 }
 /* Equivalent to Bootstrap Extra Large */
 @media screen and (max-width: 1399px){
@@ -808,6 +844,10 @@ font-size: 140%;
 .wsr-cta-img img{
 width: 120px;
 height: 120px;
+}
+
+#img-carousel-1{
+height: 1100px;
 }
 }
 /* Equivalent to Bootstrap Large */
@@ -910,6 +950,10 @@ max-height: 600px;
 }
 
 #img-carousel-2 {
+height: 600px;
+}
+
+#img-carousel-1 {
 height: 600px;
 }
 }

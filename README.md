@@ -4,8 +4,8 @@ README.md
 
 # Version Details: Warwickshire Search and Rescue
 README Version: ;
-HTML Version: 0342;
-CSS Version: 0667;
+HTML Version: 0348;
+CSS Version: 0670;
 JavaScript Version: 0026;
 
 ## User Experience
@@ -185,6 +185,12 @@ Further educe font size of CTA text
 
 ##### What We Do Page - *OK*
 
+##### Team Carousel - *OK*
+
+##### Join Us
+Reduce font sizes
+
+
 #### Medium md 768px to 992px
 
 ##### Navigation Bar - OK
@@ -196,6 +202,12 @@ Hide central logo
 Add element ids so that individual elements can be targeted, and Bootstrap customised, without affecting other parts of the site
 Use Bootstrap set images to go vertically above text
 
+##### Team Carousel - *OK*
+
+##### Join Us
+Align image title and text vertically using Bootstrap
+
+
 #### Small 
 
 ##### Navigation Bar
@@ -206,6 +218,11 @@ Menu background being transparent makes text difficult to read with burger menu.
 ##### Home Page
 Move buttons below central main text
 Re-align buttons for horizontal display
+
+##### Team Carousel - *OK*
+
+##### Join Us
+Hide image using Bootstrap
 
 #### Extra Small
 

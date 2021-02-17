@@ -4,7 +4,7 @@ README.md
 
 # Version Details: Warwickshire Search and Rescue
 README Version: ;
-HTML Version: 0351;
+HTML Version: 0375;
 CSS Version: 0672;
 JavaScript Version: 0026;
 
@@ -320,7 +320,7 @@ The will be checked against the W3C validator validator.w3.org
 
 # W3C HTML Validation Report
 
-*Report 001*
+**Report 001**
 
 ## 1.	Error: No space between attributes.
 
@@ -342,9 +342,15 @@ From line 16, column 1; to line 16, column 97
 ### Actions
 Type attribute removed
 
-3.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+## 3.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
 From line 28, column 1; to line 28, column 51
 ogoleft'>?<img class='logoleft' src='assets/images/logo.png'>?</div
+
+### Actions
+Add ALT tag
+
 4.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
 From line 73, column 1; to line 73, column 34
 cta-img">?<img src="assets/images/logo.png">?</div

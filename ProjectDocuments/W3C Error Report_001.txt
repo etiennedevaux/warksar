@@ -1,6 +1,6 @@
 # W3C HTML Validation Report
 
-*Report 001*
+**Report 001**
 
 ## 1.	Error: No space between attributes.
 
@@ -22,55 +22,158 @@ From line 16, column 1; to line 16, column 97
 ### Actions
 Type attribute removed
 
-3.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+## 3.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
 From line 28, column 1; to line 28, column 51
 ogoleft'>↩<img class='logoleft' src='assets/images/logo.png'>↩</div
-4.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Actions
+Add ALT tag
+
+## 4.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
 From line 73, column 1; to line 73, column 34
 cta-img">↩<img src="assets/images/logo.png">↩</div
-5.	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+
+### Actions
+Add an Alt tag
+
+
+## 5.	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+
+### Error
 From line 69, column 1; to line 69, column 43
 d='Home'>↩<section id='wsr-home' class='wsr-content'>↩<!-- 
-6.	Error: Duplicate ID WhatWeDo.
+
+### Actions
+Create an identifying Heading, but keep hidden
+
+
+## 6.	Error: Duplicate ID WhatWeDo.
+
+### Error
 From line 98, column 1; to line 98, column 43
 ntainer">↩<section id='WhatWeDo' class='wsr-content'>↩<div 
-7.	Warning: The first occurrence of ID WhatWeDo was here.
+
+### Actions 
+Change ID to WhatWeDo-section
+
+## 7.	Warning: The first occurrence of ID WhatWeDo was here.
+
+### Error
 From line 93, column 1; to line 93, column 64
 '>↩</div>↩<div style='display: none;' class='MenuComponent' id='WhatWeDo'>↩<head
-8.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Actions
+Corrected by Error 6
+
+## 8.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
 From line 108, column 1; to line 108, column 116
 ol-lg-4">↩<img id="alsar-logo" src="https://www.lowlandrescue.org/images/lowland-rescue-lozenge1.png" class="wsr-content-img">↩</div
-9.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Actions
+Add alt tag
+
+## 9.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
 From line 118, column 1; to line 118, column 67
 ol-lg-4">↩<img src="assets/images/imgwarksar002.jpg" class="wsr-content-img">↩</div
-10.	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+
+### Actions
+
+Add alt tag
+
+
+## 10.	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+
+### Error
 From line 98, column 1; to line 98, column 43
 ntainer">↩<section id='WhatWeDo' class='wsr-content'>↩<div 
-11.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Actions
+Add hidden heading with <h2> tag
+
+## 11.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
 From line 282, column 1; to line 282, column 89
 m-block">↩<img id="imgwarksar030-02" src="assets/images/imgwarksar030.jpg" class="wsr-content-img">↩</div
-12.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Actions
+Add alt tag
+
+
+## 12.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
 From line 297, column 1; to line 297, column 89
 m-block">↩<img id="imgwarksar021-02" src="assets/images/imgwarksar021.jpg" class="wsr-content-img">↩</div
-13.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Actions
+Add alt tag
+
+## 13.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
 From line 312, column 1; to line 312, column 89
 m-block">↩<img id="imgwarksar028-02" src="assets/images/imgwarksar028.jpg" class="wsr-content-img">↩</div
-14.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Actions
+Add alt tag
+
+## 14.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
 From line 327, column 1; to line 327, column 89
 m-block">↩<img id="imgwarksar011-02" src="assets/images/imgwarksar011.jpg" class="wsr-content-img">↩</div
-15.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Actions
+Add alt tag
+
+## 15.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
 From line 342, column 1; to line 342, column 100
 m-block">↩<img id="imgwarksar027-searchmanager" src="assets/images/imgwarksar027.jpg" class="wsr-content-img">↩</div
-16.	Error: Bad value mailto: support@warksar.org.uk for attribute href on element a: Illegal character in scheme data: space is not allowed.
+
+### Actions
+Add alt tag
+
+## 16.	Error: Bad value mailto: support@warksar.org.uk for attribute href on element a: Illegal character in scheme data: space is not allowed.
+
+### Error
 From line 360, column 1; to line 360, column 78
 .</p>↩<p>↩<a class="btn btn-primary wsr-text-btn" href="mailto: support@warksar.org.uk">Contac
-17.	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+
+### Actions
+Remove space
+
+## 17.	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+
+### Error
 From line 272, column 1; to line 272, column 47
 ntainer">↩<section id='warksarroles' class='wsr-content'>↩<div 
-18.	Error: The frameborder attribute on the iframe element is obsolete. Use CSS instead.
+
+### Actions
+Add <h2> header but keep hidden
+
+## 18.	Error: The frameborder attribute on the iframe element is obsolete. Use CSS instead.
+
+### Error
 From line 375, column 1; to line 375, column 211
 her"></a>↩<iframe width="1280" height="720" src="https://www.youtube.com/embed/qDnTAo1rHks" frameborder="0" al…rometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></ifra
+
+### Actions
+Remove frameborder attribute and add id to iframe to make CSS tagetting more precise
+
 19.	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+
+
 From line 371, column 1; to line 371, column 20
 </header>↩<section id='photo'>↩<!-- 
 20.	Error: Bad value for attribute id on element div: An ID must not be the empty string.

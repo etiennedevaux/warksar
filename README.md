@@ -5,7 +5,7 @@ README.md
 # Version Details: Warwickshire Search and Rescue
 README Version: ;
 HTML Version: 0348;
-CSS Version: 0670;
+CSS Version: 0672;
 JavaScript Version: 0026;
 
 ## User Experience
@@ -145,7 +145,7 @@ There are four key user experience scenarios against which the site will be test
 
 ### Responsive Design
 
-The site is based on the Bootstrap breakpoints, testing has been conducted against each of these.
+The site is based on the Bootstrap breakpoints, testing has been conducted against each of these.  The following test record shows the logical transition from 4k desktop screens to small mobile devices, that may be in portrait or landscape orientation.
 
 #### Extra Extra Large (XXL) >= 1400px
 
@@ -162,6 +162,15 @@ Adjust width for first item.
 
 ##### Join Us - *OK*
 
+##### Gallery - *OK*
+4 columns
+
+##### Contact - *OK*
+4 Bootstrap Cards Across
+
+##### Donate - *OK*
+3 Bootstrap Cards Across
+
 #### Extra Large xl 1200px - 1400px
 
 ##### Home Page
@@ -174,6 +183,15 @@ Reduce font size of CTA text
 ##### Team Carousel - *OK*
 
 ##### Join Us - *OK*
+
+##### Gallery - *OK*
+3 columns
+
+##### Contact - *OK*
+4 Bootstrap Cards Across
+
+##### Donate - *OK*
+3 Bootstrap Cards Across
 
 #### Large lg 992px - 1200px
 
@@ -189,6 +207,16 @@ Further educe font size of CTA text
 
 ##### Join Us
 Reduce font sizes
+
+#### Gallery - *OK*
+3 columns
+
+##### Contact - *OK*
+3 Bootstrap Cards Across
+1 on next row, all centred
+
+##### Donate - *OK*
+3 Bootstrap Cards Across
 
 
 #### Medium md 768px to 992px
@@ -207,13 +235,22 @@ Use Bootstrap set images to go vertically above text
 ##### Join Us
 Align image title and text vertically using Bootstrap
 
+#### Gallery - *OK*
+3 columns
 
-#### Small 
+##### Contact - *OK*
+3 Bootstrap Cards Across
+1 on next row, all centred
+
+##### Donate - *OK*
+3 Bootstrap Cards Across
+
+
+
+#### Small 576px to 768px
 
 ##### Navigation Bar
 Menu background being transparent makes text difficult to read with burger menu.  Set background to green, with padding and rounded corners
-
-
 
 ##### Home Page
 Move buttons below central main text
@@ -224,17 +261,58 @@ Re-align buttons for horizontal display
 ##### Join Us
 Hide image using Bootstrap
 
-#### Extra Small
+#### Gallery - *OK*
+3 columns
 
-#### Home Page
+##### Contact - *OK*
+2 Bootstrap Cards Across
+2 on next row, all centred
+
+##### Donate - *OK*
+2 Bootstrap Cards Across
+1 on next row, all centred
 
 
 
-#### Medium
 
-#### Small
+#### Extra Small 0px to 576px
 
-#### Extra Small
+##### Home Page
+
+##### Navigation Bar
+Menu background being transparent makes text difficult to read with burger menu.  Set background to green, with padding and rounded corners
+
+##### Home Page
+Move buttons below central main text
+Re-align buttons for horizontal display
+
+##### Team Carousel - *OK*
+
+##### Join Us
+Hide image using Bootstrap
+
+#### Gallery - *OK*
+3 columns
+
+##### Contact - *OK*
+2 Bootstrap Cards Across
+2 on next row, all centred
+
+##### Donate - *OK*
+2 Bootstrap Cards Across
+1 on next row, all centred
+
+
+
+
+#### Landscape Mobile
+
+##### Footer Bar
+Disappears when height is below 400px.
+
+
+
+
 
 ### Accessibility
 

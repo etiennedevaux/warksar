@@ -4,7 +4,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0670";
+--cssfileversion: "0672";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
@@ -1032,4 +1032,9 @@ text-align: center;
   .right {
   left: 0%;
   }
+}
+@media screen and (max-height: 400px){
+footer{
+display: none;
+}
 }

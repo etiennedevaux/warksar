@@ -4,14 +4,10 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0675";
+--cssfileversion: "0681";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
-}
-audio{
-margin: 10px;
-height: 30px;
 }
 /* Attributes that apply across the site as a whole */
 *{
@@ -19,10 +15,17 @@ margin: 0px;
 padding: 0px;
 border: 0px;
 }
+audio{
+margin: 10px;
+height: 30px;
+}
 /* Attributes that apply to the html body */
 body{
 font-family: Lato;
 background-color: var(--bgroundshade);
+}
+video{
+width: 100%;
 }
 /* Parameters for the fixed background image */
 div.bground{
@@ -58,29 +61,6 @@ margin: 0px;
 background-position: center center;
 filter: blur(10px);
 display: none;
-}
-@keyframes hero-zoom{
- from{
-    transform: scale(1);
-    filter: blur(10px);
-
-  }
-  to{
-    transform: scale(1.1);
-    filter: blur(1px);
-  }
-}
-/* Animation for the front page call to action. */
-@keyframes CTA-zoom{
- from{
-    transform: scale(0.9);
-    opacity: 0.7;
-
-  }
-  to{
-    transform: scale(1);
-    opacity: 1;
-  }
 }
 /* CSS for the site-wide navbar */
 .navbar{
@@ -810,10 +790,38 @@ background-color: #ffffff99;
 .wsr-row-foot{
 display: inline;
 }
+@keyframes hero-zoom{
+ from{
+    transform: scale(1);
+    filter: blur(10px);
+
+  }
+  to{
+    transform: scale(1.1);
+    filter: blur(1px);
+  }
+}
+/* Animation for the front page call to action. */
+@keyframes CTA-zoom{
+ from{
+    transform: scale(0.9);
+    opacity: 0.7;
+
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 2400px){
+#photo {
+column-count: 6;
+}
+}
 /* Equivalent to Bootstrap Extra Extra Large */
 @media screen and (min-width: 1400px){
 #photo {
-column-count: 4;
+column-count: 5;
 }
 
 #img-carousel-0 {
@@ -842,7 +850,7 @@ max-height: 1100px;
 /* Equivalent to Bootstrap Extra Large */
 @media screen and (max-width: 1399px){
 #photo {
-    column-count: 3;
+    column-count: 4;
   }
 
 .wsr-cta-text{

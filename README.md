@@ -9,7 +9,8 @@ CSS Version: 0681;
 JavaScript Version: 0026;
 
 ## User Experience
-
+
+
 ## Personae
 
 The key purpose of the Warwickshire Search and Rescue (Warksar) site it to reach out to the public in general.  The team members will mainly communicate and interact with each other via internal online services.  The agreed strategic goals for the site are to Inform, Communicate and Engage.  Engagement will include support, participation and donations.
@@ -41,11 +42,13 @@ This group are also likely to be future donors.
 These are people comning to the site with the specific intention of making a donation.  These people need rapid links to the dontation information that supports their preferred donation method. At all times users will be within two clicks of a donation option.
 
 It may also be desirable to keep a GDPR compliant record of these people, so that they can be supported and thanked.  Such information is easy to gather - but managing it on an ongoing basis does need to considered.
-
+
+
 ### Information Seekers
 
-[Seeking Information] (assets/video/ICU_Setup_Rapid.mp4)
-
+[Seeking Information] ("assets/video/ICU_Setup_Rapid.mp4")
+
+
 ## Features
 
 Features for the Warwickshire Search and Rescue Website
@@ -62,7 +65,8 @@ One of the multimedia challenges is that all media are contributed by members of
 ### Gallery Page
 
 The Gallery Page, taken from the Code Institute Love Running exercise, is an important and informal way engaging end users in the wide variety of activities undertaken by Warwickshire Search and Rescue.  The masonry board effect enables users to see a wide range in a single view and focus on the areas of interest to them, sometimes with internal or external links to articles or multimedia.  The photos come from a wide range of sources and on 4k screens some will show pixelation.  The standard Bootstrap breakpoints do not cover screens that large, so an additional breakpoint at 2,400 px width has been created.  The extra column minimised pixelation issues.
-
+
+
 ## Home Page and Call to Action
 
 The home page is designed to give an eye-catching experience with a clear Call to Action (CTA).
@@ -72,11 +76,13 @@ The top menu is static, ensuring a familiar navitation interface from any part o
 The footer is also static, keeping key information and links readily available at all times when on the site.  This information includes social media links, registered charity number and email contact.
 
 The CTA can be animated, some people love animation some hate it.  At present the css is available but disabled.
-
+
+
 The Navigation bar, based on a Bootstrap Navigation bar, but with some local customisation, is visible in the same place at all times.  This gives a simple, unobtrusive and always easily available navigation experience.
 
 The element has 0.9 opacity, so that it is always clear when there is content behind it, inviting the user to scroll to that content, but without obscuring the text.
-
+
+
 The Footer bar is visible in the same place at all times.  This gives simple, unobtrusive and always easily available information, such as contact and charity number, as well as links to related external social media sites.
 
 The element has 0.8 opacity, so that it is always clear when there is content behind it, inviting the user to scroll to that content, but without obscuring the text.  The opacity is lower than the header for two reasons, firstly it shows content that the user may not yet have seen, secondly it is primarily a reference feature rather than an active part of the naviation experience.
@@ -84,7 +90,8 @@ The element has 0.8 opacity, so that it is always clear when there is content be
 The footer also contains information about the precise code versions the user is seeing.  This helps to match the user experience to precise versions of html, css and Javascript code.
 
 Date and ownership information are also held here.  This information is generally of low importance, but on occasions can be an important reference.
-
+
+
 ### Donation Modal Form
 When submitting a donation via an online transfer the workflow involves sending an automated email to the benefactor, with a copy to the fund raising co-ordinator and a record being made in a remote database of the request for details.
 
@@ -95,11 +102,14 @@ The submit button runs a JS routine and also posts the form to a PHP routine tha
 In the initial implementation the output from the PHP routing goes to a hidden iframe, future deployments will use the iframe to give a message to the user.
 
 At present the form button label changes to show that the submission has been completed.
-
+
+
 ## External Libraries
-
+
+
 ## Key Issues
-
+
+
 ### Image and Media Management and Manipulation
 
 Keeping images fresh and relevant is important for the work of the organisation.  However, images come from a wide range of non-specialist contributors, and therefore in a wide range of shapes, sizes and resolutions.
@@ -115,7 +125,8 @@ So far approach 1 would seem easier to manage and maintain, although approach 2 
 By default all images and image boxes are given an ID.  This may not be strictly necessary, but if the id is in place it makes it easier to use CSS to target individual images.
 
 Many images will be assigned an id so that they can be individually manipulated from CSS.
-
+
+
 ### Background Image
 
 This site is using a single page of html, with sections being hidden and shown via a simple JavaScript routine.  This approach provides many advantages, particularly around performance and re-use of content.  
@@ -123,11 +134,13 @@ This site is using a single page of html, with sections being hidden and shown v
 Some of the user feedback is for the site background image to only appear in the 'Call to Action' home section.  Having the background image as a separate div keeps it out of the content flow, so making other changes easier.  
 
 To provide the user requirement the div now has an additional class that makes it easy to switch it off and on with a small change to the existing Javascript.
-
+
+
 ### Donate images
 
 The existing donation page images will not produce an elegant page, even as placeholders.  It will be necessary to source or create some appropriate placeholder images.
-
+
+
 ## Testing and Quality Assurance
 
 ### Systematic Testing
@@ -336,7 +349,8 @@ Disappears when height is below 400px.
 ### Accessibility
 
 The will be checked against the W3C validator validator.w3.org
-
+
+
 # W3C HTML Validation Report
 
 The report was the initial report for the index.html page (which includes all html pages as Javascript is used to hide and show page components).
@@ -521,7 +535,7 @@ Add heading, hide if appropriate
 
 ### Error
 From line 375, column 1; to line 375, column 211
-her"></a>?<iframe width="1280" height="720" src="https://www.youtube.com/embed/qDnTAo1rHks" frameborder="0" al…rometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></ifra
+her"></a>?<iframe width="1280" height="720" src="https://www.youtube.com/embed/qDnTAo1rHks" frameborder="0" alÂ…rometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></ifra
 
 ### Actions
 Remove frameborder and use CSS
@@ -691,9 +705,12 @@ Full Document checking completed.
 Used the HTML parser.
 Total execution time 127 milliseconds.
 ________________________________________
-About this checker • Report an issue • Version: 21.2.17
-
+About this checker Â• Report an issue Â• Version: 21.2.17
+
+
 ##Deployment
-
+
+
 ##Credits
-
+
+

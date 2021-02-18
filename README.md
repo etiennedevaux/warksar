@@ -44,7 +44,7 @@ It may also be desirable to keep a GDPR compliant record of these people, so tha
 
 ### Information Seekers
 
-[Seeking Information] (assets/video/ICU_Setup_Rapid.mp4)
+![Seeking Information](assets/video/ICU_Setup_Rapid.mp4)
 
 ## Features
 

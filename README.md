@@ -4,8 +4,8 @@ README.md
 
 # Version Details: Warwickshire Search and Rescue
 README Version: ;
-HTML Version: 0348;
-CSS Version: 0672;
+HTML Version: 0396;
+CSS Version: 0682;
 JavaScript Version: 0026;
 
 ## User Experience
@@ -42,7 +42,26 @@ These are people comning to the site with the specific intention of making a don
 
 It may also be desirable to keep a GDPR compliant record of these people, so that they can be supported and thanked.  Such information is easy to gather - but managing it on an ongoing basis does need to considered.
 
+### Information Seekers
+
+![Seeking Information](assets/video/ICU_Setup_Rapid.mp4)
+
+## Features
+
 Features for the Warwickshire Search and Rescue Website
+
+### Multimedia
+
+Multimedia is a growing part of the Warwickshire Search and Rescue site.  The images have some animation and additional effects.  The gallery contains a number of pictures and an item of streamed video.
+
+The What We Do section contains downloaded audio and video.  The video has been recorded and edited at a low resolution to make the file small enough to go on GitHub.  The video content has not been approved for YouTube, once approved it can be uploaded to a streaming service and be delivered that way instead.
+
+One of the multimedia challenges is that all media are contributed by members of the team, this means that the items come in highly variable levels of quality and format.  CSS is used to adjust media, often at an individual level, to optimise appearance.
+
+
+### Gallery Page
+
+The Gallery Page, taken from the Code Institute Love Running exercise, is an important and informal way engaging end users in the wide variety of activities undertaken by Warwickshire Search and Rescue.  The masonry board effect enables users to see a wide range in a single view and focus on the areas of interest to them, sometimes with internal or external links to articles or multimedia.  The photos come from a wide range of sources and on 4k screens some will show pixelation.  The standard Bootstrap breakpoints do not cover screens that large, so an additional breakpoint at 2,400 px width has been created.  The extra column minimised pixelation issues.
 
 ## Home Page and Call to Action
 
@@ -317,6 +336,362 @@ Disappears when height is below 400px.
 ### Accessibility
 
 The will be checked against the W3C validator validator.w3.org
+
+# W3C HTML Validation Report
+
+The report was the initial report for the index.html page (which includes all html pages as Javascript is used to hide and show page components).
+
+The report also shows the actions taken to obtain an error free report.
+
+A check will now be run before each commit and any errors adressed at that stage, or soon after.
+
+**Report 001**
+
+## 1.	Error: No space between attributes.
+
+### Error
+At line 16, column 31
+ext/javascript"src="https://cd
+
+### Actions
+Space added
+
+
+## 2.	Warning: The type attribute is unnecessary for JavaScript resources.
+
+### Error
+From line 16, column 1; to line 16, column 97
+</script>?<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></scri
+
+### Actions
+Type attribute removed
+
+
+## 3.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
+From line 28, column 1; to line 28, column 51
+ogoleft'>?<img class='logoleft' src='assets/images/logo.png'>?</div
+
+### Actions
+Add ALT tag
+
+
+## 4.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+From line 73, column 1; to line 73, column 34
+cta-img">?<img src="assets/images/logo.png">?</div
+
+### Actions
+Add ALT tag
+
+
+## 5.	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+
+### Error
+From line 69, column 1; to line 69, column 43
+d='Home'>?<section id='wsr-home' class='wsr-content'>?<!-- 
+
+### Actions
+Add section heading, hide if appropriate
+
+## 6.	Error: Duplicate ID WhatWeDo.
+
+### Error
+From line 98, column 1; to line 98, column 43
+ntainer">?<section id='WhatWeDo' class='wsr-content'>?<div 
+
+### Actions
+Change ID to avoid duplication
+
+
+## 7.	Warning: The first occurrence of ID WhatWeDo was here.
+
+### Error
+From line 93, column 1; to line 93, column 64
+'>?</div>?<div style='display: none;' class='MenuComponent' id='WhatWeDo'>?<head
+
+### Actions
+Change ID to avoid duplication
+
+
+
+## 8.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
+From line 108, column 1; to line 108, column 116
+ol-lg-4">?<img id="alsar-logo" src="https://www.lowlandrescue.org/images/lowland-rescue-lozenge1.png" class="wsr-content-img">?</div
+
+### Actions
+Add ALT tag
+
+
+## 9.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
+From line 118, column 1; to line 118, column 67
+ol-lg-4">?<img src="assets/images/imgwarksar002.jpg" class="wsr-content-img">?</div
+
+### Actions
+Add ALT tag
+
+
+## 10.	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+
+### Error
+From line 98, column 1; to line 98, column 43
+ntainer">?<section id='WhatWeDo' class='wsr-content'>?<div 
+
+### Actions
+Add heading, hide if appropriate
+
+
+
+## 11.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
+From line 282, column 1; to line 282, column 89
+m-block">?<img id="imgwarksar030-02" src="assets/images/imgwarksar030.jpg" class="wsr-content-img">?</div
+
+### Actions
+Add ALT tag
+
+
+
+## 12.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
+From line 297, column 1; to line 297, column 89
+m-block">?<img id="imgwarksar021-02" src="assets/images/imgwarksar021.jpg" class="wsr-content-img">?</div
+
+### Actions
+Add ALT tag
+
+
+
+## 13.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
+From line 312, column 1; to line 312, column 89
+m-block">?<img id="imgwarksar028-02" src="assets/images/imgwarksar028.jpg" class="wsr-content-img">?</div
+
+### Actions
+Add ALT tag
+
+
+## 14.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
+From line 327, column 1; to line 327, column 89
+m-block">?<img id="imgwarksar011-02" src="assets/images/imgwarksar011.jpg" class="wsr-content-img">?</div
+
+### Actions
+Add ALT tag
+
+
+## 15.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+### Error
+From line 342, column 1; to line 342, column 100
+m-block">?<img id="imgwarksar027-searchmanager" src="assets/images/imgwarksar027.jpg" class="wsr-content-img">?</div
+
+### Actions
+Add ALT tag
+
+
+## 16.	Error: Bad value mailto: support@warksar.org.uk for attribute href on element a: Illegal character in scheme data: space is not allowed.
+
+### Error
+From line 360, column 1; to line 360, column 78
+.</p>?<p>?<a class="btn btn-primary wsr-text-btn" href="mailto: support@warksar.org.uk">Contac
+
+### Actions
+Remove space
+
+## 17.	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+
+### Error
+From line 272, column 1; to line 272, column 47
+ntainer">?<section id='warksarroles' class='wsr-content'>?<div 
+
+### Actions
+Add heading, hide if appropriate
+
+
+## 18.	Error: The frameborder attribute on the iframe element is obsolete. Use CSS instead.
+
+### Error
+From line 375, column 1; to line 375, column 211
+her"></a>?<iframe width="1280" height="720" src="https://www.youtube.com/embed/qDnTAo1rHks" frameborder="0" al…rometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></ifra
+
+### Actions
+Remove frameborder and use CSS
+
+
+## 19.	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+
+### Error
+From line 371, column 1; to line 371, column 20
+</header>?<section id='photo'>?<!-- 
+
+### Actions
+Add heading, hide if appropriate
+
+
+
+## 20.	Error: Bad value for attribute id on element div: An ID must not be the empty string.
+
+### Error
+From line 441, column 1; to line 441, column 46
+ation -->?<div id="" class="card" style="width: 18rem;">? <im
+
+### Actions
+Put in unique, non-null, ID
+
+
+##21.	Error: Duplicate ID .
+
+### Error
+From line 442, column 3; to line 442, column 82
+8rem;">? <img id="" src="assets/images/imgwarksar011.jpg" class="card-img-top" alt="...">? <di
+
+### Actions
+Put in unique, non-null, ID
+
+
+## 22.	Warning: The first occurrence of ID was here.
+
+### Error
+From line 441, column 1; to line 441, column 46
+ation -->?<div id="" class="card" style="width: 18rem;">? <im
+
+### Actions
+Put in unique, non-null, ID
+
+
+## 23.	Error: Bad value for attribute id on element img: An ID must not be the empty string.
+
+### Error
+From line 442, column 3; to line 442, column 82
+8rem;">? <img id="" src="assets/images/imgwarksar011.jpg" class="card-img-top" alt="...">? <di
+
+### Actions
+Put in unique, non-null, ID
+
+
+## 24.	Error: Duplicate ID .
+
+### Error
+From line 455, column 1; to line 455, column 46
+ation -->?<div id="" class="card" style="width: 18rem;">? <im
+
+### Actions
+Put in unique, non-null, ID
+
+
+## 25.	Warning: The first occurrence of ID was here.
+
+### Error
+From line 441, column 1; to line 441, column 46
+ation -->?<div id="" class="card" style="width: 18rem;">? <im
+
+### Actions
+Put in unique, non-null, ID
+
+
+## 26.	Error: Bad value for attribute id on element div: An ID must not be the empty string.
+
+### Error
+From line 455, column 1; to line 455, column 46
+ation -->?<div id="" class="card" style="width: 18rem;">? <im
+27.	Error: End tag div seen, but there were open elements.
+From line 507, column 1; to line 507, column 6
+ize="50">?</div>? 
+
+### Actions
+Put in unique, non-null, ID
+
+
+## 28.	Error: Unclosed element form.
+
+### Error
+From line 498, column 1; to line 498, column 131
+transfer?<form id="query-form" class="signup-form" method="POST" action="https://devauxphp.azurewebsites.net/warksar_log.php" target="null">??<!--
+
+### Actions
+Form and div are both closed, but cross.  Adjust html to avoid
+
+
+
+## 29.	Error: Attribute form_id not allowed on element input at this point.
+
+### Error
+From line 510, column 9; to line 510, column 135
+>? <input form_id="query_form" id="donationmodal-button" type="submit" class="btn btn-primary" onclick="formSubmit('query-form')">? 
+Attributes for element input:
+Global attributes
+acceptwhen type is file
+altwhen type is image
+autocompletewhen type is text, search, url, tel, email, password, date, month, week, time, datetime-local, number, range, or color
+autofocus
+checkedwhen type is checkbox or radio
+dirnamewhen type is text or search
+disabled
+form
+formactionwhen type is submit or image
+formenctypewhen type is submit or image
+formmethodwhen type is submit or image
+formnovalidatewhen type is submit or image
+formtargetwhen type is submit or image
+heightwhen type is image
+listwhen type is text, search, url, tel, email, date, month, week, time, datetime-local, number, range, or color
+maxwhen type is date, month, week, time, datetime-local, number, or range
+maxlengthwhen type is text, search, url, tel, email, or password
+minwhen type is date, month, week, time, datetime-local, number, or range
+multiplewhen type is email or file
+name
+patternwhen type is text, search, url, tel, email, or password
+placeholderwhen type is text, search, url, tel, email, password, or number
+readonlywhen type is text, search, url, tel, email, password, date, month, week, time, datetime-local, or number
+requiredwhen type is text, search, url, tel, email, password, date, month, week, time, datetime-local, number, checkbox, radio, or file
+sizewhen type is text, search, url, tel, email, or password
+srcwhen type is image
+stepwhen type is date, month, week, time, datetime-local, number, or range
+type
+valuewhen type is not file or image
+widthwhen type is image
+
+### Actions
+Remove attribute
+
+
+
+## 30.	Error: Stray end tag form.
+
+### Error
+From line 512, column 1; to line 512, column 7
+</div>?</form>? <
+
+### Actions
+Form and div are both closed, but cross, this makes the tag appear stray.  Adjust html to avoid
+
+
+
+## 31.	Error: The value of the for attribute of the label element must be the ID of a non-hidden form control.
+
+### Error
+From line 503, column 1; to line 503, column 19
+/iframe>??<label for="fname"> 
+
+### Actions
+Adjust for attribute
+
+
+
+Full Document checking completed.
+Used the HTML parser.
+Total execution time 127 milliseconds.
+________________________________________
+About this checker • Report an issue • Version: 21.2.17
 
 ##Deployment
 

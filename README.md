@@ -10,7 +10,11 @@ JavaScript Version: 0026;
 
 ## User Experience
 
-[The User Experience Introduction](https://youtu.be/bswPg6mYZAc)
+**[The User Experience Introduction]**(https://youtu.be/bswPg6mYZAc)
+The user journey is based on four personae
+
+[*Users Seeking Information*](https://youtu.be/nghCxQIYFRs)
+People coming to the site, who simply, at this stage want to find out more information, but need to nurtured as potential future contributors, members, donors or maybe all three.
 
 ## Personae
 

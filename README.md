@@ -18,11 +18,18 @@ People coming to the site, who simply, at this stage want to find out more infor
 
 ## Personae
 
-The key purpose of the Warwickshire Search and Rescue (Warksar) site it to reach out to the public in general.  The team members will mainly communicate and interact with each other via internal online services.  The agreed strategic goals for the site are to Inform, Communicate and Engage.  Engagement will include support, participation and donations.
+
+The user journey is based on four personae
+
+
+People coming to the site, who simply, at this stage want to find out more information, but need to nurtured as potential future contributors, members, donors or maybe all three.The key purpose of the Warwickshire Search and Rescue (Warksar) site it to reach out to the public in general.  The team members will mainly communicate and interact with each other via internal online services.  The agreed strategic goals for the site are to Inform, Communicate and Engage.  Engagement will include support, participation and donations.
 
 This leads us to 4 critical personae
+[**Home Page Demonstration**](https://youtu.be/bswPg6mYZAc)
 
 ### Information Seekers
+
+[*Demonstration for Users Seeking Information*](https://youtu.be/nghCxQIYFRs)
 
 For most of the public in general they may have had little reason to have come across Warksar, but have now heard about it and would like to know more.  These people are potential donors, members and collaborators - but for now need to be nurtured rather than directed.
 
@@ -47,10 +54,6 @@ This group are also likely to be future donors.
 These are people comning to the site with the specific intention of making a donation.  These people need rapid links to the dontation information that supports their preferred donation method. At all times users will be within two clicks of a donation option.
 
 It may also be desirable to keep a GDPR compliant record of these people, so that they can be supported and thanked.  Such information is easy to gather - but managing it on an ongoing basis does need to considered.
-
-### Information Seekers
-
-![Seeking Information](assets/video/ICU_Setup_Rapid.mp4)
 
 ## Features
 

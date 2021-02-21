@@ -63,6 +63,12 @@ These are people comning to the site with the specific intention of making a don
 
 It may also be desirable to keep a GDPR compliant record of these people, so that they can be supported and thanked.  Such information is easy to gather - but managing it on an ongoing basis does need to considered.
 
+### Responsive Design
+
+[Responsive Design Demo](https://youtu.be/e96WzABQF0c)
+
+With a wide range of screen sizes for all potential users it is important to design for responsiveness, based on horizontal and vertical resolution changes.
+
 ## Features
 
 Features for the Warwickshire Search and Rescue Website

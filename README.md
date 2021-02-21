@@ -6,7 +6,7 @@ README.md
 README Version: ;
 HTML Version: 0398;
 CSS Version: 0682;
-JavaScript Version: 0026;
+JavaScript Version: 0028;
 
 ## User Experience
 
@@ -25,6 +25,7 @@ The user journey is based on four personae
 People coming to the site, who simply, at this stage want to find out more information, but need to nurtured as potential future contributors, members, donors or maybe all three.The key purpose of the Warwickshire Search and Rescue (Warksar) site it to reach out to the public in general.  The team members will mainly communicate and interact with each other via internal online services.  The agreed strategic goals for the site are to Inform, Communicate and Engage.  Engagement will include support, participation and donations.
 
 This leads us to 4 critical personae
+
 [**Home Page Demonstration**](https://youtu.be/bswPg6mYZAc)
 
 ### Information Seekers
@@ -37,11 +38,16 @@ The Call to Action gives these people a prompt to the About - What We Do section
 
 ### Queries
 
+[*Demonstration for Users with Specific Queries*](https://youtu.be/7ZZaQi35YWU)
+
+
 If somebody wants to get in touch they are potentially valuable to the organisation.  They probably already know something about the organisation already and want to discuss something specific.  They need rapid access to contact information, balancing the need to get to the right person with the need to have the information without any complex navigation.
 
 This user is immediately prompted to the Contact section.  The navigation bar keeps these users within two clicks of a relevant contact person.
 
 ### Potential Members, Supporters and Collaborators
+
+[*Demonstration for Potential Members*](https://youtu.be/NUyK1Wbc-iU)
 
 These people may be ready and willing to make substantial contributions and to bring their own time and expertise.  They are likely to want specific information about key activities, and to understand how they could best contribute.
 
@@ -49,7 +55,9 @@ It is important that this group understand waht is involved before signing up.  
 
 This group are also likely to be future donors.
 
-### Intentional Donors
+### Donors
+
+[*Demonstration for Donors*](https://youtu.be/fKmlrB2n-PU)
 
 These are people comning to the site with the specific intention of making a donation.  These people need rapid links to the dontation information that supports their preferred donation method. At all times users will be within two clicks of a donation option.
 

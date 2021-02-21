@@ -5,8 +5,8 @@ README.md
 ## Version Details
 README Version: ;
 HTML Version: 0398;
-CSS Version: 0688;
-JavaScript Version: 0028;
+CSS Version: 0693;
+JavaScript Version: 0029;
 
 ## User Experience
 

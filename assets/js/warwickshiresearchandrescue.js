@@ -1,5 +1,5 @@
 // Global Variables
-var jsfileversion="0028";
+var jsfileversion="0029";
 
 function showMenuComponent(sect) {
 var elements = document.getElementsByClassName('MenuComponent');
@@ -26,6 +26,8 @@ var elements2 = document.getElementsByClassName(sect + '-display');
 
 
 document.getElementById('JSSerNo').textContent='.'+jsfileversion;
+
+document.getElementById('navbarNavDropdown').className='navbar-collapse show';
 }
 
 function formSubmit(formid){

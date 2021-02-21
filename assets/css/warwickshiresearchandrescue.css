@@ -4,7 +4,7 @@
 /* Variable */
 :root{
 --menubuttonwidth: %;
---cssfileversion: "0682";
+--cssfileversion: "0685";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
@@ -1018,6 +1018,7 @@ text-align: center;
     display: block!important;
 }
 }
+/* Additional breakpoint for timeline display */
 @media screen and (max-width: 600px) {
 /* Place the timelime to the left */
   .timeline::after {
@@ -1049,7 +1050,8 @@ text-align: center;
   left: 0%;
   }
 }
-@media screen and (max-height: 400px){
+/* For mobile devices in Landscape */
+@media screen and (max-height: 450px){
 footer{
 display: none;
 }

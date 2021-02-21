@@ -1051,7 +1051,7 @@ text-align: center;
   }
 }
 /* For mobile devices in Landscape */
-@media screen and (max-height: 450px){
+@media screen and (max-height: 600px){
 footer{
 display: none;
 }

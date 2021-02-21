@@ -1,5 +1,5 @@
 // Global Variables
-var jsfileversion="0026";
+var jsfileversion="0028";
 
 function showMenuComponent(sect) {
 var elements = document.getElementsByClassName('MenuComponent');
@@ -22,6 +22,8 @@ var elements2 = document.getElementsByClassName(sect + '-display');
     for (var i = 0; i < elements2.length; i++){
         elements2[i].style.display = 'block';
     }
+
+
 
 document.getElementById('JSSerNo').textContent='.'+jsfileversion;
 }

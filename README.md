@@ -73,20 +73,7 @@ With a wide range of screen sizes for all potential users it is important to des
 
 Features for the Warwickshire Search and Rescue Website
 
-### Multimedia
-
-Multimedia is a growing part of the Warwickshire Search and Rescue site.  The images have some animation and additional effects.  The gallery contains a number of pictures and an item of streamed video.
-
-The What We Do section contains downloaded audio and video.  The video has been recorded and edited at a low resolution to make the file small enough to go on GitHub.  The video content has not been approved for YouTube, once approved it can be uploaded to a streaming service and be delivered that way instead.
-
-One of the multimedia challenges is that all media are contributed by members of the team, this means that the items come in highly variable levels of quality and format.  CSS is used to adjust media, often at an individual level, to optimise appearance.
-
-
-### Gallery Page
-
-The Gallery Page, taken from the Code Institute Love Running exercise, is an important and informal way engaging end users in the wide variety of activities undertaken by Warwickshire Search and Rescue.  The masonry board effect enables users to see a wide range in a single view and focus on the areas of interest to them, sometimes with internal or external links to articles or multimedia.  The photos come from a wide range of sources and on 4k screens some will show pixelation.  The standard Bootstrap breakpoints do not cover screens that large, so an additional breakpoint at 2,400 px width has been created.  The extra column minimised pixelation issues.
-
-## Home Page and Call to Action
+### Home Page
 
 The home page is designed to give an eye-catching experience with a clear Call to Action (CTA).
 
@@ -95,20 +82,67 @@ The top menu is static, ensuring a familiar navitation interface from any part o
 The footer is also static, keeping key information and links readily available at all times when on the site.  This information includes social media links, registered charity number and email contact.
 
 The CTA can be animated, some people love animation some hate it.  At present the css is available but disabled.
-
-The Navigation bar, based on a Bootstrap Navigation bar, but with some local customisation, is visible in the same place at all times.  This gives a simple, unobtrusive and always easily available navigation experience.
 
-The element has 0.9 opacity, so that it is always clear when there is content behind it, inviting the user to scroll to that content, but without obscuring the text.
-
-The Footer bar is visible in the same place at all times.  This gives simple, unobtrusive and always easily available information, such as contact and charity number, as well as links to related external social media sites.
+### About - What We Do
 
-The element has 0.8 opacity, so that it is always clear when there is content behind it, inviting the user to scroll to that content, but without obscuring the text.  The opacity is lower than the header for two reasons, firstly it shows content that the user may not yet have seen, secondly it is primarily a reference feature rather than an active part of the naviation experience.
+The What We Do page is desgigned, using Bootstrap, to provide clear, factual information with supporting media, in the form of photos, audio and video.
 
-The footer also contains information about the precise code versions the user is seeing.  This helps to match the user experience to precise versions of html, css and Javascript code.
+The page is navigated by the user simply scrolling down.  The page is designed to be responsive for different screen sizes and orientations.
 
-Date and ownership information are also held here.  This information is generally of low importance, but on occasions can be an important reference.
-
-### Donation Modal Form
+### About - Our History
+
+This page uses a timeline layout.  This is based on the template provided [Here](https://www.w3schools.com/howto/howto_css_timeline.asp)
+
+The timeline has had minor adaptations to improve how the top item displays, and more subtantial extensions to make it fully responsive.
+
+### The Team
+
+This section was based on the Bootstrap carousel example [Here](https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp) but with adaptations to allow for easier display of a range of image shapes, sizes and orientations on a range of screen sizes.  
+
+The aim is to provide a simple, informal narrative on the type of work done by Warwickshire Search and Rescue
+
+### Join Us
+
+The Join Us page is fairly low key as there is no currently active recruitment campaign.  However, it is still a key part of the site.
+
+The main aim is to ensure that before people express an interest that they understand the scale of commitment that is required, hence the page has a scrollable section describing the work, with a button at the bottom, at least implying that people have read the text before they make contact.
+
+At present the contact button triggers an email using mailto:, but future versions will probably generate an automatic email and record user details on a database, allowing for email campaigns etc.  This will need to be considered in the context of GDPR, so is not part of the initial deployment.
+
+
+### Gallery Page
+
+The Gallery Page, taken from the Code Institute Love Running exercise, is an important and informal way of engaging end users in the wide variety of activities undertaken by Warwickshire Search and Rescue.  The masonry board effect enables users to see a wide range in a single view and focus on the areas of interest to them, sometimes with internal or external links to articles or multimedia.  The photos come from a wide range of sources and on 4k screens did initially show pixelation.  The standard Bootstrap breakpoints do not cover screens that large, so an additional breakpoint at 2,400 px width has been created.  The extra column minimised pixelation issues.
+
+### Contact
+
+The contact page deploys standard Bootstrap cards.  The Police card links to an external site, using _blank for a separate tab, thereby maintaining navigation etc.
+
+The other cards use mailto: at present, this may be developed to use automatic emails and databsae storage of data (as elsewhere on the site) but for the initial deployment the mailto: options is considered sufficient.
+
+### Donate
+
+Currently there are three preferred donation methods on this page.  A fourth one is in the specification for a future deployment, and will follow the same pattern.
+
+The PayPal and Easyfunding options point to embedded pages, that open in a new tab.
+
+The banking details for works slightly differently.  For security reasons it is not felt to be appropriate to have full banking details directly on the website.  It is also the case that the other options have some inherent recording of donations etc.  People submitting donations online needs some additional recording and tracking.  The workflow is as follows
+
+1.  User clicks on the button to request details
+
+2.  A modal form requests a name and email address
+
+3.  The user submits, and the modal form changes to show that they have submitted.
+
+4.  An automatic email is generated from emailjs and is sent to the user with a copy to the relevant person in Warwickshire Search and Rescue
+
+5.  A PHP routine is called on a separate server that creates a record in a separate SQL Server.  This records the form data alongside a date.
+
+
+
+
+#### Donation Modal Form
+
 When submitting a donation via an online transfer the workflow involves sending an automated email to the benefactor, with a copy to the fund raising co-ordinator and a record being made in a remote database of the request for details.
 
 This is achieved by using a Bootstrap Modal, in which there is an embedded form with a submit button.
@@ -118,12 +152,75 @@ The submit button runs a JS routine and also posts the form to a PHP routine tha
 In the initial implementation the output from the PHP routing goes to a hidden iframe, future deployments will use the iframe to give a message to the user.
 
 At present the form button label changes to show that the submission has been completed.
+
+### Site Wide Features
+
+#### JavaScript 'Virtual Pages'
+
+#### Navigation Bar
+
+The Navigation bar, based on a Bootstrap Navigation bar, but with some local customisation, is visible in the same place at all times.  This gives a simple, unobtrusive and always easily available navigation experience.
+
+The element has 0.9 opacity, so that it is always clear when there is content behind it, inviting the user to scroll to that content, but without obscuring the text.
+
+#### Footer
+
+The Footer bar is visible in the same place at all times.  This gives simple, unobtrusive and always easily available information, such as contact and charity number, as well as links to related external social media sites.
+
+The element has 0.8 opacity, so that it is always clear when there is content behind it, inviting the user to scroll to that content, but without obscuring the text.  The opacity is lower than the header for two reasons, firstly it shows content that the user may not yet have seen, secondly it is primarily a reference feature rather than an active part of the naviation experience.
+
+The footer also contains information about the precise code versions the user is seeing.  This helps to match the user experience to precise versions of html, css and Javascript code.
+
+Date and ownership information are also held here.  This information is generally of low importance, but on occasions can be an important reference.
+
+#### Background Images
+
+This site is using a single page of html, with sections being hidden and shown via a simple JavaScript routine.  This approach provides many advantages, particularly around performance and re-use of content.  
+
+Some of the user feedback is for the site background image to only appear in the 'Call to Action' home section.  Having the background image as a separate div keeps it out of the content flow, so making other changes easier.  
+
+To provide the user requirement the div now has an additional class that makes it easy to switch it off and on with a small change to the existing Javascript.
+
+#### Multimedia
+
+Multimedia is a growing part of the Warwickshire Search and Rescue site.  The images have some animation and additional effects.  The gallery contains a number of pictures and an item of streamed video.
+
+The What We Do section contains downloaded audio and video.  The video has been recorded and edited at a low resolution to make the file small enough to go on GitHub.  The video content has not been approved for YouTube, once approved it can be uploaded to a streaming service and be delivered that way instead.
+
+One of the multimedia challenges is that all media are contributed by members of the team, this means that the items come in highly variable levels of quality and format.  CSS is used to adjust media, often at an individual level, to optimise appearance.
 
 ## External Libraries
+
+This project uses a number of external libraries
+
+### Bootstrap 4.1.3
+https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+### Font Awesome
+https://use.fontawesome.com/releases/v5.6.1/css/all.css
+
+### Google Fonts
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+### JQuery
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+### Cloudflare
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+### EmailJS
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'/>
+
+
+### Microsoft Azure
+
+In addition the SQL Server and PHP Server are held on Microsoft Azure
 
 ## Key Issues
-
-### Image and Media Management and Manipulation
+
+### Handling different sizes and shapes of images
 
 Keeping images fresh and relevant is important for the work of the organisation.  However, images come from a wide range of non-specialist contributors, and therefore in a wide range of shapes, sizes and resolutions.
 
@@ -138,6 +235,20 @@ So far approach 1 would seem easier to manage and maintain, although approach 2 
 By default all images and image boxes are given an ID.  This may not be strictly necessary, but if the id is in place it makes it easier to use CSS to target individual images.
 
 Many images will be assigned an id so that they can be individually manipulated from CSS.
+
+
+
+### Bootstrap Burger menu opening dropdown at breakpoint
+
+### Items going over header and footer when scrolled
+
+### SCrolling above footer
+
+### Additional breakpoints
+
+### Size of media files
+
+### Image and Media Management and Manipulation
 
 ### Background Image
 
@@ -146,10 +257,6 @@ This site is using a single page of html, with sections being hidden and shown v
 Some of the user feedback is for the site background image to only appear in the 'Call to Action' home section.  Having the background image as a separate div keeps it out of the content flow, so making other changes easier.  
 
 To provide the user requirement the div now has an additional class that makes it easy to switch it off and on with a small change to the existing Javascript.
-
-### Donate images
-
-The existing donation page images will not produce an elegant page, even as placeholders.  It will be necessary to source or create some appropriate placeholder images.
 
 ## Testing and Quality Assurance
 

@@ -10,7 +10,7 @@ JavaScript Version: 0029;
 
 ## User Experience
 
-**[The User Experience Introduction]**(https://youtu.be/bswPg6mYZAc)
+**[The User Experience Introduction](https://youtu.be/bswPg6mYZAc)**
 The user journey is based on four personae
 
 [*Users Seeking Information*](https://youtu.be/nghCxQIYFRs)
@@ -65,29 +65,29 @@ It may also be desirable to keep a GDPR compliant record of these people, so tha
 
 ## Wireframe Designs
 
-The Wireframe Designs were created using [Justinmind 9.2.2](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Justinmind.jpg)
+The Wireframe Designs were created using [Justinmind 9.2.2](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Justinmind.jpg)
 
 Each page was prototyped in order to get consenses from the Warwickshire Search and Rescue Team.  Once finalised the designs were implemented in html, using CSS and Javascript.
 
-[Home](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Home.png)
+[Home](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Home.png)
 
-[](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/About%20-%20History.png)
+[About - History](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About%20-%20History.png)
 
-[](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/About%20-%20History.png)
+[About - What We Do](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About%20-%20What%20We%20Do.png)
 
-[](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/About%20-%20History.png)
+[The Team](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/The%20Team.png)
 
-[](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/About%20-%20History.png)
+[Join Us](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Join%20Us.png)
 
+[Gallery](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Gallery.png)
 
+[Contact](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Contact.png)
 
-
-
-
-
-
+[Donate](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Donate.png)
 
 Perhaps most importantly the wireframe designs will be used for workshopping future developments, ensuring clear specifications before development work starts.
+
+This approach will also allow creative free-thinking and discussion, whilst ensure the production website remains stable.
 
 ### Responsive Design
 
@@ -960,19 +960,18 @@ Vaidated that the property works with Chrome.  For other browsers it degrades gr
 
 
 
-? TOP
-
-W3Cx logo	Interested in “developing” your developer skills? In W3Cx’s hands-on Professional Certificate Program, learn how to code the right way by creating Web sites and apps that use the latest Web standards. Find out more!
-
-Donate and help us build better tools for a better web.
 Warnings (6)
 URI : warwickshiresearchandrescue.css
-2		Imported style sheets are not checked in direct input and file upload modes
-3		Imported style sheets are not checked in direct input and file upload modes
+
+**Warnings**
 7		--cssfileversion is an unknown vendor extension
 8		--lightgrey is an unknown vendor extension
 9		--darkgrey is an unknown vendor extension
 10		--bgroundshade is an unknown vendor extension
+
+
+**Actions**
+All warnings refer to variables that have been created to enable global management of the colurs of certain features so that they remain consistent across the site.
 
 ##Deployment
 

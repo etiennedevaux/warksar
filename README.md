@@ -4,8 +4,8 @@ README.md
 
 ## Version Details
 README Version: ;
-HTML Version: 0398;
-CSS Version: 0693;
+HTML Version: 0399;
+CSS Version: 0705;
 JavaScript Version: 0029;
 
 ## User Experience
@@ -822,6 +822,107 @@ Used the HTML parser.
 Total execution time 127 milliseconds.
 ________________________________________
 About this checker • Report an issue • Version: 21.2.17
+
+## W3C CSS Validator results for warwickshiresearchandrescue.css 
+(CSS level 3 + SVG)
+Sorry! We found the following errors (13)
+URI : warwickshiresearchandrescue.css
+
+
+**Error**
+6	:root
+Parse Error %
+
+**Actions**
+Line is now redundanct, removed.
+
+
+**Error**
+241	.Content-Container
+Value Error : border collapse is not a color value : collapse
+
+**Actions**
+Redundant line, removed
+
+**Error**
+316	.wsr-content-text-fc
+Value Error : font-weight 1000 is not a font-weight value : 1000
+
+**Actions**
+Set to max value, 900
+
+
+**Error**
+425	.wsr-cta-actions	
+Value Error : font-weight 1000 is not a font-weight value : 1000
+
+**Actions**
+Set to max value, 900
+
+
+**Error**
+583	#imgwarksar029-01	
+Property max-wdith doesn't exist. The closest matching property name is max-width : 300px
+
+**Actions**
+Remove section as the img is no longer in use
+
+
+**Error**
+622	#imgitem005	
+is an incorrect operator : cover / contain / px
+
+** Actions
+Remove section as the img is no longer in use
+
+**Error**
+630	#imgitem010	
+is an incorrect operator : cover / contain / px
+
+** Actions
+Remove section as the img is no longer in use
+
+
+**Error**
+638	#imgitem006	
+is an incorrect operator : cover / contain / px
+
+** Actions
+Remove section as the img is no longer in use
+
+
+**Error**
+647	#btn_donateCC_LG-01	
+Property image-fit doesn't exist : contain
+
+**Actions**
+Corrected to object-fit
+
+
+**Error**
+690	#img-carousel-5	
+Property object-align doesn't exist : center center
+
+**Actions**
+Correct to object-position
+
+
+753	.wsr-carousel-caption h5	Property backdrop-filter doesn't exist : blur(10px)
+761	.wsr-carousel-indicator	Value Error : bottom revert is not a bottom value : revert
+785	.wsr-carousel-caption p	Property backdrop-filter doesn't exist : blur(10px)
+? TOP
+
+W3Cx logo	Interested in “developing” your developer skills? In W3Cx’s hands-on Professional Certificate Program, learn how to code the right way by creating Web sites and apps that use the latest Web standards. Find out more!
+
+Donate and help us build better tools for a better web.
+Warnings (6)
+URI : warwickshiresearchandrescue.css
+2		Imported style sheets are not checked in direct input and file upload modes
+3		Imported style sheets are not checked in direct input and file upload modes
+7		--cssfileversion is an unknown vendor extension
+8		--lightgrey is an unknown vendor extension
+9		--darkgrey is an unknown vendor extension
+10		--bgroundshade is an unknown vendor extension
 
 ##Deployment
 

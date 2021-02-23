@@ -3,8 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
 /* Variable */
 :root{
---menubuttonwidth: %;
---cssfileversion: "0693";
+--cssfileversion: "0705";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
@@ -15,6 +14,7 @@ margin: 0px;
 padding: 0px;
 border: 0px;
 }
+/* Attributes that apply to all <audio> elements */
 audio{
 margin: 10px;
 height: 30px;
@@ -24,6 +24,7 @@ body{
 font-family: Lato;
 background-color: var(--bgroundshade);
 }
+/* Attributes that apply to all <video> elements */
 video{
 width: 100%;
 }
@@ -44,6 +45,7 @@ animation-duration: 5s;
 animation-fill-mode: forwards;
 background-position: center center;
 }
+/* Parameters for the blurred background image */
 .bground-blur{
 width: 100%;
 height: 100%;
@@ -73,9 +75,11 @@ top: 0;
 height: 100px;
 z-index: 5;
 }
+/* Bootstrap Class for Customisation */
 .navbar .navbar-toggler{
 border: 0;
 }
+/* Bootstrap Class for Customisation */
 .navbar navbar-nav a{
 font-weight: bold;
 }
@@ -238,7 +242,6 @@ color: #555555;
 width: 100%;
 height: 300px;
 overflow: hidden;
-border: collapse;
 }
 .Content-Image{
 width: 40%;
@@ -313,7 +316,7 @@ width: 100%;
 width: 100%;
 text-align: justify;
 font-size: 120%;
-font-weight: 1000;
+font-weight: 900;
 letter-spacing: 3px;
 line-height: 120%;
 color: #fff;
@@ -421,13 +424,13 @@ flex-direction: column;
 }
 .wsr-cta-actions{
 color: #ffffffff;
-    font-size: 150%;
-    font-weight: 1000;
-    letter-spacing: 2px;
-    line-height: 100%;
-    display: flex;
-    max-width: 250px;
-    max-height: 300px;
+font-size: 150%;
+font-weight: 900;
+letter-spacing: 2px;
+line-height: 100%;
+display: flex;
+max-width: 250px;
+max-height: 300px;
 flex-direction: column;
 }
 .wsr-cta p{
@@ -565,88 +568,8 @@ width: 80%;
 .wsr-text-input{
 border: 1px #000 solid;
 }
-/* Warksar map of Warwickshire */
-#warksmap-01{
-max-width: 250px;
-}
-#alsar-logo{
-width: 100%;
-height: 100%;
-object-fit: scale-down;
-}
-#alsar-logo-container{
-}
-#imgwarksar028-01{
-width: 400px;
-}
-#imgwarksar029-01{
-max-wdith: 300px;
-}
-#imgwarksar030-02{
-max-height: 250px;
-}
-#imgitem001{
-background: url(http://www.warksar.org.uk/wp-content/uploads/2018/01/IMGP6198.jpg);
-width: 200px;
-height: 200px;
-background-size: cover;
-}
-#imgitem002{
-background: url(http://www.warksar.org.uk/wp-content/uploads/2017/01/logo.png);
-width: 200px;
-height: 200px;
-background-size: 130px;
-background-position: center center;
-background-repeat: no-repeat;
-}
-#imgitem003{
-background: url(https://www.lowlandrescue.org/images/lowland-rescue-lozenge1.png);
-width: 200px;
-height: 200px;
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center center;
-}
-#imgitem004{
-background: url(http://www.warksar.org.uk/wp-content/uploads/2020/10/Team-2019_09-copy2.jpg);
-width: 200px;
-height: 200px;
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center center;
-}
-#imgitem005{
-background: url(http://www.warksar.org.uk/wp-content/uploads/2018/10/water-rescue01-e1538595542220.jpg);
-width: 200px;
-height: 200px;
-background-size: cover/contain/px;
-background-repeat: no-repeat;
-background-position: center center;
-}
-#imgitem010{
-background: url(http://www.warksar.org.uk/wp-content/uploads/2018/02/nbd01.jpg);
-width: 200px;
-height: 200px;
-background-size: cover/contain/px;
-background-repeat: no-repeat;
-background-position: center center;
-}
-#imgitem006{
-background: url(http://www.warksar.org.uk/wp-content/uploads/2018/01/IMGP6258.jpg);
-width: 200px;
-height: 200px;
-background-size: cover/contain/px;
-background-repeat: no-repeat;
-background-position: center center;
-}
-#warwickshire-police-logo-warwickshirepolice{
-object-fit: contain;
-}
 /* Warksar Donate Image */
 #btn_donateCC_LG-01{
-image-fit: contain;
-}
-#warwickshire-police-logo-policecard{
 object-fit: contain;
 }
 #btn_donateCC_LG-02{
@@ -687,7 +610,7 @@ min-height: 1000px;
 /* Sixth Carousel Image */
 #img-carousel-5{
 object-fit: cover;
-object-align: center center;
+object-position: center center;
 max-height: 1200px;
 min-height: 1000px;
 }
@@ -758,11 +681,11 @@ background-color: #ffffff99;
 /* Warksar Carousel Slide Indicator */
 .wsr-carousel-indicator{
 position: fixed;
-bottom: revert;
 z-index: 2;
 background-color: #555555aa;
 justify-content: center;
 height: 30px;
+top: 100px;
 }
 .wsr-img-lscape{
 width: 100%;
@@ -789,6 +712,68 @@ background-color: #ffffff99;
 }
 .wsr-row-foot{
 display: inline;
+}
+#alsar-logo{
+width: 100%;
+height: 100%;
+object-fit: scale-down;
+}
+#alsar-logo-container{
+}
+#imgwarksar028-01{
+width: 400px;
+}
+#imgwarksar030-02{
+max-height: 250px;
+}
+#imgitem001{
+background: url(http://www.warksar.org.uk/wp-content/uploads/2018/01/IMGP6198.jpg);
+width: 200px;
+height: 200px;
+background-size: cover;
+}
+#imgitem002{
+background: url(http://www.warksar.org.uk/wp-content/uploads/2017/01/logo.png);
+width: 200px;
+height: 200px;
+background-size: 130px;
+background-position: center center;
+background-repeat: no-repeat;
+}
+#imgitem003{
+background: url(https://www.lowlandrescue.org/images/lowland-rescue-lozenge1.png);
+width: 200px;
+height: 200px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center center;
+}
+#imgitem004{
+background: url(http://www.warksar.org.uk/wp-content/uploads/2020/10/Team-2019_09-copy2.jpg);
+width: 200px;
+height: 200px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center center;
+}
+#imgitem010{
+background: url(http://www.warksar.org.uk/wp-content/uploads/2018/02/nbd01.jpg);
+width: 200px;
+height: 200px;
+background-size: cover/contain/px;
+background-repeat: no-repeat;
+background-position: center center;
+}
+#imgitem006{
+background: url(http://www.warksar.org.uk/wp-content/uploads/2018/01/IMGP6258.jpg);
+width: 200px;
+height: 200px;
+background-size: cover/contain/px;
+background-repeat: no-repeat;
+background-position: center center;
+}
+#warwickshire-police-logo-policecard{
+object-fit: contain;
 }
 @keyframes hero-zoom{
  from{

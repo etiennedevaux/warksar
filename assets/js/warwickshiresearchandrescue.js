@@ -1,5 +1,5 @@
 // Global Variables
-var jsfileversion="0029";
+var jsfileversion="0033";
 
 function showMenuComponent(sect) {
 var elements = document.getElementsByClassName('MenuComponent');
@@ -28,6 +28,7 @@ var elements2 = document.getElementsByClassName(sect + '-display');
 document.getElementById('JSSerNo').textContent='.'+jsfileversion;
 
 document.getElementById('navbarNavDropdown').className='navbar-collapse show';
+window.history.pushState("","Warksar Home","#"+sect+"-Top");
 }
 
 function formSubmit(formid){

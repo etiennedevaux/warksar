@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
 /* Variable */
 :root{
---cssfileversion: "0705";
+--cssfileversion: "0738";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
@@ -149,14 +149,19 @@ content: var(--cssfileversion);
 width: 100%;
 margin: 0px;
 }
+/* Manages the images in the gallery */
 #photo{
 clear: both;
 line-height: 0px;
 column-count: 5;
 column-gap: 0;
-padding: 0 0 90px 0;
+padding: 0;
 }
 #Gallery{
+margin-bottom: 0px;
+}
+#Gallery header{
+background-image: linear-gradient(#000000e6, #55555500);
 }
 .MenuSectionTitle{
 text-align: center;
@@ -668,21 +673,36 @@ width: 100%;
 .card-body-small{
 height: 180px;
 }
+/* Warksar parameters for The Team captions */
 .wsr-carousel-caption{
-top: 20px;
+top: 0;
+width: 100%;
+background-image: linear-gradient(#000000ef, #55555500);
+left: 0;
+height: 40%;
 }
+/* Warksar parameters for The Team captions heading */
 .wsr-carousel-caption h5{
-font-size: 200%;
-backdrop-filter: blur(10px);
-color: #000;
+font-size: 190%;
+color: #fff;
 font-weight: 900;
-background-color: #ffffff99;
+padding: 15px 0 0 0;
+margin: 0;
+}
+/* Warksar parameters for The Team captions paragrpah */
+.wsr-carousel-caption p{
+font-size: 110%;
+color: #fff;
+font-weight: 900;
+margin: 0;
+padding: 1%;
+letter-spacing: 2px;
 }
 /* Warksar Carousel Slide Indicator */
 .wsr-carousel-indicator{
 position: fixed;
 z-index: 2;
-background-color: #555555aa;
+background-color: #55555500;
 justify-content: center;
 height: 30px;
 top: 100px;
@@ -693,7 +713,7 @@ width: 100%;
 /* Position the carousel previous indicator */
 .carousel-control-prev, .carousel-control-next{
 height: 30px;
-background-color: #555555aa;
+background-color: #55555500;
 top: 100px;
 opacity: 1;
 position: fixed;
@@ -702,13 +722,6 @@ color: inherit;
 .wsr-carousel-indicator li{
 margin: auto 3px;;
 height: 5px;
-}
-.wsr-carousel-caption p{
-font-size: 120%;
-backdrop-filter: blur(10px);
-color: #000;
-font-weight: 900;
-background-color: #ffffff99;
 }
 .wsr-row-foot{
 display: inline;
@@ -804,7 +817,7 @@ column-count: 6;
 }
 }
 /* Equivalent to Bootstrap Extra Extra Large */
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1600px){
 #photo {
 column-count: 5;
 }
@@ -833,7 +846,7 @@ max-height: 1100px;
 }
 }
 /* Equivalent to Bootstrap Extra Large */
-@media screen and (max-width: 1399px){
+@media screen and (max-width: 1599px){
 #photo {
     column-count: 4;
   }

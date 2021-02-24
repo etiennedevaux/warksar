@@ -19,7 +19,7 @@
 <script src='assets/js/warwickshiresearchandrescue.js'></script>
 <title>Warwickshire Search and Rescue</title>
 </head>
-<body onload="showMenuComponent('Home');document.getElementById('navbarNavDropdown').className='navbar-collapse collapse';"; onhashchange='showMenuComponent(location.hash.substring(1,location.hash.length-4));'>
+<body onload="showMenuComponent('Home');document.getElementById('navbarNavDropdown').className='navbar-collapse collapse';" onhashchange='showMenuComponent(location.hash.substring(1,location.hash.length-4));'>
 <div id='imgbground' class='bground Home-display Gallery-display'></div>
 <div id='imgbground-blur' class='bground-blur'></div>
 <!-- Start of Nav Bootstrap Template 01-->
@@ -27,7 +27,7 @@
 <div class='logoleft'>
 <img class='logoleft' src='assets/images/logo.png' alt='Navigation Logo'>
 </div>
-<a href='#Home-Top'href="/" class="navbar-brand">
+<a href='#Home-Top' class="navbar-brand">
 <div class="header-lg">Warwickshire</div>
 <div class="header-sm">Search and Rescue</div>
 </a>
@@ -69,7 +69,7 @@
 
 <!--  Start of Home menu section-->
 <div style='display: none;' class='MenuComponent' id='Home'>
-<a name='Home-Top'></a>
+<a id='Home-Top'></a>
 <section id='wsr-home' class='wsr-content'>
 <!-- Start of Call to Action -->
 <h2 class="d-none">Call to Action</h2>
@@ -84,9 +84,9 @@
 <p>From Hill to Highwater</p>
 </div>
 <div class="wsr-cta wsr-cta-actions">
-<p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("WhatWeDo")'>About Us</a></p>
+<p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("WhatWeDo")'>What We Do</a></p>
 <p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("Contact")'>Contact Us</a></p>
-<p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("JoinUs")'>Get Involved</a></p>
+<p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("JoinUs")'>Join Us</a></p>
 <p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("Donate")'>Donate</a></p>
 </div>
 </div>
@@ -98,14 +98,14 @@
 
 <!--  Start of About menu section-->
 <div style='display: none;' class='MenuComponent' id='About'>
-<a name='About-Top'></a>
+<a id='About-Top'></a>
 </div>
 <!--  End of About menu section-->
 
 
 <!--  Start of WhatWeDo menu section-->
 <div style='display: none;' class='MenuComponent' id='WhatWeDo'>
-<a name='WhatWeDo-Top'></a>
+<a id='WhatWeDo-Top'></a>
 <header>
 <h1 class='MenuSectionTitle'>What We Do</h1>
 </header>
@@ -177,7 +177,7 @@ Team members are unpaid volunteers from all walks of life, from 18 to 80 years o
 
 <!--  Start of OurHistory menu section-->
 <div style='display: none;' class='MenuComponent' id='OurHistory'>
-<a name='OurHistory-Top'></a>
+<a id='OurHistory-Top'></a>
 <header>
 <h1 class='MenuSectionTitle'>History of Warwickshire Search and Rescue</h1>
 </header>
@@ -254,7 +254,7 @@ In 2013 Warwickshire Search and Rescue was established.  By the end of the year 
 
 <!--  Start of Contact menu section-->
 <div style='display: none;' class='MenuComponent' id='Contact'>
-<a name='Contact-Top'></a>
+<a id='Contact-Top'></a>
 <header>
 <h1 class='MenuSectionTitle'>Get in Touch</h1>
 </header>
@@ -323,7 +323,7 @@ Ian Malins is the current Chair of Warwickshire Search and Rescue. Ian is a Trus
 
 <!--  Start of JoinUs menu section-->
 <div style='display: none;' class='MenuComponent' id='JoinUs'>
-<a name='JoinUs-Top'></a>
+<a id='JoinUs-Top'></a>
 <header>
 <h1 class='MenuSectionTitle'>Warwickshire Search and Rescue Needs You</h1>
 </header>
@@ -429,7 +429,7 @@ Once operational you will be called out in the middle of the night in all weathe
 
 <!--  Start of TheTeam menu section-->
 <div style='display: none;' class='MenuComponent' id='TheTeam'>
-<a name='TheTeam-Top'></a>
+<a id='TheTeam-Top'></a>
 <section id='wsr-carousel-01' class='wsr-content'>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators wsr-carousel-indicator">
@@ -500,13 +500,17 @@ Once operational you will be called out in the middle of the night in all weathe
 
 <!--  Start of Gallery menu section-->
 <div style='display: none;' class='MenuComponent' id='Gallery'>
-<a name='Gallery-Top'></a>
+<a id='Gallery-Top'></a>
 <header>
 <h1 class='MenuSectionTitle'>The Team in Action</h1>
 </header>
 <section id='photo'>
 <!-- Based on the approach from the Code Institute Love Running exercise-->
 <h2 class="d-none">Photo Gallery</h2>
+
+<a target="_blank" class="gallery-anchor" href="https://www.facebook.com/warksar/posts/5364838720200889"><div class="gallery-overlay"><p>Warwickshire Search and Rescue 24/2/21</p></div><img src="assets/images/imgwarksar049.jpg"  alt="Search Training"></a>
+
+<a target="_blank" class="gallery-anchor" href="http://www.midshires.org.uk/"><div class="gallery-overlay"><p>Midshires Search and Rescue 20/2/21</p></div><img src="assets/images/msar01.jpg"  alt="Search and Rescue Vehicle"></a>
 
 <a target="_blank" class="gallery-anchor" href="https://www.facebook.com/warksar/posts/5335230903161671"><div class="gallery-overlay"><p>Warwickshire Search and Rescue 15/2/21</p></div><img src="assets/images/imgwarksar046.jpg"  alt="Stretcher Rescue"></a>
 
@@ -560,7 +564,7 @@ Once operational you will be called out in the middle of the night in all weathe
 
 <!--  Start of Donate menu section-->
 <div style='display: none;' class='MenuComponent' id='Donate'>
-<a name='Donate-Top'></a>
+<a id='Donate-Top'></a>
 <header>
 <h1 class='MenuSectionTitle'>Support Us</h1>
 </header>
@@ -666,6 +670,6 @@ Banking Details
 <p>Registered Charity No. 1167079</p>
 <p class='enquiry'>For Enquiries Please Email: support@warksar.org.uk</p>
 <p class='d-none d-lg-inline footer-sm'>Created by Stephen Clarke on behalf of Warwickshire Search and Rescue 
-||&nbsp;Last update on 24/02/2021||&nbsp;<span id='HTMLSerNo'>0401</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
+||&nbsp;Last update on 24/02/2021||&nbsp;<span id='HTMLSerNo'>0404</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
 </body>
 </html>

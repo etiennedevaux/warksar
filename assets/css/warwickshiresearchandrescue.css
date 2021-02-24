@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
 /* Variable */
 :root{
---cssfileversion: "0740";
+--cssfileversion: "0741";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
@@ -691,11 +691,11 @@ margin: 0;
 }
 /* Warksar parameters for The Team captions paragrpah */
 .wsr-carousel-caption p{
-font-size: 110%;
+font-size: 130%;
 color: #fff;
 font-weight: 900;
 margin: 0;
-padding: 1%;
+padding: 2%;
 letter-spacing: 2px;
 }
 /* Warksar Carousel Slide Indicator */
@@ -766,22 +766,6 @@ background: url(http://www.warksar.org.uk/wp-content/uploads/2020/10/Team-2019_0
 width: 200px;
 height: 200px;
 background-size: contain;
-background-repeat: no-repeat;
-background-position: center center;
-}
-#imgitem010{
-background: url(http://www.warksar.org.uk/wp-content/uploads/2018/02/nbd01.jpg);
-width: 200px;
-height: 200px;
-background-size: cover/contain/px;
-background-repeat: no-repeat;
-background-position: center center;
-}
-#imgitem006{
-background: url(http://www.warksar.org.uk/wp-content/uploads/2018/01/IMGP6258.jpg);
-width: 200px;
-height: 200px;
-background-size: cover/contain/px;
 background-repeat: no-repeat;
 background-position: center center;
 }

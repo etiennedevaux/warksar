@@ -817,7 +817,7 @@ column-count: 6;
 }
 }
 /* Equivalent to Bootstrap Extra Extra Large */
-@media screen and (min-width: 1800px){
+@media screen and (min-width: 2000px){
 #photo {
 column-count: 5;
 }
@@ -846,7 +846,7 @@ max-height: 1100px;
 }
 }
 /* Equivalent to Bootstrap Extra Large */
-@media screen and (max-width: 1799px){
+@media screen and (max-width: 1999px){
 #photo {
     column-count: 4;
   }

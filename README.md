@@ -4,31 +4,27 @@ README.md
 
 ## Version Details
 README Version: ;
-HTML Version: 0404;
-CSS Version: 0741;
-JavaScript Version: 0033;
+HTML Version: 0418;
+CSS Version: 0745;
+JavaScript Version: 0039;
 
-## User Experience
+## 1  The Warwickshire Search and Rescue User Experience
 
-**[The User Experience Introduction](https://youtu.be/bswPg6mYZAc)**
-The user journey is based on four personae
+**NB The video recordings may not reflect the exact screens as text, images and configuration may have had minor changes in response to user feedback.  No changes have been made that alter the four key user journeys.**
 
-[*Users Seeking Information*](https://youtu.be/nghCxQIYFRs)
-People coming to the site, who simply, at this stage want to find out more information, but need to nurtured as potential future contributors, members, donors or maybe all three.
-
-## Personae
+The key purpose of the Warwickshire Search and Rescue (Warksar) site it to reach out to the public in general.  The team members will mainly communicate and interact with each other via internal online services.  
 
+The agreed strategic goals for the site are to Inform, Communicate and Engage.  Engagement will include support, participation and donations.
 
-The user journey is based on four personae
+The user journey is based on four personae, people coming to the site, who simply, at this stage want to find out more information, but need to nurtured as potential future contributors, members, donors or maybe all three.
 
+This leads us to 4 critical user journeys, all of which start from the Home Page
 
-People coming to the site, who simply, at this stage want to find out more information, but need to nurtured as potential future contributors, members, donors or maybe all three.The key purpose of the Warwickshire Search and Rescue (Warksar) site it to reach out to the public in general.  The team members will mainly communicate and interact with each other via internal online services.  The agreed strategic goals for the site are to Inform, Communicate and Engage.  Engagement will include support, participation and donations.
-
-This leads us to 4 critical personae
+### 1.1 The Home Page
 
 [**Home Page Demonstration**](https://youtu.be/bswPg6mYZAc)
 
-### Information Seekers
+### 1.2 Information Seekers
 
 [*Demonstration for Users Seeking Information*](https://youtu.be/nghCxQIYFRs)
 
@@ -36,16 +32,15 @@ For most of the public in general they may have had little reason to have come a
 
 The Call to Action gives these people a prompt to the About - What We Do section.  All navigation remains either directly visible, or within a single click on a dropdown.  At most this user is two clicks from any part of the site.
 
-### Queries
+### 1.3 Queries
 
 [*Demonstration for Users with Specific Queries*](https://youtu.be/7ZZaQi35YWU)
-
 
 If somebody wants to get in touch they are potentially valuable to the organisation.  They probably already know something about the organisation already and want to discuss something specific.  They need rapid access to contact information, balancing the need to get to the right person with the need to have the information without any complex navigation.
 
 This user is immediately prompted to the Contact section.  The navigation bar keeps these users within two clicks of a relevant contact person.
 
-### Potential Members, Supporters and Collaborators
+### 1.4 Potential Members, Supporters and Collaborators
 
 [*Demonstration for Potential Members*](https://youtu.be/NUyK1Wbc-iU)
 
@@ -55,7 +50,7 @@ It is important that this group understand waht is involved before signing up.  
 
 This group are also likely to be future donors.
 
-### Donors
+### 1.5 Donors
 
 [*Demonstration for Donors*](https://youtu.be/fKmlrB2n-PU)
 
@@ -262,13 +257,30 @@ By default all images and image boxes are given an ID.  This may not be strictly
 
 Many images will be assigned an id so that they can be individually manipulated from CSS.
 
+### Logo Text Link
+
+Changed logo text link to point to an internal anchor, ensuring that the link does not need to change if the root domain is changed with deployment to different services.
+
+### Browser Back Button
+
+The site is a single file, divided into virutal pages, each of which is a div that is hidden or shown by a JavaScript routine.  THis approach has many benefits that are discussed elsewhere, but was leaving the browser back button empty.  This has been resolved by adding a Javascript line of code to insert an address to the back button, adding anchors at the top of each virtual page and detecting 'onhashchange' events.
+
+### Carousel Headings and Captions
+
+User feedback suggested that the captions and headings for the carousel should blend more seamlessley into the background photos.  A gradient background colour was used to achieve this.
 
 
 ### Bootstrap Burger menu opening dropdown at breakpoint
 
+The core bootstrap does this as toggle.  Occasionally that can get out of sync, so the body element has an onload option to ensure that it remains synced when the page is loaded or reloaded.
+
 ### Items going over header and footer when scrolled
 
-### SCrolling above footer
+### Bottom row of Gallery images
+
+The bottom row of gallery images end at different points as the images are, by design, of different lengths.  The overall mosaic effect is effective and provides a different perspective of hte work of the organisation.  But the bottom layer looked untidy. Two key things have been done, firstly the background imaged was switched from a blurred image to one that comes from a blur into focus.  Secondly the external margin to ensure that other pages can scroll clear of the translucent footer, was removed.  The overall effect is now far more aesthetic.
+
+### Scrolling above footer
 
 ### Additional breakpoints
 

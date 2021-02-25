@@ -1,5 +1,5 @@
 // Global Variables
-var jsfileversion="0033";
+var jsfileversion="0039";
 
 function showMenuComponent(sect) {
 var elements = document.getElementsByClassName('MenuComponent');
@@ -46,5 +46,15 @@ send_to: addrfrom,
 );
 
 document.getElementById("donationmodal-button").value="Details Submitted";
+}
+
+function signupSubmit(formid){
+
+//Variables for future extension
+//var form=document.getElementById(formid);
+//var namefull=form.elements.fullname.value;
+//var addrfrom=form.elements.email.value;
+
+document.getElementById("signupmodal-button").style.display="none";
 }
 

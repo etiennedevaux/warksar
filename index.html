@@ -417,9 +417,73 @@ Someone who is qualified to perform both the Search Planner and Search Operation
 <p class="wsr-content-text">
 Once operational you will be called out in the middle of the night in all weathers?  You might need to deal with potentially dangerous situations, and still keep yourself and your team members safe?  You will also need to buy personal kit and fund your own travel? If you can make the commitment and see yourself as a Search Technician, wanting to also undertake other roles, then please get in touch.</p>
 <p>
-<a class="btn btn-primary wsr-text-btn" href="mailto:support@warksar.org.uk">Contact Us</a>
+<button id="joinus-button" type="button" class="btn btn-primary wsr-btn-donation" data-toggle="modal" data-target="#JoinUsModal">
+Sign-Up with Warwickshire Search and Rescue
+</button>
 </p>
 </div>
+</div>
+<!-- Warksar Signup Modal -->
+
+<div class="modal fade" id="JoinUsModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+        <h5 class="modal-title" id="Signup-ModalLabel">Online Transfer</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+</div>
+
+<form id="signup-form" class="signup-form" method="POST" action="https://devauxphp.azurewebsites.net/warksar_join.php" target="signup-response">
+<div class="modal-body">
+Please enter your name and email address and we will send you details of how to perform an online transfer.<br>
+
+
+<br><label for="fullname">Full Name</label><br>
+<input class="text-input wsr-text-input" id="signup-fullname" type="text" name="full_name" required="" size="50"><br>
+<label for="email">Email Address</label><br>
+<input class="text-input wsr-text-input" id="signup-email" type="email" name="email_address" required="" size="50">
+<br>
+<br>
+<label>What type of membership would you consider?</label><br>
+<label for="operational">Operational</label>
+<input class="radio-input" type="radio" id="operational" name="join_preference" value="operational" required>
+&nbsp;
+&nbsp;
+<label for="trail">Support</label>
+<input class="radio-input" type="radio" id="trail" name="join_preference" value="support">
+&nbsp;
+&nbsp;
+<label for="both">Both</label>
+<input class="radio-input" type="radio" id="both" name="join_preference" value="both">
+<br>
+<br>
+<label for="wsr-review">Why Join Warwickshire Search and Rescue</label>
+
+<textarea id="wsr-review" name="wsr-review" rows="4" cols="50" class="text-input wsr-text-input">
+Please briefly state why you would like to join us at Warwickshire Search and Rescue
+</textarea>
+
+<iframe name="signup-response" id="signup-response"></iframe>
+
+
+
+
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <input id="signupmodal-button" type="submit" class="btn btn-primary" onclick="signupSubmit('query-form')">
+
+      </div>
+</form>
+
+</div>
+
+
+</div>
+
 </div>
 </section>
 </div>
@@ -670,6 +734,6 @@ Banking Details
 <p>Registered Charity No. 1167079</p>
 <p class='enquiry'>For Enquiries Please Email: support@warksar.org.uk</p>
 <p class='d-none d-lg-inline footer-sm'>Created by Stephen Clarke on behalf of Warwickshire Search and Rescue 
-||&nbsp;Last update on 24/02/2021||&nbsp;<span id='HTMLSerNo'>0404</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
+||&nbsp;Last update on 25/02/2021||&nbsp;<span id='HTMLSerNo'>0418</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
 </body>
 </html>

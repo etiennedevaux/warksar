@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
 /* Variable */
 :root{
---cssfileversion: "0741";
+--cssfileversion: "0745";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
@@ -23,6 +23,16 @@ height: 30px;
 body{
 font-family: Lato;
 background-color: var(--bgroundshade);
+}
+/* Global configuration for header sections */
+header{
+overflow: hidden;
+margin: 0;
+}
+/* Specific text paragraph within the footer */
+.enquiry{
+font-size: 120%;
+font-weight: 500;
 }
 /* Attributes that apply to all <video> elements */
 video{
@@ -83,6 +93,11 @@ border: 0;
 .navbar navbar-nav a{
 font-weight: bold;
 }
+/* Navbar dropdown menu */
+.dropdown-menu{
+position: static;
+}
+/* Left-hand logo in Navbar */
 .logoleft{
 border-radius: 50%;
 width: 80px;
@@ -90,37 +105,7 @@ padding: 0;
 margin: 0 10px 0 0;
 border-width: 0;
 }
-footer{
-position: fixed;
-bottom: 0;
-width: 100%;
-text-align: center;
-background-color: var(--darkgrey);
-opacity: 0.9;
-height: 120px;
-z-index: 5;
-}
-.social-networks{
-text-align: center;
-margin: 5px 0;
-}
-.social-networks i{
-font-size: 160%;
-margin: 0 1% 0;
-padding: 3px 5% 0;
-color: #ffffffff;
-}
-.social-networks li{
-display: inline;
-}
-footer p{
-color: #ffffffff;
-margin: 0;
-}
-.enquiry{
-font-size: 120%;
-font-weight: 500;
-}
+/* Class to define header parameters in the Navigation bar */
 .header-lg{
 font-size: 130%;
 font-weight: 500;
@@ -129,6 +114,7 @@ padding: 0;
 line-height: 100%;
 text-align: center;
 }
+/* Class to define second line header parameters in the Navigation bar */
 .header-sm{
 font-size: 90%;
 font-weight: 300;
@@ -138,18 +124,21 @@ line-height: 100%;
 letter-spacing: 1px;
 text-align: center;
 }
+/* Class to define final line of footer text */
 .footer-sm{
 font-size: 90%;
 color: #aaa;
 }
+/* Pseudo element as a placeholder for the CSS serial number that is drawn from the CSS file and populated by Javascript */
 #CSSSerNo::before{
 content: var(--cssfileversion);
 }
+/* Settings that apply to img and iframe elements within the photo section of the Gallery page */
 #photo img, #photo iframe{
 width: 100%;
 margin: 0px;
 }
-/* Manages the images in the gallery */
+/* Manages the photo section of the gallery */
 #photo{
 clear: both;
 line-height: 0px;
@@ -157,12 +146,41 @@ column-count: 5;
 column-gap: 0;
 padding: 0;
 }
+/* Manage the Gallery page */
 #Gallery{
 margin-bottom: 0px;
 }
+/* Manage the Gallery page header */
 #Gallery header{
 background-image: linear-gradient(#000000e6, #55555500);
 }
+/* Configure the anchor link for gallery images */
+.gallery-anchor{
+position: relative;
+display: block;
+}
+/* Configure the overlay for gallery images */
+.gallery-overlay{
+position: absolute;
+bottom: 0px;
+left: 0px;
+white-space: nowrap;
+letter-spacing: 1px;
+font-weight: 800;
+color: #ffffffdd;
+padding: 3px;
+}
+/* Parameters for Home page */
+#Home{
+width: 100%;
+}
+/* Parameters for all page divs */
+div.MenuComponent{
+padding: 0 0 0 0;
+margin-top: 100px;
+margin-bottom: 120px;
+}
+/* Configures the title for each page. */
 .MenuSectionTitle{
 text-align: center;
 /* background-color: var(--bgroundshade); */
@@ -175,82 +193,15 @@ width: 100%;
 line-height: 100%;
 padding: 2%;
 }
-header{
-overflow: hidden;
-margin: 0;
-}
-.dropdown-menu{
-position: static;
-}
-section.ContentPage-STD{
-background-color: #999999ee;
-border-width: 5px;
-border-style: solid;
-margin: 20px;
-padding: 20px;
-border-color: #378a5b88;
-border-radius: 20px;
-color: #054405ff;
-font-size: 130%;
-font-weight: 700;
-letter-spacing: 1px;
-}
-#AllTerrainFoot{
-margin: 0;
-float: left;
-width: 100%;
-object-fit: cover;
-}
-#imgwarksar030-01{
-margin: 0;
-float: left;
-max-height: 400px;
-}
-#Home{
+/* Button to trigger the Sign Up Modal Form */
+#joinus-button{
 width: 100%;
 }
-#onilnebanking-button{
-border-style: none;
-}
-div.MenuComponent{
-padding: 0 0 0 0;
-margin-top: 100px;
-margin-bottom: 120px;
-}
-div.InnerText{
-padding: 20px;
-width: 60%;
-background-color: var(--darkgrey);
-opacity: 0.8;
-float: left;
-color: #ffffff;
-}
-.gallery-anchor{
-position: relative;
-display: block;
-}
-.gallery-overlay{
-position: absolute;
-bottom: 0px;
-left: 0px;
-white-space: nowrap;
-letter-spacing: 1px;
-font-weight: 800;
-color: #ffffffdd;
-padding: 3px;
-}
-/* Styling for anchors that call Javascript */
-.jsclick{
-color: #555555;
-}
-.Content-Container{
+/* Parameters for iFrame within signup modal */
+#signup-response{
 width: 100%;
-height: 300px;
-overflow: hidden;
 }
-.Content-Image{
-width: 40%;
-}
+/* WSR Content Text configuration */
 .wsr-content-text{
 float: left;
 display: flex;
@@ -260,6 +211,7 @@ padding: 20px;
 color: #fff;
 font-size: 120%;
 }
+/* WSR Content Text paragraphs configuration */
 .wsr-content-text p{
 color: white;
 padding: 10px;
@@ -279,6 +231,7 @@ border: 4px solid #555555ff;
 width: 100%;
 margin: auto;
 }
+/* Content Row for Warksar Website - alternative */
 .wsr-content-row{
 margin-top: 20px;
 margin-bottom: 20px;
@@ -292,11 +245,13 @@ object-fit: cover;
 width: 70%;
 align-items: center;
 }
+/* Warksar Content Images */
 .wsr-content-img{
 object-fit: cover;
 width: 100%;
 height: 100%;
 }
+/* Right Hand Content Image for Warksar Website */
 .wsr-content-img-r{
 width: 30%;
 float: left;
@@ -317,25 +272,6 @@ display: inline-block;
 .wsr-content-text-fl{
 width: 100%;
 }
-.wsr-content-text-fc{
-width: 100%;
-text-align: justify;
-font-size: 120%;
-font-weight: 900;
-letter-spacing: 3px;
-line-height: 120%;
-color: #fff;
-}
-/* Warksar Style for Key Images on Items */
-.wsr-content-item-imgbox{
-float: left;
-min-width: 200px;
-min-height: 200px;
-max-width: 200px;
-max-height: 200px;
-margin-left: auto;
-object-fit: cover;
-}
 /* Warksar Title for Items */
 .wsr-content-item-title{
 text-align: center;
@@ -347,25 +283,6 @@ line-height: 100%;
 
 display: flex;
 align-items: center;
-}
-/* Warksar Item Text */
-.wsr-content-item-text{
-text-align: justify;
-color: #ffffffff;
-font-size: 110%;
-font-weight: 700;
-letter-spacing: 2px;
-line-height: 110%;
-
-display: flex;
-align-items: center;
-
-min-width: 600px;
-min-height: 200px;
-max-width: 600px;
-max-height: 200px;
-margin-right: auto;
-flex-direction: column;
 }
 .wsr-content-item{
 margin-bottom: 20px;
@@ -771,6 +688,38 @@ background-position: center center;
 }
 #warwickshire-police-logo-policecard{
 object-fit: contain;
+}
+/* Footer bar across all pages */
+footer{
+position: fixed;
+bottom: 0;
+width: 100%;
+text-align: center;
+background-color: var(--darkgrey);
+opacity: 0.9;
+height: 120px;
+z-index: 5;
+}
+/* Text paragraph within the footer */
+footer p{
+color: #ffffffff;
+margin: 0;
+}
+/* List of links to Social Networks within the footer */
+.social-networks{
+text-align: center;
+margin: 5px 0;
+}
+/* Fontawesome icons for Social Networks */
+.social-networks i{
+font-size: 160%;
+margin: 0 1% 0;
+padding: 3px 5% 0;
+color: #ffffffff;
+}
+/* Links to Social Networks within the footer */
+.social-networks li{
+display: inline;
 }
 @keyframes hero-zoom{
  from{

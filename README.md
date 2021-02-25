@@ -91,14 +91,34 @@ This approach will also allow creative free-thinking and discussion, whilst ensu
 3.1 [Responsive Design Demo](https://youtu.be/e96WzABQF0c)
 
 With a wide range of screen sizes for all potential users it is important to design for responsiveness, based on horizontal and vertical resolution changes.
+
+Also see README section 8.6 for examles of responsive design testing.
 
 ## 4 Accessible Design
+
+### 4.1 Accessible Design Principles
+
+Accessible design is about maximising accessibility for as wide a range of users as possible, over a wide range of browsers in a wide range of contexts.
+
+To ensure this use of semantic markup, such <section>, <heading>, <navigation> and other semantic tools is maximised.
+
+The aria set of attributes are also widely used.
+
+### 4.2 Testing Process
+
+[Web Accessibility](https://www.webaccessibility.com/)
+
+The initial testing identified 4 issues and a score of 92%, those being the 4 social media links in the footer.  The source of the issue was having a fontawesome icon and no text label.
+
+To overcome this aria-label attributes were added to all of anchor elements, in accordance with the [W3C Guidelines](https://www.w3.org/TR/wai-aria/#aria-label)
+
+The above tool still showed these as an issue, but the links are compliant so they can be deployed whilst the discrepancy is further investigated.
 
-## Features
+## 5 Features
 
 Features for the Warwickshire Search and Rescue Website
 
-### Home Page
+### 5.1 Home Page
 
 The home page is designed to give an eye-catching experience with a clear Call to Action (CTA).
 
@@ -108,44 +128,46 @@ The footer is also static, keeping key information and links readily available a
 
 The CTA can be animated, some people love animation some hate it.  At present the css is available but disabled.
 
-### About - What We Do
+### 5.2 About - What We Do
 
 The What We Do page is desgigned, using Bootstrap, to provide clear, factual information with supporting media, in the form of photos, audio and video.
 
 The page is navigated by the user simply scrolling down.  The page is designed to be responsive for different screen sizes and orientations.
 
-### About - Our History
+### 5.3 About - Our History
 
 This page uses a timeline layout.  This is based on the template provided [Here](https://www.w3schools.com/howto/howto_css_timeline.asp)
 
 The timeline has had minor adaptations to improve how the top item displays, and more subtantial extensions to make it fully responsive.
 
-### The Team
+### 5.4 The Team
 
 This section was based on the Bootstrap carousel example [Here](https://www.w3schools.com/bootstrap4/bootstrap_carousel.asp) but with adaptations to allow for easier display of a range of image shapes, sizes and orientations on a range of screen sizes.  
 
 The aim is to provide a simple, informal narrative on the type of work done by Warwickshire Search and Rescue
 
-### Join Us
+### 5.5 Join Us
 
 The Join Us page is fairly low key as there is no currently active recruitment campaign.  However, it is still a key part of the site.
 
 The main aim is to ensure that before people express an interest that they understand the scale of commitment that is required, hence the page has a scrollable section describing the work, with a button at the bottom, at least implying that people have read the text before they make contact.
 
-At present the contact button triggers an email using mailto:, but future versions will probably generate an automatic email and record user details on a database, allowing for email campaigns etc.  This will need to be considered in the context of GDPR, so is not part of the initial deployment.
+#### 5.5.1  Join Us
+
+Modal FormAt present the contact button triggers a modal form.  This form captures information from the user, who then submits.  At present the submission triggers a JavaScript that hides the submit button and an external PHP file that stores the submission on a SQL Server database and returns a confirmation message to the user.  This will need to be considered in the context of GDPR, so is not part of the initial deployment.
 
 
-### Gallery Page
+### 5.5 Gallery Page
 
 The Gallery Page, taken from the Code Institute Love Running exercise, is an important and informal way of engaging end users in the wide variety of activities undertaken by Warwickshire Search and Rescue.  The masonry board effect enables users to see a wide range in a single view and focus on the areas of interest to them, sometimes with internal or external links to articles or multimedia.  The photos come from a wide range of sources and on 4k screens did initially show pixelation.  The standard Bootstrap breakpoints do not cover screens that large, so an additional breakpoint at 2,400 px width has been created.  The extra column minimised pixelation issues.
 
-### Contact
+### 5.6 Contact
 
 The contact page deploys standard Bootstrap cards.  The Police card links to an external site, using _blank for a separate tab, thereby maintaining navigation etc.
 
 The other cards use mailto: at present, this may be developed to use automatic emails and databsae storage of data (as elsewhere on the site) but for the initial deployment the mailto: options is considered sufficient.
 
-### Donate
+### 5.7 Donate
 
 Currently there are three preferred donation methods on this page.  A fourth one is in the specification for a future deployment, and will follow the same pattern.
 
@@ -166,7 +188,7 @@ The banking details for works slightly differently.  For security reasons it is 
 
 
 
-#### Donation Modal Form
+#### 5.7.1 Donation Modal Form
 
 When submitting a donation via an online transfer the workflow involves sending an automated email to the benefactor, with a copy to the fund raising co-ordinator and a record being made in a remote database of the request for details.
 
@@ -178,17 +200,17 @@ In the initial implementation the output from the PHP routing goes to a hidden i
 
 At present the form button label changes to show that the submission has been completed.
 
-### Site Wide Features
+### 5.8 Site Wide Features
 
-#### JavaScript 'Virtual Pages'
+#### 5.8.1 JavaScript 'Virtual Pages'
 
-#### Navigation Bar
+#### 5.8.2 Navigation Bar
 
 The Navigation bar, based on a Bootstrap Navigation bar, but with some local customisation, is visible in the same place at all times.  This gives a simple, unobtrusive and always easily available navigation experience.
 
 The element has 0.9 opacity, so that it is always clear when there is content behind it, inviting the user to scroll to that content, but without obscuring the text.
 
-#### Footer
+#### 5.8.3 Footer
 
 The Footer bar is visible in the same place at all times.  This gives simple, unobtrusive and always easily available information, such as contact and charity number, as well as links to related external social media sites.
 
@@ -198,7 +220,7 @@ The footer also contains information about the precise code versions the user is
 
 Date and ownership information are also held here.  This information is generally of low importance, but on occasions can be an important reference.
 
-#### Background Images
+#### 5.8.4 Background Images
 
 This site is using a single page of html, with sections being hidden and shown via a simple JavaScript routine.  This approach provides many advantages, particularly around performance and re-use of content.  
 
@@ -206,7 +228,7 @@ Some of the user feedback is for the site background image to only appear in the
 
 To provide the user requirement the div now has an additional class that makes it easy to switch it off and on with a small change to the existing Javascript.
 
-#### Multimedia
+#### 5.8.5 Multimedia
 
 Multimedia is a growing part of the Warwickshire Search and Rescue site.  The images have some animation and additional effects.  The gallery contains a number of pictures and an item of streamed video.
 
@@ -214,38 +236,32 @@ The What We Do section contains downloaded audio and video.  The video has been 
 
 One of the multimedia challenges is that all media are contributed by members of the team, this means that the items come in highly variable levels of quality and format.  CSS is used to adjust media, often at an individual level, to optimise appearance.
 
-## External Libraries
+## 6 External Libraries
 
 This project uses a number of external libraries
 
-### Bootstrap 4.1.3
+### 6.1 [Bootstrap](https://getbootstrap.com/)
 https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js
 
-### Font Awesome
+### 6.2 [Font Awesome](https://fontawesome.com/)
 https://use.fontawesome.com/releases/v5.6.1/css/all.css
 
-### Google Fonts
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+### 6.3 [Google Fonts](https://fonts.google.com/)
+https://fonts.googleapis.com/
 
-### JQuery
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+### 6.4 [JQuery](https://jquery.com/)
+https://code.jquery.com/jquery-3.3.1.slim.min.js
 
-### Cloudflare
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+### 6.6 [EmailJS](https://www.emailjs.com/)
+https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js
 
-### EmailJS
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'/>
-
-
-### Microsoft Azure
-
+### 6.7 [Microsoft Azure](https://azure.microsoft.com/)
 In addition the SQL Server and PHP Server are held on Microsoft Azure
 
-## Key Issues
+## 7 Key Issues
 
-### Handling different sizes and shapes of images
+### 7.1 Handling different sizes and shapes of images
 
 Keeping images fresh and relevant is important for the work of the organisation.  However, images come from a wide range of non-specialist contributors, and therefore in a wide range of shapes, sizes and resolutions.
 
@@ -261,48 +277,38 @@ By default all images and image boxes are given an ID.  This may not be strictly
 
 Many images will be assigned an id so that they can be individually manipulated from CSS.
 
-### Logo Text Link
+### 7.2 Logo Text Link
 
 Changed logo text link to point to an internal anchor, ensuring that the link does not need to change if the root domain is changed with deployment to different services.
 
-### Browser Back Button
+### 7.3 Browser Back Button
 
 The site is a single file, divided into virutal pages, each of which is a div that is hidden or shown by a JavaScript routine.  THis approach has many benefits that are discussed elsewhere, but was leaving the browser back button empty.  This has been resolved by adding a Javascript line of code to insert an address to the back button, adding anchors at the top of each virtual page and detecting 'onhashchange' events.
 
-### Carousel Headings and Captions
+### 7.4 Carousel Headings and Captions
 
 User feedback suggested that the captions and headings for the carousel should blend more seamlessley into the background photos.  A gradient background colour was used to achieve this.
 
 
-### Bootstrap Burger menu opening dropdown at breakpoint
+### 7.5 Bootstrap Burger menu opening dropdown at breakpoint
 
 The core bootstrap does this as toggle.  Occasionally that can get out of sync, so the body element has an onload option to ensure that it remains synced when the page is loaded or reloaded.
 
-### Items going over header and footer when scrolled
+### 7.6  Items going over header and footer when scrolled
 
-### Bottom row of Gallery images
+The header and footer were originally set with a z-index of 2.  However some other content items had z-index values that were higher.  The z-index of footer and header were set to 10, so that all other items can come below them as they scroll.  This approach also enables a user to see when there are items beneath the translucent header and footer, inviting them to scroll.
+
+### 7.7 Bottom row of Gallery images
 
 The bottom row of gallery images end at different points as the images are, by design, of different lengths.  The overall mosaic effect is effective and provides a different perspective of hte work of the organisation.  But the bottom layer looked untidy. Two key things have been done, firstly the background imaged was switched from a blurred image to one that comes from a blur into focus.  Secondly the external margin to ensure that other pages can scroll clear of the translucent footer, was removed.  The overall effect is now far more aesthetic.
 
-### Scrolling above footer
+### 7.8 Additional breakpoints
 
-### Additional breakpoints
-
-### Size of media files
+### 7.9 Size of media files
 
-### Image and Media Management and Manipulation
-
-### Background Image
+## 8 Testing and Quality Assurance
 
-This site is using a single page of html, with sections being hidden and shown via a simple JavaScript routine.  This approach provides many advantages, particularly around performance and re-use of content.  
-
-Some of the user feedback is for the site background image to only appear in the 'Call to Action' home section.  Having the background image as a separate div keeps it out of the content flow, so making other changes easier.  
-
-To provide the user requirement the div now has an additional class that makes it easy to switch it off and on with a small change to the existing Javascript.
-
-## Testing and Quality Assurance
-
-### Systematic Testing
+### 8.1 Systematic Testing
 
 Systematic testing involves checking each menu option from left to right, including drop-down options.  The left to right pattern helps to reduce the risk of options being overlooked.
 
@@ -310,13 +316,13 @@ For each option the page is then checked from top to bottom.  Key checks include
 
 For layout and look and feel consistency, usability and aesthetics are considered.
 
-### Browser Testing
+### 8.2 Browser Testing
 
 The site needs to be systematically checked against a range of common browsers.  These include, but are not limited to, Google Chrome, Firefox, Microsoft Edge, Safari and Internet Explorer.
 
 Errors corrected include, not use of auto-fit in css and careful use of flex display options.
 
-### Device Testing
+### 8.3 Device Testing
 
 Ideally the site would be checked on the full range of devices and operating systems.  For practical reasons in the context of a learning project it may not be possible to test against all options.
 
@@ -324,21 +330,21 @@ The web developer tools allow testing against common devices, particularly mobil
 
 The site has been developed on a Windows 10 Platform with Chrome.
 
-### End User Testing
+### 8.4 End User Testing
 
 In this case there is a client organisation, so there will be extensive end user testing from a range of stakeholders, focusing on a range of personae.
 
 There will also be a range of end users asked to review and comment on the site.  Beyond the context of a learning project this would need to be more extensive, more formal and more structured.
 
-### Scenario Testing
+### 8.5 Scenario Testing
 
 There are four key user experience scenarios against which the site will be tested, a user seeking further information, a user wishing to get in touch with the organisation, a user wishing to join the organisation and a user wishing to donate to the organisation.  
 
-### Responsive Design
+### 8.6 Responsive Design Testing
 
 The site is based on the Bootstrap breakpoints, testing has been conducted against each of these.  The following test record shows the logical transition from 4k desktop screens to small mobile devices, that may be in portrait or landscape orientation.
 
-#### Extra Extra Large (XXL) >= 1400px
+#### 8.6.1 Extra Extra Large (XXL) >= 1400px
 
 ##### Navigation Bar - OK
 
@@ -362,7 +368,7 @@ Adjust width for first item.
 ##### Donate - *OK*
 3 Bootstrap Cards Across
 
-#### Extra Large xl 1200px - 1400px
+#### 8.6.2 Extra Large xl 1200px - 1400px
 
 ##### Home Page
 Remove min-width and min-height for CTA-text frame
@@ -384,7 +390,7 @@ Reduce font size of CTA text
 ##### Donate - *OK*
 3 Bootstrap Cards Across
 
-#### Large lg 992px - 1200px
+#### 8.6.3 Large lg 992px - 1200px
 
 ##### Navigation Bar - OK
 
@@ -410,7 +416,7 @@ Reduce font sizes
 3 Bootstrap Cards Across
 
 
-#### Medium md 768px to 992px
+#### 8.6.4 Medium md 768px to 992px
 
 ##### Navigation Bar - OK
 
@@ -438,7 +444,7 @@ Align image title and text vertically using Bootstrap
 
 
 
-#### Small 576px to 768px
+#### 8.6.5 Small 576px to 768px
 
 ##### Navigation Bar
 Menu background being transparent makes text difficult to read with burger menu.  Set background to green, with padding and rounded corners
@@ -466,7 +472,7 @@ Hide image using Bootstrap
 
 
 
-#### Extra Small 0px to 576px
+#### 8.6.6 Extra Small 0px to 576px
 
 ##### Home Page
 
@@ -496,18 +502,10 @@ Hide image using Bootstrap
 
 
 
-#### Landscape Mobile
+#### 8.6.7 Landscape Mobile
 
 ##### Footer Bar
 Disappears when height is below 400px.
-
-
-
-
-
-### Accessibility
-
-The will be checked against the W3C validator validator.w3.org
 
 # W3C HTML Validation Report
 

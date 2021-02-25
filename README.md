@@ -5,7 +5,7 @@ README.md
 ## Version Details
 README Version: ;
 HTML Version: 0418;
-CSS Version: 0745;
+CSS Version: 0747;
 JavaScript Version: 0039;
 
 ## 1  The Warwickshire Search and Rescue User Experience

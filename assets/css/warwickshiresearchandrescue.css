@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
 /* Variable */
 :root{
---cssfileversion: "0745";
+--cssfileversion: "0747";
 --lightgrey:#e5e5e5; /* Light grey color for use across the site */
 --darkgrey:#555555; /* Dark grey color for use across the site */
 --bgroundshade:#378a42ff;; /* Opaque background */
@@ -167,7 +167,7 @@ left: 0px;
 white-space: nowrap;
 letter-spacing: 1px;
 font-weight: 800;
-color: #ffffffdd;
+color: #ffffffff;
 padding: 3px;
 }
 /* Parameters for Home page */
@@ -284,10 +284,12 @@ line-height: 100%;
 display: flex;
 align-items: center;
 }
+/* Warksar configuration for content items on about us and other pages */
 .wsr-content-item{
 margin-bottom: 20px;
 background-color: var(--bgroundshade);
 }
+/* Warksar configuration for tet on about us and other pages */
 .wsr-content-text p{
 text-align: justify;
 color: #ffffffff;
@@ -296,129 +298,37 @@ font-weight: 500;
 letter-spacing: 2px;
 line-height: 100%;
 }
+/* Warksar Configuration for sections of content */
 section.wsr-content{
 display: inline-block;
 width: 100%;
 }
-.wsr-cta{
-color: #ffffff;
-float: left;
-font-size: 200%;
-height: 300px;
-}
-.wsr-cta-btn{
-width: 135px;
-text-align: center;
-}
-.wsr-cta-img{
-width: 200px;
-display: flex;
-}
-.wsr-cta-img img{
-height: 170px;
-width: 170px;
-margin: auto;
-}
-.wsr-cta-row{
-margin: 10% auto;
-width: 50%;
-display: flex;
-background-color: #4b674ef9;
-border-radius: 10px;
-border: 4px solid #335533f9;
-animation-name: CTA-zoom;
-animation-duration: 3s;
-animation-fill-mode: forwards;
-max-width: 1000px;
-}
-.wsr-cta-text{
-/* width: 500px; */
-text-align: left;
-    color: #ffffffff;
-    font-size: 160%;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 100%;
-    display: flex;
-    max-width: 600px;
-    max-height: 300px;
-flex-direction: column;
-}
-.wsr-cta-actions{
-color: #ffffffff;
-font-size: 150%;
-font-weight: 900;
-letter-spacing: 2px;
-line-height: 100%;
-display: flex;
-max-width: 250px;
-max-height: 300px;
-flex-direction: column;
-}
-.wsr-cta p{
-margin: auto 0 auto 10px;
-}
-.wsr-content-item-text p{
-margin: auto 0;
-}
-.wsr-content-item-img-l{
-float: left;
-min-width: 200px;
-min-height: 200px;
-max-width: 200px;
-max-height: 200px;
-margin-left: auto;
-}
+/* Warksar Content Item Title paragraphs */
 .wsr-content-item-title p{
 width: 100%;
 }
-.wsr-content-item-text a{
-color: #000055;
-}
+/* Warksar Content Item image frame */
 .wsr-content-img-frame{
 padding: 0px;
 border-radius: 5px;
 }
-.wsr-content-text-frame{
-width: 70%;
-}
+/* Warksar Container for the What We Do section */
 .wsr-container{
 background-color: #555555aa;
 padding: 10px;
 border: 4px solid #555555ff;
 margin-bottom: 20px;
 }
-.wsr-container-carousel{
-}
-.wsr-outer-container-timeline{
-box-sizing: border-box;
-background-color: var(--bgroundshade);
-}
-.wsr-container-timeline::after{
-content: '';
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  right: -13px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 20px;
-  border-radius: 50%;
-  z-index: 1;
-}
-.wsr-container-timeline{
-padding: 10px 40px;
-  position: relative;
-  background-color: #55555500;
-  width: 50%;
-}
+/* Warksar Container for the Timeline Graphics */
 .wsr-timeline-left{
 left: 0;
 background-color: #55555500;
 }
+/* Warksar Container for the Timeline Graphics */
 .wsr-timeline-right{
 left: 50%;
 }
+/* Warksar Container for the Timeline Graphics */
 .wsr-timeline-left::before{
 content: " ";
   height: 0;
@@ -431,6 +341,7 @@ content: " ";
   border-width: 20px 0 20px 20px;
   border-color: transparent transparent transparent #55555555;
 }
+/* Warksar Container for the Timeline Graphics */
 .wsr-timeline-right::before{
 content: " ";
   height: 0;
@@ -443,9 +354,11 @@ content: " ";
   border-width: 20px 20px 20px 0;
   border-color: transparent #55555555 transparent transparent;
 }
+/* Warksar Container for the Timeline Graphics */
 .wsr-timeline-right::after{
   left: -13px;
 }
+/* Warksar Container for the Timeline Graphics */
 .wsr-timeline-content{
 padding: 20px 30px;
   background-color: #55555555;
@@ -453,6 +366,7 @@ padding: 20px 30px;
   border-radius: 6px;
 color: #fff;
 }
+/* Warksar Container for the Timeline Graphics */
 .wsr-timeline::after{
 content: '';
   position: absolute;
@@ -463,6 +377,7 @@ content: '';
   left: 50%;
   margin-left: -3px;
 }
+/* Warksar Container for the Timeline Graphics */
 #wsr-container-timeline-top::after{
 content: '';
   position: absolute;
@@ -475,11 +390,13 @@ content: '';
   border-radius: 50%;
   z-index: 1;
 }
+/* Warksar Container for the Timeline Graphics */
 .wsr-timeline{
 position: relative;
   max-width: 1200px;
   margin: 0 auto;
 }
+/* Warksar Container for the Contact Cards */
 .wsr-contact-container{
 width: 90%;
 margin: auto;
@@ -496,6 +413,9 @@ object-fit: contain;
 }
 #btn_donateCC_LG-02{
 object-fit: scale-down;
+}
+/* Warksar Container for the carousel section */
+.wsr-container-carousel{
 }
 /* First Carousel Image */
 #img-carousel-0{
@@ -642,6 +562,97 @@ height: 5px;
 }
 .wsr-row-foot{
 display: inline;
+}
+/* Warksar Call to Action */
+.wsr-cta{
+color: #ffffff;
+float: left;
+font-size: 200%;
+height: 300px;
+}
+/* Warksar Call to Action Buttons */
+.wsr-cta-btn{
+width: 135px;
+text-align: center;
+}
+/* Warksar Call to Action Image Box */
+.wsr-cta-img{
+width: 200px;
+display: flex;
+}
+/* Warksar Call to Action Image */
+.wsr-cta-img img{
+height: 170px;
+width: 170px;
+margin: auto;
+}
+/* Warksar Call to Action row */
+.wsr-cta-row{
+margin: 10% auto;
+width: 50%;
+display: flex;
+background-color: #4b674ef9;
+border-radius: 10px;
+border: 4px solid #335533f9;
+animation-name: CTA-zoom;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+max-width: 1000px;
+}
+/* Warksar Call to Action text */
+.wsr-cta-text{
+/* width: 500px; */
+text-align: left;
+    color: #ffffffff;
+    font-size: 160%;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 100%;
+    display: flex;
+    max-width: 600px;
+    max-height: 300px;
+flex-direction: column;
+}
+/* Warksar Call to Action actions section */
+.wsr-cta-actions{
+color: #ffffffff;
+font-size: 150%;
+font-weight: 900;
+letter-spacing: 2px;
+line-height: 100%;
+display: flex;
+max-width: 250px;
+max-height: 300px;
+flex-direction: column;
+}
+/* Warksar Call to Action paragraphs */
+.wsr-cta p{
+margin: auto 0 auto 10px;
+}
+/* Warksar Container for the Timeline */
+.wsr-outer-container-timeline{
+box-sizing: border-box;
+background-color: var(--bgroundshade);
+}
+/* Warksar Container for the Timeline Graphics */
+.wsr-container-timeline::after{
+content: '';
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  right: -13px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+/* Warksar Container for the Timeline Graphics */
+.wsr-container-timeline{
+padding: 10px 40px;
+  position: relative;
+  background-color: #55555500;
+  width: 50%;
 }
 #alsar-logo{
 width: 100%;

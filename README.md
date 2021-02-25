@@ -58,37 +58,41 @@ These are people comning to the site with the specific intention of making a don
 
 It may also be desirable to keep a GDPR compliant record of these people, so that they can be supported and thanked.  Such information is easy to gather - but managing it on an ongoing basis does need to considered.
 
-## Wireframe Designs
+## 2 Wireframe Designs
 
 The Wireframe Designs were created using [Justinmind 9.2.2](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Justinmind.jpg)
 
-Each page was prototyped in order to get consenses from the Warwickshire Search and Rescue Team.  Once finalised the designs were implemented in html, using CSS and Javascript.
+Each page was prototyped in order to get concensus from the Warwickshire Search and Rescue Team.  Once finalised the designs were implemented in html, using CSS and Javascript.  
 
-[Home](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Home.png)
+* In some cases there are minor interface changes from the original wireframe. *
 
-[About - History](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About%20-%20History.png)
+2.1 [Home](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Home.png)
 
-[About - What We Do](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About%20-%20What%20We%20Do.png)
+2.2 [About - History](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About%20-%20History.png)
 
-[The Team](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/The%20Team.png)
+2.3 [About - What We Do](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About%20-%20What%20We%20Do.png)
 
-[Join Us](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Join%20Us.png)
+2.4 [The Team](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/The%20Team.png)
 
-[Gallery](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Gallery.png)
+2.5 [Join Us](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Join%20Us.png)
 
-[Contact](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Contact.png)
+2.6 [Gallery](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Gallery.png)
 
-[Donate](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Donate.png)
+2.7 [Contact](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Contact.png)
+
+2.8 [Donate](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Donate.png)
 
 Perhaps most importantly the wireframe designs will be used for workshopping future developments, ensuring clear specifications before development work starts.
 
 This approach will also allow creative free-thinking and discussion, whilst ensure the production website remains stable.
 
-### Responsive Design
+### 3 Responsive Design
 
-[Responsive Design Demo](https://youtu.be/e96WzABQF0c)
+3.1 [Responsive Design Demo](https://youtu.be/e96WzABQF0c)
 
 With a wide range of screen sizes for all potential users it is important to design for responsiveness, based on horizontal and vertical resolution changes.
+
+## 4 Accessible Design
 
 ## Features
 

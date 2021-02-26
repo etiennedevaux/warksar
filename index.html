@@ -24,79 +24,86 @@
     <title>Warwickshire Search and Rescue</title>
     
 </head>
+    
 <body onload="showMenuComponent('Home');document.getElementById('navbarNavDropdown').className='navbar-collapse collapse';" onhashchange='showMenuComponent(location.hash.substring(1,location.hash.length-4));'>
+
+<!-- Background Images for Different Pages-->
 <div id='imgbground' class='bground Home-display Gallery-display'></div>
 <div id='imgbground-blur' class='bground-blur'></div>
+
 <!-- Start of Nav Bootstrap Template 01-->
 <nav class="navbar navbar-dark navbar-expand-md">
-<div class='logoleft'>
-<img class='logoleft' src='assets/images/logo.png' alt='Navigation Logo'>
-</div>
-<a href='#Home-Top' class="navbar-brand">
-<div class="header-lg">Warwickshire</div>
-<div class="header-sm">Search and Rescue</div>
-</a>
-<!-- Based on the navigation style in the Code Institute Whiskey Drop tutorial -->
-<button class='navbar-toggler ml-auto' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
-<span class='navbar-toggler-icon'></span>
-</button>
-<div class='noshow collapse navbar-collapse collapse' id='navbarNavDropdown'>
-<ul id='menu' class='navbar-nav'>
-<li class='nav-item mr-2'>
-<a href='#Home-Top' class='nav-link MenuButton' id='HomeButton' onclick='showMenuComponent("Home")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Home</a>
-</li>
-<li class='nav-item dropdown'>
-<a class='nav-link dropdown-toggle' href='#' id='navbarDropdownMenuLink' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>About</a>
-<div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
-<a class='dropdown-item' href='#' onclick='showMenuComponent("WhatWeDo")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>What We Do</a>
-<a class='dropdown-item' href='#' onclick='showMenuComponent("OurHistory")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Our History</a>
-</div>
-</li>
-<li class='nav-item mr-2'>
-<a href='#Contact-Top' class='nav-link MenuButton' id='ContactButton' onclick='showMenuComponent("Contact")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Contact</a>
-</li>
-<li class='nav-item mr-2'>
-<a href='#JoinUs-Top' class='nav-link MenuButton' id='JoinUsButton' onclick='showMenuComponent("JoinUs")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Join Us</a>
-</li>
-<li class='nav-item mr-2'>
-<a href='#TheTeam-Top' class='nav-link MenuButton' id='TheTeamButton' onclick='showMenuComponent("TheTeam")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>The Team</a>
-</li>
-<li class='nav-item mr-2'>
-<a href='#Gallery-Top' class='nav-link MenuButton' id='GalleryButton' onclick='showMenuComponent("Gallery")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Gallery</a>
-</li>
-<li class='nav-item mr-2'>
-<a href='#Donate-Top' class='nav-link MenuButton' id='DonateButton' onclick='showMenuComponent("Donate")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Donate</a>
-</li>
-</ul>
-</div>
+    <!-- Navbar Logo-->
+    <div class='logoleft'>
+        <img class='logoleft' src='assets/images/logo.png' alt='Navigation Logo'>
+    </div>
+    <!-- Navbar Text-->
+    <a href='#Home-Top' class="navbar-brand">
+        <div class="header-lg">Warwickshire</div>
+        <div class="header-sm">Search and Rescue</div>
+    </a>
+    
+    <!-- Based on the navigation style in the Code Institute Whiskey Drop tutorial -->
+    <button class='navbar-toggler ml-auto' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
+    <span class='navbar-toggler-icon'></span>
+    </button>
+    <div class='noshow collapse navbar-collapse collapse' id='navbarNavDropdown'>
+    <ul id='menu' class='navbar-nav'>
+    <li class='nav-item mr-2'>
+    <a href='#Home-Top' class='nav-link MenuButton' id='HomeButton' onclick='showMenuComponent("Home")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Home</a>
+    </li>
+    <li class='nav-item dropdown'>
+    <a class='nav-link dropdown-toggle' href='#' id='navbarDropdownMenuLink' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>About</a>
+    <div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
+    <a class='dropdown-item' href='#' onclick='showMenuComponent("WhatWeDo")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>What We Do</a>
+    <a class='dropdown-item' href='#' onclick='showMenuComponent("OurHistory")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Our History</a>
+    </div>
+    </li>
+    <li class='nav-item mr-2'>
+    <a href='#Contact-Top' class='nav-link MenuButton' id='ContactButton' onclick='showMenuComponent("Contact")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Contact</a>
+    </li>
+    <li class='nav-item mr-2'>
+    <a href='#JoinUs-Top' class='nav-link MenuButton' id='JoinUsButton' onclick='showMenuComponent("JoinUs")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Join Us</a>
+    </li>
+    <li class='nav-item mr-2'>
+    <a href='#TheTeam-Top' class='nav-link MenuButton' id='TheTeamButton' onclick='showMenuComponent("TheTeam")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>The Team</a>
+    </li>
+    <li class='nav-item mr-2'>
+    <a href='#Gallery-Top' class='nav-link MenuButton' id='GalleryButton' onclick='showMenuComponent("Gallery")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Gallery</a>
+    </li>
+    <li class='nav-item mr-2'>
+    <a href='#Donate-Top' class='nav-link MenuButton' id='DonateButton' onclick='showMenuComponent("Donate")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Donate</a>
+    </li>
+    </ul>
+    </div>
 </nav>
 <!-- End of Nav Bootstrap Template 01-->
 
 <!--  Start of Home menu section-->
 <div style='display: none;' class='MenuComponent' id='Home'>
-<a id='Home-Top'></a>
-<section id='wsr-home' class='wsr-content'>
-<!-- Start of Call to Action -->
-<h2 class="d-none">Call to Action</h2>
-<div class="wsr-cta-row">
-<div class="wsr-cta wsr-cta-img">
-<img src="assets/images/logo.png" alt="Search and Rescue Logo">
-</div>
-<div  class="wsr-cta wsr-cta-text">
-<p>Lowland Rescue Team</p>
-<p>100% Volunteers</p>
-<p>24 Hours a Day 365 Days a Year</p>
-<p>From Hill to Highwater</p>
-</div>
-<div class="wsr-cta wsr-cta-actions">
-<p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("WhatWeDo")'>What We Do</a></p>
-<p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("Contact")'>Contact Us</a></p>
-<p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("JoinUs")'>Join Us</a></p>
-<p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("Donate")'>Donate</a></p>
-</div>
-</div>
-<!-- End of Call to Action -->
-</section>
+    <a id='Home-Top'></a>
+    <section id='wsr-home' class='wsr-content'>
+    <!-- Start of Call to Action -->
+    <h2 class="d-none">Call to Action</h2>
+    <div class="wsr-cta-row">
+    <div class="wsr-cta wsr-cta-img">
+    <img src="assets/images/logo.png" alt="Search and Rescue Logo">
+    </div>
+    <div  class="wsr-cta wsr-cta-text">
+    <p>Lowland Rescue Team</p>
+    <p>100% Volunteers</p>
+    <p>24 Hours a Day 365 Days a Year</p>
+    <p>From Hill to Highwater</p>
+    </div>
+    <div class="wsr-cta wsr-cta-actions">
+    <p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("WhatWeDo")'>What We Do</a></p>
+    <p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("Contact")'>Contact Us</a></p>
+    <p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("JoinUs")'>Join Us</a></p>
+    <p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("Donate")'>Donate</a></p>
+    </div>
+    </div>
+    <!-- End of Call to Action -->
+    </section>
 </div>
 <!--  End of Home menu section-->
 

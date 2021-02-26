@@ -20,44 +20,45 @@ The user journey is based on four personae, people coming to the site, who simpl
 
 This leads us to 4 critical user journeys, all of which start from the Home Page
 
-### 1.1 The Home Page
+    ### 1.1 The Home Page
 
-[**Home Page Demonstration**](https://youtu.be/bswPg6mYZAc)
+    [**Home Page Demonstration**](https://youtu.be/bswPg6mYZAc)
 
-### 1.2 Information Seekers
+    ### 1.2 Information Seekers
 
-[*Demonstration for Users Seeking Information*](https://youtu.be/nghCxQIYFRs)
+    [*Demonstration for Users Seeking Information*](https://youtu.be/nghCxQIYFRs)
 
-For most of the public in general they may have had little reason to have come across Warksar, but have now heard about it and would like to know more.  These people are potential donors, members and collaborators - but for now need to be nurtured rather than directed.
+    For most of the public in general they may have had little reason to have come across Warksar, but have now heard about it and would like to know more.  These people are potential donors, members and collaborators - but for now need to be nurtured rather than directed.
 
-The Call to Action gives these people a prompt to the About - What We Do section.  All navigation remains either directly visible, or within a single click on a dropdown.  At most this user is two clicks from any part of the site.
+    The Call to Action gives these people a prompt to the About - What We Do section.  All navigation remains either directly visible, or within a single click on a dropdown.  At most this user is two clicks from any part of the site.
 
-### 1.3 Queries
+    ### 1.3 Queries
 
-[*Demonstration for Users with Specific Queries*](https://youtu.be/7ZZaQi35YWU)
+    [*Demonstration for Users with Specific Queries*](https://youtu.be/7ZZaQi35YWU)
 
-If somebody wants to get in touch they are potentially valuable to the organisation.  They probably already know something about the organisation already and want to discuss something specific.  They need rapid access to contact information, balancing the need to get to the right person with the need to have the information without any complex navigation.
+    If somebody wants to get in touch they are potentially valuable to the organisation.  They probably already know something about the organisation already and want to discuss something specific.  They need rapid access to contact information, balancing the need to get to the right person with the need to have the information without any complex navigation.
 
-This user is immediately prompted to the Contact section.  The navigation bar keeps these users within two clicks of a relevant contact person.
+    This user is immediately prompted to the Contact section.  The navigation bar keeps these users within two clicks of a relevant contact person.
 
-### 1.4 Potential Members, Supporters and Collaborators
+    ### 1.4 Potential Members, Supporters and Collaborators
 
-[*Demonstration for Potential Members*](https://youtu.be/NUyK1Wbc-iU)
+    [*Demonstration for Potential Members*](https://youtu.be/NUyK1Wbc-iU)
 
-These people may be ready and willing to make substantial contributions and to bring their own time and expertise.  They are likely to want specific information about key activities, and to understand how they could best contribute.
+    These people may be ready and willing to make substantial contributions and to bring their own time and expertise.  They are likely to want specific information about key activities, and to understand how they could best contribute.
 
-It is important that this group understand waht is involved before signing up.  Therefore the Join Us page is always a single click, with the sign-up button being a click at the bottom of the information page.
+    It is important that this group understand waht is involved before signing up.  Therefore the Join Us page is always a single click, with the sign-up button being a click at the bottom of the information page.
 
-This group are also likely to be future donors.
+    This group are also likely to be future donors.
 
-### 1.5 Donors
+    ### 1.5 Donors
 
-[*Demonstration for Donors*](https://youtu.be/fKmlrB2n-PU)
+    [*Demonstration for Donors*](https://youtu.be/fKmlrB2n-PU)
 
-These are people comning to the site with the specific intention of making a donation.  These people need rapid links to the dontation information that supports their preferred donation method. At all times users will be within two clicks of a donation option.
+    These are people comning to the site with the specific intention of making a donation.  These people need rapid links to the dontation information that supports their preferred donation method. At all times users will be within two clicks of a donation option.
 
-It may also be desirable to keep a GDPR compliant record of these people, so that they can be supported and thanked.  Such information is easy to gather - but managing it on an ongoing basis does need to considered.
-
+    It may also be desirable to keep a GDPR compliant record of these people, so that they can be supported and thanked.  Such information is easy to gather - but managing it on an ongoing basis does need to considered.
+
+
 ## 2 Wireframe Designs
 
 The Wireframe Designs were created using [Justinmind 9.2.2](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Justinmind.jpg)
@@ -85,7 +86,8 @@ Each page was prototyped in order to get concensus from the Warwickshire Search 
 Perhaps most importantly the wireframe designs will be used for workshopping future developments, ensuring clear specifications before development work starts.
 
 This approach will also allow creative free-thinking and discussion, whilst ensure the production website remains stable.
-
+
+
 ### 3 Responsive Design
 
 3.1 [Responsive Design Demo](https://youtu.be/e96WzABQF0c)
@@ -93,7 +95,8 @@ This approach will also allow creative free-thinking and discussion, whilst ensu
 With a wide range of screen sizes for all potential users it is important to design for responsiveness, based on horizontal and vertical resolution changes.
 
 Also see README section 8.6 for examles of responsive design testing.
-
+
+
 ## 4 Accessible Design
 
 ### 4.1 Accessible Design Principles
@@ -113,7 +116,8 @@ The initial testing identified 4 issues and a score of 92%, those being the 4 so
 To overcome this aria-label attributes were added to all of anchor elements, in accordance with the [W3C Guidelines](https://www.w3.org/TR/wai-aria/#aria-label)
 
 The above tool still showed these as an issue, but the links are compliant so they can be deployed whilst the discrepancy is further investigated.
-
+
+
 ## 5 Features
 
 Features for the Warwickshire Search and Rescue Website
@@ -235,7 +239,8 @@ Multimedia is a growing part of the Warwickshire Search and Rescue site.  The im
 The What We Do section contains downloaded audio and video.  The video has been recorded and edited at a low resolution to make the file small enough to go on GitHub.  The video content has not been approved for YouTube, once approved it can be uploaded to a streaming service and be delivered that way instead.
 
 One of the multimedia challenges is that all media are contributed by members of the team, this means that the items come in highly variable levels of quality and format.  CSS is used to adjust media, often at an individual level, to optimise appearance.
-
+
+
 ## 6 External Libraries
 
 This project uses a number of external libraries
@@ -258,7 +263,8 @@ https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js
 
 ### 6.7 [Microsoft Azure](https://azure.microsoft.com/)
 In addition the SQL Server and PHP Server are held on Microsoft Azure
-
+
+
 ## 7 Key Issues
 
 ### 7.1 Handling different sizes and shapes of images
@@ -305,7 +311,8 @@ The bottom row of gallery images end at different points as the images are, by d
 ### 7.8 Additional breakpoints
 
 ### 7.9 Size of media files
-
+
+
 ## 8 Testing and Quality Assurance
 
 ### 8.1 Systematic Testing
@@ -346,27 +353,27 @@ The site is based on the Bootstrap breakpoints, testing has been conducted again
 
 #### 8.6.1 Extra Extra Large (XXL) >= 1400px
 
-##### Navigation Bar - OK
+    **Navigation Bar** - OK
 
-##### Home Page - **OK**
+    **Home Page** - OK
 
-##### What We Do Page - *OK*
+    **What We Do Page - OK
 
-##### Our History - *OK*
+    **Our History** - OK
 
-##### Team Carousel
-Adjust width for first item.
+    **Team Carousel**
+    Adjust width for first item.
 
-##### Join Us - *OK*
+    **Join Us** - OK
 
-##### Gallery - *OK*
-4 columns
+    **Gallery** - OK
+    4 columns
 
-##### Contact - *OK*
-4 Bootstrap Cards Across
+    **Contact** - OK
+    4 Bootstrap Cards Across
 
-##### Donate - *OK*
-3 Bootstrap Cards Across
+    **Donate** - OK
+    3 Bootstrap Cards Across
 
 #### 8.6.2 Extra Large xl 1200px - 1400px
 
@@ -506,7 +513,8 @@ Hide image using Bootstrap
 
 ##### Footer Bar
 Disappears when height is below 400px.
-
+
+
 # W3C HTML Validation Report
 
 The report was the initial report for the index.html page (which includes all html pages as Javascript is used to hide and show page components).
@@ -691,7 +699,7 @@ Add heading, hide if appropriate
 
 ### Error
 From line 375, column 1; to line 375, column 211
-her"></a>?<iframe width="1280" height="720" src="https://www.youtube.com/embed/qDnTAo1rHks" frameborder="0" al…rometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></ifra
+her"></a>?<iframe width="1280" height="720" src="https://www.youtube.com/embed/qDnTAo1rHks" frameborder="0" alï¿½rometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></ifra
 
 ### Actions
 Remove frameborder and use CSS
@@ -861,8 +869,9 @@ Full Document checking completed.
 Used the HTML parser.
 Total execution time 127 milliseconds.
 ________________________________________
-About this checker • Report an issue • Version: 21.2.17
-
+About this checker ï¿½ Report an issue ï¿½ Version: 21.2.17
+
+
 ## W3C CSS Validator results for warwickshiresearchandrescue.css 
 (CSS level 3 + SVG)
 Sorry! We found the following errors (13)
@@ -986,11 +995,14 @@ URI : warwickshiresearchandrescue.css
 
 **Actions**
 All warnings refer to variables that have been created to enable global management of the colurs of certain features so that they remain consistent across the site.
-
+
+
 ##Deployment
-
+
+
 ##Credits
-
+
+
 User Centric Front-end Development
 Assessment Criteria
 Learning Outcomes
@@ -1085,7 +1097,7 @@ the web site follows the principles of UX design and accessibility guidelines an
 fully responsive.
 Code is well-organised and easy to follow and the application has been fully tested,
 following a planned, manual testing procedure, with no obvious errors left in the code.
-The development process is clearly evident through commit messages. The project’s
+The development process is clearly evident through commit messages. The projectï¿½s
 documentation provides a clear rationale for the development of this project and covers all
 stages of the development life cycle.
 5.1
@@ -1169,7 +1181,7 @@ principles are identified and described (comments in code and/or a section in th
 Milestone Project 1 - User Centric Front-end Development
 11
 Development and Implementation
-Code demonstrates characteristics of ‘clean code’:
+Code demonstrates characteristics of ï¿½clean codeï¿½:
 Consistent and appropriate naming conventions within code and in file naming, e.g.
 ? file names and class names, are descriptive and consistent
 ? for cross-platform compatibility, file and directory names will not have spaces in them
@@ -1191,7 +1203,7 @@ unnecessary repeated blank lines (and never more than 2)
 ? CSS code is split into well-defined and commented sections
 ? Semantic markup is used to structure HTML code
 ? HTML and CSS are kept in separate, linked files
-? CSS files are linked to in the HTML file’s head element
+? CSS files are linked to in the HTML fileï¿½s head element
 Defensive design
 ? errors are handled gracefully and users are notified of the problem where appropriate.
 Comments
@@ -1227,4 +1239,5 @@ reasoning behind it
 in the project
 Milestone Project 1 - User Centric Front-end Development
 13
-
+
+

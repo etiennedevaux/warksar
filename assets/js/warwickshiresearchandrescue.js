@@ -23,14 +23,13 @@ var elements2 = document.getElementsByClassName(sect + '-display');
         elements2[i].style.display = 'block';
     }
 
-
-
 document.getElementById('JSSerNo').textContent='.'+jsfileversion;
 
 document.getElementById('navbarNavDropdown').className='navbar-collapse show';
 window.history.pushState("","Warksar Home","#"+sect+"-Top");
 }
-
+
+
 function formSubmit(formid){
 
 var form=document.getElementById(formid);
@@ -47,7 +46,8 @@ send_to: addrfrom,
 
 document.getElementById("donationmodal-button").value="Details Submitted";
 }
-
+
+
 function signupSubmit(formid){
 
 //Variables for future extension
@@ -57,4 +57,5 @@ function signupSubmit(formid){
 
 document.getElementById("signupmodal-button").style.display="none";
 }
-
+
+

@@ -76,6 +76,72 @@ width: 100%;
 
 /* Navigation Bar */
 
+    /* CSS for the site-wide navbar */
+    .navbar{
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color:  rgba(0,0,0,.9);
+    position: fixed;
+    top: 0;
+    height: 100px;
+    z-index: 5;
+    }
+    /* Bootstrap Class for Customisation */
+    .navbar .navbar-toggler{
+    border: 0;
+    }
+    /* Bootstrap Class for Customisation */
+    .navbar navbar-nav a{
+    font-weight: bold;
+    }
+    /* Navbar dropdown menu */
+    .dropdown-menu{
+    position: static;
+    }
+    /* Left-hand logo in Navbar */
+    .logoleft{
+    border-radius: 50%;
+    width: 80px;
+    padding: 0;
+    margin: 0 10px 0 0;
+    border-width: 0;
+    }
+    /* Class to define header parameters in the Navigation bar */
+    .header-lg{
+    font-size: 130%;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+    text-align: center;
+    }
+    /* Class to define second line header parameters in the Navigation bar */
+    .header-sm{
+    font-size: 90%;
+    font-weight: 300;
+    margin: 0 0 0 5px;
+    padding: 0;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-align: center;
+    }
+
+
+/* Footer Bar */
+
+    /* Specific text paragraph within the footer */
+    .enquiry{
+    font-size: 120%;
+    font-weight: 500;
+    }
+
+    /* Class to define final line of footer text */
+    .footer-sm{
+    font-size: 90%;
+    color: #aaa;
+    }
+
 /* Headers */
 
     /* Global configuration for header sections */
@@ -84,71 +150,9 @@ width: 100%;
     margin: 0;
     }
 
-/* Footer Bar*/
-
-/* Specific text paragraph within the footer */
-.enquiry{
-font-size: 120%;
-font-weight: 500;
-}
 
 
 
-/* CSS for the site-wide navbar */
-.navbar{
-margin-bottom: 0;
-border: 0;
-width: 100%;
-background-color:  rgba(0,0,0,.9);
-position: fixed;
-top: 0;
-height: 100px;
-z-index: 5;
-}
-/* Bootstrap Class for Customisation */
-.navbar .navbar-toggler{
-border: 0;
-}
-/* Bootstrap Class for Customisation */
-.navbar navbar-nav a{
-font-weight: bold;
-}
-/* Navbar dropdown menu */
-.dropdown-menu{
-position: static;
-}
-/* Left-hand logo in Navbar */
-.logoleft{
-border-radius: 50%;
-width: 80px;
-padding: 0;
-margin: 0 10px 0 0;
-border-width: 0;
-}
-/* Class to define header parameters in the Navigation bar */
-.header-lg{
-font-size: 130%;
-font-weight: 500;
-margin: 0;
-padding: 0;
-line-height: 100%;
-text-align: center;
-}
-/* Class to define second line header parameters in the Navigation bar */
-.header-sm{
-font-size: 90%;
-font-weight: 300;
-margin: 0 0 0 5px;
-padding: 0;
-line-height: 100%;
-letter-spacing: 1px;
-text-align: center;
-}
-/* Class to define final line of footer text */
-.footer-sm{
-font-size: 90%;
-color: #aaa;
-}
 /* Pseudo element as a placeholder for the CSS serial number that is drawn from the CSS file and populated by Javascript */
 #CSSSerNo::before{
 content: var(--cssfileversion);

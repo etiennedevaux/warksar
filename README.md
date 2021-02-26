@@ -20,44 +20,43 @@ The user journey is based on four personae, people coming to the site, who simpl
 
 This leads us to 4 critical user journeys, all of which start from the Home Page
 
-    ### 1.1 The Home Page
+### 1.1 The Home Page
 
-    [**Home Page Demonstration**](https://youtu.be/bswPg6mYZAc)
+[**Home Page Demonstration**](https://youtu.be/bswPg6mYZAc)
 
-    ### 1.2 Information Seekers
+### 1.2 Information Seekers
 
-    [*Demonstration for Users Seeking Information*](https://youtu.be/nghCxQIYFRs)
+[*Demonstration for Users Seeking Information*](https://youtu.be/nghCxQIYFRs)
 
-    For most of the public in general they may have had little reason to have come across Warksar, but have now heard about it and would like to know more.  These people are potential donors, members and collaborators - but for now need to be nurtured rather than directed.
+For most of the public in general they may have had little reason to have come across Warksar, but have now heard about it and would like to know more.  These people are potential donors, members and collaborators - but for now need to be nurtured rather than directed.
 
-    The Call to Action gives these people a prompt to the About - What We Do section.  All navigation remains either directly visible, or within a single click on a dropdown.  At most this user is two clicks from any part of the site.
+The Call to Action gives these people a prompt to the About - What We Do section.  All navigation remains either directly visible, or within a single click on a dropdown.  At most this user is two clicks from any part of the site.
 
-    ### 1.3 Queries
+### 1.3 Queries
 
-    [*Demonstration for Users with Specific Queries*](https://youtu.be/7ZZaQi35YWU)
+[*Demonstration for Users with Specific Queries*](https://youtu.be/7ZZaQi35YWU)
 
-    If somebody wants to get in touch they are potentially valuable to the organisation.  They probably already know something about the organisation already and want to discuss something specific.  They need rapid access to contact information, balancing the need to get to the right person with the need to have the information without any complex navigation.
+If somebody wants to get in touch they are potentially valuable to the organisation.  They probably already know something about the organisation already and want to discuss something specific.  They need rapid access to contact information, balancing the need to get to the right person with the need to have the information without any complex navigation.
 
-    This user is immediately prompted to the Contact section.  The navigation bar keeps these users within two clicks of a relevant contact person.
+This user is immediately prompted to the Contact section.  The navigation bar keeps these users within two clicks of a relevant contact person.
 
-    ### 1.4 Potential Members, Supporters and Collaborators
+### 1.4 Potential Members, Supporters and Collaborators
 
-    [*Demonstration for Potential Members*](https://youtu.be/NUyK1Wbc-iU)
+[*Demonstration for Potential Members*](https://youtu.be/NUyK1Wbc-iU)
 
-    These people may be ready and willing to make substantial contributions and to bring their own time and expertise.  They are likely to want specific information about key activities, and to understand how they could best contribute.
+These people may be ready and willing to make substantial contributions and to bring their own time and expertise.  They are likely to want specific information about key activities, and to understand how they could best contribute.
 
-    It is important that this group understand waht is involved before signing up.  Therefore the Join Us page is always a single click, with the sign-up button being a click at the bottom of the information page.
+It is important that this group understand waht is involved before signing up.  Therefore the Join Us page is always a single click, with the sign-up button being a click at the bottom of the information page.
 
-    This group are also likely to be future donors.
+This group are also likely to be future donors.
 
-    ### 1.5 Donors
+### 1.5 Donors
 
-    [*Demonstration for Donors*](https://youtu.be/fKmlrB2n-PU)
+[*Demonstration for Donors*](https://youtu.be/fKmlrB2n-PU)
 
-    These are people comning to the site with the specific intention of making a donation.  These people need rapid links to the dontation information that supports their preferred donation method. At all times users will be within two clicks of a donation option.
+These are people comning to the site with the specific intention of making a donation.  These people need rapid links to the dontation information that supports their preferred donation method. At all times users will be within two clicks of a donation option.
 
-    It may also be desirable to keep a GDPR compliant record of these people, so that they can be supported and thanked.  Such information is easy to gather - but managing it on an ongoing basis does need to considered.
-
+It may also be desirable to keep a GDPR compliant record of these people, so that they can be supported and thanked.  Such information is easy to gather - but managing it on an ongoing basis does need to considered.
 
 ## 2 Wireframe Designs
 
@@ -161,17 +160,17 @@ The main aim is to ensure that before people express an interest that they under
 Modal FormAt present the contact button triggers a modal form.  This form captures information from the user, who then submits.  At present the submission triggers a JavaScript that hides the submit button and an external PHP file that stores the submission on a SQL Server database and returns a confirmation message to the user.  This will need to be considered in the context of GDPR, so is not part of the initial deployment.
 
 
-### 5.5 Gallery Page
+### 5.6 Gallery Page
 
 The Gallery Page, taken from the Code Institute Love Running exercise, is an important and informal way of engaging end users in the wide variety of activities undertaken by Warwickshire Search and Rescue.  The masonry board effect enables users to see a wide range in a single view and focus on the areas of interest to them, sometimes with internal or external links to articles or multimedia.  The photos come from a wide range of sources and on 4k screens did initially show pixelation.  The standard Bootstrap breakpoints do not cover screens that large, so an additional breakpoint at 2,400 px width has been created.  The extra column minimised pixelation issues.
 
-### 5.6 Contact
+### 5.7 Contact
 
 The contact page deploys standard Bootstrap cards.  The Police card links to an external site, using _blank for a separate tab, thereby maintaining navigation etc.
 
 The other cards use mailto: at present, this may be developed to use automatic emails and databsae storage of data (as elsewhere on the site) but for the initial deployment the mailto: options is considered sufficient.
 
-### 5.7 Donate
+### 5.8 Donate
 
 Currently there are three preferred donation methods on this page.  A fourth one is in the specification for a future deployment, and will follow the same pattern.
 
@@ -189,10 +188,7 @@ The banking details for works slightly differently.  For security reasons it is 
 
 5.  A PHP routine is called on a separate server that creates a record in a separate SQL Server.  This records the form data alongside a date.
 
-
-
-
-#### 5.7.1 Donation Modal Form
+#### 5.8.1 Donation Modal Form
 
 When submitting a donation via an online transfer the workflow involves sending an automated email to the benefactor, with a copy to the fund raising co-ordinator and a record being made in a remote database of the request for details.
 
@@ -204,17 +200,17 @@ In the initial implementation the output from the PHP routing goes to a hidden i
 
 At present the form button label changes to show that the submission has been completed.
 
-### 5.8 Site Wide Features
+### 5.9 Site Wide Features
 
-#### 5.8.1 JavaScript 'Virtual Pages'
+#### 5.9.1 JavaScript 'Virtual Pages'
 
-#### 5.8.2 Navigation Bar
+#### 5.9.2 Navigation Bar
 
 The Navigation bar, based on a Bootstrap Navigation bar, but with some local customisation, is visible in the same place at all times.  This gives a simple, unobtrusive and always easily available navigation experience.
 
 The element has 0.9 opacity, so that it is always clear when there is content behind it, inviting the user to scroll to that content, but without obscuring the text.
 
-#### 5.8.3 Footer
+#### 5.9.3 Footer
 
 The Footer bar is visible in the same place at all times.  This gives simple, unobtrusive and always easily available information, such as contact and charity number, as well as links to related external social media sites.
 
@@ -224,7 +220,7 @@ The footer also contains information about the precise code versions the user is
 
 Date and ownership information are also held here.  This information is generally of low importance, but on occasions can be an important reference.
 
-#### 5.8.4 Background Images
+#### 5.9.4 Background Images
 
 This site is using a single page of html, with sections being hidden and shown via a simple JavaScript routine.  This approach provides many advantages, particularly around performance and re-use of content.  
 
@@ -232,7 +228,7 @@ Some of the user feedback is for the site background image to only appear in the
 
 To provide the user requirement the div now has an additional class that makes it easy to switch it off and on with a small change to the existing Javascript.
 
-#### 5.8.5 Multimedia
+#### 5.9.5 Multimedia
 
 Multimedia is a growing part of the Warwickshire Search and Rescue site.  The images have some animation and additional effects.  The gallery contains a number of pictures and an item of streamed video.
 
@@ -243,7 +239,7 @@ One of the multimedia challenges is that all media are contributed by members of
 
 ## 6 External Libraries
 
-This project uses a number of external libraries
+This project uses a number of external libraries, as listed below
 
 ### 6.1 [Bootstrap](https://getbootstrap.com/)
 https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css
@@ -295,7 +291,6 @@ The site is a single file, divided into virutal pages, each of which is a div th
 
 User feedback suggested that the captions and headings for the carousel should blend more seamlessley into the background photos.  A gradient background colour was used to achieve this.
 
-
 ### 7.5 Bootstrap Burger menu opening dropdown at breakpoint
 
 The core bootstrap does this as toggle.  Occasionally that can get out of sync, so the body element has an onload option to ensure that it remains synced when the page is loaded or reloaded.
@@ -308,10 +303,19 @@ The header and footer were originally set with a z-index of 2.  However some oth
 
 The bottom row of gallery images end at different points as the images are, by design, of different lengths.  The overall mosaic effect is effective and provides a different perspective of hte work of the organisation.  But the bottom layer looked untidy. Two key things have been done, firstly the background imaged was switched from a blurred image to one that comes from a blur into focus.  Secondly the external margin to ensure that other pages can scroll clear of the translucent footer, was removed.  The overall effect is now far more aesthetic.
 
-### 7.8 Additional breakpoints
+### 7.8 Additional Breakpoints
+
+Three additional breakpoints have been added:
+
+1.  Screens over 2000px in width
+2.  Screens over 2400px in width
+3.  Screens under 600px in height, this particularly targets mobile devices in landscape
 
 ### 7.9 Size of media files
 
+GitHub has an upper file limit of 100Mb.  This is generous for code, and adequate for audio and images.  However, for video this is limiting.  Video files for the site are therefore either streamed from a third-party (Y0uTube or Facebook) or reduced in resolution to be stored on GitHub.
+
+The are examples of all three on this site.
 
 ## 8 Testing and Quality Assurance
 
@@ -353,169 +357,158 @@ The site is based on the Bootstrap breakpoints, testing has been conducted again
 
 #### 8.6.1 Extra Extra Large (XXL) >= 1400px
 
-    **Navigation Bar** - OK
+**Navigation Bar** - OK
 
-    **Home Page** - OK
+**Home Page** - OK
 
-    **What We Do Page - OK
+**What We Do Page - OK
 
-    **Our History** - OK
+**Our History** - OK
 
-    **Team Carousel**
-    Adjust width for first item.
+**Team Carousel**
+Adjust width for first item.
 
-    **Join Us** - OK
+**Join Us** - OK
 
-    **Gallery** - OK
-    4 columns
+**Gallery** - OK
+4 columns
 
-    **Contact** - OK
-    4 Bootstrap Cards Across
+**Contact** - OK
+4 Bootstrap Cards Across
 
-    **Donate** - OK
-    3 Bootstrap Cards Across
+**Donate** - OK
+3 Bootstrap Cards Across
 
 #### 8.6.2 Extra Large xl 1200px - 1400px
 
-##### Home Page
+**Home Page**
 Remove min-width and min-height for CTA-text frame
 Reduce size of central logo
 Reduce font size of CTA text
 
-##### What We Do Page - *OK*
+**What We Do Page** - OK
 
-##### Team Carousel - *OK*
+**Team Carousel** - OK
 
-##### Join Us - *OK*
+**Join Us** - OK
 
-##### Gallery - *OK*
+**Gallery** - OK
 3 columns
 
-##### Contact - *OK*
+**Contact** - OK
 4 Bootstrap Cards Across
 
-##### Donate - *OK*
+**Donate** - OK
 3 Bootstrap Cards Across
 
 #### 8.6.3 Large lg 992px - 1200px
 
-##### Navigation Bar - OK
+**Navigation Bar** - OK
 
-##### Home Page
+**Home Page*
 Further educe size of central logo
 Further educe font size of CTA text
 
-##### What We Do Page - *OK*
+**What We Do Page** - OK
 
-##### Team Carousel - *OK*
+**Team Carousel** - OK
 
-##### Join Us
+**Join Us**
 Reduce font sizes
 
-#### Gallery - *OK*
+**Gallery** - OK
 3 columns
 
-##### Contact - *OK*
+**Contact** - OK
 3 Bootstrap Cards Across
 1 on next row, all centred
 
-##### Donate - *OK*
+**Donate** - OK
 3 Bootstrap Cards Across
-
 
 #### 8.6.4 Medium md 768px to 992px
 
-##### Navigation Bar - OK
+**Navigation Bar** - OK
 
-##### Home Page
+**Home Page**
 Hide central logo
 
-##### What We Do Page
+**What We Do Page**
 Add element ids so that individual elements can be targeted, and Bootstrap customised, without affecting other parts of the site
 Use Bootstrap set images to go vertically above text
 
-##### Team Carousel - *OK*
+**Team Carousel** - OK
 
-##### Join Us
+**Join Us**
 Align image title and text vertically using Bootstrap
 
-#### Gallery - *OK*
+**Gallery** - OK
 3 columns
 
-##### Contact - *OK*
+**Contact** - OK
 3 Bootstrap Cards Across
 1 on next row, all centred
 
-##### Donate - *OK*
+**Donate** - OK
 3 Bootstrap Cards Across
-
-
 
 #### 8.6.5 Small 576px to 768px
 
-##### Navigation Bar
+**Navigation Bar**
 Menu background being transparent makes text difficult to read with burger menu.  Set background to green, with padding and rounded corners
 
-##### Home Page
+**Home Page**
 Move buttons below central main text
 Re-align buttons for horizontal display
 
-##### Team Carousel - *OK*
+**Team Carousel** - OK
 
-##### Join Us
+**Join Us**
 Hide image using Bootstrap
 
-#### Gallery - *OK*
+**Gallery** - OK
 3 columns
 
-##### Contact - *OK*
+**Contact** - OK
 2 Bootstrap Cards Across
 2 on next row, all centred
 
-##### Donate - *OK*
+**Donate** - OK
 2 Bootstrap Cards Across
 1 on next row, all centred
-
-
-
 
 #### 8.6.6 Extra Small 0px to 576px
 
-##### Home Page
-
-##### Navigation Bar
+**Navigation Bar**
 Menu background being transparent makes text difficult to read with burger menu.  Set background to green, with padding and rounded corners
 
-##### Home Page
+**Home Page**
 Move buttons below central main text
 Re-align buttons for horizontal display
 
-##### Team Carousel - *OK*
+**Team Carousel** - OK
 
-##### Join Us
+**Join Us**
 Hide image using Bootstrap
 
-#### Gallery - *OK*
+**Gallery** - OK
 3 columns
 
-##### Contact - *OK*
+**Contact** - OK
 2 Bootstrap Cards Across
 2 on next row, all centred
 
-##### Donate - *OK*
+**Donate** - OK
 2 Bootstrap Cards Across
 1 on next row, all centred
 
-
-
-
 #### 8.6.7 Landscape Mobile
 
-##### Footer Bar
+**Footer Bar**
 Disappears when height is below 400px.
 
 
-# W3C HTML Validation Report
+## 9 W3C HTML Validation Report
 
 The report was the initial report for the index.html page (which includes all html pages as Javascript is used to hide and show page components).
 
@@ -525,354 +518,352 @@ A check will now be run before each commit and any errors adressed at that stage
 
 **Report 001**
 
-## 1.	Error: No space between attributes.
+**1**	Error: No space between attributes.
 
-### Error
+**Issue**
 At line 16, column 31
 ext/javascript"src="https://cd
 
-### Actions
+**Actions**
 Space added
 
+**2**	Warning: The type attribute is unnecessary for JavaScript resources.
 
-## 2.	Warning: The type attribute is unnecessary for JavaScript resources.
-
-### Error
+**Issue**
 From line 16, column 1; to line 16, column 97
 </script>?<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></scri
 
-### Actions
+**Actions**
 Type attribute removed
 
+**3**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
 
-## 3.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
-
-### Error
+**Issue**
 From line 28, column 1; to line 28, column 51
 ogoleft'>?<img class='logoleft' src='assets/images/logo.png'>?</div
 
-### Actions
+**Actions**
 Add ALT tag
 
 
-## 4.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+**4**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+**Issue**
 From line 73, column 1; to line 73, column 34
 cta-img">?<img src="assets/images/logo.png">?</div
 
-### Actions
+**Actions**
 Add ALT tag
 
 
-## 5.	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+**5**	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
 
-### Error
+**Issue**
 From line 69, column 1; to line 69, column 43
 d='Home'>?<section id='wsr-home' class='wsr-content'>?<!-- 
 
-### Actions
+**Actions**
 Add section heading, hide if appropriate
 
-## 6.	Error: Duplicate ID WhatWeDo.
+**6**	Error: Duplicate ID WhatWeDo.
 
-### Error
+**Issue**
 From line 98, column 1; to line 98, column 43
 ntainer">?<section id='WhatWeDo' class='wsr-content'>?<div 
 
-### Actions
+**Actions**
 Change ID to avoid duplication
 
 
-## 7.	Warning: The first occurrence of ID WhatWeDo was here.
+**7**	Warning: The first occurrence of ID WhatWeDo was here.
 
-### Error
+**Issue**
 From line 93, column 1; to line 93, column 64
 '>?</div>?<div style='display: none;' class='MenuComponent' id='WhatWeDo'>?<head
 
-### Actions
+**Actions**
 Change ID to avoid duplication
 
 
 
-## 8.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+**8**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
 
-### Error
+**Issue**
 From line 108, column 1; to line 108, column 116
 ol-lg-4">?<img id="alsar-logo" src="https://www.lowlandrescue.org/images/lowland-rescue-lozenge1.png" class="wsr-content-img">?</div
 
-### Actions
+**Actions**
 Add ALT tag
 
 
-## 9.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+**9**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
 
-### Error
+**Issue**
 From line 118, column 1; to line 118, column 67
 ol-lg-4">?<img src="assets/images/imgwarksar002.jpg" class="wsr-content-img">?</div
 
-### Actions
+**Actions**
 Add ALT tag
 
 
-## 10.	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+**10**	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
 
-### Error
+**Issue**
 From line 98, column 1; to line 98, column 43
 ntainer">?<section id='WhatWeDo' class='wsr-content'>?<div 
 
-### Actions
+**Actions**
 Add heading, hide if appropriate
 
 
 
-## 11.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+**11**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
 
-### Error
+**Issue**
 From line 282, column 1; to line 282, column 89
 m-block">?<img id="imgwarksar030-02" src="assets/images/imgwarksar030.jpg" class="wsr-content-img">?</div
 
-### Actions
+**Actions**
 Add ALT tag
 
 
 
-## 12.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+**12**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
 
-### Error
+**Issue**
 From line 297, column 1; to line 297, column 89
 m-block">?<img id="imgwarksar021-02" src="assets/images/imgwarksar021.jpg" class="wsr-content-img">?</div
 
-### Actions
+**Actions**
 Add ALT tag
 
 
 
-## 13.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+**13**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
 
-### Error
+**Issue**
 From line 312, column 1; to line 312, column 89
 m-block">?<img id="imgwarksar028-02" src="assets/images/imgwarksar028.jpg" class="wsr-content-img">?</div
 
-### Actions
+**Actions**
 Add ALT tag
 
 
-## 14.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+**14**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
 
-### Error
+**Issue**
 From line 327, column 1; to line 327, column 89
 m-block">?<img id="imgwarksar011-02" src="assets/images/imgwarksar011.jpg" class="wsr-content-img">?</div
 
-### Actions
+**Actions**
 Add ALT tag
 
 
-## 15.	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+**15**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
 
-### Error
+**Issue**
 From line 342, column 1; to line 342, column 100
 m-block">?<img id="imgwarksar027-searchmanager" src="assets/images/imgwarksar027.jpg" class="wsr-content-img">?</div
 
-### Actions
+**Actions**
 Add ALT tag
 
 
-## 16.	Error: Bad value mailto: support@warksar.org.uk for attribute href on element a: Illegal character in scheme data: space is not allowed.
+**16**	Error: Bad value mailto: support@warksar.org.uk for attribute href on element a: Illegal character in scheme data: space is not allowed.
 
-### Error
+**Issue**
 From line 360, column 1; to line 360, column 78
 .</p>?<p>?<a class="btn btn-primary wsr-text-btn" href="mailto: support@warksar.org.uk">Contac
 
-### Actions
+**Actions**
 Remove space
 
-## 17.	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+**17**	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
 
-### Error
+**Issue**
 From line 272, column 1; to line 272, column 47
 ntainer">?<section id='warksarroles' class='wsr-content'>?<div 
 
-### Actions
+**Actions**
 Add heading, hide if appropriate
 
 
-## 18.	Error: The frameborder attribute on the iframe element is obsolete. Use CSS instead.
+**18**	Error: The frameborder attribute on the iframe element is obsolete. Use CSS instead.
 
-### Error
+**Issue**
 From line 375, column 1; to line 375, column 211
 her"></a>?<iframe width="1280" height="720" src="https://www.youtube.com/embed/qDnTAo1rHks" frameborder="0" al�rometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></ifra
 
-### Actions
+**Actions**
 Remove frameborder and use CSS
 
 
-## 19.	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+**19**	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
 
-### Error
+**Issue**
 From line 371, column 1; to line 371, column 20
 </header>?<section id='photo'>?<!-- 
 
-### Actions
+**Actions**
 Add heading, hide if appropriate
 
 
 
-## 20.	Error: Bad value for attribute id on element div: An ID must not be the empty string.
+**20**	Error: Bad value for attribute id on element div: An ID must not be the empty string.
 
-### Error
+**Issue**
 From line 441, column 1; to line 441, column 46
 ation -->?<div id="" class="card" style="width: 18rem;">? <im
 
-### Actions
+**Actions**
 Put in unique, non-null, ID
 
 
-##21.	Error: Duplicate ID .
+**21**	Error: Duplicate ID .
 
-### Error
+**Issue**
 From line 442, column 3; to line 442, column 82
 8rem;">? <img id="" src="assets/images/imgwarksar011.jpg" class="card-img-top" alt="...">? <di
 
-### Actions
+**Actions**
 Put in unique, non-null, ID
 
 
-## 22.	Warning: The first occurrence of ID was here.
+**22**	Warning: The first occurrence of ID was here.
 
-### Error
+**Issue**
 From line 441, column 1; to line 441, column 46
 ation -->?<div id="" class="card" style="width: 18rem;">? <im
 
-### Actions
+**Actions**
 Put in unique, non-null, ID
 
 
-## 23.	Error: Bad value for attribute id on element img: An ID must not be the empty string.
+**23**	Error: Bad value for attribute id on element img: An ID must not be the empty string.
 
-### Error
+**Issue**
 From line 442, column 3; to line 442, column 82
 8rem;">? <img id="" src="assets/images/imgwarksar011.jpg" class="card-img-top" alt="...">? <di
 
-### Actions
+**Actions**
 Put in unique, non-null, ID
 
 
-## 24.	Error: Duplicate ID .
+**24**	Error: Duplicate ID .
 
-### Error
+**Issue**
 From line 455, column 1; to line 455, column 46
 ation -->?<div id="" class="card" style="width: 18rem;">? <im
 
-### Actions
+**Actions**
 Put in unique, non-null, ID
 
 
-## 25.	Warning: The first occurrence of ID was here.
+**25**	Warning: The first occurrence of ID was here.
 
-### Error
+**Issue**
 From line 441, column 1; to line 441, column 46
 ation -->?<div id="" class="card" style="width: 18rem;">? <im
 
-### Actions
+**Actions**
 Put in unique, non-null, ID
 
 
-## 26.	Error: Bad value for attribute id on element div: An ID must not be the empty string.
+**26**	Error: Bad value for attribute id on element div: An ID must not be the empty string.
 
-### Error
+**Issue**
 From line 455, column 1; to line 455, column 46
 ation -->?<div id="" class="card" style="width: 18rem;">? <im
-27.	Error: End tag div seen, but there were open elements.
+
+**Actions**
+Put in unique, non-null, ID
+
+**27**	Error: End tag div seen, but there were open elements.
+
+**Issue**
 From line 507, column 1; to line 507, column 6
 ize="50">?</div>? 
 
-### Actions
-Put in unique, non-null, ID
+**Actions**
+Re-arrange html to avoid crossing elements
 
 
-## 28.	Error: Unclosed element form.
+**28**	Error: Unclosed element form.
 
-### Error
+**Issue**
 From line 498, column 1; to line 498, column 131
 transfer?<form id="query-form" class="signup-form" method="POST" action="https://devauxphp.azurewebsites.net/warksar_log.php" target="null">??<!--
 
-### Actions
+**Actions**
 Form and div are both closed, but cross.  Adjust html to avoid
 
+**29**	Error: Attribute form_id not allowed on element input at this point.
 
-
-## 29.	Error: Attribute form_id not allowed on element input at this point.
-
-### Error
+**Issue**
 From line 510, column 9; to line 510, column 135
 >? <input form_id="query_form" id="donationmodal-button" type="submit" class="btn btn-primary" onclick="formSubmit('query-form')">? 
-Attributes for element input:
-Global attributes
-acceptwhen type is file
-altwhen type is image
-autocompletewhen type is text, search, url, tel, email, password, date, month, week, time, datetime-local, number, range, or color
-autofocus
-checkedwhen type is checkbox or radio
-dirnamewhen type is text or search
-disabled
-form
-formactionwhen type is submit or image
-formenctypewhen type is submit or image
-formmethodwhen type is submit or image
-formnovalidatewhen type is submit or image
-formtargetwhen type is submit or image
-heightwhen type is image
-listwhen type is text, search, url, tel, email, date, month, week, time, datetime-local, number, range, or color
-maxwhen type is date, month, week, time, datetime-local, number, or range
-maxlengthwhen type is text, search, url, tel, email, or password
-minwhen type is date, month, week, time, datetime-local, number, or range
-multiplewhen type is email or file
-name
-patternwhen type is text, search, url, tel, email, or password
-placeholderwhen type is text, search, url, tel, email, password, or number
-readonlywhen type is text, search, url, tel, email, password, date, month, week, time, datetime-local, or number
-requiredwhen type is text, search, url, tel, email, password, date, month, week, time, datetime-local, number, checkbox, radio, or file
-sizewhen type is text, search, url, tel, email, or password
-srcwhen type is image
-stepwhen type is date, month, week, time, datetime-local, number, or range
-type
-valuewhen type is not file or image
-widthwhen type is image
+    Attributes for element input:
+    Global attributes
+    acceptwhen type is file
+    altwhen type is image
+    autocompletewhen type is text, search, url, tel, email, password, date, month, week, time, datetime-local, number, range, or color
+    autofocus
+    checkedwhen type is checkbox or radio
+    dirnamewhen type is text or search
+    disabled
+    form
+    formactionwhen type is submit or image
+    formenctypewhen type is submit or image
+    formmethodwhen type is submit or image
+    formnovalidatewhen type is submit or image
+    formtargetwhen type is submit or image
+    heightwhen type is image
+    listwhen type is text, search, url, tel, email, date, month, week, time, datetime-local, number, range, or color
+    maxwhen type is date, month, week, time, datetime-local, number, or range
+    maxlengthwhen type is text, search, url, tel, email, or password
+    minwhen type is date, month, week, time, datetime-local, number, or range
+    multiplewhen type is email or file
+    name
+    patternwhen type is text, search, url, tel, email, or password
+    placeholderwhen type is text, search, url, tel, email, password, or number
+    readonlywhen type is text, search, url, tel, email, password, date, month, week, time, datetime-local, or number
+    requiredwhen type is text, search, url, tel, email, password, date, month, week, time, datetime-local, number, checkbox, radio, or file
+    sizewhen type is text, search, url, tel, email, or password
+    srcwhen type is image
+    stepwhen type is date, month, week, time, datetime-local, number, or range
+    type
+    valuewhen type is not file or image
+    widthwhen type is image
 
-### Actions
+**Actions**
 Remove attribute
 
+**30**	Error: Stray end tag form.
 
-
-## 30.	Error: Stray end tag form.
-
-### Error
+**Issue**
 From line 512, column 1; to line 512, column 7
 </div>?</form>? <
 
-### Actions
+**Actions**
 Form and div are both closed, but cross, this makes the tag appear stray.  Adjust html to avoid
 
+**27**	Error: The value of the for attribute of the label element must be the ID of a non-hidden form control.
 
-
-## 31.	Error: The value of the for attribute of the label element must be the ID of a non-hidden form control.
-
-### Error
+**Issue**
 From line 503, column 1; to line 503, column 19
 /iframe>??<label for="fname"> 
 
-### Actions
+**Actions**
 Adjust for attribute
 
+    Full Document checking completed.
+    Used the HTML parser.
+    Total execution time 127 milliseconds.
+    ________________________________________
+    About this checker � Report an issue � Version: 21.2.17
 
 
-Full Document checking completed.
-Used the HTML parser.
-Total execution time 127 milliseconds.
-________________________________________
-About this checker � Report an issue � Version: 21.2.17
-
-
-## W3C CSS Validator results for warwickshiresearchandrescue.css 
+## 10 W3C CSS Validator results for warwickshiresearchandrescue.css 
 (CSS level 3 + SVG)
 Sorry! We found the following errors (13)
 URI : warwickshiresearchandrescue.css

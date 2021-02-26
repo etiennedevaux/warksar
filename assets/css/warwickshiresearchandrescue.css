@@ -1,40 +1,48 @@
-/* Imported Google Fonts */
-@import url('https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
+/*IMPORTS*/
+  @import url('https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
 
-/* Variables */
-:root{
---cssfileversion: "0748";
---lightgrey:#e5e5e5; /* Light grey color for use across the site */
---darkgrey:#555555; /* Dark grey color for use across the site */
---bgroundshade:#378a42ff;; /* Opaque background */
-}
+/*VARIABLES*/
+  :root{
+  --cssfileversion: "0748";
+  --lightgrey:#e5e5e5; /* Light grey color for use across the site */
+  --darkgrey:#555555; /* Dark grey color for use across the site */
+  --bgroundshade:#378a42ff;; /* Opaque background */
+  }
 
-/* Attributes that apply across the site as a whole */
-*{
-margin: 0px;
-padding: 0px;
-border: 0px;
-}
+/*GLOBAL PROPERTIES*/
 
-/* Attributes that apply to the html body */
-body{
-font-family: Lato;
-background-color: var(--bgroundshade);
-}
+  /* Properties that apply to all elements */
+  *{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  }
 
-/* Attributes that apply to all <audio> elements */
-audio{
-margin: 10px;
-height: 30px;
-}
+  /* Properties that apply to the html body */
+  body{
+  font-family: Lato;
+  background-color: var(--bgroundshade);
+  }
 
-/* Attributes that apply to all <video> elements */
-video{
-width: 100%;
-}
+  /* Attributes that apply to all <audio> elements */
+  audio{
+  margin: 10px;
+  height: 30px;
+  }
 
-/* Background Images */
+  /* Attributes that apply to all <header> elements */
+  header{
+    overflow: hidden;
+    margin: 0;
+    }
+
+  /* Attributes that apply to all <video> elements */
+  video{
+  width: 100%;
+  }
+
+/*BACKGROUND IMAGES ACROSS THE SITE*/
 
     /* Parameters for the fixed background image */
     div.bground{
@@ -74,7 +82,7 @@ width: 100%;
     display: none;
     }
 
-/* Navigation Bar */
+/* NAVIGATION BAR */
 
     /* CSS for the site-wide navbar */
     .navbar{
@@ -128,505 +136,287 @@ width: 100%;
     }
 
 
-/* Footer Bar */
+/* FOOTER BAR */
 
     /* Specific text paragraph within the footer */
     .enquiry{
     font-size: 120%;
     font-weight: 500;
     }
-
     /* Class to define final line of footer text */
     .footer-sm{
     font-size: 90%;
     color: #aaa;
     }
+    /* Pseudo element as a placeholder for the CSS serial number that is drawn from the CSS file and populated by Javascript */
+    #CSSSerNo::before{
+    content: var(--cssfileversion);
+    }
+    /* Footer bar across all pages */
+      footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        background-color: var(--darkgrey);
+        opacity: 0.9;
+        height: 120px;
+        z-index: 5;
+      }
+    /* Text paragraph within the footer */
+      footer p{
+        color: #ffffffff;
+        margin: 0;
+      }
+    /* List of links to Social Networks within the footer */
+      .social-networks{
+        text-align: center;
+        margin: 5px 0;
+      }
+    /* Fontawesome icons for Social Networks */
+      .social-networks i{
+        font-size: 160%;
+        margin: 0 1% 0;
+        padding: 3px 5% 0;
+        color: #ffffffff;
+      }
+    /* Links to Social Networks within the footer */
+      .social-networks li{
+        display: inline;
+      }
 
-/* Headers */
+/* MULTIPLE CONTENT PAGES */
 
-    /* Global configuration for header sections */
-    header{
-    overflow: hidden;
+  /* Parameters for Menu Component Virtual Pages */
+    div.MenuComponent{
+    padding: 0 0 0 0;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    }
+  /* Configures the title for each page. */
+    .MenuSectionTitle{
+    text-align: center;
+    color: #ffffffff;
     margin: 0;
+    font-size: 160%;
+    font-weight: 800;
+    letter-spacing: 3px;
+    width: 100%;
+    line-height: 100%;
+    padding: 2%;
+    }
+  /* WSR Content Text configuration */
+    .wsr-content-text{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 120%;
+    }
+  /* WSR Content Text paragraphs configuration */
+    .wsr-content-text p{
+    color: white;
+    padding: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    display: inline-block;
+    }
+  /* Content Row for Warksar Website */
+    .wsr-row{
+    display: flex;
+    max-width: 1400px;
+    background-color: #555555aa;
+    padding: 5px;
+    float: left;
+    border: 4px solid #555555ff;
+    width: 100%;
+    margin: auto;
+    }
+  /* Content Row for Warksar Website - alternative */
+    .wsr-content-row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+  /* Left Hand Content Image for Warksar Website */
+    .wsr-content-img-l{
+    object-fit: cover;
+    }
+  /* Warksar Right Hand Text Box */
+    .wsr-content-text-r{
+    width: 70%;
+    align-items: center;
+    }
+  /* Warksar Content Images */
+    .wsr-content-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    }
+  /* Right Hand Content Image for Warksar Website */
+    .wsr-content-img-r{
+    width: 30%;
+    float: left;
+    display: flex;
+    align-items: center;
+    }
+  /* Warksar Left Hand Text Box */
+    .wsr-content-text-l{
+    width: 50%;
+    align-items: center;
+    }
+  /* Warksar larger content text for emphasis */
+    .wsr-content-text-lg{
+    font-size: 150%;
+    display: inline-block;
+    }
+  /* Warksar ull width text section. */
+    .wsr-content-text-fl{
+    width: 100%;
+    }
+  /* Warksar Title for Items */
+    .wsr-content-item-title{
+    text-align: center;
+    color: #ffffffbb;
+    font-size: 150%;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    }
+  /* Warksar configuration for content items on about us and other pages */
+    .wsr-content-item{
+    margin-bottom: 20px;
+    background-color: var(--bgroundshade);
+    }
+  /* Warksar configuration for tet on about us and other pages */
+    .wsr-content-text p{
+    text-align: justify;
+    color: #ffffffff;
+    font-size: 100%;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 100%;
+    }
+  /* Warksar Configuration for sections of content */
+    section.wsr-content{
+    display: inline-block;
+    width: 100%;
+    }
+  /* Warksar Content Item Title paragraphs */
+    .wsr-content-item-title p{
+    width: 100%;
+    }
+  /* Warksar Content Item image frame */
+    .wsr-content-img-frame{
+    padding: 0px;
+    border-radius: 5px;
+    }
+  /* Warksar Container for the What We Do section */
+    .wsr-container{
+    background-color: #555555aa;
+    padding: 10px;
+    border: 4px solid #555555ff;
+    margin-bottom: 20px;
+    }
+  /* Action button for use as part of general text pages. */
+    .wsr-text-btn{
+      width: 100%;
+    }
+    /* Full width text below a content section*/
+    .wsr-row-foot{
+      display: inline;
+    }
+  /* Bootstrap Card Customisation */
+    .card{
+      background-color: #555555aa;
+      padding: 5px;
+      margin: 20px auto;
+      float: left;
+      border: 4px solid #555555ff;
+    }
+    .card-img-top{
+      object-fit: cover;
+      height: 200px;
+    }
+    .card-img-top-small{
+      height: 150px;
+    }
+    .card-body{
+      height: 240px;
+    }
+    .card-body span{
+      font-weight: 800;
+      font-size: 90%;
+    }
+    .card-text a{
+      width: 200px;
+    }
+    .card-text{
+      color: #fff;
+    }
+   .card-link{
+      height: 50px;
+      text-align: center;
+    }
+    .card-link a{
+      width: 80%;
+    }
+    .card-title{
+      color: #fff;
+      font-weight: 900;
+    }
+    .card-body-small{
+      height: 180px;
     }
 
-
-
-
-/* Pseudo element as a placeholder for the CSS serial number that is drawn from the CSS file and populated by Javascript */
-#CSSSerNo::before{
-content: var(--cssfileversion);
-}
-/* Settings that apply to img and iframe elements within the photo section of the Gallery page */
-#photo img, #photo iframe{
-width: 100%;
-margin: 0px;
-}
-/* Manages the photo section of the gallery */
-#photo{
-clear: both;
-line-height: 0px;
-column-count: 5;
-column-gap: 0;
-padding: 0;
-}
-/* Manage the Gallery page */
-#Gallery{
-margin-bottom: 0px;
-}
-/* Manage the Gallery page header */
-#Gallery header{
-background-image: linear-gradient(#000000e6, #55555500);
-}
-/* Configure the anchor link for gallery images */
-.gallery-anchor{
-position: relative;
-display: block;
-}
-/* Configure the overlay for gallery images */
-.gallery-overlay{
-position: absolute;
-bottom: 0px;
-left: 0px;
-white-space: nowrap;
-letter-spacing: 1px;
-font-weight: 800;
-color: #ffffffff;
-padding: 3px;
-}
-/* Parameters for Home page */
-#Home{
-width: 100%;
-}
-/* Parameters for all page divs */
-div.MenuComponent{
-padding: 0 0 0 0;
-margin-top: 100px;
-margin-bottom: 120px;
-}
-/* Configures the title for each page. */
-.MenuSectionTitle{
-text-align: center;
-/* background-color: var(--bgroundshade); */
-color: #ffffffff;
-margin: 0;
-font-size: 160%;
-font-weight: 800;
-letter-spacing: 3px;
-width: 100%;
-line-height: 100%;
-padding: 2%;
-}
-/* Button to trigger the Sign Up Modal Form */
-#joinus-button{
-width: 100%;
-}
-/* Parameters for iFrame within signup modal */
-#signup-response{
-width: 100%;
-}
-/* WSR Content Text configuration */
-.wsr-content-text{
-float: left;
-display: flex;
-flex-wrap: wrap;
-align-content: center;
-padding: 20px;
-color: #fff;
-font-size: 120%;
-}
-/* WSR Content Text paragraphs configuration */
-.wsr-content-text p{
-color: white;
-padding: 10px;
-font-weight: 500;
-letter-spacing: 2px;
-opacity: 0.8;
-display: inline-block;
-}
-/* Content Row for Warksar Website */
-.wsr-row{
-display: flex;
-max-width: 1400px;
-background-color: #555555aa;
-padding: 5px;
-float: left;
-border: 4px solid #555555ff;
-width: 100%;
-margin: auto;
-}
-/* Content Row for Warksar Website - alternative */
-.wsr-content-row{
-margin-top: 20px;
-margin-bottom: 20px;
-}
-/* Left Hand Content Image for Warksar Website */
-.wsr-content-img-l{
-object-fit: cover;
-}
-/* Warksar Right Hand Text Box */
-.wsr-content-text-r{
-width: 70%;
-align-items: center;
-}
-/* Warksar Content Images */
-.wsr-content-img{
-object-fit: cover;
-width: 100%;
-height: 100%;
-}
-/* Right Hand Content Image for Warksar Website */
-.wsr-content-img-r{
-width: 30%;
-float: left;
-display: flex;
-align-items: center;
-}
-/* Warksar Left Hand Text Box */
-.wsr-content-text-l{
-width: 50%;
-align-items: center;
-}
-/* Warksar larger content text for emphasis */
-.wsr-content-text-lg{
-font-size: 150%;
-display: inline-block;
-}
-/* Warksar ull width text section. */
-.wsr-content-text-fl{
-width: 100%;
-}
-/* Warksar Title for Items */
-.wsr-content-item-title{
-text-align: center;
-color: #ffffffbb;
-font-size: 150%;
-font-weight: 800;
-letter-spacing: 3px;
-line-height: 100%;
-
-display: flex;
-align-items: center;
-}
-/* Warksar configuration for content items on about us and other pages */
-.wsr-content-item{
-margin-bottom: 20px;
-background-color: var(--bgroundshade);
-}
-/* Warksar configuration for tet on about us and other pages */
-.wsr-content-text p{
-text-align: justify;
-color: #ffffffff;
-font-size: 100%;
-font-weight: 500;
-letter-spacing: 2px;
-line-height: 100%;
-}
-/* Warksar Configuration for sections of content */
-section.wsr-content{
-display: inline-block;
-width: 100%;
-}
-/* Warksar Content Item Title paragraphs */
-.wsr-content-item-title p{
-width: 100%;
-}
-/* Warksar Content Item image frame */
-.wsr-content-img-frame{
-padding: 0px;
-border-radius: 5px;
-}
-/* Warksar Container for the What We Do section */
-.wsr-container{
-background-color: #555555aa;
-padding: 10px;
-border: 4px solid #555555ff;
-margin-bottom: 20px;
-}
-/* Warksar Container for the Timeline Graphics */
-.wsr-timeline-left{
-left: 0;
-background-color: #55555500;
-}
-/* Warksar Container for the Timeline Graphics */
-.wsr-timeline-right{
-left: 50%;
-}
-/* Warksar Container for the Timeline Graphics */
-.wsr-timeline-left::before{
-content: " ";
-  height: 0;
-  position: absolute;
-  top: 18px;
-  width: 0;
-  z-index: 1;
-  right: 20px;
-  border: medium solid white;
-  border-width: 20px 0 20px 20px;
-  border-color: transparent transparent transparent #55555555;
-}
-/* Warksar Container for the Timeline Graphics */
-.wsr-timeline-right::before{
-content: " ";
-  height: 0;
-  position: absolute;
-  top: 18px;
-  width: 0;
-  z-index: 1;
-  left: 20px;
-  border: medium solid white;
-  border-width: 20px 20px 20px 0;
-  border-color: transparent #55555555 transparent transparent;
-}
-/* Warksar Container for the Timeline Graphics */
-.wsr-timeline-right::after{
-  left: -13px;
-}
-/* Warksar Container for the Timeline Graphics */
-.wsr-timeline-content{
-padding: 20px 30px;
-  background-color: #55555555;
-  position: relative;
-  border-radius: 6px;
-color: #fff;
-}
-/* Warksar Container for the Timeline Graphics */
-.wsr-timeline::after{
-content: '';
-  position: absolute;
-  width: 6px;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-/* Warksar Container for the Timeline Graphics */
-#wsr-container-timeline-top::after{
-content: '';
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  right: -20px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 0px;
-  border-radius: 50%;
-  z-index: 1;
-}
-/* Warksar Container for the Timeline Graphics */
-.wsr-timeline{
-position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-/* Warksar Container for the Contact Cards */
-.wsr-contact-container{
-width: 90%;
-margin: auto;
-}
-.wsr-btn-donation{
-width: 80%;
-}
-.wsr-text-input{
-border: 1px #000 solid;
-}
-/* Warksar Donate Image */
-#btn_donateCC_LG-01{
-object-fit: contain;
-}
-#btn_donateCC_LG-02{
-object-fit: scale-down;
-}
-/* Warksar Container for the carousel section */
-.wsr-container-carousel{
-}
-/* First Carousel Image */
-#img-carousel-0{
-object-fit: cover;
-height: 1000px;
-}
-/* Second Carousel Image */
-#img-carousel-1{
-object-fit: cover;
-object-position: center center;
-min-height: 1000px;
-}
-/* Third Carousel Image */
-#img-carousel-2{
-object-fit: cover;
-max-height: 1200px;
-object-position: center center;
-min-height: 1000px;
-}
-/* Fourth Carousel Image */
-#img-carousel-3{
-object-fit: cover;
-max-height: 1200px;
-object-position: center center;
-min-height: 1000px;
-}
-/* Fifth Carousel Image */
-#img-carousel-4{
-max-height: 1200px;
-object-fit: cover;
-object-position: center center;
-min-height: 1000px;
-}
-/* Sixth Carousel Image */
-#img-carousel-5{
-object-fit: cover;
-object-position: center center;
-max-height: 1200px;
-min-height: 1000px;
-}
-/* Bootstrap Card Customisation */
-.card{
-background-color: #555555aa;
-padding: 5px;
-margin: 20px auto;
-float: left;
-border: 4px solid #555555ff;
-}
-/* Bootstrap Card Image Customisation */
-.card-img-top{
-object-fit: cover;
-height: 200px;
-}
-.card-img-top-small{
-height: 150px;
-}
-.card-body{
-height: 240px;
-}
-.card-body span{
-font-weight: 800;
-font-size: 90%;
-}
-/* Bootstrap button customisation */
-.card-text a{
-width: 200px;
-}
-.card-text{
-color: #fff;
-}
-/* Complements within Bootstrap card */
-.card-link{
-height: 50px;
-text-align: center;
-}
-.card-link a{
-width: 80%;
-}
-.card-title{
-color: #fff;
-font-weight: 900;
-}
-#null-iframe{
-display: none;
-}
-/* Action button for use as part of general text pages. */
-.wsr-text-btn{
-width: 100%;
-}
-.container{
-}
-.card-body-small{
-height: 180px;
-}
-/* Warksar parameters for The Team captions */
-.wsr-carousel-caption{
-top: 0;
-width: 100%;
-background-image: linear-gradient(#000000ef, #55555500);
-left: 0;
-height: 40%;
-}
-/* Warksar parameters for The Team captions heading */
-.wsr-carousel-caption h5{
-font-size: 190%;
-color: #fff;
-font-weight: 900;
-padding: 15px 0 0 0;
-margin: 0;
-}
-/* Warksar parameters for The Team captions paragrpah */
-.wsr-carousel-caption p{
-font-size: 130%;
-color: #fff;
-font-weight: 900;
-margin: 0;
-padding: 2%;
-letter-spacing: 2px;
-}
-/* Warksar Carousel Slide Indicator */
-.wsr-carousel-indicator{
-position: fixed;
-z-index: 2;
-background-color: #55555500;
-justify-content: center;
-height: 30px;
-top: 100px;
-}
-.wsr-img-lscape{
-width: 100%;
-}
-/* Position the carousel previous indicator */
-.carousel-control-prev, .carousel-control-next{
-height: 30px;
-background-color: #55555500;
-top: 100px;
-opacity: 1;
-position: fixed;
-color: inherit;
-}
-.wsr-carousel-indicator li{
-margin: auto 3px;;
-height: 5px;
-}
-.wsr-row-foot{
-display: inline;
-}
-/* Warksar Call to Action */
-.wsr-cta{
-color: #ffffff;
-float: left;
-font-size: 200%;
-height: 300px;
-}
-/* Warksar Call to Action Buttons */
-.wsr-cta-btn{
-width: 135px;
-text-align: center;
-}
-/* Warksar Call to Action Image Box */
-.wsr-cta-img{
-width: 200px;
-display: flex;
-}
-/* Warksar Call to Action Image */
-.wsr-cta-img img{
-height: 170px;
-width: 170px;
-margin: auto;
-}
-/* Warksar Call to Action row */
-.wsr-cta-row{
-margin: 10% auto;
-width: 50%;
-display: flex;
-background-color: #4b674ef9;
-border-radius: 10px;
-border: 4px solid #335533f9;
-animation-name: CTA-zoom;
-animation-duration: 3s;
-animation-fill-mode: forwards;
-max-width: 1000px;
-}
-/* Warksar Call to Action text */
-.wsr-cta-text{
-/* width: 500px; */
-text-align: left;
+/*HOME PAGE*/
+  /* Parameters for Home page */
+  #Home{
+  width: 100%;
+  }
+  /* Warksar Call to Action */
+  .wsr-cta{
+    color: #ffffff;
+    float: left;
+    font-size: 200%;
+    height: 300px;
+  }
+  /* Warksar Call to Action Buttons */
+  .wsr-cta-btn{
+    width: 135px;
+    text-align: center;
+  }
+  /* Warksar Call to Action Image Box */
+  .wsr-cta-img{
+    width: 200px;
+    display: flex;
+  }
+  /* Warksar Call to Action Image */
+  .wsr-cta-img img{
+    height: 170px;
+    width: 170px;
+    margin: auto;
+  }
+  /* Warksar Call to Action row */
+  .wsr-cta-row{
+    margin: 10% auto;
+    width: 50%;
+    display: flex;
+    background-color: #4b674ef9;
+    border-radius: 10px;
+    border: 4px solid #335533f9;
+    animation-name: CTA-zoom;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    max-width: 1000px;
+  }
+  /* Warksar Call to Action text */
+  .wsr-cta-text{
+    text-align: left;
     color: #ffffffff;
     font-size: 160%;
     font-weight: 500;
@@ -635,404 +425,606 @@ text-align: left;
     display: flex;
     max-width: 600px;
     max-height: 300px;
-flex-direction: column;
-}
-/* Warksar Call to Action actions section */
-.wsr-cta-actions{
-color: #ffffffff;
-font-size: 150%;
-font-weight: 900;
-letter-spacing: 2px;
-line-height: 100%;
-display: flex;
-max-width: 250px;
-max-height: 300px;
-flex-direction: column;
-}
-/* Warksar Call to Action paragraphs */
-.wsr-cta p{
-margin: auto 0 auto 10px;
-}
-/* Warksar Container for the Timeline */
-.wsr-outer-container-timeline{
-box-sizing: border-box;
-background-color: var(--bgroundshade);
-}
-/* Warksar Container for the Timeline Graphics */
-.wsr-container-timeline::after{
-content: '';
-  position: absolute;
-  width: 26px;
-  height: 26px;
-  right: -13px;
-  background-color: white;
-  border: 4px solid #FF9F55;
-  top: 20px;
-  border-radius: 50%;
-  z-index: 1;
-}
-/* Warksar Container for the Timeline Graphics */
-.wsr-container-timeline{
-padding: 10px 40px;
-  position: relative;
-  background-color: #55555500;
-  width: 50%;
-}
-#alsar-logo{
-width: 100%;
-height: 100%;
-object-fit: scale-down;
-}
-#alsar-logo-container{
-}
-#imgwarksar028-01{
-width: 400px;
-}
-#imgwarksar030-02{
-max-height: 250px;
-}
-#imgitem001{
-background: url(http://www.warksar.org.uk/wp-content/uploads/2018/01/IMGP6198.jpg);
-width: 200px;
-height: 200px;
-background-size: cover;
-}
-#imgitem002{
-background: url(http://www.warksar.org.uk/wp-content/uploads/2017/01/logo.png);
-width: 200px;
-height: 200px;
-background-size: 130px;
-background-position: center center;
-background-repeat: no-repeat;
-}
-#imgitem003{
-background: url(https://www.lowlandrescue.org/images/lowland-rescue-lozenge1.png);
-width: 200px;
-height: 200px;
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center center;
-}
-#imgitem004{
-background: url(http://www.warksar.org.uk/wp-content/uploads/2020/10/Team-2019_09-copy2.jpg);
-width: 200px;
-height: 200px;
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center center;
-}
-#warwickshire-police-logo-policecard{
-object-fit: contain;
-}
-/* Footer bar across all pages */
-footer{
-position: fixed;
-bottom: 0;
-width: 100%;
-text-align: center;
-background-color: var(--darkgrey);
-opacity: 0.9;
-height: 120px;
-z-index: 5;
-}
-/* Text paragraph within the footer */
-footer p{
-color: #ffffffff;
-margin: 0;
-}
-/* List of links to Social Networks within the footer */
-.social-networks{
-text-align: center;
-margin: 5px 0;
-}
-/* Fontawesome icons for Social Networks */
-.social-networks i{
-font-size: 160%;
-margin: 0 1% 0;
-padding: 3px 5% 0;
-color: #ffffffff;
-}
-/* Links to Social Networks within the footer */
-.social-networks li{
-display: inline;
-}
-@keyframes hero-zoom{
- from{
-    transform: scale(1);
-    filter: blur(10px);
-
+    flex-direction: column;
   }
-  to{
-    transform: scale(1.1);
-    filter: blur(1px);
+  /* Warksar Call to Action actions section */
+  .wsr-cta-actions{
+    color: #ffffffff;
+    font-size: 150%;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 100%;
+    display: flex;
+    max-width: 250px;
+    max-height: 300px;
+    flex-direction: column;
   }
-}
-/* Animation for the front page call to action. */
-@keyframes CTA-zoom{
- from{
-    transform: scale(0.9);
-    opacity: 0.7;
-
+  /* Warksar Call to Action paragraphs */
+  .wsr-cta p{
+    margin: auto 0 auto 10px;
   }
-  to{
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-@media screen and (min-width: 2400px){
-#photo {
-column-count: 6;
-}
-}
-/* Equivalent to Bootstrap Extra Extra Large */
-@media screen and (min-width: 2000px){
-#photo {
-column-count: 5;
-}
-
-#img-carousel-0 {
-}
-
-#img-carousel-1 {
-max-height: 1200px;
-}
-
-#img-carousel-2 {
-max-height: 1200px;
-}
-
-#img-carousel-3 {
-max-height: 1100px;
-}
-
-#img-carousel-4 {
-max-height: 1100px;
-}
-
-#img-carousel-5 {
-max-height: 1100px;
-}
-}
-/* Equivalent to Bootstrap Extra Large */
-@media screen and (max-width: 1999px){
-#photo {
-    column-count: 4;
+  /* Warksar Container for the Timeline */
+  .wsr-outer-container-timeline{
+    box-sizing: border-box;
+    background-color: var(--bgroundshade);
   }
 
-.wsr-cta-text{
-font-size: 140%;
-}
-
-.wsr-cta-img img{
-width: 120px;
-height: 120px;
-}
-
-#img-carousel-1{
-height: 1100px;
-}
-}
-/* Equivalent to Bootstrap Large */
-@media screen and (max-width: 1199px){
-#photo {
-    column-count: 3;
-  }
-
-
-.wsr-cta-text{
-font-size: 120%;
-}
-
-.wsr-cta-img img{
-width: 100px;
-height: 100px;
-}
-}
-/* Equivalent to Bootstrap Medium */
-@media screen and (max-width: 991px){
-div.dropdown-menu{
-position: sticky;
-}
-
-.wsr-cta-text{
-font-size: 120%;
-}
-
-.wsr-cta-img{
-display: none;
-}
-
-.wsr-content-text{
-font-size: 100%;
-}
-
-.wsr-content-item-title{
-font-size: 120%;
-}
-
-
-
-/* #alsar-logo-container, #alsar-text-container, #warksar-whatwedo-img-container, #warksar-whatwedo-text-container  {
-max-width: 100%;
-flex: 0 0 100%;
-}
-*/
-}
-/* Equivalent to Bootstrap Small */
-@media screen and (max-width: 767px){
-.wsr-cta-row {
-
-    width: 90%;
-    display: flow-root;
-  
-}
-
-.wsr-cta-actions {
-font-size: 60%;
-display: inline;
-letter-spacing: 1px;
-max-width: unset;
-text-align: center; 
-width: 100%;}
-
-.wsr-cta-btn {
-width: 120px;
-margin: 5px auto;
-}
-
-.wsr-cta-actions p {
-display: inline;
-}
-
-.wsr-cta-text {
-width: 100%;
-text-align: center;
-}
-
-.wsr-cta-text {
-float: none;
-}
-
-.wsr-timeline-left::before, #wsr-container-timeline-top::before, .wsr-timeline-right::before, .wsr-timeline::before {
-display: inherit;
-}
-
-.wsr-timeline-left::after, #wsr-container-timeline-top::after, .wsr-timeline-right::after, .wsr-timeline::after {
-display: none;
-}
-
-.wsr-container-timeline {
-padding: 5px;
-width: 100%;
-}
-
-.wsr-timeline-right {
-left: unset;
-}
-
-#menu{
-background-color: var(--bgroundshade);
-width: 30%;
-padding: 5px;
-border-radius: 5px;
-}
-
-.noshow {
-display: none;
-}
-
-#img-carousel-3 {
-max-height: 600px;
-}
-
-#img-carousel-2 {
-height: 600px;
-}
-
-#img-carousel-1 {
-height: 600px;
-}
-}
-/* Equivalent to Bootstrap X-Small */
-@media screen and (max-width: 575px){
-#photo {
-    column-count: 2;
-  }
-
-ul.Home-CTA li{
-text-align: center;
-letter-spacing: 1px;
-}
-
-#ALSAR-logo, #Police-image, #Warksmap {
-width: 100%;
-margin: 0 ;
-}
-
-section.AnnReport img{
-width: 98%;
-margin: auto;
-float: none;
-}
-
-section.AnnReport {
-width: 100%;
-padding: 0;
-margin: 0;
-border-style: none;
-border-radius: 0;
-text-align: center;
-}
-
-.d-md-block {
-    display: block!important;
-}
-}
-/* Additional breakpoint for timeline display */
-@media screen and (max-width: 600px) {
-/* Place the timelime to the left */
-  .timeline::after {
-  left: 31px;
-  }
-  
-  /* Full-width containers */
-  .container {
+/*ABOUT - WHAT WE DO PAGE*/
+/*Lowland Rescure Logo*/
+  #alsar-logo{
   width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-  }
-  
-  /* Make sure that all arrows are pointing leftwards */
-  .container::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  height: 100%;
+  object-fit: scale-down;
   }
 
-  /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-  left: 15px;
+/*ABOUT - OUR HISTORY PAGE*/
+/* Warksar Container for the Timeline Graphics */
+  .wsr-timeline-left{
+    left: 0;
+    background-color: #55555500;
   }
-  
-  /* Make all right containers behave like the left ones */
-  .right {
-  left: 0%;
+  .wsr-timeline-right{
+    left: 50%;
   }
-}
-/* Large vertical breakpoint */
-@media screen and (max-height: 850px){
-.wsr-cta-row {
-margin: 5% auto;
-}
-}
-/* For mobile devices in Landscape */
-@media screen and (max-height: 600px){
-footer{
-display: none;
-}
+  .wsr-timeline-left::before{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 18px;
+    width: 0;
+    z-index: 1;
+    right: 20px;
+    border: medium solid white;
+    border-width: 20px 0 20px 20px;
+    border-color: transparent transparent transparent #55555555;
+  }
+  .wsr-timeline-right::before{
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 18px;
+    width: 0;
+    z-index: 1;
+    left: 20px;
+    border: medium solid white;
+    border-width: 20px 20px 20px 0;
+    border-color: transparent #55555555 transparent transparent;
+  }
+  .wsr-timeline-right::after{
+    left: -13px;
+  }
+  .wsr-timeline-content{
+    padding: 20px 30px;
+    background-color: #55555555;
+    position: relative;
+    border-radius: 6px;
+    color: #fff;
+  }
+  .wsr-timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  #wsr-container-timeline-top::after{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: -20px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 0px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .wsr-timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  /* Warksar Container for the Timeline Graphics */
+  .wsr-container-timeline::after{
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    right: -13px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 20px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .wsr-container-timeline{
+    padding: 10px 40px;
+    position: relative;
+    background-color: #55555500;
+    width: 50%;
+  }
 
-.wsr-cta-row {
-margin: 10px auto;
-}
-}
+/* CONTACT PAGE */
+  /* Warksar Container for the Contact Cards */
+    .wsr-contact-container{
+      width: 90%;
+      margin: auto;
+    }
+    .wsr-btn-donation{
+      width: 80%;
+    }
+    .wsr-text-input{
+      border: 1px #000 solid;
+    }
+  /*Wrwickshire Police Logo*/
+    #warwickshire-police-logo-policecard{
+    object-fit: contain;
+    }
+
+/* JOIN US PAGE */
+  /* Button to trigger the Sign Up Modal Form */
+    #joinus-button{
+    width: 100%;
+    }
+  /* Parameters for iFrame within signup modal */
+    #signup-response{
+    width: 100%;
+    }
+   /* Stretcher Image*/
+    #imgwarksar030-02{
+      max-height: 250px;
+    }
+
+/* THE TEAM PAGE */
+  /* First Carousel Image */
+    #img-carousel-0{
+      object-fit: cover;
+      height: 1000px;
+    }
+  /* Second Carousel Image */
+    #img-carousel-1{
+      object-fit: cover;
+      object-position: center center;
+      min-height: 1000px;
+    }
+  /* Third Carousel Image */
+    #img-carousel-2{
+      object-fit: cover;
+      max-height: 1200px;
+      object-position: center center;
+      min-height: 1000px;
+    }
+  /* Fourth Carousel Image */
+    #img-carousel-3{
+      object-fit: cover;
+      max-height: 1200px;
+      object-position: center center;
+      min-height: 1000px;
+    }
+  /* Fifth Carousel Image */
+    #img-carousel-4{
+      max-height: 1200px;
+      object-fit: cover;
+      object-position: center center;
+      min-height: 1000px;
+    }
+  /* Sixth Carousel Image */
+    #img-carousel-5{
+    object-fit: cover;
+    object-position: center center;
+    max-height: 1200px;
+    min-height: 1000px;
+    }
+  /* Warksar parameters for The Team captions */
+    .wsr-carousel-caption{
+      top: 0;
+      width: 100%;
+      background-image: linear-gradient(#000000ef, #55555500);
+      left: 0;
+      height: 40%;
+    }
+  /* Warksar parameters for The Team captions heading */
+    .wsr-carousel-caption h5{
+      font-size: 190%;
+      color: #fff;
+      font-weight: 900;
+      padding: 15px 0 0 0;
+      margin: 0;
+    }
+  /* Warksar parameters for The Team captions paragrpah */
+    .wsr-carousel-caption p{
+      font-size: 130%;
+      color: #fff;
+      font-weight: 900;
+      margin: 0;
+      padding: 2%;
+      letter-spacing: 2px;
+    }
+  /* Warksar Carousel Slide Indicator */
+    .wsr-carousel-indicator{
+      position: fixed;
+      z-index: 2;
+      background-color: #55555500;
+      justify-content: center;
+      height: 30px;
+      top: 100px;
+    }
+    .wsr-img-lscape{
+      width: 100%;
+    }
+  /* Position the carousel previous indicator */
+    .carousel-control-prev, .carousel-control-next{
+      height: 30px;
+      background-color: #55555500;
+      top: 100px;
+      opacity: 1;
+      position: fixed;
+      color: inherit;
+    }
+    .wsr-carousel-indicator li{
+      margin: auto 3px;;
+      height: 5px;
+    }
+
+/* GALLERY PAGE */
+  /* Settings that apply to img and iframe elements within the photo section of the Gallery page */
+    #photo img, #photo iframe{
+    width: 100%;
+    margin: 0px;
+    }
+  /* Manages the photo section of the gallery */
+    #photo{
+    clear: both;
+    line-height: 0px;
+    column-count: 5;
+    column-gap: 0;
+    padding: 0;
+    }
+  /* Manage the Gallery page */
+    #Gallery{
+    margin-bottom: 0px;
+    }
+  /* Manage the Gallery page header */
+    #Gallery header{
+    background-image: linear-gradient(#000000e6, #55555500);
+    }
+  /* Configure the anchor link for gallery images */
+    .gallery-anchor{
+    position: relative;
+    display: block;
+    }
+  /* Configure the overlay for gallery images */
+    .gallery-overlay{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: #ffffffff;
+    padding: 3px;
+    }
+
+/* DONATE PAGE */
+  /* Warksar Donate Image */
+    #btn_donateCC_LG-01{
+      object-fit: contain;
+    }
+    #btn_donateCC_LG-02{
+      object-fit: scale-down;
+    }
+  /* Hidden iframe on bank details modal form, for future extension*/
+    #null-iframe{
+      display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ANIMATIONS*/
+  /* Animation for the home page and gallery background image. */
+  @keyframes hero-zoom{
+    from{
+      transform: scale(1);
+      filter: blur(10px);
+    }
+    to{
+      transform: scale(1.1);
+      filter: blur(1px);
+    }
+  }
+  /* Animation for the front page call to action. */
+  @keyframes CTA-zoom{
+  from{
+      transform: scale(0.9);
+      opacity: 0.7;
+    }
+    to{
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+/*MEDIA QUERIES*/
+  /* For extra-wide 4k screens */
+    @media screen and (min-width: 2400px){
+      /*Adjust Gallery Columns*/
+      #photo {
+      column-count: 6;
+      }
+    }
+  /* Equivalent to Bootstrap Extra Extra Large */
+    @media screen and (min-width: 2000px){
+      /*Adjust Gallery Columns*/
+      #photo {
+      column-count: 5;
+      }
+
+      /*Adjust Carousel Images to crop appropriately*/
+      #img-carousel-0 {
+      }
+      #img-carousel-1 {
+      max-height: 1200px;
+      }
+      #img-carousel-2 {
+      max-height: 1200px;
+      }
+      #img-carousel-3 {
+      max-height: 1100px;
+      }
+      #img-carousel-4 {
+      max-height: 1100px;
+      }
+      #img-carousel-5 {
+      max-height: 1100px;
+      }
+    }
+
+  /* Equivalent to Bootstrap Extra Large */
+    @media screen and (max-width: 1999px){
+      /*Adjust Gallery Columns*/
+      #photo {
+          column-count: 4;
+        }
+
+      /*Adjust Home Page CTA*/
+      .wsr-cta-text{
+      font-size: 140%;
+      }
+      .wsr-cta-img img{
+      width: 120px;
+      height: 120px;
+      }
+      #img-carousel-1{
+      height: 1100px;
+      }
+    }
+
+  /* Equivalent to Bootstrap Large */
+    @media screen and (max-width: 1199px){
+      /*Adjust Gallery Columns*/
+      #photo {
+      column-count: 3;
+      }
+
+      /*Adjust Home Page CTA*/
+      .wsr-cta-text{
+      font-size: 120%;
+      }
+      .wsr-cta-img img{
+      width: 100px;
+      height: 100px;
+      }
+    }
+
+  /* Equivalent to Bootstrap Medium */
+  @media screen and (max-width: 991px){
+  div.dropdown-menu{
+  position: sticky;
+  }
+
+  .wsr-cta-text{
+  font-size: 120%;
+  }
+
+  .wsr-cta-img{
+  display: none;
+  }
+
+  .wsr-content-text{
+  font-size: 100%;
+  }
+
+  .wsr-content-item-title{
+  font-size: 120%;
+  }
+
+
+
+  /* #alsar-logo-container, #alsar-text-container, #warksar-whatwedo-img-container, #warksar-whatwedo-text-container  {
+  max-width: 100%;
+  flex: 0 0 100%;
+  }
+  */
+  }
+  /* Equivalent to Bootstrap Small */
+  @media screen and (max-width: 767px){
+  .wsr-cta-row {
+
+      width: 90%;
+      display: flow-root;
+    
+  }
+
+  .wsr-cta-actions {
+  font-size: 60%;
+  display: inline;
+  letter-spacing: 1px;
+  max-width: unset;
+  text-align: center; 
+  width: 100%;}
+
+  .wsr-cta-btn {
+  width: 120px;
+  margin: 5px auto;
+  }
+
+  .wsr-cta-actions p {
+  display: inline;
+  }
+
+  .wsr-cta-text {
+  width: 100%;
+  text-align: center;
+  }
+
+  .wsr-cta-text {
+  float: none;
+  }
+
+  .wsr-timeline-left::before, #wsr-container-timeline-top::before, .wsr-timeline-right::before, .wsr-timeline::before {
+  display: inherit;
+  }
+
+  .wsr-timeline-left::after, #wsr-container-timeline-top::after, .wsr-timeline-right::after, .wsr-timeline::after {
+  display: none;
+  }
+
+  .wsr-container-timeline {
+  padding: 5px;
+  width: 100%;
+  }
+
+  .wsr-timeline-right {
+  left: unset;
+  }
+
+  #menu{
+  background-color: var(--bgroundshade);
+  width: 30%;
+  padding: 5px;
+  border-radius: 5px;
+  }
+
+  .noshow {
+  display: none;
+  }
+
+  #img-carousel-3 {
+  max-height: 600px;
+  }
+
+  #img-carousel-2 {
+  height: 600px;
+  }
+
+  #img-carousel-1 {
+  height: 600px;
+  }
+  }
+  /* Equivalent to Bootstrap X-Small */
+  @media screen and (max-width: 575px){
+  #photo {
+      column-count: 2;
+    }
+
+  ul.Home-CTA li{
+  text-align: center;
+  letter-spacing: 1px;
+  }
+
+  #ALSAR-logo, #Police-image, #Warksmap {
+  width: 100%;
+  margin: 0 ;
+  }
+
+  section.AnnReport img{
+  width: 98%;
+  margin: auto;
+  float: none;
+  }
+
+  section.AnnReport {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-style: none;
+  border-radius: 0;
+  text-align: center;
+  }
+
+  .d-md-block {
+      display: block!important;
+  }
+  }
+  /* Additional breakpoint for timeline display */
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+  }
+  /* Large vertical breakpoint */
+  @media screen and (max-height: 850px){
+  .wsr-cta-row {
+  margin: 5% auto;
+  }
+  }
+  /* For mobile devices in Landscape */
+  @media screen and (max-height: 600px){
+  footer{
+  display: none;
+  }
+
+  .wsr-cta-row {
+  margin: 10px auto;
+  }
+  }

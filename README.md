@@ -330,13 +330,13 @@ For each option the page is then checked from top to bottom.  Key checks include
 
 For layout and look and feel consistency, usability and aesthetics are considered.
 
-### 8.2 Browser Testing
+### 10.2 Browser Testing
 
 The site needs to be systematically checked against a range of common browsers.  These include, but are not limited to, Google Chrome, Firefox, Microsoft Edge, Safari and Internet Explorer.
 
 Errors corrected include, not use of auto-fit in css and careful use of flex display options.
 
-### 8.3 Device Testing
+### 10.3 Device Testing
 
 Ideally the site would be checked on the full range of devices and operating systems.  For practical reasons in the context of a learning project it may not be possible to test against all options.
 
@@ -344,21 +344,21 @@ The web developer tools allow testing against common devices, particularly mobil
 
 The site has been developed on a Windows 10 Platform with Chrome.
 
-### 8.4 End User Testing
+### 10.4 End User Testing
 
 In this case there is a client organisation, so there will be extensive end user testing from a range of stakeholders, focusing on a range of personae.
 
 There will also be a range of end users asked to review and comment on the site.  Beyond the context of a learning project this would need to be more extensive, more formal and more structured.
 
-### 8.5 Scenario Testing
+### 10.5 Scenario Testing
 
 There are four key user experience scenarios against which the site will be tested, a user seeking further information, a user wishing to get in touch with the organisation, a user wishing to join the organisation and a user wishing to donate to the organisation.  
 
-### 8.6 Responsive Design Testing
+### 10.6 Responsive Design Testing
 
 The site is based on the Bootstrap breakpoints, testing has been conducted against each of these.  The following test record shows the logical transition from 4k desktop screens to small mobile devices, that may be in portrait or landscape orientation.
 
-#### 8.6.1 Extra Extra Large (XXL) >= 1400px
+#### 10.6.1 Extra Extra Large (XXL) >= 1400px
 
 **Navigation Bar** - OK
 
@@ -382,7 +382,7 @@ Adjust width for first item.
 **Donate** - OK
 3 Bootstrap Cards Across
 
-#### 8.6.2 Extra Large xl 1200px - 1400px
+#### 10.6.2 Extra Large xl 1200px - 1400px
 
 **Home Page**
 Remove min-width and min-height for CTA-text frame
@@ -404,7 +404,7 @@ Reduce font size of CTA text
 **Donate** - OK
 3 Bootstrap Cards Across
 
-#### 8.6.3 Large lg 992px - 1200px
+#### 10.6.3 Large lg 992px - 1200px
 
 **Navigation Bar** - OK
 
@@ -429,7 +429,7 @@ Reduce font sizes
 **Donate** - OK
 3 Bootstrap Cards Across
 
-#### 8.6.4 Medium md 768px to 992px
+#### 10.6.4 Medium md 768px to 992px
 
 **Navigation Bar** - OK
 
@@ -455,7 +455,7 @@ Align image title and text vertically using Bootstrap
 **Donate** - OK
 3 Bootstrap Cards Across
 
-#### 8.6.5 Small 576px to 768px
+#### 10.6.5 Small 576px to 768px
 
 **Navigation Bar**
 Menu background being transparent makes text difficult to read with burger menu.  Set background to green, with padding and rounded corners
@@ -480,7 +480,7 @@ Hide image using Bootstrap
 2 Bootstrap Cards Across
 1 on next row, all centred
 
-#### 8.6.6 Extra Small 0px to 576px
+#### 10.6.6 Extra Small 0px to 576px
 
 **Navigation Bar**
 Menu background being transparent makes text difficult to read with burger menu.  Set background to green, with padding and rounded corners
@@ -505,13 +505,13 @@ Hide image using Bootstrap
 2 Bootstrap Cards Across
 1 on next row, all centred
 
-#### 8.6.7 Landscape Mobile
+#### 10.6.7 Landscape Mobile
 
 **Footer Bar**
 Disappears when height is below 400px.
 
 
-## 9 W3C HTML Validation Report
+## 10.7 W3C HTML Validation Report
 
 The report was the initial report for the index.html page (which includes all html pages as Javascript is used to hide and show page components).
 
@@ -702,17 +702,14 @@ her"></a>?<iframe width="1280" height="720" src="https://www.youtube.com/embed/q
 **Actions**
 Remove frameborder and use CSS
 
-
 **19**	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
 
 **Issue**
 From line 371, column 1; to line 371, column 20
-</header>?<section id='photo'>?<!-- 
+</header>?<section id=''photo'>? 
 
 **Actions**
 Add heading, hide if appropriate
-
-
 
 **20**	Error: Bad value for attribute id on element div: An ID must not be the empty string.
 
@@ -723,7 +720,6 @@ ation -->?<div id="" class="card" style="width: 18rem;">? <im
 **Actions**
 Put in unique, non-null, ID
 
-
 **21**	Error: Duplicate ID .
 
 **Issue**
@@ -732,7 +728,6 @@ From line 442, column 3; to line 442, column 82
 
 **Actions**
 Put in unique, non-null, ID
-
 
 **22**	Warning: The first occurrence of ID was here.
 
@@ -868,7 +863,7 @@ Adjust for attribute
     About this checker � Report an issue � Version: 21.2.17
 
 
-## 10 W3C CSS Validator results for warwickshiresearchandrescue.css 
+### 10.8 W3C CSS Validator results for warwickshiresearchandrescue.css 
 (CSS level 3 + SVG)
 Sorry! We found the following errors (13)
 URI : warwickshiresearchandrescue.css
@@ -992,14 +987,9 @@ URI : warwickshiresearchandrescue.css
 **Actions**
 All warnings refer to variables that have been created to enable global management of the colurs of certain features so that they remain consistent across the site.
 
+## 11 Credits
 
-## CSS Structure
-
-## Deployment
-
-## Credits
-
-## Assessment Criteria
+## 12 Assessment Criteria
 User Centric Front-end Development
 Assessment Criteria
 Learning Outcomes

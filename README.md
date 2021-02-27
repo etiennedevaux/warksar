@@ -344,88 +344,88 @@ The site is based on the Bootstrap breakpoints, testing has been conducted again
 
 #### 10.6.1 Extra Extra Large (XXL) >= 1400px
 
-    **Navigation Bar** - OK
+    Navigation Bar - OK
 
-    **Home Page** - OK
+    Home Page - OK
 
-    **What We Do Page - OK
+    What We Do Page - OK
 
-    **Our History** - OK
+    Our History - OK
 
-    **Team Carousel**
+    Team Carousel
     Adjust width for first item.
 
-    **Join Us** - OK
+    Join Us - OK
 
-    **Gallery** - OK
+    Gallery - OK
     4 columns
 
-    **Contact** - OK
+    Contact - OK
     4 Bootstrap Cards Across
 
-    **Donate** - OK
+    Donate - OK
     3 Bootstrap Cards Across
 
 #### 10.6.2 Extra Large xl 1200px - 1400px
 
-    **Home Page**
+    Home Page
     Remove min-width and min-height for CTA-text frame
     Reduce size of central logo
     Reduce font size of CTA text
 
-    **What We Do Page** - OK
+    What We Do Page - OK
 
-    **Team Carousel** - OK
+    Team Carousel - OK
 
-    **Join Us** - OK
+    Join Us - OK
 
-    **Gallery** - OK
+    Gallery - OK
     3 columns
 
-    **Contact** - OK
+    Contact - OK
     4 Bootstrap Cards Across
 
-    **Donate** - OK
+    Donate - OK
     3 Bootstrap Cards Across
 
-    #### 10.6.3 Large lg 992px - 1200px
+#### 10.6.3 Large lg 992px - 1200px
 
-    **Navigation Bar** - OK
+    Navigation Bar - OK
 
-    **Home Page*
+    Home Page*
     Further educe size of central logo
     Further educe font size of CTA text
 
-    **What We Do Page** - OK
+    What We Do Page - OK
 
-    **Team Carousel** - OK
+    Team Carousel - OK
 
-    **Join Us**
+    Join Us
     Reduce font sizes
 
-    **Gallery** - OK
+    Gallery - OK
     3 columns
 
-    **Contact** - OK
+    Contact - OK
     3 Bootstrap Cards Across
     1 on next row, all centred
 
-    **Donate** - OK
+    Donate - OK
     3 Bootstrap Cards Across
 
 #### 10.6.4 Medium md 768px to 992px
 
-**Navigation Bar** - OK
-
-**Home Page**
-Hide central logo
-
-**What We Do Page**
-Add element ids so that individual elements can be targeted, and Bootstrap customised, without affecting other parts of the site
-Use Bootstrap set images to go vertically above text
-
-**Team Carousel** - OK
-
+>**Navigation Bar** - OK  
+>
+>**Home Page**  
+>Hide central logo  
+>
+>**What We Do Page**  
+>Add element ids so that individual elements can be targeted, and Bootstrap customised, without affecting other parts of the site
+>Use Bootstrap set images to go vertically above text
+>
+>**Team Carousel** - OK
+>
 **Join Us**
 Align image title and text vertically using Bootstrap
 

@@ -3,7 +3,6 @@ README.md
 # Website Title: Warwickshire Search and Rescue
 
 ## Version Details
-README Version: ;
 HTML Version: 0418;
 CSS Version: 0748;
 JavaScript Version: 0039;
@@ -64,7 +63,7 @@ The Wireframe Designs were created using [Justinmind 9.2.2](https://etiennedevau
 
 Each page was prototyped in order to get concensus from the Warwickshire Search and Rescue Team.  Once finalised the designs were implemented in html, using CSS and Javascript.  
 
-* In some cases there are minor interface changes from the original wireframe. *
+*In some cases there are minor interface changes from the original wireframe.*
 
 2.1 [Home](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Home.png)
 
@@ -317,9 +316,13 @@ GitHub has an upper file limit of 100Mb.  This is generous for code, and adequat
 
 The are examples of all three on this site.
 
-## 8 Testing and Quality Assurance
+## 8 Code Structure
 
-### 8.1 Systematic Testing
+## 9 Deployment
+
+## 10 Testing and Quality Assurance
+
+### 10.1 Systematic Testing
 
 Systematic testing involves checking each menu option from left to right, including drop-down options.  The left to right pattern helps to reduce the risk of options being overlooked.
 
@@ -516,6 +519,8 @@ The report also shows the actions taken to obtain an error free report.
 
 A check will now be run before each commit and any errors adressed at that stage, or soon after.
 
+*NB: src=  urls have been modified to prevent images from cluttering the README file when viewed online
+
 **Report 001**
 
 **1**	Error: No space between attributes.
@@ -531,7 +536,7 @@ Space added
 
 **Issue**
 From line 16, column 1; to line 16, column 97
-</script>?<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></scri
+</script>?<script type="text/javascript"src=""https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js></scri
 
 **Actions**
 Type attribute removed
@@ -540,7 +545,7 @@ Type attribute removed
 
 **Issue**
 From line 28, column 1; to line 28, column 51
-ogoleft'>?<img class='logoleft' src='assets/images/logo.png'>?</div
+ogoleft'>?<img class='logoleft' src=''assets/images/logo.png>?</div
 
 **Actions**
 Add ALT tag
@@ -550,7 +555,7 @@ Add ALT tag
 
 **Issue**
 From line 73, column 1; to line 73, column 34
-cta-img">?<img src="assets/images/logo.png">?</div
+cta-img">?<img src=""assets/images/logo.png">?</div
 
 **Actions**
 Add ALT tag
@@ -723,7 +728,7 @@ Put in unique, non-null, ID
 
 **Issue**
 From line 442, column 3; to line 442, column 82
-8rem;">? <img id="" src="assets/images/imgwarksar011.jpg" class="card-img-top" alt="...">? <di
+8rem;">? <img id="" src=""assets/images/imgwarksar011.jpg class="card-img-top" alt="...">? <di
 
 **Actions**
 Put in unique, non-null, ID
@@ -988,12 +993,13 @@ URI : warwickshiresearchandrescue.css
 All warnings refer to variables that have been created to enable global management of the colurs of certain features so that they remain consistent across the site.
 
 
-##Deployment
+## CSS Structure
 
+## Deployment
 
-##Credits
+## Credits
 
-
+## Assessment Criteria
 User Centric Front-end Development
 Assessment Criteria
 Learning Outcomes

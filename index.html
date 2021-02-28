@@ -681,112 +681,126 @@
     </div>
   <!--  End of Gallery Virtual Page-->
 
-  <!--  Start of Donate menu section-->
-  <div style='display: none;' class='MenuComponent' id='Donate'>
-    <a id='Donate-Top'></a>
-    <header>
-      <h1 class='MenuSectionTitle'>Support Us</h1>
-    </header>
-  <section id='donations' class='wsr-content'>
-  <div class="row">
-    <div  class="col-12">
-      <p class="wsr-content-text">
-        Every member of Warwickshire Search and Rescue is a volunteer, and the only way we can continue to operate is with your help and support.  Each team member pays for their own clothing, fuel and equipment, but your support helps keep our Incident Control Vehicle running, provides essential training and helps us purchase vital equipment, such as communications equipment, GPS navigation and medical kits.
-        <br>No matter how small, personal donations help to keep the team running. 
-      </p>
-    </div>
-  </div>
-  <div class="wsr-contact-container">
-  <div class="row">
-  <!-- Warksar Donation Modal -->
-  <!-- Modal -->
-  <div class="modal fade" id="DonationModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="ModalLabel">Online Transfer</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+  <!--  Start of Donate Virtual Page-->
+    <div style='display: none;' class='MenuComponent' id='Donate'>
+      <a id='Donate-Top'></a>
+      <header>
+        <h1 class='MenuSectionTitle'>Support Us</h1>
+      </header>
+      <section id='donations' class='wsr-content'>
+        <div class="row">
+          <div  class="col-12">
+            <p class="wsr-content-text">
+              Every member of Warwickshire Search and Rescue is a volunteer, and the only way we can continue to operate is with your help and support.  Each team member pays for their own clothing, fuel and equipment, but your support helps keep our Incident Control Vehicle running, provides essential training and helps us purchase vital equipment, such as communications equipment, GPS navigation and medical kits.
+              <br>No matter how small, personal donations help to keep the team running. 
+            </p>
+          </div>
         </div>
-        <!-- Start of Online Transfer Modal Form-->
-          <form id="query-form" class="signup-form" method="POST" action="https://devauxphp.azurewebsites.net/warksar_log.php" target="null">
-            <div class="modal-body">
-              Please enter your name and email address and we will send you details of how to perform an online transfer.<br>
-              <!-- iframe to receive post input from php.  Presently hidden-->
-              <iframe id="null-iframe" name="null"></iframe>
-              <br>
-              <label for="fullname">Full Name</label>
-              <br>
-              <input class="text-input wsr-text-input" id="fullname" type="text" name="full_name" required="" size="50">
-              <br>
-              <label for="email">Email Address</label><br>
-              <input class="text-input wsr-text-input" id="email" type="email" name="email_address" required="" size="50">
+        <div class="wsr-contact-container">
+          <div class="row">
+          <!-- Warksar Donation Modal -->
+            <div class="modal fade" id="DonationModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">Online Transfer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <!-- Start of Online Transfer Modal Form-->
+                    <form id="query-form" class="signup-form" method="POST" action="https://devauxphp.azurewebsites.net/warksar_log.php" target="null">
+                      <div class="modal-body">
+                        Please enter your name and email address and we will send you details of how to perform an online transfer.<br>
+                        <!-- iframe to receive post input from php.  Presently hidden-->
+                        <iframe id="null-iframe" name="null"></iframe>
+                        <br>
+                        <label for="fullname">Full Name</label>
+                        <br>
+                        <input class="text-input wsr-text-input" id="fullname" type="text" name="full_name" required="" size="50">
+                        <br>
+                        <label for="email">Email Address</label><br>
+                        <input class="text-input wsr-text-input" id="email" type="email" name="email_address" required="" size="50">
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <input id="donationmodal-button" type="submit" class="btn btn-primary" onclick="formSubmit('query-form')">
+                      </div>
+                    </form>
+                  <!-- End of Online Transfer Modal Form-->
+                </div>
+              </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <input id="donationmodal-button" type="submit" class="btn btn-primary" onclick="formSubmit('query-form')">
+          <!-- End of Warksar Donation Modal-->
+          <!-- Online Transfer Bootstrap Card with Local Customisation  -->
+            <div id="onlinetransfer" class="card" style="width: 18rem;">
+              <img id="OnlineBanking-01" src="assets/images/OnlineBanking.png" class="card-img-top-small" alt="Payment Cards">
+              <div class="card-body-small">
+                <h5 class="card-title">Online Transfer</h5>
+                <p class="card-text">To perform an online transfer please click on the link below, and you will be sent banking details.</p>
+              </div>
+                <div class="card-link">
+                  <!-- Button To Trigger Modal -->
+                  <button id="onlinebanking-button" type="button" class="btn btn-primary wsr-btn-donation" data-toggle="modal" data-target="#DonationModal">
+                  Banking Details
+                  </button>
+                </div>
             </div>
-          </form>
-        <!-- End of Online Transfer Modal Form-->
-      </div>
+          <!-- End of Online TransferBootstrap Card -->
+          <!-- Paypal Bootstrap Card with Local Customisation  -->
+            <div id="paypal" class="card" style="width: 18rem;">
+              <img id="btn_donateCC_LG-02" src="assets/images/btn_donateCC_LG.gif" class="card-img-top-small" alt="Payment Cards">
+              <div class="card-body-small">
+                <h5 class="card-title">Paypal</h5>
+                <p class="card-text">You can make a donation by using the Paypal button, you don&apos;t need a Paypal account to do this.</p>
+              </div>
+              <div class="card-link">
+                <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=ECZMF9M494KXY" target="_blank" class="btn btn-primary">Paypal</a>
+              </div>
+            </div>
+          <!-- End of Paypal Bootstrap Card -->
+          <!-- Online Banking Bootstrap Card with Local Customisation  -->
+            <div id="onlineshopping" class="card" style="width: 18rem;">
+              <img id="logowall-01" src="assets/images/logowall.png" class="card-img-top-small" alt="Online Stores">
+              <div class="card-body-small">
+                  <h5 class="card-title">Online Shopping</h5>
+                  <p class="card-text">Easyfundraising is a great way to raise money.  Shop online with over 2,700 retailers and they will give a donation, at no cost to you, every time you buy.</p>
+              </div>
+              <div class="card-link">
+                <a href="https://www.easyfundraising.org.uk/causes/warksar/" target="_blank" class="btn btn-primary">Easyfundraising</a>
+              </div>
+            </div>
+          <!-- End of Online Banking Bootstrap Card -->
+          </div>
+        </div>
+      </section>
     </div>
-  </div>
-  <!-- Online Transfer Bootstrap Card with Local Customisation  -->
-  <div id="onlinetransfer" class="card" style="width: 18rem;">
-    <img id="OnlineBanking-01" src="assets/images/OnlineBanking.png" class="card-img-top-small" alt="Payment Cards">
-    <div class="card-body-small">
-      <h5 class="card-title">Online Transfer</h5>
-      <p class="card-text">To perform an online transfer please click on the link below, and you will be sent banking details.</p>
-    </div>
-      <div class="card-link">
-  <!-- Button trigger modal -->
-  <button id="onlinebanking-button" type="button" class="btn btn-primary wsr-btn-donation" data-toggle="modal" data-target="#DonationModal">
-  Banking Details
-  </button>
-  </div>
-  </div>
-  <!-- End of Bootstrap Card -->
-  <!-- Paypal Bootstrap Card with Local Customisation  -->
-  <div id="paypal" class="card" style="width: 18rem;">
-    <img id="btn_donateCC_LG-02" src="assets/images/btn_donateCC_LG.gif" class="card-img-top-small" alt="Payment Cards">
-    <div class="card-body-small">
-      <h5 class="card-title">Paypal</h5>
-      <p class="card-text">You can make a donation by using the Paypal button, you don&apos;t need a Paypal account to do this.</p>
-    </div>
-      <div class="card-link">
-  <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=ECZMF9M494KXY" target="_blank" class="btn btn-primary">Paypal</a>
-  </div>
-  </div>
-  <!-- End of Bootstrap Card -->
-  <!-- Online Bootstrap Card with Local Customisation  -->
-  <div id="onlineshopping" class="card" style="width: 18rem;">
-  <img id="logowall-01" src="assets/images/logowall.png" class="card-img-top-small" alt="Online Stores">
-    <div class="card-body-small">
-      <h5 class="card-title">Online Shopping</h5>
-      <p class="card-text">Easyfundraising is a great way to raise money.  Shop online with over 2,700 retailers and they will give a donation, at no cost to you, every time you buy.</p>
-    </div>
-      <div class="card-link">
-  <a href="https://www.easyfundraising.org.uk/causes/warksar/" target="_blank" class="btn btn-primary">Easyfundraising</a>
-  </div>
-  </div>
-  <!-- End of Bootstrap Card -->
-  </div>
-  </div>
-  </section>
-  </div>
-  <!--  End of Donate menu section-->
+  <!--  End of Donate Virtual Page-->
 
-  <footer>
-  <ul class="social-networks" aria-label="Social Media">
-  <li><a aria-label="Facebook" href="http://www.facebook.com/warksar" target="_blank" aria-label="Facebook"><i class="fab fa-facebook" ></i></a></li>
-  <li><a href="https://twitter.com/WarkSAR" target="_blank"   aria-label="Twitter"><i class="fab fa-twitter-square"></i></a></li>
-  <li><a href="http://www.youtube.com" target="_blank"  aria-label="YouTube"><i class="fab fa-youtube-square"></i></a></li>
-  <li><a href="http://www.instagram.com" target="_blank"  aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-  </ul>
-  <p>Registered Charity No. 1167079</p>
-  <p class='enquiry'>For Enquiries Please Email: support@warksar.org.uk</p>
-  <p class='d-none d-lg-inline footer-sm'>Created by Stephen Clarke on behalf of Warwickshire Search and Rescue 
-  ||&nbsp;Last update on 25/02/2021||&nbsp;<span id='HTMLSerNo'>0418</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
+  <!-- Start of Site Wide Footer-->
+    <footer>
+      <ul class="social-networks" aria-label="Social Media">
+        <li>
+          <a aria-label="Facebook" href="http://www.facebook.com/warksar" target="_blank" aria-label="Facebook"><i class="fab fa-facebook" ></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/WarkSAR" target="_blank"   aria-label="Twitter"><i class="fab fa-twitter-square"></i></a>
+        </li>
+        <li>
+          <a href="http://www.youtube.com" target="_blank"  aria-label="YouTube"><i class="fab fa-youtube-square"></i></a>
+        </li>
+        <li>
+          <a href="http://www.instagram.com" target="_blank"  aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </li>
+      </ul>
+      <p>Registered Charity No. 1167079</p>
+      <p class='enquiry'>For Enquiries Please Email: support@warksar.org.uk</p>
+      <p class='d-none d-lg-inline footer-sm'>Created by Stephen Clarke on behalf of Warwickshire Search and Rescue ||&nbsp;Last update on 25/02/2021||&nbsp;
+        <span id='HTMLSerNo'>0418</span>.
+        <span id='CSSSerNo'></span>
+        <span id='JSSerNo'></span>
+      </p>
+    </footer>
+  <!-- End of Site Wide Footer-->
 </body>
 </html>

@@ -5,7 +5,6 @@
     <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
     <meta name='viewport' content='width=device-width initial-scale=1.0'>
     <meta name='description' content='Public facing website for Warwickshire Search and Rescue'>
-    <meta name='keywords' content=''>
     <meta name='author' content='Stephen Clarke: Warwickshire Search and Rescue'>
     <!-- Resource References-->
     <link rel='icon' href='assets/images/favicon.ico'>
@@ -20,731 +19,774 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    
-    <title>Warwickshire Search and Rescue</title>
-    
+    <!-- Title as shown in the browser and for search engines-->
+    <title>Warwickshire Search and Rescue</title> 
 </head>
     
 <body onload="showMenuComponent('Home');document.getElementById('navbarNavDropdown').className='navbar-collapse collapse';" onhashchange='showMenuComponent(location.hash.substring(1,location.hash.length-4));'>
 
-<!-- Background Images for Different Pages-->
-<div id='imgbground' class='bground Home-display Gallery-display'></div>
-<div id='imgbground-blur' class='bground-blur'></div>
+  <!-- Background Images for Different Pages-->
+  <div id='imgbground' class='bground Home-display Gallery-display'></div>
+  <div id='imgbground-blur' class='bground-blur'></div>
 
-<!-- Start of Nav Bootstrap Template 01-->
-<nav class="navbar navbar-dark navbar-expand-md">
-    <!-- Navbar Logo-->
-    <div class='logoleft'>
-        <img class='logoleft' src='assets/images/logo.png' alt='Navigation Logo'>
-    </div>
-    <!-- Navbar Text-->
-    <a href='#Home-Top' class="navbar-brand">
-        <div class="header-lg">Warwickshire</div>
-        <div class="header-sm">Search and Rescue</div>
-    </a>
-    
-    <!-- Based on the navigation style in the Code Institute Whiskey Drop tutorial -->
-    <button class='navbar-toggler ml-auto' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
-    <span class='navbar-toggler-icon'></span>
-    </button>
-    <div class='noshow collapse navbar-collapse collapse' id='navbarNavDropdown'>
-    <ul id='menu' class='navbar-nav'>
-    <li class='nav-item mr-2'>
-    <a href='#Home-Top' class='nav-link MenuButton' id='HomeButton' onclick='showMenuComponent("Home")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Home</a>
-    </li>
-    <li class='nav-item dropdown'>
-    <a class='nav-link dropdown-toggle' href='#' id='navbarDropdownMenuLink' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>About</a>
-    <div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
-    <a class='dropdown-item' href='#' onclick='showMenuComponent("WhatWeDo")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>What We Do</a>
-    <a class='dropdown-item' href='#' onclick='showMenuComponent("OurHistory")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Our History</a>
-    </div>
-    </li>
-    <li class='nav-item mr-2'>
-    <a href='#Contact-Top' class='nav-link MenuButton' id='ContactButton' onclick='showMenuComponent("Contact")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Contact</a>
-    </li>
-    <li class='nav-item mr-2'>
-    <a href='#JoinUs-Top' class='nav-link MenuButton' id='JoinUsButton' onclick='showMenuComponent("JoinUs")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Join Us</a>
-    </li>
-    <li class='nav-item mr-2'>
-    <a href='#TheTeam-Top' class='nav-link MenuButton' id='TheTeamButton' onclick='showMenuComponent("TheTeam")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>The Team</a>
-    </li>
-    <li class='nav-item mr-2'>
-    <a href='#Gallery-Top' class='nav-link MenuButton' id='GalleryButton' onclick='showMenuComponent("Gallery")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Gallery</a>
-    </li>
-    <li class='nav-item mr-2'>
-    <a href='#Donate-Top' class='nav-link MenuButton' id='DonateButton' onclick='showMenuComponent("Donate")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Donate</a>
-    </li>
-    </ul>
-    </div>
-</nav>
-<!-- End of Nav Bootstrap Template 01-->
-
-<!--  Start of Home menu section-->
-<div style='display: none;' class='MenuComponent' id='Home'>
-    <a id='Home-Top'></a>
-    <section id='wsr-home' class='wsr-content'>
-    <!-- Start of Call to Action -->
-    <h2 class="d-none">Call to Action</h2>
-    <div class="wsr-cta-row">
-    <div class="wsr-cta wsr-cta-img">
-    <img src="assets/images/logo.png" alt="Search and Rescue Logo">
-    </div>
-    <div  class="wsr-cta wsr-cta-text">
-    <p>Lowland Rescue Team</p>
-    <p>100% Volunteers</p>
-    <p>24 Hours a Day 365 Days a Year</p>
-    <p>From Hill to Highwater</p>
-    </div>
-    <div class="wsr-cta wsr-cta-actions">
-    <p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("WhatWeDo")'>What We Do</a></p>
-    <p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("Contact")'>Contact Us</a></p>
-    <p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("JoinUs")'>Join Us</a></p>
-    <p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("Donate")'>Donate</a></p>
-    </div>
-    </div>
-    <!-- End of Call to Action -->
-    </section>
-</div>
-<!--  End of Home menu section-->
-
-
-<!--  Start of About menu section-->
-<div style='display: none;' class='MenuComponent' id='About'>
-<a id='About-Top'></a>
-</div>
-<!--  End of About menu section-->
-
-
-<!--  Start of WhatWeDo menu section-->
-<div style='display: none;' class='MenuComponent' id='WhatWeDo'>
-<a id='WhatWeDo-Top'></a>
-<header>
-<h1 class='MenuSectionTitle'>What We Do</h1>
-</header>
-<div class="container wsr-container">
-<section id='WhatWeDo-section' class='wsr-content'>
-<h2 class="d-none">What We Do</h2>
-<div class="row">
-<div  class="col-12">
-<p class="wsr-content-text">
-In a typical year around 700 people go missing in Warwickshire, the equivalent of two people every day. Thankfully many missing people soon return safe and well to their friends and family. When they do not, often because they suffer from a form of dementia or wish to harm themselves, Warwickshire Search and Rescue are there to support the Police in finding those people.
-</p>
-</div>
-</div>
-<div class="media row wsr-content-row">
-<div id="wsr-media-logo-container" class="col-12 col-lg-4">
-  <img class="wsr-content-img" src="assets/images/TessTalks.jpg" alt="Tess Lukehurst and Sally Phillips">
-</div>
-  <div class="media-body col-12 col-lg-8">
-    <h5 class="mt-0 wsr-content-item-title">Tess Talks ...</h5>
-<p id="tess-talks-text" class="wsr-content-text">
-... to Sally Phillips about the importance of the work done by Warwickshire Search and Rescue.
-    <audio controls>
-  <source src="assets/audio/Tess_Talks.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
-</p>
-  </div>
-</div>
-<div class="row wsr-content-row">
-
-<div id="icu-video-container" class="col-12 col-lg-4">
-<video controls>
-  <source src="assets/video/ICU_Setup_Rapid.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-</div>
-<div  id="icu-text-container" class="col-12 col-lg-8">
-<h5 class="mt-0 wsr-content-item-title">Phil Demonstrates ...</h5>
-<p id="icu-text" class="wsr-content-text">
-... how to setup the Incident Control Unit, in double-quick time.  The ICU is the nerve-centre of any search, co-ordinating the activity and communications across the search teams and other services.
-</p>
-</div>
-</div>
-<div class="row">
-<div id="alsar-logo-container" class="col-12 col-lg-4">
-<img id="alsar-logo" src="https://www.lowlandrescue.org/images/lowland-rescue-lozenge1.png" class="wsr-content-img" alt="Lowland Rescue Logo">
-</div>
-<div  id="alsar-text-container" class="col-12 col-lg-8">
-<p id="alsar-text" class="wsr-content-text">
-Search and Rescue teams are members of the Association of Lowland Search and Rescue (ALSAR). ALSAR set the training standards that we all have to reach, and the code of practice that we use, working alongside the police. With Mountain Rescue England and Wales (MREW), Mountain Rescue Committee of Scotland (MRC of S), and the British Cave Rescue Council (BCRC), ALSAR members are nationally recognised as part of UKSAR capability.
-</p>
-</div>
-</div>
-<div class="row">
-<div id="warksar-whatwedo-img-container" class="col-12 col-lg-4">
-<img src="assets/images/imgwarksar002.jpg" class="wsr-content-img"  alt="Team Members">
-</div>
-<div  id="warksar-whatwedo-text-container" class="col-12 col-lg-8">
-<p class="wsr-content-text">
-Team members are unpaid volunteers from all walks of life, from 18 to 80 years old.  We are available to respond to callouts 24 hours a day, 7 days a week, every day of the year.  As well as search management personnel, team leaders and search technicians, Warwickshire Search and Rescue also has a search dog team and a specialist kayak team.  To learn more about the roles within our team, or to find out how to join the team, click here.
-</p>
-</div>
-</div>
-</section>
-</div>
-</div>
-<!--  End of WhatWeDo menu section-->
-
-
-<!--  Start of OurHistory menu section-->
-<div style='display: none;' class='MenuComponent' id='OurHistory'>
-<a id='OurHistory-Top'></a>
-<header>
-<h1 class='MenuSectionTitle'>History of Warwickshire Search and Rescue</h1>
-</header>
-<section id='WarksarTimeline' class='wsr-content'>
-<!-- Timeline taken from W3 Schools-->
-<div class="wsr-outer-container-timeline">
-<div class="wsr-timeline">
-  <div id="wsr-container-timeline-top" class="wsr-container-timeline">
-    <div class="wsr-timeline-content">
-      <h2>2021</h2>
-      <p>With over 30 trainees looking to join the 35 operational members 2021 will be an active year.  Also, we are hoping to start the creation of our own drone team.</p>
-    </div>
-  </div>
-  <div class="wsr-container-timeline wsr-timeline-right">
-    <div class="wsr-timeline-content">
-      <h2>2020</h2>
-      <p>In a year dominated by Covid-19 Warwickshire Search and Rescue were called out to over 50 incidents in the year.  The busiest year the team have known.</p>
-    </div>
-  </div>
-  <div class="wsr-container-timeline wsr-timeline-left">
-    <div class="wsr-timeline-content">
-      <h2>2019</h2>
-      <p>With over 140 training exercises, and over 40 call-outs Warwickshire Search and Rescue provided invaluable support to the local community.</p>
-    </div>
-  </div>
-  <div class="wsr-container-timeline wsr-timeline-right">
-    <div class="wsr-timeline-content">
-      <h2>2018</h2>
-      <p>In June 2018 Warwickshire Search and Rescue reached an important milestone by responding to their 100th callout.</p>
-    </div>
-  </div>
-  <div class="wsr-container-timeline wsr-timeline-left">
-    <div class="wsr-timeline-content">
-      <h2>2017</h2>
-      <p>The 74 members of the team attended 362 fundraising events, near to an event for every day.</p>
-    </div>
-  </div>
-  <div class="wsr-container-timeline wsr-timeline-right">
-    <div class="wsr-timeline-content">
-      <h2>2016</h2>
-      <p>The search and rescue team completed over 700 horus of training and attended 23 call-outs.</p>
-    </div>
-  </div>
-<div class="wsr-container-timeline wsr-timeline-left">
-    <div class="wsr-timeline-content">
-      <h2>2015</h2>
-      <p>With 16 call-outs and over 380 fundraising events, Warwickshire Search and Rescue continued to grow its presence and have an increasing impact in the county.</p>
-    </div>
-  </div>
-<div class="wsr-container-timeline wsr-timeline-right">
-    <div class="wsr-timeline-content">
-      <h2>2014</h2>
-      <p>Training search dogs takes many years, in 2014 Warwickshire Search and Rescue started the journey to creating their own dog search team.</p>
-    </div>
-  </div>
-
-<!-- Start of 2013-->
-<div class="wsr-container-timeline wsr-timeline-left">
-<div class="wsr-timeline-content">
-<h2>2013</h2>
-<p>
-In 2013 Warwickshire Search and Rescue was established.  By the end of the year there were 20 members, of whom five became operational in that year.
-</p>
-</div>
-</div>
-<!-- End of 2013-->
-
-</div>
-</div>
-</section>
-</div>
-<!--  End of OurHistory menu section-->
-
-
-<!--  Start of Contact menu section-->
-<div style='display: none;' class='MenuComponent' id='Contact'>
-<a id='Contact-Top'></a>
-<header>
-<h1 class='MenuSectionTitle'>Get in Touch</h1>
-</header>
-<div class="wsr-contact-container">
-<section id='Contacts' class='wsr-content'>
-<div class="row">
-<!-- Bootstrap Card with Local Customisation -->
-<div class="card" style="width: 18rem;">
-  <img id="warwickshire-police-logo-policecard" src="assets/images/warwickshire-police-logo.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Emergency 999</h5>
-    <p class="card-text">
-If the missing person is in immediate danger, is a young child or vulnerable to harm, call 999 now.
-<br><span>Warwickshire Search and Rescue are only called out by the police, not directly by members of the public</span></p>
-</div>
-<div class="card-link">
-    <a href="https://www.warwickshire.police.uk/ro/report/mp/v1/report-missing-person/" target="_blank" class="btn btn-primary">Report a Missing Person</a>
-  </div>
-</div>
-<!-- Bootstrap Card with Local Customisation -->
-<div id="fundraising-contact-card" class="card" style="width: 18rem;">
-  <img id="img-fundraising-contact-card" src="assets/images/imgwarksar033.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Fund Raising</h5>
-    <p class="card-text">
-At Warwickshire Search and Rescue we rely on charitable funding.  If you want to work with us on a fund-rasing activity then please get in touch.  </p>
-</div>
-<div class="card-link">
-    <a href="mailto:fundraising@warksar.org.uk" class="btn btn-primary">fundraising@warksar.org.uk</a>
-  </div>
-</div>
-<!-- End of Bootstrap Card -->
-<!-- Bootstrap Card with Local Customisation -->
-<div id="general-enquiries-card" class="card" style="width: 18rem;">
-  <img id="general-enquiries-image" src="assets/images/imgwarksar011.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">General Enquiries</h5>
-<p class="card-text">
-If you have a question about our organisation, but are not sure who to contact, then please use our general email and we will direct it to the right person.
-</p>
-</div>
-<div class="card-link">
-    <a href="mailto:support@warksar.org.uk" class="btn btn-primary">support@warksar.org.uk</a>
-  </div>
-</div>
-<!-- End of Bootstrap Card -->
-<!-- Bootstrap Card with Local Customisation -->
-<div id="chair-card" class="card" style="width: 18rem;">
-  <img id="imgwarksar045-chaircard" src="assets/images/imgwarksar045.jpg" class="card-img-top" alt="Chair Person">
-  <div class="card-body">
-    <h5 class="card-title">Chair Person</h5>
-    <p class="card-text">
-Ian Malins is the current Chair of Warwickshire Search and Rescue. Ian is a Trustee, Search Planner, Team Leader and long-standing Search Technician.</p>
-</div>
-<div class="card-link">
-    <a href="mailto:chair@warksar.org.uk" class="btn btn-primary">chair@warksar.org.uk</a>
-  </div>
-</div>
-<!-- End of Bootstrap Card -->
-</div>
-</section>
-</div>
-</div>
-<!--  End of Contact menu section-->
-
-
-<!--  Start of JoinUs menu section-->
-<div style='display: none;' class='MenuComponent' id='JoinUs'>
-<a id='JoinUs-Top'></a>
-<header>
-<h1 class='MenuSectionTitle'>Warwickshire Search and Rescue Needs You</h1>
-</header>
-<div class="container">
-<section id='warksarroles' class='wsr-content'>
-<h2 class="d-none">Operational Roles</h2>
-<div class="row">
-<div  class="col-12">
-<p class="wsr-content-text">
-Lowland Rescue work is very rewarding and demanding.  Applicants need to consider if they can commit to regular training and assist with other essential activities.  See some of the key roles below.
-</p>
-</div>
-</div>
-<div class="row wsr-row">
-<div id="imgitem011" class="col-12 col-md-3 wsr-content-img-frame d-none d-sm-block">
-<img id="imgwarksar030-02" src="assets/images/imgwarksar030.jpg" class="wsr-content-img" alt="Team with Stretcher">
-</div>
-<div class="col-12 col-md-2 wsr-content-item-title">
-<p>
-Search Technician
-</p>
-</div>
-<div  class="col-12 col-md-7">
-<p class="wsr-content-text">
-All members complete the national Lowland Rescue curriculum, including search techniques, casualty care, health and safety, communications, navigation and working with the emergency services.  You may also want to gain additional specialist search skills.  To completed all aspects of the training, and become a qualified Search Technician, will take a minimum of six months.
-</p>
-</div>
-</div>
-<div class="row wsr-row">
-<div id="imgitem012" class="col-12 col-md-3 wsr-content-img-frame d-none d-sm-block">
-<img id="imgwarksar021-02" src="assets/images/imgwarksar021.jpg" class="wsr-content-img" alt="Team on Search">
-</div>
-<div class="col-12 col-md-2 wsr-content-item-title">
-<p>
-Team Leader
-</p>
-</div>
-<div  class="col-12 col-md-7">
-<p  class="wsr-content-text">
-Further training is required to become a Lowland Rescue Team Leader, who can safely and effectively lead a team of Search Technicians, and manage any situations that arise.  Team Leaders plan how to search particular areas and co-ordinate relevant activities such as, medical assistance, managing the extrication of an individual, or controlling a crime scene, before the police arrive.
-</p>
-</div>
-</div>
-<div class="row wsr-row">
-<div id="imgitem015" class="col-12 col-md-3 wsr-content-img-frame d-none d-sm-block">
-<img id="imgwarksar028-02" src="assets/images/imgwarksar028.jpg" class="wsr-content-img" alt="Search Team in Discussion">
-</div>
-<div class="col-12 col-md-2 wsr-content-item-title">
-<p>
-Search Operations Manager
-</p>
-</div>
-<div  class="col-12 col-md-7">
-<p  class="wsr-content-text">
-Once fully trained you can take on the Search Operations Manager role, handling all the logistics of a search.  This includes managing and co-ordinating resources, whether that&apos;s human resources, or vital tools to aid the search, such as maps, radios, and medical equipment.  The Search Manager assesses the people available for the search, divides them into teams, briefs the team leaders and ensures they have everything they need.
-</p>
-</div>
-</div>
-<div class="row wsr-row">
-<div id="imgwarksar011-02-frame" class="col-12 col-md-3 wsr-content-img-frame d-none d-sm-block">
-<img id="imgwarksar011-02" src="assets/images/imgwarksar011.jpg" class="wsr-content-img" alt="Incident Control Unit">
-</div>
-<div class="col-12 col-md-2 wsr-content-item-title">
-<p>
-Search Planner
-</p>
-</div>
-<div  class="col-12 col-md-7">
-<p  class="wsr-content-text">
-Search Planners must study missing person behaviour in more depth.  Planners gather the information about the missing person from the police, and use their in depth knowledge of missing person behaviour and search techniques, to plan and prioritise the search areas.  They analyse behavioural statistics for different types of missing person and plan accordingly. The Search Planner may also have to attend court hearings.
-</p>
-</div>
-</div>
-<div class="row wsr-row">
-<div id="imgwarksar027-searchmanager-frame" class="col-12 col-md-3 wsr-content-img-frame d-none d-sm-block">
-<img id="imgwarksar027-searchmanager" src="assets/images/imgwarksar027.jpg" class="wsr-content-img" alt="Search Team">
-</div>
-<div class="col-12 col-md-2 wsr-content-item-title">
-<p>
-Search Manager
-</p>
-</div>
-<div  class="col-12 col-md-7">
-<p  class="wsr-content-text">
-Someone who is qualified to perform both the Search Planner and Search Operations roles is known as a Search Manager.  
-</p>
-</div>
-</div>
-<div class="row wsr-row-foot">
-<div  class="col-12">
-<p class="wsr-content-text">
-Once operational you will be called out in the middle of the night in all weathers?  You might need to deal with potentially dangerous situations, and still keep yourself and your team members safe?  You will also need to buy personal kit and fund your own travel? If you can make the commitment and see yourself as a Search Technician, wanting to also undertake other roles, then please get in touch.</p>
-<p>
-<button id="joinus-button" type="button" class="btn btn-primary wsr-btn-donation" data-toggle="modal" data-target="#JoinUsModal">
-Sign-Up with Warwickshire Search and Rescue
-</button>
-</p>
-</div>
-</div>
-<!-- Warksar Signup Modal -->
-
-<div class="modal fade" id="JoinUsModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-
-<div class="modal-dialog" role="document">
-<div class="modal-content">
-<div class="modal-header">
-        <h5 class="modal-title" id="Signup-ModalLabel">Online Transfer</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+  <!-- Start of Nav Bootstrap Template 01-->
+    <nav class="navbar navbar-dark navbar-expand-md">
+        <!-- Navbar Logo-->
+        <div class='logoleft'>
+            <img class='logoleft' src='assets/images/logo.png' alt='Navigation Logo'>
+        </div>
+        <!-- Navbar Text-->
+        <a href='#Home-Top' class="navbar-brand">
+            <div class="header-lg">Warwickshire</div>
+            <div class="header-sm">Search and Rescue</div>
+        </a>
+        
+        <!-- Based on the navigation style in the Code Institute Whiskey Drop tutorial -->
+        <button class='navbar-toggler ml-auto' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
+          <span class='navbar-toggler-icon'></span>
         </button>
-</div>
+        <div class='noshow collapse navbar-collapse collapse' id='navbarNavDropdown'>
+          <ul id='menu' class='navbar-nav'>
+            <li class='nav-item mr-2'>
+              <a href='#Home-Top' class='nav-link MenuButton' id='HomeButton' onclick='showMenuComponent("Home")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Home</a>
+            </li>
+            <li class='nav-item dropdown'>
+              <a class='nav-link dropdown-toggle' href='#' id='navbarDropdownMenuLink' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>About</a>
+              <!-- Dropdown Item -->
+              <div class='dropdown-menu' aria-labelledby='navbarDropdownMenuLink'>
+                <a class='dropdown-item' href='#' onclick='showMenuComponent("WhatWeDo")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>What We Do</a>
+                <a class='dropdown-item' href='#' onclick='showMenuComponent("OurHistory")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Our History</a>
+              </div>
+            </li>
+            <li class='nav-item mr-2'>
+              <a href='#Contact-Top' class='nav-link MenuButton' id='ContactButton' onclick='showMenuComponent("Contact")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Contact</a>
+            </li>
+            <li class='nav-item mr-2'>
+              <a href='#JoinUs-Top' class='nav-link MenuButton' id='JoinUsButton' onclick='showMenuComponent("JoinUs")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Join Us</a>
+            </li>
+            <li class='nav-item mr-2'>
+              <a href='#TheTeam-Top' class='nav-link MenuButton' id='TheTeamButton' onclick='showMenuComponent("TheTeam")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>The Team</a>
+            </li>
+            <li class='nav-item mr-2'>
+              <a href='#Gallery-Top' class='nav-link MenuButton' id='GalleryButton' onclick='showMenuComponent("Gallery")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Gallery</a>
+            </li>
+            <li class='nav-item mr-2'>
+              <a href='#Donate-Top' class='nav-link MenuButton' id='DonateButton' onclick='showMenuComponent("Donate")' data-toggle='collapse' data-target='#navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>Donate</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  <!-- End of Nav Bootstrap Template 01-->
 
-<form id="signup-form" class="signup-form" method="POST" action="https://devauxphp.azurewebsites.net/warksar_join.php" target="signup-response">
-<div class="modal-body">
-Please enter your name and email address and we will send you details of how to perform an online transfer.<br>
+  <!--  Start of Home Virtual Page-->
+    <div style='display: none;' class='MenuComponent' id='Home'>
+        <a id='Home-Top'></a>
+        <section id='wsr-home' class='wsr-content'>
+          <!-- Start of Call to Action -->
+          <h2 class="d-none">Call to Action</h2>
+          <div class="wsr-cta-row">
+            <div class="wsr-cta wsr-cta-img">
+              <img src="assets/images/logo.png" alt="Search and Rescue Logo">
+            </div>
+            <div  class="wsr-cta wsr-cta-text">
+              <p>Lowland Rescue Team</p>
+              <p>100% Volunteers</p>
+              <p>24 Hours a Day 365 Days a Year</p>
+              <p>From Hill to Highwater</p>
+            </div>
+            <div class="wsr-cta wsr-cta-actions">
+              <p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("WhatWeDo")'>What We Do</a></p>
+              <p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("Contact")'>Contact Us</a></p>
+              <p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("JoinUs")'>Join Us</a></p>
+              <p><a class="btn btn-primary wsr-cta-btn" onclick='showMenuComponent("Donate")'>Donate</a></p>
+            </div>
+          </div>
+          <!-- End of Call to Action -->
+        </section>
+    </div>
+  <!--  End of Home Virtual Page-->
 
-
-<br><label for="fullname">Full Name</label><br>
-<input class="text-input wsr-text-input" id="signup-fullname" type="text" name="full_name" required="" size="50"><br>
-<label for="email">Email Address</label><br>
-<input class="text-input wsr-text-input" id="signup-email" type="email" name="email_address" required="" size="50">
-<br>
-<br>
-<label>What type of membership would you consider?</label><br>
-<label for="operational">Operational</label>
-<input class="radio-input" type="radio" id="operational" name="join_preference" value="operational" required>
-&nbsp;
-&nbsp;
-<label for="trail">Support</label>
-<input class="radio-input" type="radio" id="trail" name="join_preference" value="support">
-&nbsp;
-&nbsp;
-<label for="both">Both</label>
-<input class="radio-input" type="radio" id="both" name="join_preference" value="both">
-<br>
-<br>
-<label for="wsr-review">Why Join Warwickshire Search and Rescue</label>
-
-<textarea id="wsr-review" name="wsr-review" rows="4" cols="50" class="text-input wsr-text-input" placeholder="Please briefly state why you would like to join us at Warwickshire Search and Rescue">
-</textarea>
-
-<iframe name="signup-response" id="signup-response"></iframe>
-
-
-
-
-</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <input id="signupmodal-button" type="submit" class="btn btn-primary" onclick="signupSubmit('query-form')">
-
+  <!--  Start of WhatWeDo Virtual Page-->
+    <div style='display: none;' class='MenuComponent' id='WhatWeDo'>
+      <a id='WhatWeDo-Top'></a>
+      <header>
+        <h1 class='MenuSectionTitle'>What We Do</h1>
+      </header>
+      <div class="container wsr-container">
+        <section id='WhatWeDo-section' class='wsr-content'>
+          <h2 class="d-none">What We Do</h2>
+          <div class="row">
+            <div  class="col-12">
+              <p class="wsr-content-text">
+              In a typical year around 700 people go missing in Warwickshire, the equivalent of two people every day. Thankfully many missing people soon return safe and well to their friends and family. When they do not, often because they suffer from a form of dementia or wish to harm themselves, Warwickshire Search and Rescue are there to support the Police in finding those people.
+              </p>
+            </div>
+          </div>
+          <div class="media row wsr-content-row">
+            <div id="wsr-media-logo-container" class="col-12 col-lg-4">
+              <img class="wsr-content-img" src="assets/images/TessTalks.jpg" alt="Tess Lukehurst and Sally Phillips">
+            </div>
+            <div class="media-body col-12 col-lg-8">
+              <h5 class="mt-0 wsr-content-item-title">Tess Talks ...</h5>
+              <p id="tess-talks-text" class="wsr-content-text">
+                ... to Fiona Phillips about the importance of the work done by Warwickshire Search and Rescue.
+                <audio controls>
+                  <source src="assets/audio/Tess_Talks.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </p>
+            </div>
+          </div>
+          <div class="row wsr-content-row">
+            <div id="icu-video-container" class="col-12 col-lg-4">
+              <video controls>
+                <source src="assets/video/ICU_Setup_Rapid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div  id="icu-text-container" class="col-12 col-lg-8">
+              <h5 class="mt-0 wsr-content-item-title">Phil Demonstrates ...</h5>
+              <p id="icu-text" class="wsr-content-text">
+              ... how to setup the Incident Control Unit, in double-quick time.  The ICU is the nerve-centre of any search, co-ordinating the activity and communications across the search teams and other services.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div id="alsar-logo-container" class="col-12 col-lg-4">
+              <img id="alsar-logo" src="https://www.lowlandrescue.org/images/lowland-rescue-lozenge1.png" class="wsr-content-img" alt="Lowland Rescue Logo">
+            </div>
+            <div  id="alsar-text-container" class="col-12 col-lg-8">
+              <p id="alsar-text" class="wsr-content-text">
+              Search and Rescue teams are members of the Association of Lowland Search and Rescue (ALSAR). ALSAR set the training standards that we all have to reach, and the code of practice that we use, working alongside the police. With Mountain Rescue England and Wales (MREW), Mountain Rescue Committee of Scotland (MRC of S), and the British Cave Rescue Council (BCRC), ALSAR members are nationally recognised as part of UKSAR capability.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div id="warksar-whatwedo-img-container" class="col-12 col-lg-4">
+            <img src="assets/images/imgwarksar002.jpg" class="wsr-content-img"  alt="Team Members">
+            </div>
+            <div  id="warksar-whatwedo-text-container" class="col-12 col-lg-8">
+              <p class="wsr-content-text">
+              Team members are unpaid volunteers from all walks of life, from 18 to 80 years old.  We are available to respond to callouts 24 hours a day, 7 days a week, every day of the year.  As well as search management personnel, team leaders and search technicians, Warwickshire Search and Rescue also has a search dog team and a specialist kayak team.  To learn more about the roles within our team, or to find out how to join the team, click here.
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
-</form>
-
-</div>
-
-
-</div>
-
-</div>
-</section>
-</div>
-</div>
-<!--  End of JoinUs menu section-->
-
-
-<!--  Start of TheTeam menu section-->
-<div style='display: none;' class='MenuComponent' id='TheTeam'>
-<a id='TheTeam-Top'></a>
-<section id='wsr-carousel-01' class='wsr-content'>
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators wsr-carousel-indicator">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div id="carousel-0" class="carousel-item active">
-      <img id="img-carousel-0" class="d-block wsr-img-lscape" src="assets/images/imgwarksar002.jpg" alt="Search Team">
-<div class="carousel-caption d-block wsr-carousel-caption">
-    <h5>Meet the Team</h5>
-    <p>Warwickshire Search and Rescue Team is an operational Lowland Rescue team, set up to assist the Police with searches for vulnerable missing persons within Warwickshire, and beyond. Our team is part of a much bigger family of 36 Lowland Rescue teams in the UK.</p>
-  </div>
     </div>
-    <div class="carousel-item">
-      <img id="img-carousel-1" class="d-block wsr-img-lscape" src="assets/images/imgwarksar017.jpg" alt="Foot Search">
-<div class="carousel-caption d-block wsr-carousel-caption">
-<h5>Foot Search</h5>
-<p>Most searches are conducted on-foot. Even those that use, or are led by, other teams will nearly always have on on-foot element. It would be extremely rare for a search to be successfully concluded without a team of on-foot search technicians reaching the person.</p>
-</div>
+  <!--  End of WhatWeDo Virtual Page-->
+
+  <!--  Start of OurHistory Virtual Page-->
+    <div style='display: none;' class='MenuComponent' id='OurHistory'>
+      <a id='OurHistory-Top'></a>
+      <header>
+        <h1 class='MenuSectionTitle'>History of Warwickshire Search and Rescue</h1>
+      </header>
+      <section id='WarksarTimeline' class='wsr-content'>
+        <!-- Timeline taken from W3 Schools-->
+          <div class="wsr-outer-container-timeline">
+            <div class="wsr-timeline">
+              <!-- Start of 2021-->
+                <div id="wsr-container-timeline-top" class="wsr-container-timeline">
+                  <div class="wsr-timeline-content">
+                    <h2>2021</h2>
+                    <p>With over 30 trainees looking to join the 35 operational members 2021 will be an active year.  Also, we are hoping to start the creation of our own drone team.</p>
+                  </div>
+                </div>
+              <!-- End of 2021-->
+              <!-- Start of 2020-->
+                <div class="wsr-container-timeline wsr-timeline-right">
+                  <div class="wsr-timeline-content">
+                    <h2>2020</h2>
+                    <p>In a year dominated by Covid-19 Warwickshire Search and Rescue were called out to over 50 incidents in the year.  The busiest year the team have known.</p>
+                  </div>
+                </div>
+              <!-- End of 2020-->
+              <!-- Start of 2019-->
+                <div class="wsr-container-timeline wsr-timeline-left">
+                  <div class="wsr-timeline-content">
+                    <h2>2019</h2>
+                    <p>With over 140 training exercises, and over 40 call-outs Warwickshire Search and Rescue provided invaluable support to the local community.</p>
+                  </div>
+                </div>
+              <!-- End of 2019-->
+              <!-- Start of 2018-->
+                <div class="wsr-container-timeline wsr-timeline-right">
+                  <div class="wsr-timeline-content">
+                    <h2>2018</h2>
+                    <p>In June 2018 Warwickshire Search and Rescue reached an important milestone by responding to their 100th callout.</p>
+                  </div>
+                </div>
+              <!-- End of 2018-->
+              <!-- Start of 2017-->
+                <div class="wsr-container-timeline wsr-timeline-left">
+                  <div class="wsr-timeline-content">
+                    <h2>2017</h2>
+                    <p>The 74 members of the team attended 362 fundraising events, near to an event for every day.</p>
+                  </div>
+                </div>
+              <!-- End of 2017-->
+              <!-- Start of 2016-->
+                <div class="wsr-container-timeline wsr-timeline-right">
+                  <div class="wsr-timeline-content">
+                    <h2>2016</h2>
+                    <p>The search and rescue team completed over 700 horus of training and attended 23 call-outs.</p>
+                  </div>
+                </div>
+              <!-- End of 2016-->
+              <!-- Start of 2015-->
+                <div class="wsr-container-timeline wsr-timeline-left">
+                  <div class="wsr-timeline-content">
+                    <h2>2015</h2>
+                    <p>With 16 call-outs and over 380 fundraising events, Warwickshire Search and Rescue continued to grow its presence and have an increasing impact in the county.</p>
+                  </div>
+                </div>
+              <!-- End of 2015-->
+              <!-- Start of 2014-->
+                <div class="wsr-container-timeline wsr-timeline-right">
+                  <div class="wsr-timeline-content">
+                    <h2>2014</h2>
+                    <p>Training search dogs takes many years, in 2014 Warwickshire Search and Rescue started the journey to creating their own dog search team.</p>
+                  </div>
+                </div>
+              <!-- End of 2014-->
+              <!-- Start of 2013-->
+                <div class="wsr-container-timeline wsr-timeline-left">
+                  <div class="wsr-timeline-content">
+                    <h2>2013</h2>
+                    <p>
+                    In 2013 Warwickshire Search and Rescue was established.  By the end of the year there were 20 members, of whom five became operational in that year.</p>
+                  </div>
+                </div>
+              <!-- End of 2013-->
+            </div>
+          </div>
+        <!-- End of Timeline-->
+      </section>
     </div>
-    <div class="carousel-item">
-      <img id="img-carousel-2" class="d-block wsr-img-lscape" src="assets/images/imgwarksar032.jpg" alt="Kayak">
-<div class="carousel-caption d-block wsr-carousel-caption">
-    <h5>Kayak Search</h5>
-    <p>The Kayak Search Team is a dedicated team of highly competent kayakers. All team members are operational Lowland Search Technicians, with additional skills for the water. All are skilled paddlers, capable of using a range of craft. Most of the team are active white water paddlers, and all are coaches with British Canoeing Safety and Rescue qualifications.</p>
-  </div>
-    </div>
-<div class="carousel-item">
-      <img id="img-carousel-3" class="d-block wsr-img-lscape" src="assets/images/alsardog01.jpg" alt="Search Dog">
-<div class="carousel-caption d-block wsr-carousel-caption">
-    <h5>Dog Search</h5>
-    <p>Search dogs search areas that are difficult for human teams to search, such as dense woodland and difficult terrain, or to cover larger areas more quickly. As with the foot teams, they look for vulnerable missing people, such as children, those suffering from mental illness and despondent people, who may wish to harm themselves.</p>
-  </div>
-    </div>
-<div class="carousel-item">
-      <img  id="img-carousel-4" class="d-block wsr-img-lscape" src="assets/images/water_rescue_05.jpg" alt="Search Boats">
-<div class="carousel-caption d-block wsr-carousel-caption">
-    <h5>Water Search</h5>
-    <p>The water team is made up of Swiftwater and Flood Rescue Technicians, supported by trained Swiftwater and Flood First Responders. The water team also has a number of powerboat coxwains. </p>
-  </div>
-    </div>
-<div class="carousel-item">
-      <img id="img-carousel-5" class="d-block wsr-img-lscape" src="assets/images/DroneSearch.jpg" alt="Drone Flying">
-<div class="carousel-caption d-block wsr-carousel-caption">
-    <h5>Drone Search</h5>
-    <p>The drone search team is made up of pilots trained to the national Lowland Rescue standard and many have additional professional expertise in drone operations.</p>
-  </div>
-    </div>
-</div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</section>
-</div>
-<!--  End of TheTeam menu section-->
+  <!--  End of OurHistory Virtual Page-->
 
-
-<!--  Start of Gallery menu section-->
-<div style='display: none;' class='MenuComponent' id='Gallery'>
-<a id='Gallery-Top'></a>
-<header>
-<h1 class='MenuSectionTitle'>The Team in Action</h1>
-</header>
-<section id='photo'>
-<!-- Based on the approach from the Code Institute Love Running exercise-->
-<h2 class="d-none">Photo Gallery</h2>
-
-<a target="_blank" class="gallery-anchor" href="https://www.facebook.com/warksar/posts/5364838720200889"><div class="gallery-overlay"><p>Warwickshire Search and Rescue 24/2/21</p></div><img src="assets/images/imgwarksar049.jpg"  alt="Search Training"></a>
-
-<a target="_blank" class="gallery-anchor" href="http://www.midshires.org.uk/"><div class="gallery-overlay"><p>Midshires Search and Rescue 20/2/21</p></div><img src="assets/images/msar01.jpg"  alt="Search and Rescue Vehicle"></a>
-
-<a target="_blank" class="gallery-anchor" href="https://www.facebook.com/warksar/posts/5335230903161671"><div class="gallery-overlay"><p>Warwickshire Search and Rescue 15/2/21</p></div><img src="assets/images/imgwarksar046.jpg"  alt="Stretcher Rescue"></a>
-
-<a target="_blank" class="gallery-anchor" href="https://www.facebook.com/warksar/videos/652852338651403"><div class="gallery-overlay"><p>Warwickshire Search and Rescue June 2020</p></div><img src="assets/images/imgwarksar048.jpg"  alt="Kayak Rescue"></a>
-
-<a target="_blank" class="gallery-anchor" href="https://www.facebook.com/warksar/posts/5341774132507348"><div class="gallery-overlay"><p>Warwickshire Search and Rescue 12/2/21</p></div><img src="assets/images/imgwarksar047.jpg"  alt="Search Training"></a>
-
-<a target="_blank" class="gallery-anchor" href="https://leamingtonobserver.co.uk/news/rescuers-highlight-importance-of-work/"><div class="gallery-overlay"><p>Leamington Observer 26/1/21</p></div><img src="assets/images/imgwarksar031.jpg"  alt="Rotary Club Lunch"></a>
-
-<a target="_blank" class="gallery-anchor" href="https://leamingtonobserver.co.uk/news/life-saving-charity-in-warwickshire-receives-funding-boost-26959/"><div class="gallery-overlay"><p>Leamington Observer 20/1/21</p></div><img src="assets/images/imgwarksar030.jpg"  alt="Search Team With Stretcher"></a>
-<iframe id="Kayak_video" width="1280" height="720" src="https://www.youtube.com/embed/qDnTAo1rHks" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<img src="assets/images/imgwarksar029.jpg"  alt="Search Team on Foot">
-
-<a target="_blank" class="gallery-anchor" href="https://www.facebook.com/297414110276734/videos/167847584565742"><div class="gallery-overlay"><p>Give Covid the Boot April 2020</p></div><img src="assets/images/CovidBoot.png"  alt="Covid Awareness Logo"></a>
-
-
-<img src="assets/images/imgwarksar028.jpg"  alt="Search Team With Police">
-<img src="assets/images/imgwarksar027.jpg"  alt="Search Team With Dog">
-<img src="assets/images/imgwarksar026.jpg"  alt="Teddy Bear Mascot">
-<img src="assets/images/imgwarksar025.jpg"  alt="Search Team Outdoors">
-<img src="assets/images/imgwarksar036.jpg"  alt="Member Fund Raising">
-<img src="assets/images/imgwarksar023.jpg"  alt="Team with Helicopter">
-<img src="assets/images/imgwarksar022.jpg"  alt="Search Team in Woodland">
-<img src="assets/images/imgwarksar001.jpg"  alt="Search Training">
-<img src="assets/images/imgwarksar002.jpg"  alt="Search Team">
-<img src="assets/images/imgwarksar003.jpg"  alt="Search Training">
-<img src="assets/images/imgwarksar004.jpg"  alt="Search Dog Merry">
-<img src="assets/images/imgwarksar041.jpg"  alt="Kayak Equipment">
-<img src="assets/images/imgwarksar005.jpg"  alt="Search Dog Harvey">
-<img src="assets/images/imgwarksar033.jpg"  alt="Fund Raising">
-<img src="assets/images/imgwarksar006.jpg"  alt="Search Dog Willow">
-<img src="assets/images/imgwarksar007.jpg"  alt="Search Dog V">
-<img src="assets/images/imgwarksar008.jpg"  alt="Kayak Search Team">
-<img src="assets/images/imgwarksar009.jpg"  alt="Kayak Team Training">
-<img src="assets/images/imgwarksar010.jpg"  alt="Stretcher">
-<img src="assets/images/imgwarksar011.jpg"  alt="Incident Co-ordination Vehichle">
-<img src="assets/images/imgwarksar012.jpg"  alt="Charity Run">
-<img src="assets/images/imgwarksar013.jpg"  alt="Search Team Runners">
-<img src="assets/images/imgwarksar014.jpg"  alt="Wolf Run">
-<img src="assets/images/imgwarksar015.jpg"  alt="Search Team Outdoors">
-<img src="assets/images/imgwarksar016.jpg"  alt="Search Team Outdoors">
-<img src="assets/images/imgwarksar017.jpg"  alt="Search Team Outdoors">
-<img src="assets/images/imgwarksar018.jpg"  alt="Search Team Outdoors">
-<img src="assets/images/imgwarksar019.jpg"  alt="Search Team Activity">
-<img src="assets/images/imgwarksar020.jpg"  alt="Search Dog Sash">
-<img src="assets/images/imgwarksar021.jpg"  alt="Search Team Outdoors">
-</section>
-</div>
-<!--  End of Gallery menu section-->
-
-
-<!--  Start of Donate menu section-->
-<div style='display: none;' class='MenuComponent' id='Donate'>
-<a id='Donate-Top'></a>
-<header>
-<h1 class='MenuSectionTitle'>Support Us</h1>
-</header>
-<section id='donations' class='wsr-content'>
-<div class="row">
-<div  class="col-12">
-<p class="wsr-content-text">
-Every member of Warwickshire Search and Rescue is a volunteer, and the only way we can continue to operate is with your help and support.  Each team member pays for their own clothing, fuel and equipment, but your support helps keep our Incident Control Vehicle running, provides essential training and helps us purchase vital equipment, such as communications equipment, GPS navigation and medical kits.
-<br>No matter how small, personal donations help to keep the team running. </p>
-</div>
-</div>
-<div class="wsr-contact-container">
-<div class="row">
-<!-- Warksar Donation Modal -->
-<!-- Modal -->
-<div class="modal fade" id="DonationModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-
-<div class="modal-dialog" role="document">
-<div class="modal-content">
-<div class="modal-header">
-        <h5 class="modal-title" id="ModalLabel">Online Transfer</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-</div>
-
-<form id="query-form" class="signup-form" method="POST" action="https://devauxphp.azurewebsites.net/warksar_log.php" target="null">
-<div class="modal-body">
-Please enter your name and email address and we will send you details of how to perform an online transfer.<br>
-
-<!-- iframe to receive post input from php.  Presently hidden-->
-<iframe id="null-iframe" name="null"></iframe>
-
-<br><label for="fullname">Full Name</label><br>
-<input class="text-input wsr-text-input" id="fullname" type="text" name="full_name" required="" size="50"><br>
-<label for="email">Email Address</label><br>
-<input class="text-input wsr-text-input" id="email" type="email" name="email_address" required="" size="50">
-</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <input id="donationmodal-button" type="submit" class="btn btn-primary" onclick="formSubmit('query-form')">
+  <!--  Start of Contact Virtual Page-->
+    <div style='display: none;' class='MenuComponent' id='Contact'>
+      <a id='Contact-Top'></a>
+      <header>
+        <h1 class='MenuSectionTitle'>Get in Touch</h1>
+      </header>
+      <div class="wsr-contact-container">
+        <section id='Contacts' class='wsr-content'>
+          <div class="row">
+            <!-- Bootstrap Card with Local Customisation -->
+              <div class="card" style="width: 18rem;">
+                <img id="warwickshire-police-logo-policecard" src="assets/images/warwickshire-police-logo.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Emergency 999</h5>
+                  <p class="card-text">
+                    If the missing person is in immediate danger, is a young child or vulnerable to harm, call 999 now.
+                    <br><span>Warwickshire Search and Rescue are only called out by the police, not directly by members of the public</span>
+                  </p>
+                </div>
+                <div class="card-link">
+                  <a href="https://www.warwickshire.police.uk/ro/report/mp/v1/report-missing-person/" target="_blank" class="btn btn-primary">Report a Missing Person</a>
+                </div>
+              </div>
+            <!-- End of Bootstrap Card-->
+            <!-- Bootstrap Card with Local Customisation -->
+              <div id="fundraising-contact-card" class="card" style="width: 18rem;">
+                <img id="img-fundraising-contact-card" src="assets/images/imgwarksar033.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Fund Raising</h5>
+                    <p class="card-text">
+                      At Warwickshire Search and Rescue we rely on charitable funding.  If you want to work with us on a fund-rasing activity then please get in touch.  
+                    </p>
+                  </div>
+                  <div class="card-link">
+                    <a href="mailto:fundraising@warksar.org.uk" class="btn btn-primary">fundraising@warksar.org.uk</a>
+                  </div>
+              </div>
+            <!-- End of Bootstrap Card -->
+            <!-- Bootstrap Card with Local Customisation -->
+              <div id="general-enquiries-card" class="card" style="width: 18rem;">
+                <img id="general-enquiries-image" src="assets/images/imgwarksar011.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">General Enquiries</h5>
+                  <p class="card-text">
+                    If you have a question about our organisation, but are not sure who to contact, then please use our general email and we will direct it to the right person.
+                  </p>
+                </div>
+                <div class="card-link">
+                  <a href="mailto:support@warksar.org.uk" class="btn btn-primary">support@warksar.org.uk</a>
+                </div>
+              </div>
+            <!-- End of Bootstrap Card -->
+            <!-- Bootstrap Card with Local Customisation -->
+              <div id="chair-card" class="card" style="width: 18rem;">
+                <img id="imgwarksar045-chaircard" src="assets/images/imgwarksar045.jpg" class="card-img-top" alt="Chair Person">
+                  <div class="card-body">
+                    <h5 class="card-title">Chair Person</h5>
+                    <p class="card-text">
+                      Ian Malins is the current Chair of Warwickshire Search and Rescue. Ian is a Trustee, Search Planner, Team Leader and long-standing Search Technician.
+                    </p>
+                  </div>
+                  <div class="card-link">
+                    <a href="mailto:chair@warksar.org.uk" class="btn btn-primary">chair@warksar.org.uk</a>
+                  </div>
+              </div>
+            <!-- End of Bootstrap Card -->
+          </div>
+        </section>
       </div>
-</form>
+    </div>
+  <!--  End of Contact Virtual Page-->
 
-</div>
+  <!--  Start of JoinUs Virtual Page-->
+    <div style='display: none;' class='MenuComponent' id='JoinUs'>
+      <a id='JoinUs-Top'></a>
+      <header>
+        <h1 class='MenuSectionTitle'>Warwickshire Search and Rescue Needs You</h1>
+      </header>
+      <div class="container">
+        <section id='warksarroles' class='wsr-content'>
+          <h2 class="d-none">Operational Roles</h2>
+          <div class="row">
+            <div  class="col-12">
+              <p class="wsr-content-text">
+                Lowland Rescue work is very rewarding and demanding.  Applicants need to consider if they can commit to regular training and assist with other essential activities.  See some of the key roles below.
+              </p>
+            </div>
+          </div>
+          <div class="row wsr-row">
+            <div id="imgitem011" class="col-12 col-md-3 wsr-content-img-frame d-none d-sm-block">
+              <img id="imgwarksar030-02" src="assets/images/imgwarksar030.jpg" class="wsr-content-img" alt="Team with Stretcher">
+            </div>
+            <div class="col-12 col-md-2 wsr-content-item-title">
+              <p>
+                Search Technician
+              </p>
+            </div>
+            <div  class="col-12 col-md-7">
+              <p class="wsr-content-text">
+                All members complete the national Lowland Rescue curriculum, including search techniques, casualty care, health and safety, communications, navigation and working with the emergency services.  You may also want to gain additional specialist search skills.  To completed all aspects of the training, and become a qualified Search Technician, will take a minimum of six months.
+              </p>
+            </div>
+          </div>
+          <div class="row wsr-row">
+            <div id="imgitem012" class="col-12 col-md-3 wsr-content-img-frame d-none d-sm-block">
+              <img id="imgwarksar021-02" src="assets/images/imgwarksar021.jpg" class="wsr-content-img" alt="Team on Search">
+            </div>
+            <div class="col-12 col-md-2 wsr-content-item-title">
+              <p>
+                Team Leader
+              </p>
+            </div>
+            <div  class="col-12 col-md-7">
+              <p  class="wsr-content-text">
+                Further training is required to become a Lowland Rescue Team Leader, who can safely and effectively lead a team of Search Technicians, and manage any situations that arise.  Team Leaders plan how to search particular areas and co-ordinate relevant activities such as, medical assistance, managing the extrication of an individual, or controlling a crime scene, before the police arrive.
+              </p>
+            </div>
+          </div>
+          <div class="row wsr-row">
+            <div id="imgitem015" class="col-12 col-md-3 wsr-content-img-frame d-none d-sm-block">
+              <img id="imgwarksar028-02" src="assets/images/imgwarksar028.jpg" class="wsr-content-img" alt="Search Team in Discussion">
+            </div>
+            <div class="col-12 col-md-2 wsr-content-item-title">
+              <p>
+                Search Operations Manager
+              </p>
+            </div>
+            <div  class="col-12 col-md-7">
+              <p  class="wsr-content-text">
+                Once fully trained you can take on the Search Operations Manager role, handling all the logistics of a search.  This includes managing and co-ordinating resources, whether that&apos;s human resources, or vital tools to aid the search, such as maps, radios, and medical equipment.  The Search Manager assesses the people available for the search, divides them into teams, briefs the team leaders and ensures they have everything they need.
+              </p>
+            </div>
+          </div>
+          <div class="row wsr-row">
+            <div id="imgwarksar011-02-frame" class="col-12 col-md-3 wsr-content-img-frame d-none d-sm-block">
+              <img id="imgwarksar011-02" src="assets/images/imgwarksar011.jpg" class="wsr-content-img" alt="Incident Control Unit">
+            </div>
+            <div class="col-12 col-md-2 wsr-content-item-title">
+              <p>
+                Search Planner
+              </p>
+            </div>
+            <div  class="col-12 col-md-7">
+              <p  class="wsr-content-text">
+                Search Planners must study missing person behaviour in more depth.  Planners gather the information about the missing person from the police, and use their in depth knowledge of missing person behaviour and search techniques, to plan and prioritise the search areas.  They analyse behavioural statistics for different types of missing person and plan accordingly. The Search Planner may also have to attend court hearings.
+              </p>
+            </div>
+          </div>
+          <div class="row wsr-row">
+            <div id="imgwarksar027-searchmanager-frame" class="col-12 col-md-3 wsr-content-img-frame d-none d-sm-block">
+              <img id="imgwarksar027-searchmanager" src="assets/images/imgwarksar027.jpg" class="wsr-content-img" alt="Search Team">
+            </div>
+            <div class="col-12 col-md-2 wsr-content-item-title">
+              <p>
+                Search Manager
+              </p>
+            </div>
+            <div  class="col-12 col-md-7">
+              <p  class="wsr-content-text">
+                Someone who is qualified to perform both the Search Planner and Search Operations roles is known as a Search Manager.  
+              </p>
+            </div>
+          </div>
+          <div class="row wsr-row-foot">
+            <div  class="col-12">
+              <p class="wsr-content-text">
+                Once operational you will be called out in the middle of the night in all weathers?  You might need to deal with potentially dangerous situations, and still keep yourself and your team members safe?  You will also need to buy personal kit and fund your own travel? If you can make the commitment and see yourself as a Search Technician, wanting to also undertake other roles, then please get in touch.
+              </p>
+              <p>
+                <button id="joinus-button" type="button" class="btn btn-primary wsr-btn-donation" data-toggle="modal" data-target="#JoinUsModal">
+                  Sign-Up with Warwickshire Search and Rescue
+                </button>
+              </p>
+            </div>
+          </div>
+          <!-- Warksar Signup Modal -->
+          <div class="modal fade" id="JoinUsModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                        <h5 class="modal-title" id="Signup-ModalLabel">Online Transfer</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <form id="signup-form" class="signup-form" method="POST" action="https://devauxphp.azurewebsites.net/warksar_join.php" target="signup-response">
+                  <div class="modal-body">
+                    Please enter your name and email address and we will send you details of how to perform an online transfer.
+                    <br>
+                    <br>
+                    <label for="fullname">Full Name</label>
+                    <br>
+                    <input class="text-input wsr-text-input" id="signup-fullname" type="text" name="full_name" required="" size="50">
+                    <br>
+                    <label for="email">Email Address</label>
+                    <br>
+                    <input class="text-input wsr-text-input" id="signup-email" type="email" name="email_address" required="" size="50">
+                    <br>
+                    <br>
+                    <label>What type of membership would you consider?</label>
+                    <br>
+                    <label for="operational">Operational</label>
+                    <input class="radio-input" type="radio" id="operational" name="join_preference" value="operational" required>
+                    &nbsp;
+                    &nbsp;
+                    <label for="trail">Support</label>
+                    <input class="radio-input" type="radio" id="trail" name="join_preference" value="support">
+                    &nbsp;
+                    &nbsp;
+                    <label for="both">Both</label>
+                    <input class="radio-input" type="radio" id="both" name="join_preference" value="both">
+                    <br>
+                    <br>
+                    <label for="wsr-review">Why Join Warwickshire Search and Rescue</label>
 
+                    <textarea id="wsr-review" name="wsr-review" rows="4" cols="50" class="text-input wsr-text-input" placeholder="Please briefly state why you would like to join us at Warwickshire Search and Rescue">
+                    </textarea>
 
-</div>
+                    <iframe name="signup-response" id="signup-response"></iframe>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <input id="signupmodal-button" type="submit" class="btn btn-primary" onclick="signupSubmit('query-form')">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- End of Signup Modal-->
+        </section>
+      </div>
+    </div>
+  <!--  End of JoinUs Virtual Page-->
 
-</div>
-<!-- Online Transfer Bootstrap Card with Local Customisation  -->
-<div id="onlinetransfer" class="card" style="width: 18rem;">
-  <img id="OnlineBanking-01" src="assets/images/OnlineBanking.png" class="card-img-top-small" alt="Payment Cards">
-  <div class="card-body-small">
-    <h5 class="card-title">Online Transfer</h5>
-    <p class="card-text">To perform an online transfer please click on the link below, and you will be sent banking details.</p>
+  <!--  Start of TheTeam Virtual Page-->
+    <div style='display: none;' class='MenuComponent' id='TheTeam'>
+      <a id='TheTeam-Top'></a>
+      <section id='wsr-carousel-01' class='wsr-content'>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators wsr-carousel-indicator">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          </ol>
+          <div class="carousel-inner">
+            <!-- Start of Carousel Item 0-->
+              <div id="carousel-0" class="carousel-item active">
+                <img id="img-carousel-0" class="d-block wsr-img-lscape" src="assets/images/imgwarksar002.jpg" alt="Search Team">
+                <div class="carousel-caption d-block wsr-carousel-caption">
+                  <h5>Meet the Team</h5>
+                  <p>Warwickshire Search and Rescue Team is an operational Lowland Rescue team, set up to assist the Police with searches for vulnerable missing persons within Warwickshire, and beyond. Our team is part of a much bigger family of 36 Lowland Rescue teams in the UK.</p>
+                </div>
+              </div>
+            <!-- End of Carousel Item 0-->
+            <!-- Start of Carousel Item 1-->
+              <div class="carousel-item">
+                <img id="img-carousel-1" class="d-block wsr-img-lscape" src="assets/images/imgwarksar017.jpg" alt="Foot Search">
+                <div class="carousel-caption d-block wsr-carousel-caption">
+                  <h5>Foot Search</h5>
+                  <p>Most searches are conducted on-foot. Even those that use, or are led by, other teams will nearly always have on on-foot element. It would be extremely rare for a search to be successfully concluded without a team of on-foot search technicians reaching the person.</p>
+                </div>
+              </div>
+            <!-- End of Carousel Item 1-->
+            <!-- Start of Carousel Item 2-->
+              <div class="carousel-item">
+                <img id="img-carousel-2" class="d-block wsr-img-lscape" src="assets/images/imgwarksar032.jpg" alt="Kayak">
+                <div class="carousel-caption d-block wsr-carousel-caption">
+                  <h5>Kayak Search</h5>
+                  <p>The Kayak Search Team is a dedicated team of highly competent kayakers. All team members are operational Lowland Search Technicians, with additional skills for the water. All are skilled paddlers, capable of using a range of craft. Most of the team are active white water paddlers, and all are coaches with British Canoeing Safety and Rescue qualifications.</p>
+                </div>
+              </div>
+            <!-- End of Carousel Item 2-->
+            <!-- Start of Carousel Item 3-->
+              <div class="carousel-item">
+                <img id="img-carousel-3" class="d-block wsr-img-lscape" src="assets/images/alsardog01.jpg" alt="Search Dog">
+                <div class="carousel-caption d-block wsr-carousel-caption">
+                  <h5>Dog Search</h5>
+                  <p>Search dogs search areas that are difficult for human teams to search, such as dense woodland and difficult terrain, or to cover larger areas more quickly. As with the foot teams, they look for vulnerable missing people, such as children, those suffering from mental illness and despondent people, who may wish to harm themselves.</p>
+                </div>
+              </div>
+            <!-- End of Carousel Item 3-->
+            <!-- Start of Carousel Item 4-->
+              <div class="carousel-item">
+                <img  id="img-carousel-4" class="d-block wsr-img-lscape" src="assets/images/water_rescue_05.jpg" alt="Search Boats">
+                <div class="carousel-caption d-block wsr-carousel-caption">
+                  <h5>Water Search</h5>
+                  <p>The water team is made up of Swiftwater and Flood Rescue Technicians, supported by trained Swiftwater and Flood First Responders. The water team also has a number of powerboat coxwains. </p>
+                </div>
+              </div>
+            <!-- End of Carousel Item 4-->
+            <!-- Start of Carousel Item 5-->
+              <div class="carousel-item">
+                <img id="img-carousel-5" class="d-block wsr-img-lscape" src="assets/images/DroneSearch.jpg" alt="Drone Flying">
+                <div class="carousel-caption d-block wsr-carousel-caption">
+                  <h5>Drone Search</h5>
+                  <p>The drone search team is made up of pilots trained to the national Lowland Rescue standard and many have additional professional expertise in drone operations.</p>
+                </div>
+              </div>
+            <!-- End of Carousel Item 5-->
+            <!-- Carousel Indicators-->
+            </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <!-- End of Carousel Indicators-->
+      </section>
+    </div>
+  <!--  End of TheTeam Virtual Page-->
+
+  <!--  Start of Gallery Virtual Page-->
+    <div style='display: none;' class='MenuComponent' id='Gallery'>
+      <a id='Gallery-Top'></a>
+      <header>
+        <h1 class='MenuSectionTitle'>The Team in Action</h1>
+      </header>
+      <section id='photo'>
+        <!-- Based on the approach from the Code Institute Love Running exercise-->
+        <!-- Start of Masonry Board-->
+          <h2 class="d-none">Photo Gallery</h2>
+          <!-- Masonry Board Contains Linked Images within an anchor, which link to an additional resource, this is the preferred approach.  The overlay div provides the caption-->
+          <!-- Masonry Board Contains Also Contains Images with no anchor, this approach is suitable if the image is the only resource-->
+          <!-- Masonry Board Contains Also Contains iframes, this approach is suitable for youtube videos-->
+            <a target="_blank" class="gallery-anchor" href="https://www.facebook.com/warksar/posts/5364838720200889">
+              <div class="gallery-overlay">
+                <p>Warwickshire Search and Rescue 24/2/21</p>
+              </div>
+              <img src="assets/images/imgwarksar049.jpg"  alt="Search Training">
+            </a>
+            <a target="_blank" class="gallery-anchor" href="http://www.midshires.org.uk/">
+              <div class="gallery-overlay">
+                <p>Midshires Search and Rescue 20/2/21</p>
+              </div>
+              <img src="assets/images/msar01.jpg"  alt="Search and Rescue Vehicle">
+            </a>
+            <a target="_blank" class="gallery-anchor" href="https://www.facebook.com/warksar/posts/5335230903161671">
+              <div class="gallery-overlay">
+                <p>Warwickshire Search and Rescue 15/2/21</p>
+              </div>
+              <img src="assets/images/imgwarksar046.jpg"  alt="Stretcher Rescue">
+            </a>
+            <a target="_blank" class="gallery-anchor" href="https://www.facebook.com/warksar/videos/652852338651403">
+              <div class="gallery-overlay">
+                <p>Warwickshire Search and Rescue June 2020</p>
+              </div>
+              <img src="assets/images/imgwarksar048.jpg"  alt="Kayak Rescue">
+            </a>
+            <a target="_blank" class="gallery-anchor" href="https://www.facebook.com/warksar/posts/5341774132507348">
+              <div class="gallery-overlay">
+                <p>Warwickshire Search and Rescue 12/2/21</p>
+              </div>
+              <img src="assets/images/imgwarksar047.jpg"  alt="Search Training">
+            </a>
+            <a target="_blank" class="gallery-anchor" href="https://leamingtonobserver.co.uk/news/rescuers-highlight-importance-of-work/">
+              <div class="gallery-overlay">
+                <p>Leamington Observer 26/1/21</p>
+              </div>
+              <img src="assets/images/imgwarksar031.jpg"  alt="Rotary Club Lunch">
+            </a>
+            <a target="_blank" class="gallery-anchor" href="https://leamingtonobserver.co.uk/news/life-saving-charity-in-warwickshire-receives-funding-boost-26959/">
+              <div class="gallery-overlay">
+                <p>Leamington Observer 20/1/21</p>
+              </div><img src="assets/images/imgwarksar030.jpg"  alt="Search Team With Stretcher">
+            </a>
+            <iframe id="Kayak_video" width="1280" height="720" src="https://www.youtube.com/embed/qDnTAo1rHks" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <img src="assets/images/imgwarksar029.jpg"  alt="Search Team on Foot">
+            <a target="_blank" class="gallery-anchor" href="https://www.facebook.com/297414110276734/videos/167847584565742">
+              <div class="gallery-overlay">
+                <p>Give Covid the Boot April 2020</p>
+              </div>
+              <img src="assets/images/CovidBoot.png"  alt="Covid Awareness Logo">
+            </a>
+            <img src="assets/images/imgwarksar028.jpg"  alt="Search Team With Police">
+            <img src="assets/images/imgwarksar027.jpg"  alt="Search Team With Dog">
+            <img src="assets/images/imgwarksar026.jpg"  alt="Teddy Bear Mascot">
+            <img src="assets/images/imgwarksar025.jpg"  alt="Search Team Outdoors">
+            <img src="assets/images/imgwarksar036.jpg"  alt="Member Fund Raising">
+            <img src="assets/images/imgwarksar023.jpg"  alt="Team with Helicopter">
+            <img src="assets/images/imgwarksar022.jpg"  alt="Search Team in Woodland">
+            <img src="assets/images/imgwarksar001.jpg"  alt="Search Training">
+            <img src="assets/images/imgwarksar002.jpg"  alt="Search Team">
+            <img src="assets/images/imgwarksar003.jpg"  alt="Search Training">
+            <img src="assets/images/imgwarksar004.jpg"  alt="Search Dog Merry">
+            <img src="assets/images/imgwarksar041.jpg"  alt="Kayak Equipment">
+            <img src="assets/images/imgwarksar005.jpg"  alt="Search Dog Harvey">
+            <img src="assets/images/imgwarksar033.jpg"  alt="Fund Raising">
+            <img src="assets/images/imgwarksar006.jpg"  alt="Search Dog Willow">
+            <img src="assets/images/imgwarksar007.jpg"  alt="Search Dog V">
+            <img src="assets/images/imgwarksar008.jpg"  alt="Kayak Search Team">
+            <img src="assets/images/imgwarksar009.jpg"  alt="Kayak Team Training">
+            <img src="assets/images/imgwarksar010.jpg"  alt="Stretcher">
+            <img src="assets/images/imgwarksar011.jpg"  alt="Incident Co-ordination Vehichle">
+            <img src="assets/images/imgwarksar012.jpg"  alt="Charity Run">
+            <img src="assets/images/imgwarksar013.jpg"  alt="Search Team Runners">
+            <img src="assets/images/imgwarksar014.jpg"  alt="Wolf Run">
+            <img src="assets/images/imgwarksar015.jpg"  alt="Search Team Outdoors">
+            <img src="assets/images/imgwarksar016.jpg"  alt="Search Team Outdoors">
+            <img src="assets/images/imgwarksar017.jpg"  alt="Search Team Outdoors">
+            <img src="assets/images/imgwarksar018.jpg"  alt="Search Team Outdoors">
+            <img src="assets/images/imgwarksar019.jpg"  alt="Search Team Activity">
+            <img src="assets/images/imgwarksar020.jpg"  alt="Search Dog Sash">
+            <img src="assets/images/imgwarksar021.jpg"  alt="Search Team Outdoors">
+        <!-- End of Masonry Board-->
+      </section>
+    </div>
+  <!--  End of Gallery Virtual Page-->
+
+  <!--  Start of Donate menu section-->
+  <div style='display: none;' class='MenuComponent' id='Donate'>
+    <a id='Donate-Top'></a>
+    <header>
+      <h1 class='MenuSectionTitle'>Support Us</h1>
+    </header>
+  <section id='donations' class='wsr-content'>
+  <div class="row">
+    <div  class="col-12">
+      <p class="wsr-content-text">
+        Every member of Warwickshire Search and Rescue is a volunteer, and the only way we can continue to operate is with your help and support.  Each team member pays for their own clothing, fuel and equipment, but your support helps keep our Incident Control Vehicle running, provides essential training and helps us purchase vital equipment, such as communications equipment, GPS navigation and medical kits.
+        <br>No matter how small, personal donations help to keep the team running. 
+      </p>
+    </div>
   </div>
-    <div class="card-link">
-<!-- Button trigger modal -->
-<button id="onlinebanking-button" type="button" class="btn btn-primary wsr-btn-donation" data-toggle="modal" data-target="#DonationModal">
-Banking Details
-</button>
-</div>
-</div>
-<!-- End of Bootstrap Card -->
-<!-- Paypal Bootstrap Card with Local Customisation  -->
-<div id="paypal" class="card" style="width: 18rem;">
-  <img id="btn_donateCC_LG-02" src="assets/images/btn_donateCC_LG.gif" class="card-img-top-small" alt="Payment Cards">
-  <div class="card-body-small">
-    <h5 class="card-title">Paypal</h5>
-    <p class="card-text">You can make a donation by using the Paypal button, you don&apos;t need a Paypal account to do this.</p>
+  <div class="wsr-contact-container">
+  <div class="row">
+  <!-- Warksar Donation Modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="DonationModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Online Transfer</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- Start of Online Transfer Modal Form-->
+          <form id="query-form" class="signup-form" method="POST" action="https://devauxphp.azurewebsites.net/warksar_log.php" target="null">
+            <div class="modal-body">
+              Please enter your name and email address and we will send you details of how to perform an online transfer.<br>
+              <!-- iframe to receive post input from php.  Presently hidden-->
+              <iframe id="null-iframe" name="null"></iframe>
+              <br>
+              <label for="fullname">Full Name</label>
+              <br>
+              <input class="text-input wsr-text-input" id="fullname" type="text" name="full_name" required="" size="50">
+              <br>
+              <label for="email">Email Address</label><br>
+              <input class="text-input wsr-text-input" id="email" type="email" name="email_address" required="" size="50">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <input id="donationmodal-button" type="submit" class="btn btn-primary" onclick="formSubmit('query-form')">
+            </div>
+          </form>
+        <!-- End of Online Transfer Modal Form-->
+      </div>
+    </div>
   </div>
-    <div class="card-link">
-<a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=ECZMF9M494KXY" target="_blank" class="btn btn-primary">Paypal</a>
-</div>
-</div>
-<!-- End of Bootstrap Card -->
-<!-- Online Bootstrap Card with Local Customisation  -->
-<div id="onlineshopping" class="card" style="width: 18rem;">
-<img id="logowall-01" src="assets/images/logowall.png" class="card-img-top-small" alt="Online Stores">
-  <div class="card-body-small">
-    <h5 class="card-title">Online Shopping</h5>
-    <p class="card-text">Easyfundraising is a great way to raise money.  Shop online with over 2,700 retailers and they will give a donation, at no cost to you, every time you buy.</p>
+  <!-- Online Transfer Bootstrap Card with Local Customisation  -->
+  <div id="onlinetransfer" class="card" style="width: 18rem;">
+    <img id="OnlineBanking-01" src="assets/images/OnlineBanking.png" class="card-img-top-small" alt="Payment Cards">
+    <div class="card-body-small">
+      <h5 class="card-title">Online Transfer</h5>
+      <p class="card-text">To perform an online transfer please click on the link below, and you will be sent banking details.</p>
+    </div>
+      <div class="card-link">
+  <!-- Button trigger modal -->
+  <button id="onlinebanking-button" type="button" class="btn btn-primary wsr-btn-donation" data-toggle="modal" data-target="#DonationModal">
+  Banking Details
+  </button>
   </div>
-    <div class="card-link">
-<a href="https://www.easyfundraising.org.uk/causes/warksar/" target="_blank" class="btn btn-primary">Easyfundraising</a>
-</div>
-</div>
-<!-- End of Bootstrap Card -->
-</div>
-</div>
-</section>
-</div>
-<!--  End of Donate menu section-->
+  </div>
+  <!-- End of Bootstrap Card -->
+  <!-- Paypal Bootstrap Card with Local Customisation  -->
+  <div id="paypal" class="card" style="width: 18rem;">
+    <img id="btn_donateCC_LG-02" src="assets/images/btn_donateCC_LG.gif" class="card-img-top-small" alt="Payment Cards">
+    <div class="card-body-small">
+      <h5 class="card-title">Paypal</h5>
+      <p class="card-text">You can make a donation by using the Paypal button, you don&apos;t need a Paypal account to do this.</p>
+    </div>
+      <div class="card-link">
+  <a href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=ECZMF9M494KXY" target="_blank" class="btn btn-primary">Paypal</a>
+  </div>
+  </div>
+  <!-- End of Bootstrap Card -->
+  <!-- Online Bootstrap Card with Local Customisation  -->
+  <div id="onlineshopping" class="card" style="width: 18rem;">
+  <img id="logowall-01" src="assets/images/logowall.png" class="card-img-top-small" alt="Online Stores">
+    <div class="card-body-small">
+      <h5 class="card-title">Online Shopping</h5>
+      <p class="card-text">Easyfundraising is a great way to raise money.  Shop online with over 2,700 retailers and they will give a donation, at no cost to you, every time you buy.</p>
+    </div>
+      <div class="card-link">
+  <a href="https://www.easyfundraising.org.uk/causes/warksar/" target="_blank" class="btn btn-primary">Easyfundraising</a>
+  </div>
+  </div>
+  <!-- End of Bootstrap Card -->
+  </div>
+  </div>
+  </section>
+  </div>
+  <!--  End of Donate menu section-->
 
-<footer>
-<ul class="social-networks" aria-label="Social Media">
-<li><a aria-label="Facebook" href="http://www.facebook.com/warksar" target="_blank" aria-label="Facebook"><i class="fab fa-facebook" ></i></a></li>
-<li><a href="https://twitter.com/WarkSAR" target="_blank"   aria-label="Twitter"><i class="fab fa-twitter-square"></i></a></li>
-<li><a href="http://www.youtube.com" target="_blank"  aria-label="YouTube"><i class="fab fa-youtube-square"></i></a></li>
-<li><a href="http://www.instagram.com" target="_blank"  aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-</ul>
-<p>Registered Charity No. 1167079</p>
-<p class='enquiry'>For Enquiries Please Email: support@warksar.org.uk</p>
-<p class='d-none d-lg-inline footer-sm'>Created by Stephen Clarke on behalf of Warwickshire Search and Rescue 
-||&nbsp;Last update on 25/02/2021||&nbsp;<span id='HTMLSerNo'>0418</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
+  <footer>
+  <ul class="social-networks" aria-label="Social Media">
+  <li><a aria-label="Facebook" href="http://www.facebook.com/warksar" target="_blank" aria-label="Facebook"><i class="fab fa-facebook" ></i></a></li>
+  <li><a href="https://twitter.com/WarkSAR" target="_blank"   aria-label="Twitter"><i class="fab fa-twitter-square"></i></a></li>
+  <li><a href="http://www.youtube.com" target="_blank"  aria-label="YouTube"><i class="fab fa-youtube-square"></i></a></li>
+  <li><a href="http://www.instagram.com" target="_blank"  aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+  </ul>
+  <p>Registered Charity No. 1167079</p>
+  <p class='enquiry'>For Enquiries Please Email: support@warksar.org.uk</p>
+  <p class='d-none d-lg-inline footer-sm'>Created by Stephen Clarke on behalf of Warwickshire Search and Rescue 
+  ||&nbsp;Last update on 25/02/2021||&nbsp;<span id='HTMLSerNo'>0418</span>.<span id='CSSSerNo'></span><span id='JSSerNo'></span></p></footer>
 </body>
 </html>

@@ -305,7 +305,47 @@ The are examples of all three on this site.
 
 ## 8 Code Structure
 
+### 8.1 HTML
+
+The HTML code has natural structure from the use of semantic elements such as header, navigation, footer and section.
+
+Additional structure is provided with extensive annotations in comment lines.
+
+Major sections are labelled with a start and end comment.
+
+Elements are indented to help identify nesting and to ensure that elements are closed and do not cross.
+
+### 8.2 CSS
+There is, at present, a single css file within the assets sub-folder of the site.  
+The CSS file has frequent comments and annotations.  
+To provide structure the CSS file uses annotations to divide into sections that correspond to the parts of the website, plus other universal elements, such as the header, the footer, animations and media queries.
+
+CSS classes follow a consistent pattern.  Classes created for the Warwickshire Search and Rescue site start with a wsr- prefix, other parts of the class given context.  This approach helps to distinguish classes specific to this site from those that are imported for other sites and those that serve to customise classes from external libraries, such as Bootstrap.
+
+### 8.3 JavaScript
+There is very little Javascript, but the Javascript routines are stored in a separate js file within the assets subfolder of the site.
+
+Code is indented for clarity.
+
 ## 9 Deployment
+
+### 9.1 Development and Testing
+
+Development and testing is run on a local machine as a set of files on the hard drive.
+
+The PHP and SQL Server elements are run on an Azure server and are called from the html, so the local files are fully operational.
+
+### 9.2 Github Branches
+
+Once tested the code is deployed on GitHub, using Github Desktop.  The code can be deployed to various branches to allow for testing and staging of changes and additions, whilst maintaining the integrity of the core.
+
+### 9.3 Github Main Branch
+
+The deployment goal at this stage is to be available for assessment on the Github platform.  Once tested locally it can then be deployed to a branch on GitHub, and when tested in that environment merged back into the main branch and left unchanged for assessment.
+
+### 9.4 Live Deployment
+
+Ultimately the site will, once approved by Warwickshire Search and Resuce, be deployed to a different server.  To make this deployment as simple as possible the site has been designed to for easy copying and using relative file paths to assets such as CSS, images and Javascript.
 
 ## 10 Testing and Quality Assurance
 
@@ -344,74 +384,74 @@ The site is based on the Bootstrap breakpoints, testing has been conducted again
 
 #### 10.6.1 Extra Extra Large (XXL) >= 1400px
 
-    Navigation Bar - OK
-
-    Home Page - OK
-
-    What We Do Page - OK
-
-    Our History - OK
-
-    Team Carousel
-    Adjust width for first item.
-
-    Join Us - OK
-
-    Gallery - OK
-    4 columns
-
-    Contact - OK
-    4 Bootstrap Cards Across
-
-    Donate - OK
-    3 Bootstrap Cards Across
+>**Navigation Bar** - OK
+>
+>**Home Page** - OK
+>
+>**What We Do Page** - OK
+>
+>**Our History** - OK
+>
+>**Team Carousel**  
+>Adjust width for first item.
+>
+>**Join Us** - OK
+>
+>**Gallery** - OK  
+>4 columns
+>
+>**Contact** - OK  
+>4 Bootstrap Cards Across
+>
+>**Donate** - OK  
+>3 Bootstrap Cards Across
 
 #### 10.6.2 Extra Large xl 1200px - 1400px
 
-    Home Page
-    Remove min-width and min-height for CTA-text frame
-    Reduce size of central logo
-    Reduce font size of CTA text
-
-    What We Do Page - OK
-
-    Team Carousel - OK
-
-    Join Us - OK
-
-    Gallery - OK
-    3 columns
-
-    Contact - OK
-    4 Bootstrap Cards Across
-
-    Donate - OK
-    3 Bootstrap Cards Across
+>**Home Page**  
+>Remove min-width and min-height for CTA-text frame
+>Reduce size of central logo
+>Reduce font size of CTA text
+>
+>**What We Do Page** - OK
+>
+>**Team Carousel** - OK
+>
+>**Join Us** - OK
+>
+>**Gallery** - OK  
+>3 columns
+>
+>**Contact** - OK    
+>4 Bootstrap Cards Across
+>
+>**Donate** - OK  
+>3 Bootstrap Cards Across
 
 #### 10.6.3 Large lg 992px - 1200px
 
-    Navigation Bar - OK
-
-    Home Page*
-    Further educe size of central logo
-    Further educe font size of CTA text
-
-    What We Do Page - OK
-
-    Team Carousel - OK
-
-    Join Us
-    Reduce font sizes
-
-    Gallery - OK
-    3 columns
-
-    Contact - OK
-    3 Bootstrap Cards Across
-    1 on next row, all centred
-
-    Donate - OK
-    3 Bootstrap Cards Across
+>**Navigation Bar** - OK
+>
+>**Home Page**  
+>Further reduce size of central logo  
+>Further reduce font size of CTA text
+>
+>**What We Do Page** - OK
+>
+>**Team Carousel** - OK
+>
+>**Join Us**  
+>Reduce font sizes
+>
+>**Gallery** - OK  
+>3 columns
+>
+>**Contact** - OK  
+>3 Bootstrap Cards Across  
+>1 on next row, all centred
+>
+>**Donate** - OK  
+>**3 Bootstrap Cards Across
 
 #### 10.6.4 Medium md 768px to 992px
 
@@ -421,78 +461,79 @@ The site is based on the Bootstrap breakpoints, testing has been conducted again
 >Hide central logo  
 >
 >**What We Do Page**  
->Add element ids so that individual elements can be targeted, and Bootstrap customised, without affecting other parts of the site
+>Add element ids so that individual elements can be targeted, and Bootstrap customised, without affecting other parts of the site  
 >Use Bootstrap set images to go vertically above text
 >
 >**Team Carousel** - OK
 >
-**Join Us**
-Align image title and text vertically using Bootstrap
-
-**Gallery** - OK
-3 columns
-
-**Contact** - OK
-3 Bootstrap Cards Across
-1 on next row, all centred
-
-**Donate** - OK
-3 Bootstrap Cards Across
+>**Join Us**  
+>Align image title and text vertically using Bootstrap
+>
+>**Gallery** - OK  
+>3 columns
+>
+>**Contact** - OK  
+>3 Bootstrap Cards Across  
+>1 on next row, all centred
+>
+>**Donate** - OK  
+>3 Bootstrap Cards Across
 
 #### 10.6.5 Small 576px to 768px
 
-**Navigation Bar**
-Menu background being transparent makes text difficult to read with burger menu.  Set background to green, with padding and rounded corners
-
-**Home Page**
-Move buttons below central main text
-Re-align buttons for horizontal display
-
-**Team Carousel** - OK
-
-**Join Us**
-Hide image using Bootstrap
-
-**Gallery** - OK
-3 columns
-
-**Contact** - OK
-2 Bootstrap Cards Across
-2 on next row, all centred
-
-**Donate** - OK
-2 Bootstrap Cards Across
-1 on next row, all centred
+>**Navigation Bar**  
+>Menu background being transparent makes text difficult to read with burger menu.  
+>Set background to green, with padding and rounded corners
+>
+>**Home Page**  
+>Move buttons below central main text
+>Re-align buttons for horizontal display
+>
+>**Team Carousel** - OK
+>
+>**Join Us**  
+>Hide image using Bootstrap
+>
+>**Gallery** - OK  
+>3 columns
+>
+>**Contact** - OK  
+>2 Bootstrap Cards Across  
+>2 on next row, all centred
+>
+>**Donate** - OK  
+>2 Bootstrap Cards Across  
+>1 on next row, all centred
 
 #### 10.6.6 Extra Small 0px to 576px
 
-**Navigation Bar**
-Menu background being transparent makes text difficult to read with burger menu.  Set background to green, with padding and rounded corners
-
-**Home Page**
-Move buttons below central main text
-Re-align buttons for horizontal display
-
-**Team Carousel** - OK
-
-**Join Us**
-Hide image using Bootstrap
-
-**Gallery** - OK
-3 columns
-
-**Contact** - OK
-2 Bootstrap Cards Across
-2 on next row, all centred
-
-**Donate** - OK
-2 Bootstrap Cards Across
-1 on next row, all centred
+>**Navigation Bar**  
+>Menu background being transparent makes text difficult to read with burger menu.  Set background to green, with padding and rounded corners
+>
+>**Home Page**  
+>Move buttons below central main text  
+>Re-align buttons for horizontal display
+>
+>**Team Carousel** - OK
+>
+>**Join Us**
+>Hide image using Bootstrap
+>
+>**Gallery** - OK  
+>3 columns
+>
+>**Contact** - OK  
+>2 Bootstrap Cards Across  
+>2 on next row, all centred
+>
+>**Donate** - OK  
+>2 Bootstrap Cards Across  
+>1 on next row, all centred
 
 #### 10.6.7 Landscape Mobile
-**Footer Bar**
-Disappears when height is below 400px.
-
+>**Footer Bar**  
+>Set to disappear when height is below 400px.
+>
 ## 10.7 W3C HTML Validation Report
 The report was the initial report for the index.html page (which includes all html pages as Javascript is used to hide and show page components).
 
@@ -503,458 +544,320 @@ A check will now be run before each commit and any errors adressed at that stage
 *NB: src=  urls have been modified to prevent images from cluttering the README file when viewed online
 
 **Report 001**
-
-    **1**	Error: No space between attributes.
-
-    **Issue**
-    At line 16, column 31
-    ext/javascript"src="https://cd
-
-    **Actions**
-    Space added
-
-    **2**	Warning: The type attribute is unnecessary for JavaScript resources.
-
-    **Issue**
-    From line 16, column 1; to line 16, column 97
-    </script>?<script type="text/javascript"src=""https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js></scri
-
-    **Actions**
-    Type attribute removed
-
-    **3**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
-    **Issue**
-    From line 28, column 1; to line 28, column 51
-    ogoleft'>?<img class='logoleft' src=''assets/images/logo.png>?</div
-    **Actions**
-    Add ALT tag
-
-
-    **4**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
-
-    **Issue**
-    From line 73, column 1; to line 73, column 34
-    cta-img">?<img src=""assets/images/logo.png">?</div
-
-    **Actions**
-    Add ALT tag
-
-
-    **5**	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
-
-    **Issue**
-    From line 69, column 1; to line 69, column 43
-    d='Home'>?<section id='wsr-home' class='wsr-content'>?<!-- 
-
-    **Actions**
-    Add section heading, hide if appropriate
-
-    **6**	Error: Duplicate ID WhatWeDo.
-
-    **Issue**
-    From line 98, column 1; to line 98, column 43
-    ntainer">?<section id='WhatWeDo' class='wsr-content'>?<div 
-
-    **Actions**
-    Change ID to avoid duplication
-
-
-    **7**	Warning: The first occurrence of ID WhatWeDo was here.
-
-    **Issue**
-    From line 93, column 1; to line 93, column 64
-    >?</div>?<div style='display: none;' class='MenuComponent' id='WhatWeDo'>?<head
-
-    **Actions**
-    Change ID to avoid duplication
-
-    **8**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
-
-    **Issue**
-    From line 108, column 1; to line 108, column 116
-    ol-lg-4">?<img id="alsar-logo" src="https://www.lowlandrescue.org/images/lowland-rescue-lozenge1.png" class="wsr-content-img">?</div
-
-    **Actions**
-    Add ALT tag
-
-
-    **9**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
-
-    **Issue**
-    From line 118, column 1; to line 118, column 67
-    ol-lg-4">?<img src="assets/images/imgwarksar002.jpg" class="wsr-content-img">?</div
-
-    **Actions**
-    Add ALT tag
-
-
-    **10**	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
-
-    **Issue**
-    From line 98, column 1; to line 98, column 43
-    ntainer">?<section id='WhatWeDo' class='wsr-content'>?<div 
-
-    **Actions**
-    Add heading, hide if appropriate
-
-
-
-    **11**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
-
-    **Issue**
-    From line 282, column 1; to line 282, column 89
-    m-block">?<img id="imgwarksar030-02" src="assets/images/imgwarksar030.jpg" class="wsr-content-img">?</div
-
-    **Actions**
-    Add ALT tag
-
-
-
-    **12**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
-
-    **Issue**
-    From line 297, column 1; to line 297, column 89
-    m-block">?<img id="imgwarksar021-02" src="assets/images/imgwarksar021.jpg" class="wsr-content-img">?</div
-
-    **Actions**
-    Add ALT tag
-
-
-
-    **13**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
-
-    **Issue**
-    From line 312, column 1; to line 312, column 89
-    m-block">?<img id="imgwarksar028-02" src="assets/images/imgwarksar028.jpg" class="wsr-content-img">?</div
-
-    **Actions**
-    Add ALT tag
-
-
-    **14**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
-
-    **Issue**
-    From line 327, column 1; to line 327, column 89
-    m-block">?<img id="imgwarksar011-02" src="assets/images/imgwarksar011.jpg" class="wsr-content-img">?</div
-
-    **Actions**
-    Add ALT tag
-
-
-    **15**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
-
-    **Issue**
-    From line 342, column 1; to line 342, column 100
-    m-block">?<img id="imgwarksar027-searchmanager" src="assets/images/imgwarksar027.jpg" class="wsr-content-img">?</div
-
-    **Actions**
-    Add ALT tag
-
-
-    **16**	Error: Bad value mailto: support@warksar.org.uk for attribute href on element a: Illegal character in scheme data: space is not allowed.
-
-    **Issue**
-    From line 360, column 1; to line 360, column 78
-    .</p>?<p>?<a class="btn btn-primary wsr-text-btn" href="mailto: support@warksar.org.uk">Contac
-
-    **Actions**
-    Remove space
-
-    **17**	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
-
-    **Issue**
-    From line 272, column 1; to line 272, column 47
-    ntainer">?<section id='warksarroles' class='wsr-content'>?<div 
-
-    **Actions**
-    Add heading, hide if appropriate
-
-
-    **18**	Error: The frameborder attribute on the iframe element is obsolete. Use CSS instead.
-
-    **Issue**
-    From line 375, column 1; to line 375, column 211
-    her"></a>?<iframe width="1280" height="720" src="https://www.youtube.com/embed/qDnTAo1rHks" frameborder="0" al�rometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></ifra
-
-    **Actions**
-    Remove frameborder and use CSS
-
-    **19**	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
-
-    **Issue**
-    From line 371, column 1; to line 371, column 20
-    </header>?<section id=''photo'>? 
-
-    **Actions**
-    Add heading, hide if appropriate
-
-    **20**	Error: Bad value for attribute id on element div: An ID must not be the empty string.
-
-    **Issue**
-    From line 441, column 1; to line 441, column 46
-    ation -->?<div id="" class="card" style="width: 18rem;">? <im
-
-    **Actions**
-    Put in unique, non-null, ID
-
-    **21**	Error: Duplicate ID .
-
-    **Issue**
-    From line 442, column 3; to line 442, column 82
-    8rem;">? <img id="" src=""assets/images/imgwarksar011.jpg class="card-img-top" alt="...">? <di
-
-    **Actions**
-    Put in unique, non-null, ID
-
-    **22**	Warning: The first occurrence of ID was here.
-
-    **Issue**
-    From line 441, column 1; to line 441, column 46
-    ation -->?<div id="" class="card" style="width: 18rem;">? <im
-
-    **Actions**
-    Put in unique, non-null, ID
-
-
-    **23**	Error: Bad value for attribute id on element img: An ID must not be the empty string.
-
-    **Issue**
-    From line 442, column 3; to line 442, column 82
-    8rem;">? <img id="" src="assets/images/imgwarksar011.jpg" class="card-img-top" alt="...">? <di
-
-    **Actions**
-    Put in unique, non-null, ID
-
-
-    **24**	Error: Duplicate ID .
-
-    **Issue**
-    From line 455, column 1; to line 455, column 46
-    ation -->?<div id="" class="card" style="width: 18rem;">? <im
-
-    **Actions**
-    Put in unique, non-null, ID
-
-
-    **25**	Warning: The first occurrence of ID was here.
-
-    **Issue**
-    From line 441, column 1; to line 441, column 46
-    ation -->?<div id="" class="card" style="width: 18rem;">? <im
-
-    **Actions**
-    Put in unique, non-null, ID
-
-
-    **26**	Error: Bad value for attribute id on element div: An ID must not be the empty string.
-
-    **Issue**
-    From line 455, column 1; to line 455, column 46
-    ation -->?<div id="" class="card" style="width: 18rem;">? <im
-
-    **Actions**
-    Put in unique, non-null, ID
-
-    **27**	Error: End tag div seen, but there were open elements.
-
-    **Issue**
-    From line 507, column 1; to line 507, column 6
-    ize="50">?</div>? 
-
-    **Actions**
-    Re-arrange html to avoid crossing elements
-
-
-    **28**	Error: Unclosed element form.
-
-    **Issue**
-    From line 498, column 1; to line 498, column 131
-    transfer?<form id="query-form" class="signup-form" method="POST" action="https://devauxphp.azurewebsites.net/warksar_log.php" target="null">??<!--
-
-    **Actions**
-    Form and div are both closed, but cross.  Adjust html to avoid
-
-    **29**	Error: Attribute form_id not allowed on element input at this point.
-
-    **Issue**
-    From line 510, column 9; to line 510, column 135
-    >? <input form_id="query_form" id="donationmodal-button" type="submit" class="btn btn-primary" onclick="formSubmit('query-form')">? 
-        Attributes for element input:
-        Global attributes
-        acceptwhen type is file
-        altwhen type is image
-        autocompletewhen type is text, search, url, tel, email, password, date, month, week, time, datetime-local, number, range, or color
-        autofocus
-        checkedwhen type is checkbox or radio
-        dirnamewhen type is text or search
-        disabled
-        form
-        formactionwhen type is submit or image
-        formenctypewhen type is submit or image
-        formmethodwhen type is submit or image
-        formnovalidatewhen type is submit or image
-        formtargetwhen type is submit or image
-        heightwhen type is image
-        listwhen type is text, search, url, tel, email, date, month, week, time, datetime-local, number, range, or color
-        maxwhen type is date, month, week, time, datetime-local, number, or range
-        maxlengthwhen type is text, search, url, tel, email, or password
-        minwhen type is date, month, week, time, datetime-local, number, or range
-        multiplewhen type is email or file
-        name
-        patternwhen type is text, search, url, tel, email, or password
-        placeholderwhen type is text, search, url, tel, email, password, or number
-        readonlywhen type is text, search, url, tel, email, password, date, month, week, time, datetime-local, or number
-        requiredwhen type is text, search, url, tel, email, password, date, month, week, time, datetime-local, number, checkbox, radio, or file
-        sizewhen type is text, search, url, tel, email, or password
-        srcwhen type is image
-        stepwhen type is date, month, week, time, datetime-local, number, or range
-        type
-        valuewhen type is not file or image
-        widthwhen type is image
-
-    **Actions**
-    Remove attribute
-
-    **30**	Error: Stray end tag form.
-
-    **Issue**
-    From line 512, column 1; to line 512, column 7
-    </div>?</form>? <
-
-    **Actions**
-    Form and div are both closed, but cross, this makes the tag appear stray.  Adjust html to avoid
-
-    **27**	Error: The value of the for attribute of the label element must be the ID of a non-hidden form control.
-
-    **Issue**
-    From line 503, column 1; to line 503, column 19
-    /iframe>??<label for="fname"> 
-
-    **Actions**
-    Adjust for attribute
-
-        Full Document checking completed.
-        Used the HTML parser.
-        Total execution time 127 milliseconds.
-        ________________________________________
-        About this checker � Report an issue � Version: 21.2.17
-
+>**1**	Error: No space between attributes.  
+>**Issue**  
+>At line 16, column 31  
+>ext/javascript"src="https://cd  
+>**Actions**  
+>Space added
+>
+>**2**	Warning: The type attribute is unnecessary for JavaScript resources.  
+>**Issue**  
+>From line 16, column 1; to line 16, column 97
+></script>?<script type="text/javascript"src=""https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js></scri  
+>**Actions**  
+>Type attribute removed
+>
+>**3**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+>**Issue**  
+>From line 28, column 1; to line 28, column 51
+>logoleft'>?<img class='logoleft' src=''assets/images/logo.png>?</div
+>**Actions**  
+>Add ALT tag
+>
+>**4**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.  
+>**Issue**  
+>From line 73, column 1; to line 73, column 34  
+>cta-img">?<img src=""assets/images/logo.png">?</div  
+>**Actions**  
+>Add ALT tag
+>
+>**5**	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.  
+>**Issue**  
+>From line 69, column 1; to line 69, column 43  
+>d='Home'>?<section id='wsr-home' class='wsr-content'>?<!--   
+>**Actions**  
+>Add section heading, hide if appropriate
+>
+>**6**	Error: Duplicate ID WhatWeDo.  
+>**Issue**  
+>From line 98, column 1; to line 98, column 43  
+>ntainer"><section id='WhatWeDo'class='wsr-content'><div    
+>**Actions**  
+>Change ID to avoid duplication
+>
+>**7**	Warning: The first occurrence of ID WhatWeDo was here.  
+>**Issue**  
+>From line 93, column 1; to line 93, column 64  
+>div style=display: none; class='MenuComponent' id='WhatWeDo'><head  
+>**Actions**  
+>Change ID to avoid duplication
+>
+>**8**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.  
+>**Issue**  
+>From line 108, column 1; to line 108, column 116  
+>ol-lg-4">?<img id="alsar-logo" src='' class="wsr-content-img">?</div  
+>**Actions**  
+>Add ALT tag
+>
+>**9**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.  
+>**Issue**  
+>From line 118, column 1; to line 118, column 67  
+>ol-lg-4">?<img src="" class="wsr-content-img">?</div  
+>**Actions**  
+>Add ALT tag
+>
+>**10**	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.  
+>**Issue**
+>From line 98, column 1; to line 98, column 43
+>ntainer">?<section id='WhatWeDo' class='wsr-content'>?<div   
+>**Actions**  
+>Add heading, hide if appropriate
+>
+>**11**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.  
+>**Issue**  
+>From line 282, column 1; to line 282, column 89
+>m-block">?<img id="imgwarksar030-02" src="" class="wsr-content-img">?</div  
+>**Actions**  
+>Add ALT tag
+>
+>**12**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.  
+>**Issue**  
+>From line 297, column 1; to line 297, column 89  
+>m-block">?<img id="imgwarksar021-02" src="" class="wsr-content-img">?</div  
+>**Actions**  
+>Add ALT tag  
+>
+>**13**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.  
+>**Issue**  
+>From line 312, column 1; to line 312, column 89  
+>m-block">?<img id="imgwarksar028-02" src="" class="wsr-content-img">?</div
+>**Actions**  
+>Add ALT tag
+>
+>**14**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.  
+>**Issue**  
+>From line 327, column 1; to line 327, column 89  
+>m-block">img id="imgwarksar011-02" src="" class="wsr-content-img"></div  
+>**Actions**  
+>Add ALT tag
+>
+>**15**	Error: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.  
+>**Issue**  
+>From line 342, column 1; to line 342, column 100  
+>img id="imgwarksar027-searchmanager" src="assets/images/imgwarksar027.jpg" class="wsr-content-img">?</div  
+>**Actions**  
+>Add ALT tag
+>
+>**16**	Error: Bad value mailto: support@warksar.org.uk for attribute href on element a: Illegal character in scheme data: space is not allowed.  
+>**Issue**  
+>From line 360, column 1; to line 360, column 78   
+>a class="btn btn-primary wsr-text-btn" href=mailto: support@warksar.org.uk">Contac  
+>**Actions**   
+>Remove space
+>
+>**17**	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.  
+>**Issue**  
+>From line 272, column 1; to line 272, column 47
+>ntainer">?<section id='warksarroles' class='wsr-content'>?<div 
+>
+>**Actions**  
+>Add heading, hide if appropriate  
+>
+>**18**	Error: The frameborder attribute on the iframe element is obsolete. Use CSS instead.  
+>**Issue**  
+>From line 375, column 1; to line 375, column 211  
+>her"></a>?<iframe width="1280" height="720" src="https://www.youtube.com/embed/qDnTAo1rHks" frameborder="0" al�rometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></ifra  
+>**Actions**  
+>Remove frameborder and use CSS  
+>
+>**19**	Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.   
+>**Issue**  
+>From line 371, column 1; to line 371, column 20  
+>/header>?<section id=''photo'  
+>**Actions**  
+>Add heading, hide if appropriate
+>
+>**20**	Error: Bad value for attribute id on element div: An ID must not be the empty string.  
+>**Issue**  
+>From line 441, column 1; to line 441, column 46  
+>ation -->?<div id="" class="card" style="width: 18rem;"? <im  
+>**Actions**  
+>Put in unique, non-null, ID  
+>
+>**21**	Error: Duplicate ID  
+>**Issue**  
+>From line 442 column3 toline 442  
+>img id=""src=class="card-img-top"  
+>**Actions**  
+>Put in unique, non-null, ID
+>
+>**22**	Warning: The first occurrence of ID
+>**Issue**  
+>From line 441, column 1; to line 441  
+>ation --> div id="" class="card"  
+>**Actions**  
+>Put in unique, non-null, ID  
+>
+>**23**	Error: Bad value for attribute id on element img: An ID must not be the empty string.  
+>**Issue**  
+>From line 442, column 3; to line 442, column 82  
+>8rem;">? <img id="" src= class="card-img-top" alt="...">? <di  
+>**Actions**  
+>Put in unique, non-null, ID
+>
+>**24**	Error: Duplicate ID  
+>**Issue**  
+>From line 455, column 1; to line 455, column 46  ation -->?div id="" class="card" style="width: 18rem;"? <im  
+>**Actions**
+>Put in unique, non-null, ID
+>
+>**25**	Warning: The first occurrence of ID was here.  
+>**Issue**  
+>From line 441, column 1; to line 441, column 46
+>ation -->?div id="" class="card" style="width: 18rem;"? <im  
+>**Actions**    
+>Put in unique, non-null, ID
+>
+>**26**	Error: Bad value for attribute id on element div: An ID must not be the empty string.  
+>**Issue**  
+>From line 455, column 1; to line 455, column 46  
+>ation -->?div id="" class="card" style="width: 18rem;"? <im  
+>**Actions**  
+>Put in unique, non-null, ID
+>
+>**27**	Error: End tag div seen, but there were open elements.  
+>**Issue**  
+>From line 507, column 1; to line 507, column 6  
+>ize="50">?/div?   
+>**Actions**  
+>Re-arrange html to avoid crossing elements
+>
+>**28**	Error: Unclosed element form.  
+>**Issue**  
+>From line 498, column 1; to line 498, column 131  
+>transfer?form id="query-form" class="signup-form" method="POST" action="https://devauxphp.azurewebsites.net/warksar_log.php" target="null"   
+>**Actions**  
+>Form and div are both closed, but cross.  Adjust html to avoid
+>
+>**29**	Error: Attribute form_id not allowed on element input at this point.
+>**Issue**  
+>From line 510, column 9; to line 510, column 135  
+>? input form_id="query_form" id="donationmodal-button" type="submit" class="btn btn-primary" onclick="formSubmit('query-form')"?   
+>**Actions**  
+>Remove attribute
+>
+>**30**	Error: Stray end tag form.  
+>**Issue**
+>From line 512, column 1; to line 512, column 7  > <  
+>**Actions**
+>Form and div are both closed, but cross, this makes the tag appear stray.  Adjust html to avoid
+>
+>**31**	Error: The value of the for attribute of the label element must be the ID of a non-hidden form control.  
+>**Issue**  
+>From line 503, column 1; to line 503, column 19  
+>/iframe>??label for="fname"   
+>**Actions**  
+>Adjust for attribute  
+>
+>Full Document checking completed.
+>Used the HTML parser.
+>Total execution time 127 milliseconds.
+>
+>About this checker � Report an issue � Version: 21.2.17
 
 ### 10.8 W3C CSS Validator results for warwickshiresearchandrescue.css 
 (CSS level 3 + SVG)
 Sorry! We found the following errors (13)
 URI : warwickshiresearchandrescue.css
 
-
-**Error**
-6	:root
-Parse Error %
-
-**Actions**
-Line is now redundanct, removed.
-
-
-**Error**
-241	.Content-Container
-Value Error : border collapse is not a color value : collapse
-
-**Actions**
-Redundant line, removed
-
-**Error**
-316	.wsr-content-text-fc
-Value Error : font-weight 1000 is not a font-weight value : 1000
-
-**Actions**
-Set to max value, 900
-
-
-**Error**
-425	.wsr-cta-actions	
-Value Error : font-weight 1000 is not a font-weight value : 1000
-
-**Actions**
-Set to max value, 900
-
-
-**Error**
-583	#imgwarksar029-01	
-Property max-wdith doesn't exist. The closest matching property name is max-width : 300px
-
-**Actions**
-Remove section as the img is no longer in use
-
-
-**Error**
-622	#imgitem005	
-is an incorrect operator : cover / contain / px
-
-** Actions
-Remove section as the img is no longer in use
-
-**Error**
-630	#imgitem010	
-is an incorrect operator : cover / contain / px
-
-** Actions
-Remove section as the img is no longer in use
-
-
-**Error**
-638	#imgitem006	
-is an incorrect operator : cover / contain / px
-
-** Actions
-Remove section as the img is no longer in use
-
-
-**Error**
-647	#btn_donateCC_LG-01	
-Property image-fit doesn't exist : contain
-
-**Actions**
-Corrected to object-fit
-
-
-**Error**
-690	#img-carousel-5	
-Property object-align doesn't exist : center center
-
-**Actions**
-Correct to object-position
-
-
-**Error**
-753	.wsr-carousel-caption h5	
-Property backdrop-filter doesn't exist : blur(10px)
-
-**Actions**
-Vaidated that the property works with Chrome.  For other browsers it degrades gracefully.  Decision to leave in place
-
-**Error**
-761	.wsr-carousel-indicator	
-Value Error : bottom revert is not a bottom value : revert
-
-**Actions**
-Change to top: 100px;
-
-**Error** 
-785	.wsr-carousel-caption p	
-Property backdrop-filter doesn't exist : blur(10px)
-
-**Actions**
-Vaidated that the property works with Chrome.  For other browsers it degrades gracefully.  Decision to leave in place
-
-**Warnings**
-Warnings (6)
-URI : warwickshiresearchandrescue.css
-7		--cssfileversion is an unknown vendor extension
-8		--lightgrey is an unknown vendor extension
-9		--darkgrey is an unknown vendor extension
-10		--bgroundshade is an unknown vendor extension
-
-**Actions**
-All warnings refer to variables that have been created to enable global management of the colurs of certain features so that they remain consistent across the site.
+>**6**	:root  
+>**Error**  
+>Parse Error %  
+>**Actions**  
+>Line is now redundanct, removed.
+>
+>**241**	.Content-Container  
+>**Error**  
+>Value Error : border collapse is not a color value : collapse  
+>**Actions**  
+>Redundant line, removed
+>
+>**316**	.wsr-content-text-fc  
+>**Error**  
+>Value Error : font-weight 1000 is not a font-weight value : 1000  
+>**Actions**  
+>Set to max value, 900  
+>
+>**425**	.wsr-cta-actions  
+>**Error**  
+>Value Error : font-weight 1000 is not a font-weight value : 1000  
+>**Actions**  
+>Set to max value, 900
+>
+>**583**	#imgwarksar029-01  
+>**Error**     
+>Property max-wdith doesn't exist. The closest matching property name is max-width : 300px  
+>**Actions**  
+>Remove section as the img is no longer in use
+>
+>**622**	#imgitem005  
+>**Error**  
+>is an incorrect operator : cover / contain / px  
+>**Actions**  
+>Remove section as the img is no longer in use
+>
+>**630**	#imgitem010	  
+>**Error**  
+>is an incorrect operator : cover / contain / px  
+>**Actions**  
+>Remove section as the img is no longer in use  
+>
+>**638**	#imgitem006	  
+>**Error**  
+>is an incorrect operator : cover / contain / px  
+>**Actions**  
+>Remove section as the img is no longer in use  
+>
+>**647**	#btn_donateCC_LG-01  
+>**Error**  
+>Property image-fit doesn't exist : contain  
+>**Actions**  
+>Corrected to object-fit  
+>
+>**690**	#img-carousel-5  
+>**Error**  
+>Property object-align doesn't exist : center center  
+>**Actions**  
+>Correct to object-position
+>
+>**753**	.wsr-carousel-caption h5  
+>**Error**  
+>Property backdrop-filter doesn't exist : blur(10px)  
+>**Actions**  
+>Vaidated that the property works with Chrome.  For other browsers it degrades gracefully.  Decision to leave in place  
+>
+>**761**	.wsr-carousel-indicator  
+>**Error**  
+>Value Error : bottom revert is not a bottom value : revert  
+>**Actions**  
+>Change to top: 100px;  
+>
+>**785**	.wsr-carousel-caption p  
+>**Error**  
+>Property backdrop-filter doesn't exist : blur(10px)  
+>**Actions**  
+>Vaidated that the property works with Chrome.  For other browsers it degrades gracefully.  Decision to leave in place
+>
+>**Warnings**  
+>Warnings (6)  
+>URI : warwickshiresearchandrescue.css  
+>7		--cssfileversion is an unknown vendor extension  
+>8		--lightgrey is an unknown vendor extension  
+>9		--darkgrey is an unknown vendor extension  
+>10		--bgroundshade is an unknown vendor extension  
+>**Actions**  
+>All warnings refer to variables that have been created to enable global management of the colurs of certain features so that they remain consistent across the site.
 
 ## 11 Credits
 
@@ -966,16 +869,16 @@ Code blocks that are taken, and often adapted, from third-parties are individual
 
 Third party sources and services are
 
-[The Code Institute](https://codeinstitute.net/)
-[Bootstrap](https://getbootstrap.com/)
-[Google Fonts](https://fonts.google.com/)
-[FontAwesome](https://fontawesome.com/)
-[World Wide Web Consortium](https://www.w3.org/)
-[W3schools](https://www.w3schools.com/)
-[Stack Overflow](https://stackoverflow.com/)
-[EMailJS]()
-[GitHub]()
-[Azure]()
+[The Code Institute](https://codeinstitute.net/)  
+[Bootstrap](https://getbootstrap.com/)  
+[Google Fonts](https://fonts.google.com/)  
+[FontAwesome](https://fontawesome.com/)  
+[World Wide Web Consortium](https://www.w3.org/)  
+[W3schools](https://www.w3schools.com/)  
+[Stack Overflow](https://stackoverflow.com/)  
+[EMailJS](https://www.emailjs.com/)  
+[GitHub](https://github.com/)  
+[Azure](https://azure.microsoft.com/)  
 
 ## 12 Assessment Criteria
 User Centric Front-end Development

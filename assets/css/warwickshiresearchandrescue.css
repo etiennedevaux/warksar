@@ -49,7 +49,8 @@
     width: 100%;
     height: 100%;
     /* rem background-image:  URL("http://www.warksar.org.uk/wp-content/uploads/2018/01/IMGP6198.jpg"); */
-    background-image: URL("https://scportfolio.blob.core.windows.net/$web/warksar/assets/images/imgwarksar001.jpg"); 
+    /* rem background-image: URL("https://scportfolio.blob.core.windows.net/$web/warksar/assets/images/imgwarksar001.jpg"); */
+    background-image: URL("https://etiennedevaux.github.io/warksar/assets/images/imgwarksar001.jpg");
     background-color: var(--bgroundshade);
     z-index: -1;
     padding: 0px;

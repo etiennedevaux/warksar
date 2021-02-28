@@ -335,13 +335,44 @@ Development and testing is run on a local machine as a set of files on the hard 
 
 The PHP and SQL Server elements are run on an Azure server and are called from the html, so the local files are fully operational.
 
-### 9.2 Github Branches
+The local respository is created using GitHub Desktop.
 
+#### 9.1.1 Installing GitHub Desktop
+
+GitHub Desktop can be accessed from http://desktop.github.com
+
+1. Dowload the version for your local machine
+
+2. Run the installation program
+
+3. Run the program and sign-in to your GitHub account (to create a GitHub account go to http://www.github.com/join)
+
+4.  Choose FILE then CLONE REPOSITORY
+
+5.  Enter the URL https://github.com/etiennedevaux/warksar
+
+6.  The repository will then be downloaded to your local machine in the directory shown in the CLONE REPOSITORY dialogue
+
+7.  File can be edited using your preferred editor, in my case I have used Visual Studio Code, but any common editor will work.
+
+8.  See the documentation at https://docs.github.com/en/desktop
+
+### 9.2 Running the Code
+
+### 9.3 Editing the Code
+
+### 9.4 Commits
+
+### 9.5 Push to Origin
+
+### 9.3 GitHub Branches
 Once tested the code is deployed on GitHub, using Github Desktop.  The code can be deployed to various branches to allow for testing and staging of changes and additions, whilst maintaining the integrity of the core.
 
 ### 9.3 Github Main Branch
 
 The deployment goal at this stage is to be available for assessment on the Github platform.  Once tested locally it can then be deployed to a branch on GitHub, and when tested in that environment merged back into the main branch and left unchanged for assessment.
+
+
 
 ### 9.4 Live Deployment
 
@@ -879,243 +910,5 @@ Third party sources and services are
 [EMailJS](https://www.emailjs.com/)  
 [GitHub](https://github.com/)  
 [Azure](https://azure.microsoft.com/)  
-
-## 12 Assessment Criteria
-User Centric Front-end Development
-Assessment Criteria and Learning Outcomes
-
-Pass Criteria:
-ALL pass criteria must be achieved for a pass to be awarded
-LO1 Design a front-end web application based on the principles of user experience design, accessibility
-and responsive design
-LO1
-Design a front-end web application based on the principles of user experience design,
-accessibility and responsivity
-LO2 Develop and implement a static front-end web application using HTML and CSS
-LO3 Maximise future maintainability through documentation, code structure and organisation
-LO4 Use version control software to maintain, upload and share code with other developers.
-LO5 Test and deploy a front-end web application to a Cloud platform
-1.1 Design a website that incorporates a main navigation menu and a structured layout
-1.2
-Design a website that meets accessibility guidelines (e.g. contrast between background and
-foreground colors, non-text elements have planned alt text equivalents to cater for the visually
-impaired)
-1.3
-Design the organisation of information on the page following the principles of user experience
-design (headers are used to convey structure, information is easy to find due to being
-presented and categorised in terms of priority)
-1.4 Ensure that foreground information is never distracted by backgrounds
-1.5 Include graphics that are consistent in style and colour
-1.6
-Design the site to allow the user to initiate and control actions such as pop-ups and playing of
-audio/video.
-2.1
-Create a website of at least 3 pages, or (if using a single scrolling page) at least 3 separate
-page areas, to match the design and to meet its stated purpose
-2.2 Write custom CSS code that passes through the official (Jigsaw) validator with no issues
-2.3 Write custom HTML code that passes through the official W3C validator with no issues.
-LO2 Develop & implement a static front-end web application using HTML and CSS
-Milestone Project 1 - User Centric Front-end Development
-7
-LO3 Maximise future maintainability through documentation, code structure and organisation
-2.4 Incorporate images that are of sufficient resolution to not appear pixelated or stretched
-2.5 Code all external links to open in a separate tab when clicked
-2.6
-Use CSS media queries or CSS Grid/Bootstrap across the application to ensure the layout
-changes appropriately and maintains the page's structural integrity across device screen sizes
-2.7 Use Semantic markup to structure HTML code
-2.8
-Present the finished website with clearly understandable site-specific content, rather than
-Lorem Ipsum placeholder text
-2.9 Implement clear navigation to allow users to find resources on the site intuitively.
-3.1
-Write a README.md file for the web application that explains its purpose, the value that it
-provides to its users, and the deployment procedure.
-3.2 Insert screenshots of the finished project that align to relevant user stories
-3.3
-Attribute all code from external sources to its original source via comments above the code
-and (for larger dependencies) in the README.
-3.4
-Clearly separate and identify code written for the website and code from external sources (e.g.
-libraries or tutorials)
-3.5 Organise HTML and CSS code into well-defined and commented sections
-3.6 Place CSS code in external files, linked to the HTML page in the HEAD element
-3.7
-Write code that meets at least minimum standards for readability (consistent indentation,
-blank lines only appear individually or, at most, in pairs)
-3.8
-Name files consistently and descriptively, without spaces or capitalisation to allow for
-cross-platform compatibility.
-3.9
-Group files in directories by file type (e.g. an assets directory will contain all static files and
-may be organized into sub-directories such as css, images, etc.)
-4.1
-Use a cloud-based, git-based, version control system (e.g. Git & GitHub) throughout the
-development and implementation process
-4.2 Document the development process through descriptive commit messages
-4.3
-Use consistent and effective markdown formatting to produce a README file that is
-well-structured, easy to follow, and has few grammatical errors
-LO4 Use version control software to maintain, upload and share code with other developers
-Milestone Project 1 - User Centric Front-end Development
-8
-All Pass criteria must be achieved for a pass to be awarded.
-Merit Performance
-It is expected that the learning clearly demonstrates characteristics of higher level
-performance as described below.
-To evidence performance at Merit level, a learner will, in general demonstrate
-characteristics of performance at Merit level as outlined below. The learner must achieve
-ALL Merit criteria for a merit to be awarded.
-The learner has a clear rationale for the development of this project and has produced a
-fully functioning, well-documented, website for a real-life audience.
-The finished project has a clear, well-defined purpose addressing the needs of a particular
-target audience (or multiple related audiences). Its purpose would be immediately
-evident to a new user without having to look at supporting documentation. The design of
-the web site follows the principles of UX design and accessibility guidelines and the site is
-fully responsive.
-Code is well-organised and easy to follow and the application has been fully tested,
-following a planned, manual testing procedure, with no obvious errors left in the code.
-The development process is clearly evident through commit messages. The project�s
-documentation provides a clear rationale for the development of this project and covers all
-stages of the development life cycle.
-5.1
-Design and implement manual testing procedures to assess functionality, usability and
-responsiveness
-5.2 Document the testing in the README or in a separate file
-5.3
-Deploy a final version of the code to a cloud-based hosting platform (e.g. GitHub Pages) and
-test to ensure it matches the development version
-5.4 Remove commented-out code before pushing final files to version control and deploying
-5.5 Ensure that there are no broken internal links
-LO5 Test and deploy a front-end web application to a Cloud platform
-Milestone Project 1 - User Centric Front-end Development
-9
-1.1
-Design a website with a flow of information layout, and interaction feedback which are clear
-and unambiguous
-2.1
-Implement a website whose purpose is immediately evident to a new user without having to
-look at supporting documentation.
-2.2
-Implement a website that provides a good solution to the user story demands and
-expectations.
-3.1 All HTML attribute and CSS rule names are consistent in format, appropriate and meaningful
-4.1
-Commit often, for each individual feature/fix, ensuring that commits are small and
-well-defined, with messages that clearly and concisely describe the exact reason for a
-particular commit.
-5.1
-Present a clear rationale for the development of the project, in the README, demonstrating
-that it has a clear, well-defined purpose addressing the needs of, and user stories for a
-particular target audience (or multiple related audiences).
-5.4
-Document testing fully to include evaluation of bugs found and their fixes and explanation of
-any bugs that are left unfixed.
-5.5 Fully document the development life cycle procedures in the README file.
-ALL Merit criteria must be achieved for a merit to be awarded.
-DISTINCTION Performance
-At this level, a learner will have achieved all pass and merit criteria, as
-described above, and will demonstrate characteristics of high level
-performance as described below:
-The learner has documented a clear, justified, rationale for a real-world
-application and a comprehensive explanation of how it will be developed.
-The finished project is judged to be publishable in its current form with a
-clearly evidenced professional grade user interface and interaction
-adhering to current practice. There are no obvious errors in the code.
-Where there is a clear breach of accepted design/UX principles, or of
-accepted good practice in code organisation, these are fully justified,
-appropriate and acceptable to the target user. It clearly matches the design
-and demonstrates the characteristics of craftsmanship in the code. The
-resulting application is original and not a copy of any walkthrough projects
-encountered in the course.
-Milestone Project 1 - User Centric Front-end Development
-10
-Amplification (craftsmanship):
-Design
-The design of the web application demonstrates the main principles of good UX design:
-Information Hierarchy
-? Semantic markup is used to convey structure - all information displayed on the site is
-presented in an organised fashion with each piece of information being easy to find
-? all resources on the site are easy to find, allowing users to navigate the layout of the site
-intuitively
-? information is presented and categorised in terms of its priority
-User Control
-? all interaction with the site would be likely to produce a positive emotional response
-within the user. This is down to the flow of information layout, use of colour, clear and
-unambiguous navigation structures and all interaction feedback
-? when displaying media files, the site avoids aggressive automatic pop-ups and
-autoplay of audio; instead letting the user initiate and control such actions
-? users who direct to a non-existent page or resource are redirected back to the main
-page without having to use the browser navigation buttons
-Consistency
-? evident across all pages/sections and covers interactivity as well as design
-Confirmation
-? user actions are confirmed where appropriate, feedback is given at all times
-Accessibility
-? there is clear conformity to accessibility guidelines across all pages/sections
-and in all interactivity
-Any design decisions that contravene accepted user interaction, user experience design
-principles are identified and described (comments in code and/or a section in the README)
-Milestone Project 1 - User Centric Front-end Development
-11
-Development and Implementation
-Code demonstrates characteristics of �clean code�:
-Consistent and appropriate naming conventions within code and in file naming, e.g.
-? file names and class names, are descriptive and consistent
-? for cross-platform compatibility, file and directory names will not have spaces in them
-and will be lower-case only
-? all HTML attributes and CSS rules, are consistent in format, follow standards for the
-language and are appropriate and meaningful
-File structure
-? whenever relevant, files are grouped in directories by file type (e.g. an assets directory
-will contain all static files and code may be organised into sub-directories such as css,
-etc)
-? there is a clear separation between custom code and any external files (for example,
-library files are all inside a directory named 'libraries')
-? files are named consistently and descriptively, without spaces or capitalisation to allow
-for cross-platform compatibility.
-Readability
-? code is indented in a consistent manner to ease readability and there are no
-unnecessary repeated blank lines (and never more than 2)
-? id/class/attribute names clearly indicate their purpose
-? CSS code is split into well-defined and commented sections
-? Semantic markup is used to structure HTML code
-? HTML and CSS are kept in separate, linked files
-? CSS files are linked to in the HTML file�s head element
-Defensive design
-? errors are handled gracefully and users are notified of the problem where appropriate.
-Comments
-? all custom code files include clear and relevant comments explaining the purpose of
-code segments
-Compliant code
-? HTML code passes through the official W3C validator with no issues
-? CSS code passes through the official (Jigsaw) validator with no issues
-Robust code
-? no logic errors are found when running code
-? errors caused by user actions are handled
-? inputs are validated when necessary.
-Milestone Project 1 - User Centric Front-end Development
-12
-The full design is implemented providing a good solution to the users' demands and
-expectations.
-Real world application
-? Clearly understandable site-specific content is used rather than Lorem Ipsum placeholder text
-? All links to external pages open in a separate tab when clicked
-? The final application is aligned to the user stories presented at the start of the project
-Testing procedures are comprehensive, with a good level of coverage, and have clearly been
-followed. All noticeable errors have been corrected or documented.
-Version control systems are used effectively:
-? all code is managed in git with well-described commit messages
-? there is a separate, well-defined commit for each individual feature/fix
-? there are no very large commits which make it harder to understand the development process
-and could lead the assessor to suspect plagiarism
-The full application development process is documented:
-? the purpose of the application is clearly described in the README
-? the project's documentation describes the UX design work undertaken for this project and the
-reasoning behind it
-? wireframes, mockups, diagrams, etc., created as part of the design process are included
-in the project
-Milestone Project 1 - User Centric Front-end Development
-13
 
 

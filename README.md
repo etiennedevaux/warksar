@@ -18,6 +18,7 @@ The agreed strategic goals for the site are to Inform, Communicate and Engage.  
 The user journey is based on four personae, people coming to the site, who simply, at this stage want to find out more information, but need to nurtured as potential future contributors, members, donors or maybe all three.
 
 This leads us to 4 critical user journeys, all of which start from the Home Page
+*NB:  Minor changes to the interface have continued and may not all be reflected in the recordings.  Where significant changes are made the recordings will be updated.
 
 ### 1.1 The Home Page
 [**Home Page Demonstration**](https://youtu.be/bswPg6mYZAc)
@@ -37,7 +38,7 @@ If somebody wants to get in touch they are potentially valuable to the organisat
 This user is immediately prompted to the Contact section.  The navigation bar keeps these users within two clicks of a relevant contact person.
 
 ### 1.4 Potential Members, Supporters and Collaborators
-[*Demonstration for Potential Members*](https://youtu.be/NUyK1Wbc-iU)
+[*Demonstration for Potential Members*](https://youtu.be/7uWdSgunZEA)
 
 These people may be ready and willing to make substantial contributions and to bring their own time and expertise.  They are likely to want specific information about key activities, and to understand how they could best contribute.
 
@@ -358,6 +359,10 @@ GitHub Desktop can be accessed from http://desktop.github.com
 8.  See the documentation at https://docs.github.com/en/desktop
 
 ### 9.2 Running the Code
+
+1.  By default on a PC the repository will be created at c:\GitHub\warksar, other directories can be chosen and the directory structure will be different on other operating systems 
+
+2.  Navigate to the repository directory  and run the file index.html using the browser of your choice
 
 ### 9.3 Editing the Code
 

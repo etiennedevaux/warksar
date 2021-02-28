@@ -4,7 +4,7 @@
 
 /*VARIABLES*/
   :root{
-  --cssfileversion: "0748";
+  --cssfileversion: "0749";
   --lightgrey:#e5e5e5; /* Light grey color for use across the site */
   --darkgrey:#555555; /* Dark grey color for use across the site */
   --bgroundshade:#378a42ff;; /* Opaque background */
@@ -46,21 +46,21 @@
 
     /* Parameters for the fixed background image */
     div.bground{
-    width: 100%;
-    height: 100%;
-    /* rem background-image:  URL("http://www.warksar.org.uk/wp-content/uploads/2018/01/IMGP6198.jpg"); */
-    /* rem background-image: URL("https://scportfolio.blob.core.windows.net/$web/warksar/assets/images/imgwarksar001.jpg"); */
-    background-image: URL("https://etiennedevaux.github.io/warksar/assets/images/imgwarksar001.jpg");
-    background-color: var(--bgroundshade);
-    z-index: -1;
-    padding: 0px;
-    position: fixed;
-    background-size: cover;
-    margin: 0px;
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-    background-position: center center;
+      width: 100%;
+      height: 100%;
+      /* Alternative location for may be used on different deployments background-image:  URL("http://www.warksar.org.uk/wp-content/uploads/2018/01/IMGP6198.jpg"); */
+      /* Alternative location for may be used on different deployments background-image: URL("https://scportfolio.blob.core.windows.net/$web/warksar/assets/images/imgwarksar001.jpg"); */
+      background-image: URL("https://etiennedevaux.github.io/warksar/assets/images/imgwarksar001.jpg");
+      background-color: var(--bgroundshade);
+      z-index: -1;
+      padding: 0px;
+      position: fixed;
+      background-size: cover;
+      margin: 0px;
+      animation-name: hero-zoom;
+      animation-duration: 5s;
+      animation-fill-mode: forwards;
+      background-position: center center;
     }
 
     /* Parameters for the blurred background image */

@@ -442,58 +442,58 @@
             </div>
           </div>
           <!-- Warksar Signup Modal -->
-          <div class="modal fade" id="JoinUsModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                        <h5 class="modal-title" id="Signup-ModalLabel">Online Transfer</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
+            <div class="modal fade" id="JoinUsModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                          <h5 class="modal-title" id="Signup-ModalLabel">Online Transfer</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                  </div>
+                  <form id="signup-form" class="signup-form" method="POST" action="https://devauxphp.azurewebsites.net/warksar_join.php" target="signup-response">
+                    <div class="modal-body">
+                      Please enter your name and email address and we will send you details of how to perform an online transfer.
+                      <br>
+                      <br>
+                      <label for="fullname">Full Name</label>
+                      <br>
+                      <input class="text-input wsr-text-input" id="signup-fullname" type="text" name="full_name" required="" size="50">
+                      <br>
+                      <label for="email">Email Address</label>
+                      <br>
+                      <input class="text-input wsr-text-input" id="signup-email" type="email" name="email_address" required="" size="50">
+                      <br>
+                      <br>
+                      <label>What type of membership would you consider?</label>
+                      <br>
+                      <label for="operational">Operational</label>
+                      <input class="radio-input" type="radio" id="operational" name="join_preference" value="operational" required>
+                      &nbsp;
+                      &nbsp;
+                      <label for="trail">Support</label>
+                      <input class="radio-input" type="radio" id="trail" name="join_preference" value="support">
+                      &nbsp;
+                      &nbsp;
+                      <label for="both">Both</label>
+                      <input class="radio-input" type="radio" id="both" name="join_preference" value="both">
+                      <br>
+                      <br>
+                      <label for="wsr-review">Why Join Warwickshire Search and Rescue?</label>
+
+                      <textarea id="wsr-review" name="wsr-review" rows="4" cols="50" class="text-input wsr-text-input" placeholder="I would like to join because ...">
+                      </textarea>
+
+                      <iframe name="signup-response" id="signup-response"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <input id="signupmodal-button" type="submit" class="btn btn-primary" onclick="signupSubmit('query-form')">
+                    </div>
+                  </form>
                 </div>
-                <form id="signup-form" class="signup-form" method="POST" action="https://devauxphp.azurewebsites.net/warksar_join.php" target="signup-response">
-                  <div class="modal-body">
-                    Please enter your name and email address and we will send you details of how to perform an online transfer.
-                    <br>
-                    <br>
-                    <label for="fullname">Full Name</label>
-                    <br>
-                    <input class="text-input wsr-text-input" id="signup-fullname" type="text" name="full_name" required="" size="50">
-                    <br>
-                    <label for="email">Email Address</label>
-                    <br>
-                    <input class="text-input wsr-text-input" id="signup-email" type="email" name="email_address" required="" size="50">
-                    <br>
-                    <br>
-                    <label>What type of membership would you consider?</label>
-                    <br>
-                    <label for="operational">Operational</label>
-                    <input class="radio-input" type="radio" id="operational" name="join_preference" value="operational" required>
-                    &nbsp;
-                    &nbsp;
-                    <label for="trail">Support</label>
-                    <input class="radio-input" type="radio" id="trail" name="join_preference" value="support">
-                    &nbsp;
-                    &nbsp;
-                    <label for="both">Both</label>
-                    <input class="radio-input" type="radio" id="both" name="join_preference" value="both">
-                    <br>
-                    <br>
-                    <label for="wsr-review">Why Join Warwickshire Search and Rescue</label>
-
-                    <textarea id="wsr-review" name="wsr-review" rows="4" cols="50" class="text-input wsr-text-input" placeholder="Please briefly state why you would like to join us at Warwickshire Search and Rescue">
-                    </textarea>
-
-                    <iframe name="signup-response" id="signup-response"></iframe>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <input id="signupmodal-button" type="submit" class="btn btn-primary" onclick="signupSubmit('query-form')">
-                  </div>
-                </form>
               </div>
             </div>
-          </div>
           <!-- End of Signup Modal-->
         </section>
       </div>

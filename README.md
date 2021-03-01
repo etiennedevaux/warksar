@@ -3,19 +3,27 @@ README.md
 # Website Title: Warwickshire Search and Rescue
 
 ## Version Details
-HTML Version: 0418;
-CSS Version: 0748;
-JavaScript Version: 0039;
+HTML Version: 0420;
+CSS Version: 0750;
+JavaScript Version: 0042;
 
 ## 1  The Warwickshire Search and Rescue User Experience
 
-**NB The video recordings may not reflect the exact screens as text, images and configuration may have had minor changes in response to user feedback.  No changes have been made that alter the four key user journeys.**
+*NB The video recordings may not reflect the exact screens as text, images and configuration may have had minor changes in response to user feedback.  No changes have been made that alter the four key user journeys.*
 
 The key purpose of the Warwickshire Search and Rescue (Warksar) site it to reach out to the public in general.  The team members will mainly communicate and interact with each other via internal online services.  
 
 The agreed strategic goals for the site are to Inform, Communicate and Engage.  Engagement will include support, participation and donations.
 
-The user journey is based on four personae, people coming to the site, who simply, at this stage want to find out more information, but need to nurtured as potential future contributors, members, donors or maybe all three.
+The user journey is based on four personae:
+
+1. People coming to the site, who simply, at this stage want to find out more information, but need to nurtured as potential future contributors, members, donors or maybe all three.
+
+2. People coming to the site looking for answers to specific queries, that may not be answerable from the site alone.
+
+3. People coming to the site who wish to become involved as operational members.
+
+4. People coming to the site who wish to donate.
 
 This leads us to 4 critical user journeys, all of which start from the Home Page
 *NB:  Minor changes to the interface have continued and may not all be reflected in the recordings.  Where significant changes are made the recordings will be updated.
@@ -55,32 +63,64 @@ It may also be desirable to keep a GDPR compliant record of these people, so tha
 
 ## 2 Wireframe Designs
 
-The Wireframe Designs were created using [Justinmind 9.2.2](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Justinmind.jpg)
+The Wireframe Designs were created using [Justinmind 9.2.2](https://www.justinmind.com/), examples of the interface are shown below:  
+[JustInMind - Interface Example One](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Justinmind.jpg)  
+[JustInMind - Interface Example Two](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Justinmind2.jpg)
 
-Each page was prototyped in order to get concensus from the Warwickshire Search and Rescue Team.  Once finalised the designs were implemented in html, using CSS and Javascript.  
+Each page was prototyped in order to get concensus from the Warwickshire Search and Rescue Team.  Once finalised the designs were implemented in html, using CSS and Javascript. 
 
+The wireframes were designed to give an outline view for each page, as it would be seen on a typical 
+1. Desktop
+2. Tablet - In Landscape Mode
+3. Mobile Phone - In Portrait Mode
+The actual implementation has more granular responsive features built-in
+
+At this stage the Desktop is still seen as the primary device, but Mobile phones are seen as increasingly important for future developments and extensions.
 *In some cases there are minor interface changes from the original wireframe.*
 
-### 2.1 [Home](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Home.png)
+### 2.1 Homepage
+#### 2.1.1 [Home - Desktop](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Home_Desktop.png)
+#### 2.1.2 [Home - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Home_Tablet.png)
+#### 2.1.3 [Home - Mobile](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Home_Mobile.png)
 
-### 2.2 [About - History](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About%20-%20History.png)
+### 2.2 About - What We Do
+#### 2.2.1 [About - What We Do - Desktop](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About_WhatWeDo_Desktop.png)
+#### 2.2.2 [About - What We Do - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About_WhatWeDo_Tablet.png)
+#### 2.2.3 [About - What We Do - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About_WhatWeDo_Mobile.png)
 
-### 2.3 [About - What We Do](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About%20-%20What%20We%20Do.png)
+### 2.3 About - History
+#### 2.3.1 [About - History - Desktop](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About_History_Desktop.png)
+#### 2.3.2 [About - History - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About_History_Tablet.png)
+#### 2.3.3 [About - History - Mobile](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About_History_Mobile.png)
 
-### 2.4 [The Team](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/The%20Team.png)
+### 2.4 The Team
+#### 2.4.1 [The Team - Desktop](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/TheTeam_Desktop.png)
+#### 2.4.2 [The Team - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/TheTeam_Tablet.png)
+#### 2.4.3 [The Team - Mobile](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/TheTeam_Mobile.png)
 
-### 2.5 [Join Us](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Join%20Us.png)
+### 2.5 Join Us
+#### 2.5.1 [Join Us - Desktop](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/JoinUs_Desktop.png)
+#### 2.5.2 [Join Us - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/JoinUs_Tablet.png)
+#### 2.5.3 [Join Us - Mobile](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/JoinUs_Mobile.png)
 
-### 2.6 [Gallery](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Gallery.png)
+### 2.6 Gallery
+#### 2.6.1 [Gallery - Desktop](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Gallery_Desktop.png)
+#### 2.6.2 [Gallery - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Gallery_Tablet.png)
+#### 2.6.3 [Gallery - Mobile](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Gallery_Mobile.png)
 
-### 2.7 [Contact](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Contact.png)
+### 2.7 Contact
+#### 2.7.1 [Contact - Desktop](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Contact_Desktop.png)
+#### 2.7.2 [Contact - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Contact_Tablet.png)
+#### 2.7.3 [Contact - Mobile](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Contact_Mobile.png)
 
-### 2.8 [Donate](https://github.com/etiennedevaux/warksar/blob/Draft4forReview/ProjectDocuments/wireframes/Donate.png)
+### 2.8 Donate
+#### 2.8.1 [Donate - Desktop](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Donate_Desktop.png)
+#### 2.8.2 [Donate - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Donate_Tablet.png)
+#### 2.8.3 [Donate - Mobile](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Donate_Mobile.png)
 
-Perhaps most importantly the wireframe designs will be used for workshopping future developments, ensuring clear specifications before development work starts.
+Perhaps most importantly, as this is a real-world development, the wireframe designs will be used for workshopping future developments, ensuring clear specifications before development work starts.
 
-This approach will also allow creative free-thinking and discussion, whilst ensure the production website remains stable.
-
+This approach will also allow creative free-thinking and discussion, whilst ensuring the production website remains stable.
 
 ## 3 Responsive Design
 

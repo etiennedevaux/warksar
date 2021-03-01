@@ -4,7 +4,7 @@
 
 /*VARIABLES*/
   :root{
-  --cssfileversion: "0749";
+  --cssfileversion: "0750";
   --lightgrey:#e5e5e5; /* Light grey color for use across the site */
   --darkgrey:#555555; /* Dark grey color for use across the site */
   --bgroundshade:#378a42ff;; /* Opaque background */
@@ -907,7 +907,7 @@
   }
 
   .wsr-timeline-left::before, #wsr-container-timeline-top::before, .wsr-timeline-right::before, .wsr-timeline::before {
-  display: inherit;
+  display: none;
   }
 
   .wsr-timeline-left::after, #wsr-container-timeline-top::after, .wsr-timeline-right::after, .wsr-timeline::after {

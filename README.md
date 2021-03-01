@@ -3,11 +3,110 @@ README.md
 # Website Title: Warwickshire Search and Rescue
 
 ## Version Details
-HTML Version: 0420;
-CSS Version: 0750;
-JavaScript Version: 0042;
+HTML Version: 0420;  
+CSS Version: 0750;  
+JavaScript Version: 0042;  
 
-## 1  The Warwickshire Search and Rescue User Experience
+## 1  The Warwickshire Search and Rescue 
+
+### 1.1 The Development Lifecycle
+
+#### 1.1.1 Strategy
+
+The current Warwickshire Search and Rescue Website has been in place for some time, and whilst some parts have had recent updates most of it has not.
+
+Critical information is accurate, but some details are now out of date.
+
+Some functions within the site are duplicating work done elsewhere, e.g. via social media or the D4H readiness and response website.
+
+However, the site is still the primary point of contact for the public in general and is an essential tool to support fundraising - without which the organisation would cease to exist.
+
+The intial discussions on the website strategy focused on the Stages of Philanthropy, which help people to map out how a person might go from basic curiosity about the organisation to becoming an actual donor.
+
+The website strategy, therefore, is based on the concept of nurtuting potential donors, and minimizing barriers to giving for actual donors.
+
+The agreed strategic goals for the site, in discussion between the developer and the organisational leadership,  are to   
+
+**Inform**  
+**Communicate**  
+**Engage**  
+
+Engagement will include support, participation and donations.  The participation aspect currently being of low importance as a recruitment cycle has just finished.  But from a development perspective this is still an important aspect.
+
+#### 1.1.2 Scope
+
+The Scope was agreed between the organisational leadership and the developer:
+
+Maintaining a website is an ongoing task, if well designed that task may be light in total hours.  From time to time more major reviews and updates may be required.  
+Ongoing maintenance would include areas such as events, annual reports, a photo gallery and maybe a video gallery.
+Reviews might lead to one or more development sprints.  Minor reviews might be annual or in response to operational changes.  Major reviews might be on a 3 to 5 year cycle.
+For the ongoing maintenance an information policy should be agreed as to what information, photos and videos it is appropriate to publish.
+Development sprints would be agreed between the organisational leadership and the developer.
+
+The first agreed sprint was **Site Modernisation** - which would involve modernising the look and feel, whilst removing poorly used tools such as the Blog and the Search option
+
+Possible future sprints were:
+
+1. Content review - focusing on accuracy, currency and relvance of content
+
+2. Media review - focusing on quality, currency and impact of visual and audio content
+
+3. Strategic review - reviewing current functionality and deciding on additional pages and tools for future sprints
+
+#### 1.1.3 Structure
+
+The developer and organisational leadership agreed a broad structure, but with acknowledged flexibility in the implementation.
+
+This was established via a Proof of Concept Site, the site itself is in the GitHub repository as the branch DraftforReview
+
+Draft2forReview, Draft3forReview and Draft4forReview show successive iterations that were shared and review.
+
+Inital Proof of Concept Screenshots (a few examples)
+
+1. [POC Homepage](https://etiennedevaux.github.io/warksar/projectdocuments/poc/poc_home.png)
+2. [POC What We Do](https://etiennedevaux.github.io/warksar/projectdocuments/poc/poc_whatwedo.png)
+3. [POC Teams](https://etiennedevaux.github.io/warksar/projectdocuments/poc/poc_teams.png)
+4. [POC Gallery](https://etiennedevaux.github.io/warksar/projectdocuments/poc/poc_gallery.png)
+
+#### 1.1.4 Skeleton
+
+The Skeleton Structure was broadly agreed as 
+
+1. Home Page - containing the four key calls to action
+
+2. About - with a drop down menu (rather than a page) showing What We Do and Our History
+
+3. What We Do - describing the work of the tam
+
+4. Events - listing events in which the team participated (this was at the start of the wireframing)
+
+5. Get Involved - during the wireframing this evolved into a simpler Join Us section
+
+6. Gallery - with a photo gallery and video gallery, although these were combined into a single gallery during implementation
+
+7. Contact - listing key contact points
+
+The wireframes are shown in section 2
+
+#### 1.1.5 Surface
+
+The proof of concept and the wireframes gave a high level of clarity for the desired surface featuresa and how they would look.
+
+The overall structure was agreed as 
+
+1.  A dark and slightly transparent upper navigation bar, visible at all times but adapting for small screens
+
+2.  A green page background, to appear on pages with no background image, which were primarily the factual and textual information pages
+
+3.  A choice of two backgroud images to appear on pages with visual and less formal content
+
+4.  A grey and slightly transparent footer bar, available on all screens with sufficient height (ie not mobiles in landscape)
+
+The overall design was agreed from the Wireframes (as shown in section 2)
+
+The need to avoid obscuring text with background images was felt to be high priority for the more formal information based pages
+
+### 1.2 User Experience
 
 *NB The video recordings may not reflect the exact screens as text, images and configuration may have had minor changes in response to user feedback.  No changes have been made that alter the four key user journeys.*
 
@@ -28,24 +127,24 @@ The user journey is based on four personae:
 This leads us to 4 critical user journeys, all of which start from the Home Page
 *NB:  Minor changes to the interface have continued and may not all be reflected in the recordings.  Where significant changes are made the recordings will be updated.
 
-### 1.1 The Home Page
+#### 1.2.1 The Home Page
 [**Home Page Demonstration**](https://youtu.be/bswPg6mYZAc)
 
-### 1.2 Information Seekers
+#### 1.2.2 Information Seekers
 [*Demonstration for Users Seeking Information*](https://youtu.be/nghCxQIYFRs)
 
 For most of the public in general they may have had little reason to have come across Warksar, but have now heard about it and would like to know more.  These people are potential donors, members and collaborators - but for now need to be nurtured rather than directed.
 
 The Call to Action gives these people a prompt to the About - What We Do section.  All navigation remains either directly visible, or within a single click on a dropdown.  At most this user is two clicks from any part of the site.
 
-### 1.3 Queries
+#### 1.2.3 Queries
 [*Demonstration for Users with Specific Queries*](https://youtu.be/7ZZaQi35YWU)
 
 If somebody wants to get in touch they are potentially valuable to the organisation.  They probably already know something about the organisation already and want to discuss something specific.  They need rapid access to contact information, balancing the need to get to the right person with the need to have the information without any complex navigation.
 
 This user is immediately prompted to the Contact section.  The navigation bar keeps these users within two clicks of a relevant contact person.
 
-### 1.4 Potential Members, Supporters and Collaborators
+#### 1.2.4 Potential Members, Supporters and Collaborators
 [*Demonstration for Potential Members*](https://youtu.be/7uWdSgunZEA)
 
 These people may be ready and willing to make substantial contributions and to bring their own time and expertise.  They are likely to want specific information about key activities, and to understand how they could best contribute.
@@ -54,7 +153,7 @@ It is important that this group understand waht is involved before signing up.  
 
 This group are also likely to be future donors.
 
-### 1.5 Donors
+#### 1.2.5 Donors
 [*Demonstration for Donors*](https://youtu.be/fKmlrB2n-PU)
 
 These are people comning to the site with the specific intention of making a donation.  These people need rapid links to the dontation information that supports their preferred donation method. At all times users will be within two clicks of a donation option.
@@ -64,8 +163,8 @@ It may also be desirable to keep a GDPR compliant record of these people, so tha
 ## 2 Wireframe Designs
 
 The Wireframe Designs were created using [Justinmind 9.2.2](https://www.justinmind.com/), examples of the interface are shown below:  
-[JustInMind - Interface Example One](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Justinmind.jpg)  
-[JustInMind - Interface Example Two](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Justinmind2.jpg)
+[JustInMind - Interface Example One](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/justinmind.jpg)  
+[JustInMind - Interface Example Two](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/justinmind2.jpg)
 
 Each page was prototyped in order to get concensus from the Warwickshire Search and Rescue Team.  Once finalised the designs were implemented in html, using CSS and Javascript. 
 
@@ -79,44 +178,44 @@ At this stage the Desktop is still seen as the primary device, but Mobile phones
 *In some cases there are minor interface changes from the original wireframe.*
 
 ### 2.1 Homepage
-#### 2.1.1 [Home - Desktop](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Home_Desktop.png)
-#### 2.1.2 [Home - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Home_Tablet.png)
-#### 2.1.3 [Home - Mobile](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Home_Mobile.png)
+#### 2.1.1 [Home - Desktop](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/home_desktop.png)
+#### 2.1.2 [Home - Tablet](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/home_tablet.png)
+#### 2.1.3 [Home - Mobile](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/home_mobile.png)
 
 ### 2.2 About - What We Do
-#### 2.2.1 [About - What We Do - Desktop](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About_WhatWeDo_Desktop.png)
-#### 2.2.2 [About - What We Do - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About_WhatWeDo_Tablet.png)
-#### 2.2.3 [About - What We Do - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About_WhatWeDo_Mobile.png)
+#### 2.2.1 [About - What We Do - Desktop](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/about_whatwedo_desktop.png)
+#### 2.2.2 [About - What We Do - Tablet](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/about_whatwedo_tablet.png)
+#### 2.2.3 [About - What We Do - Mobile](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/about_whatwedo_mobile.png)
 
 ### 2.3 About - History
-#### 2.3.1 [About - History - Desktop](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About_History_Desktop.png)
-#### 2.3.2 [About - History - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About_History_Tablet.png)
-#### 2.3.3 [About - History - Mobile](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/About_History_Mobile.png)
+#### 2.3.1 [About - History - Desktop](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/about_history_desktop.png)
+#### 2.3.2 [About - History - Tablet](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/about_history_tablet.png)
+#### 2.3.3 [About - History - Mobile](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/about_history_mobile.png)
 
 ### 2.4 The Team
-#### 2.4.1 [The Team - Desktop](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/TheTeam_Desktop.png)
-#### 2.4.2 [The Team - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/TheTeam_Tablet.png)
-#### 2.4.3 [The Team - Mobile](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/TheTeam_Mobile.png)
+#### 2.4.1 [The Team - Desktop](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/theteam_desktop.png)
+#### 2.4.2 [The Team - Tablet](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/theteam_tablet.png)
+#### 2.4.3 [The Team - Mobile](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/theteam_mobile.png)
 
 ### 2.5 Join Us
-#### 2.5.1 [Join Us - Desktop](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/JoinUs_Desktop.png)
-#### 2.5.2 [Join Us - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/JoinUs_Tablet.png)
-#### 2.5.3 [Join Us - Mobile](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/JoinUs_Mobile.png)
+#### 2.5.1 [Join Us - Desktop](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/joinus_desktop.png)
+#### 2.5.2 [Join Us - Tablet](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/joinus_tablet.png)
+#### 2.5.3 [Join Us - Mobile](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/joinus_mobile.png)
 
 ### 2.6 Gallery
-#### 2.6.1 [Gallery - Desktop](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Gallery_Desktop.png)
-#### 2.6.2 [Gallery - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Gallery_Tablet.png)
-#### 2.6.3 [Gallery - Mobile](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Gallery_Mobile.png)
+#### 2.6.1 [Gallery - Desktop](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/gallery_desktop.png)
+#### 2.6.2 [Gallery - Tablet](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/gallery_tablet.png)
+#### 2.6.3 [Gallery - Mobile](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/gallery_mobile.png)
 
 ### 2.7 Contact
-#### 2.7.1 [Contact - Desktop](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Contact_Desktop.png)
-#### 2.7.2 [Contact - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Contact_Tablet.png)
-#### 2.7.3 [Contact - Mobile](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Contact_Mobile.png)
+#### 2.7.1 [Contact - Desktop](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/contact_desktop.png)
+#### 2.7.2 [Contact - Tablet](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/contact_tablet.png)
+#### 2.7.3 [Contact - Mobile](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/contact_mobile.png)
 
 ### 2.8 Donate
-#### 2.8.1 [Donate - Desktop](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Donate_Desktop.png)
-#### 2.8.2 [Donate - Tablet](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Donate_Tablet.png)
-#### 2.8.3 [Donate - Mobile](https://etiennedevaux.github.io/warksar/ProjectDocuments/wireframes/Donate_Mobile.png)
+#### 2.8.1 [Donate - Desktop](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/donate_desktop.png)
+#### 2.8.2 [Donate - Tablet](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/donate_tablet.png)
+#### 2.8.3 [Donate - Mobile](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/donate_mobile.png)
 
 Perhaps most importantly, as this is a real-world development, the wireframe designs will be used for workshopping future developments, ensuring clear specifications before development work starts.
 
@@ -344,6 +443,16 @@ GitHub has an upper file limit of 100Mb.  This is generous for code, and adequat
 
 The are examples of all three on this site.
 
+### 7.10 Chrome Lighthouse Report
+
+The Chrome Lighthouse report highlighted three key issues:
+
+1. Performance - the initial image was loading from a remote location.  Moving the image to the same server improved performance.  However this link will need adjusting when the site is moved across to a different server.  Alternative locations have been left in the CSS, btu have been commented out.
+
+2.  Best Practices on External Links - some of the external links did not have the noreferrer attribute.  This has been addressed.
+
+3.  Best Practices Vulnerabilites - known vulnerabilities within Bootstrap 4.1.3 and JQuery 3.3.1 javascript libraries were highlighted.  These will be addressed in the next development round.
+
 ## 8 Code Structure
 
 ### 8.1 HTML
@@ -404,24 +513,81 @@ GitHub Desktop can be accessed from http://desktop.github.com
 
 2.  Navigate to the repository directory  and run the file index.html using the browser of your choice
 
+3.  CSS, Javascript and site images are accessed by relative paths and are stored within the assets folder.  Some images are drawn from third-party locations.  
+
 ### 9.3 Editing the Code
+
+1.  The main html file index.html is stored on the root folder, which is at c:\GitHub\warksar if using GitHub Desktop on a PC with the default folder setttings.
+
+2.  The index.html file can be edited with any text editor, including Notepad.exe on a PC.  HTML editing is more efficient with a specialist editor.  There are many available, such as [Visual Studio Code](https://code.visualstudio.com/) or [Brackets](http://brackets.io/).
+
+3.  The README.md file is also stored in the root and can be edited with the same set of tools.  
+
+4.  The README.md file is written using the Markdown language, focused on GitHub deployment.
+
+5.  Visual Studio Code includes a preview for the Markdown Language, although this is not identical to the GitHub display format.  Significant formating should be verified on GitHub before making extensive use in the source file.
 
 ### 9.4 Commits
 
+Frequent commits have been made, all are labelled with at least a summary.  Most major commits also have a description.
+
+Commits are made both to update code, creating stable and re-usable version, and to test that code working successfully as a local html file will work in the same way when viewed from the GitHub pages server.
+
+All major functional areas are committed once completed and tested.
+
 ### 9.5 Push to Origin
 
-### 9.3 GitHub Branches
+Frequent pushes to origin from GitHub desktop are important, as this ensures:
+
+1.  That committed code is stored in more than one place, ie on the desktop and in the cloud
+2.  That committed code is available to viewers, reviewers and collaborators using GitHub
+3.  If future issues occur then an audit trail back to a stable and working version of individual functions is available
+
+### 9.6 GitHub Branches
 Once tested the code is deployed on GitHub, using Github Desktop.  The code can be deployed to various branches to allow for testing and staging of changes and additions, whilst maintaining the integrity of the core.
 
-### 9.3 Github Main Branch
+### 9.7 Github Main Branch
 
 The deployment goal at this stage is to be available for assessment on the Github platform.  Once tested locally it can then be deployed to a branch on GitHub, and when tested in that environment merged back into the main branch and left unchanged for assessment.
 
+Currently the latest version is on the Main branch.
 
+### 9.8 Live Deployment
 
-### 9.4 Live Deployment
+#### 9.8.1 GitHub Pages
+
+The goal for this round of development is to make the site available for
+
+1.  Assessment Purposes - so that the Code Institute can assess a stable and complete version.
+2.  Warwickshire Search and Rescue Leadership - so that the team can see a complete version, and decide on whether to deploy or do another round of development prior to deployment.
+
+Both of these are achieved by making the site available as an externally facing URL via the GitHub pages.
+
+To add GitHub pages to a site (or to change setting)
+
+1.  Logon to GitHub
+2.  Go to Repositories
+3.  Select the desired repository (e.g. warksar)
+4.  Go to Settings
+5.  Scroll down to the GitHub Pages section
+6.  In the Source section click on the dropdown (default value None, but maybe already configured to point to a given branch such as Main)
+7.  Select the desired branch to display and click on Save
+8.  Other settings such as a Theme are not necessary for this site
+
+#### 9.8.2 Future Platforms
 
 Ultimately the site will, once approved by Warwickshire Search and Resuce, be deployed to a different server.  To make this deployment as simple as possible the site has been designed to for easy copying and using relative file paths to assets such as CSS, images and Javascript.
+
+To deploy to different server
+
+1.  It is assumed that a server is available, with a known domain and a root directory configured to serve an index.html file via the hypertext transfer protocol (http)
+2.  Copy the index.html file to the server root
+3.  Copy the assets folder and all of its sub-directories (css, images, js, audio and video) to the server root
+4.  Allow time for the uploads to be fully completed and for the target server to process those files, refer to documentation on the target server for precise estimates, but a few minutes is normally sufficient
+5.  Enter the domain (e.g. https://etiennedevaux.github.io/warksar) into your browser, the index.html file should automatically load and should include the linked content in the assets subfolder.
+6. Folow the test procedures set out in section 10 of this document
+7. Test the submissions from the Modal forms on the Join Us (button labelled Sign-UP with Warwickshire Search and Rescue) and Donate (button labelled Banking Details) pages
+8. Test the above on a Desktop machine, a Tablet and a Mobile phone.
 
 ## 10 Testing and Quality Assurance
 
@@ -431,6 +597,8 @@ Systematic testing involves checking each menu option from left to right, includ
 For each option the page is then checked from top to bottom.  Key checks include, but are not limited to, formating, spelling, links, colouring and shading.
 
 For layout and look and feel consistency, usability and aesthetics are considered.
+
+See 10.6 for examples of test reports
 
 ### 10.2 Browser Testing
 The site needs to be systematically checked against a range of common browsers.  These include, but are not limited to, Google Chrome, Firefox, Microsoft Edge, Safari and Internet Explorer.
@@ -610,14 +778,78 @@ The site is based on the Bootstrap breakpoints, testing has been conducted again
 >**Footer Bar**  
 >Set to disappear when height is below 400px.
 >
-## 10.7 W3C HTML Validation Report
+### 10.7 Chrome Lighthouse Site Report
+
+#### 10.7.1 Chrome Lighthouse Reports
+>[New Warwickshire Search and Rescue - Desktop](https://etiennedevaux.github.io/warksar/projectdocuments/lighthouse/new_warksar_desktop.png)  
+>Performance **90%** Accessibility **98%** Best Practices **93%** Search Engine Optimisation **90%**  
+>
+>[New Warwickshire Search and Rescue - Mobile](https://etiennedevaux.github.io/warksar/projectdocuments/lighthouse/new_warksar_mobile.png)  
+>Performance **72%** Accessibility **98%** Best Practices **86%** Search Engine Optimisation **92%**  
+
+Overall these levels seem OK, all are highlighted as Green for the Desktop and for the Mobile Performance and Best Practices are in Amber.
+
+A number of best practices issues have been addressed, the outstanding ones relate to Bootstrap 4.1.3 and the other to JQuery 3.3.1. These issues will be addressed, but as they are dependent on external libraries will be addressed during the next development cycle.
+
+The performance tests will, inevitably, produce variable results, but still give good indicators if there are substantial problems.
+
+#### 10.7.2 Chrome Lighthouse Benchmark Reports
+
+It is important to put the test results for this site into context by doing benchmark comparisons with some relevant established sites.
+
+##### 10.7.2.1 Chrome Lighthouse Report for existing [Warwickshire Search and Rescue](http://www.warksar.org.uk/) Site
+>[New Warwickshire Search and Rescue - Desktop](https://etiennedevaux.github.io/warksar/projectdocuments/lighthouse/original_warksar_desktop.png)  
+>Performance **69%** Accessibility **77%** Best Practices **71%** Search Engine Optimisation **83%**  
+>
+>[New Warwickshire Search and Rescue - Mobile](https://etiennedevaux.github.io/warksar/projectdocuments/lighthouse/original_warksar_mobile.png)  
+>Performance **39%** Accessibility **83%** Best Practices **64%** Search Engine Optimisation **86%**  
+
+One of the most important metrics is to show improvements from the existing website. The new version shows considerable improvements in all areas, ranging for 6% to 33%.
+
+##### 10.7.2.1 Chrome Lighthouse Report for the [BBC](https://www.bbc.co.uk/)
+>[BBC - Desktop](https://etiennedevaux.github.io/warksar/projectdocuments/lighthouse/bbc_desktop.png)  
+>Performance **90%** Accessibility **100%** Best Practices **93%** Search Engine Optimisation **92%**  
+>
+>[BBC - Mobile](https://etiennedevaux.github.io/warksar/projectdocuments/lighthouse/bbc_mobile.png)  
+>Performance **84%** Accessibility **100%** Best Practices **93%** Search Engine Optimisation **93%**  
+
+The BBC was chosen as a benchmark as they represent the Gold Standard of web design.  The site was better in most areas, but the new Warwickshire Search and Rescue site compares well.  The BBCs accessibility of 100% is particularly impressive and would be an aspiration for future developments.
+
+##### 10.7.2.2 Chrome Lighthouse Report for the public [Code Institute](https://codeinstitute.net/) site.
+>[Code Institute - Desktop](https://etiennedevaux.github.io/warksar/projectdocuments/lighthouse/codeinstitute_desktop.png)  
+>Performance **80%** Accessibility **88%** Best Practices **79%** Search Engine Optimisation **92%**  
+>
+>[Code Institute - Mobile](https://etiennedevaux.github.io/warksar/projectdocuments/lighthouse/codeinstitute_mobile.png)  
+>Performance **34%** Accessibility **88%** Best Practices **71%** Search Engine Optimisation **93%**  
+
+The Code Institute is an obvious comparison to draw. The new Warwickshire Search and Rescue site compares well, and is generally slightly better in performance and accessibility.
+
+##### 10.7.2.3 Chrome Lighthouse Report for [Oxfordshire Search and Rescue](https://www.lowlandrescueoxfordshire.org.uk/)
+>[Oxfordshire Search and Rescue - Desktop](https://etiennedevaux.github.io/warksar/projectdocuments/lighthouse/oxsar_desktop.png)  
+>Performance **82%** Accessibility **93%** Best Practices **93%** Search Engine Optimisation **92%**  
+>
+>[Oxfordshire Search and Rescue - Mobile](https://etiennedevaux.github.io/warksar/projectdocuments/lighthouse/oxsar_mobile.png)  
+>Performance **58%** Accessibility **93%** Best Practices **93%** Search Engine Optimisation **87%**  
+
+The Oxfordshire Search and Rescue website is seen as an example of good practice, and a realistic standard that can, and should, be achieved.  The new Warwickshire Search and Rescue site comes to about the same overall standard.  Performance and accessibilty appear slightly better that the Oxfordshire site, but other aspects of the Oxfordshire site are slightly stronger.
+
+##### 10.7.2.4 Chrome Lighthouse Report for the [National Trust](https://www.nationaltrust.org.uk/)
+[National Trust - Desktop](https://etiennedevaux.github.io/warksar/projectdocuments/lighthouse/nationaltrust_desktop.png)  
+Performance **84%** Accessibility **79%** Best Practices **71%** Search Engine Optimisation **100%**  
+
+[National Trust - Mobile](https://etiennedevaux.github.io/warksar/projectdocuments/lighthouse/nationaltrust_mobile.png)  
+Performance **37%** Accessibility **79%** Best Practices **79%** Search Engine Optimisation **100%**  
+
+The National Trust is a useful benchmark as it is a large, non-profit organisation.  The overall scores on accessibility and best practices are lower than for the new Warwickshire Search and Rescue site.  The search engine optimisation is, however, very strong and would be an aspiration for future developments.
+
+### 10.8 W3C HTML Validation Report
 The report was the initial report for the index.html page (which includes all html pages as Javascript is used to hide and show page components).
 
 The report also shows the actions taken to obtain an error free report.
 
 A check will now be run before each commit and any errors adressed at that stage, or soon after.
 
-*NB: src=  urls have been modified to prevent images from cluttering the README file when viewed online
+*NB: src=  urls have been modified and other parts of the error message removed to prevent images from cluttering the README file when viewed online and unintended formating.*
 
 **Report 001**
 >**1**	Error: No space between attributes.  
@@ -842,7 +1074,7 @@ A check will now be run before each commit and any errors adressed at that stage
 >
 >About this checker � Report an issue � Version: 21.2.17
 
-### 10.8 W3C CSS Validator results for warwickshiresearchandrescue.css 
+### 10.9 W3C CSS Validator results for warwickshiresearchandrescue.css 
 (CSS level 3 + SVG)
 Sorry! We found the following errors (13)
 URI : warwickshiresearchandrescue.css

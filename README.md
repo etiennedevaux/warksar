@@ -811,10 +811,10 @@ The performance tests will, inevitably, produce variable results, but still give
 It is important to put the test results for this site into context by doing benchmark comparisons with some relevant established sites.
 
 ##### 10.7.2.1 Chrome Lighthouse Report for existing [Warwickshire Search and Rescue](http://www.warksar.org.uk/) Site
->[New Warwickshire Search and Rescue - Desktop](https://etiennedevaux.github.io/warksar/projectdocuments/lighthouse/original_warksar_desktop.png)  
+>[Original Warwickshire Search and Rescue - Desktop](https://etiennedevaux.github.io/warksar/projectdocuments/lighthouse/original_warksar_desktop.png)  
 >Performance **69%** Accessibility **77%** Best Practices **71%** Search Engine Optimisation **83%**  
 >
->[New Warwickshire Search and Rescue - Mobile](https://etiennedevaux.github.io/warksar/projectdocuments/lighthouse/original_warksar_mobile.png)  
+>[Original Warwickshire Search and Rescue - Mobile](https://etiennedevaux.github.io/warksar/projectdocuments/lighthouse/original_warksar_mobile.png)  
 >Performance **39%** Accessibility **83%** Best Practices **64%** Search Engine Optimisation **86%**  
 
 One of the most important metrics is to show improvements from the existing website. The new version shows considerable improvements in all areas, ranging for 6% to 33%.

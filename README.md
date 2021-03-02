@@ -2,10 +2,20 @@ README.md
 
 # Website Title: Warwickshire Search and Rescue
 
+This project is a real-world project.  Warwickshire Search and Rescue is an operational Lowland Rescue Team.
+
+The Website is functional, but is considered no longer fully fit for purpose and needs a significant overhaul.
+
+[Warwickshire Search and Rescue Website](http://www.warksar.org.uk/)
+
+This project addresses the first stage of that overhaul by bringing a fully working version to the leadership of that organisation, with a view to full production implementation.
+
 ## Version Details
-HTML Version: 0420;  
-CSS Version: 0750;  
-JavaScript Version: 0042;  
+HTML Version: 0999;  
+CSS Version: 0999;  
+JavaScript Version: 0999;  
+
+This represents the final version for Milestone Project 1.  The next release will be further development for the client organisation, and will be Version 1000.
 
 ## 1  The Warwickshire Search and Rescue 
 
@@ -38,12 +48,14 @@ Engagement will include support, participation and donations.  The participation
 The Scope was agreed between the organisational leadership and the developer:
 
 Maintaining a website is an ongoing task, if well designed that task may be light in total hours.  From time to time more major reviews and updates may be required.  
-Ongoing maintenance would include areas such as events, annual reports, a photo gallery and maybe a video gallery.
-Reviews might lead to one or more development sprints.  Minor reviews might be annual or in response to operational changes.  Major reviews might be on a 3 to 5 year cycle.
-For the ongoing maintenance an information policy should be agreed as to what information, photos and videos it is appropriate to publish.
-Development sprints would be agreed between the organisational leadership and the developer.
+Ongoing maintenance might include areas such as events, annual reports, a photo gallery and maybe a video gallery.  
+Reviews might lead to one or more development sprints.  Minor reviews might be annual or in response to operational changes.  Major reviews might be on a 3 to 5 year cycle.  
+For the ongoing maintenance an information policy should be agreed as to what information, photos and videos it is appropriate to publish.  
+Development sprints would be agreed between the organisational leadership and the developer.  
 
-The first agreed sprint was **Site Modernisation** - which would involve modernising the look and feel, whilst removing poorly used tools such as the Blog and the Search option
+The first agreed sprint was **Site Modernisation** - which would involve modernising the look and feel, whilst removing poorly used tools such as the Blog and the Search option.
+
+It is this sprint that represents Milestone Project One.
 
 Possible future sprints were:
 
@@ -59,7 +71,7 @@ The developer and organisational leadership agreed a broad structure, but with a
 
 This was established via a Proof of Concept Site, the site itself is in the GitHub repository as the branch DraftforReview
 
-Draft2forReview, Draft3forReview and Draft4forReview show successive iterations that were shared and review.
+Draft2forReview, Draft3forReview and Draft4forReview show successive iterations that were shared and reviewed.
 
 Inital Proof of Concept Screenshots (a few examples)
 
@@ -70,15 +82,16 @@ Inital Proof of Concept Screenshots (a few examples)
 
 #### 1.1.4 Skeleton
 
-The Skeleton Structure was broadly agreed as 
+The Skeleton Structure was initially agreed as 
 
 1. Home Page - containing the four key calls to action
 
-2. About - with a drop down menu (rather than a page) showing What We Do and Our History
+2. About - with a drop down menu (rather than a page) showing What We Do and Our History, there will be no actual About page.
 
-3. What We Do - describing the work of the tam
+3. What We Do - describing the work of the team
 
-4. Events - listing events in which the team participated (this was at the start of the wireframing)
+4. Events - listing events in which the team participated  
+*This was at the start of the wireframing as it was felt it overlapped with social media*
 
 5. Get Involved - during the wireframing this evolved into a simpler Join Us section
 
@@ -90,7 +103,7 @@ The wireframes are shown in section 2
 
 #### 1.1.5 Surface
 
-The proof of concept and the wireframes gave a high level of clarity for the desired surface featuresa and how they would look.
+The proof of concept and the wireframes gave a high level of clarity for the desired surface features and how they would look.
 
 The overall structure was agreed as 
 
@@ -100,7 +113,7 @@ The overall structure was agreed as
 
 3.  A choice of two backgroud images to appear on pages with visual and less formal content
 
-4.  A grey and slightly transparent footer bar, available on all screens with sufficient height (ie not mobiles in landscape)
+4.  A grey and slightly transparent footer bar, available on all screens, unless the screen height was very low (ie not mobiles in landscape)
 
 The overall design was agreed from the Wireframes (as shown in section 2)
 
@@ -128,7 +141,7 @@ This leads us to 4 critical user journeys, all of which start from the Home Page
 *NB:  Minor changes to the interface have continued and may not all be reflected in the recordings.  Where significant changes are made the recordings will be updated.
 
 #### 1.2.1 The Home Page
-[**Home Page Demonstration**](https://youtu.be/bswPg6mYZAc)
+[*Home Page Demonstration*](https://youtu.be/bswPg6mYZAc)
 
 #### 1.2.2 Information Seekers
 [*Demonstration for Users Seeking Information*](https://youtu.be/nghCxQIYFRs)
@@ -164,7 +177,7 @@ It may also be desirable to keep a GDPR compliant record of these people, so tha
 
 The Wireframe Designs were created using [Justinmind 9.2.2](https://www.justinmind.com/), examples of the interface are shown below:  
 [JustInMind - Interface Example One](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/justinmind.jpg)  
-[JustInMind - Interface Example Two](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/justinmind2.jpg)
+[JustInMind - Interface Example Two](https://etiennedevaux.github.io/warksar/projectdocuments/wireframes/justinmind_2.jpg)
 
 Each page was prototyped in order to get concensus from the Warwickshire Search and Rescue Team.  Once finalised the designs were implemented in html, using CSS and Javascript. 
 
